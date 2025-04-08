@@ -1,0 +1,785 @@
+/* Fonts: Importa fontes do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/**********************
+ * Variáveis globais
+ *********************/
+:root {
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing: 16px;
+  --spacing-m: 16px;
+  --spacing-l: 48px;
+  --foreground: black;
+  --font-size: 20px;
+  --font-size-s: 12px;
+  --font-size-m: 16px;
+  --font-size-l: 22px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 36px;
+  --red-light: #fecbca;
+  --red: #f83735;
+  --yellow: #fddf8e;
+  --pink: #ffc0cb;
+  --blue: #1231b5;
+  --blue-light: #84b4f9;
+  --content-width: 800px;
+  --dark-bg: #191919;
+  --dark-text: white;
+  --dark-link: #ecb365;
+  --dark-border: #555555;
+  --dark-popup-bg: #333333;
+  --dark-close-btn: #ff6666;
+  --dark-hr: #eeeeee;
+}
+
+/**********************
+ * Estilos gerais
+ *********************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: white;
+  color: var(--foreground);
+  font-family: "Rubik", sans-serif;
+  margin: auto;
+  padding: var(--spacing);
+}
+
+::selection {
+  background: var(--red-light);
+}
+
+/**********************
+ * Links e botões
+ *********************/
+a,
+button {
+  color: var(--foreground);
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: var(--font-size);
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+button {
+  padding: 0.6em 2em;
+  width: 60%;
+  border: 3px solid var(--foreground);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+/**********************
+ * Textos e parágrafos
+ *********************/
+p {
+  font-size: var(--font-size);
+  margin: 0 0 1em 0; /* Margem inferior de 1em */
+  line-height: 1.5;
+text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  word-break: break-word;
+  text-justify: inter-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-xxl);
+  font-weight: 900;
+  margin: 0 10;
+}
+
+sub {
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+  font-size: var(--font-size-s);
+  color: #777777;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  margin-bottom: 0px;
+  display: inline-block; /* Permite que as margens sejam aplicadas */
+}
+
+sub a {
+  text-decoration: underline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-transform: inherit;
+  vertical-align: inherit;
+  margin-bottom: inherit;
+  display: inherit;
+}
+
+figcaption {
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+  font-size: var(--font-size-s);
+  color: #777777;
+  text-transform: uppercase;
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 15px;
+  display: block; /* Altera para block para ocupar toda a largura */
+  width: 100%; /* Garante que ocupe toda a largura do contêiner pai */
+}
+
+figcaption a {
+  text-decoration: underline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-transform: inherit;
+  vertical-align: inherit;
+  margin-bottom: inherit;
+  display: inline; /* Mantém o link como inline para não quebrar o fluxo do texto */
+  text-align: inherit;
+}
+
+iframe {
+  margin-bottom: 15px;
+}
+
+/**********************
+ * Listas e blockquotes
+ *********************/
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.content ol li::marker {
+  font-weight: bold;
+}
+
+.content ul,
+.content ol {
+  font-size: var(--font-size);
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 20px 0;
+  padding-left: 10%;
+  color: var(--foreground);
+  list-style-position: inside;
+}
+
+.content li {
+  padding-left: 10px;
+  margin: 8px 0;
+  text-indent: -10px;
+}
+
+blockquote {
+  font-size: var(--font-size-m);
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 20px 0;
+  padding-left: 12%;
+  border-left: 0px solid var(--foreground);
+  color: var(--foreground);
+}
+
+blockquote a {
+  font-size: var(--font-size-m);
+  color: inherit; /* Herda a cor do texto do blockquote */
+  text-decoration: underline; /* Adiciona sublinhado aos links */
+  font-weight: bold; /* Opcional: deixa o link em negrito */
+}
+
+/**********************
+ * Menu e navegação
+ *********************/
+nav {
+  align-items: center;
+  text-align: center;
+}
+
+nav p {
+  text-align: center;
+  width: 100%;
+}
+
+.menu span {
+  color: var(--foreground);
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+.menu span:hover {
+  text-decoration: underline;
+}
+
+/* Estilo da Linha Horizontal */
+hr {
+  background-color: var(--foreground); /* Cor de fundo */
+  margin: 15px auto; /* Margens de 15px para cima e para baixo, e centralizada */
+  width: 50%; /* Largura */
+  height: 3px; /* Espessura da linha */
+  max-width: 430px; /* Largura máxima */
+  border: none; /* Remove a borda padrão */
+}
+
+/**********************
+ * Layout e contâiners
+ *********************/
+.container {
+  padding-top: var(--spacing-l);
+}
+
+.main,
+.content {
+  max-width: var(--content-width);
+  margin: auto;
+  padding: var(--spacing-m);
+}
+
+/* Sidebar */
+.sidebar {
+  font-family: "Rubik", sans-serif;
+  position: fixed;
+  z-index: 100;
+  top: 20px;
+  left: 0;
+  width: 150px;
+  text-align: center;
+  margin-bottom: var(--spacing-s);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 150px;
+    position: fixed;
+    left: 0;
+    top: 20px;
+     text-align: left; /* Remove justificação em mobile */
+    hyphens: none;
+  }
+
+  .inner-switch {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+/**********************
+ * Switch dark mode
+
+.switch {
+  position: absolute;
+  margin: auto;
+  top: 20px;
+  right: 30px;
+  text-align: center;
+}
+
+.inner-switch {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  border: 0px solid #555555;
+  border-radius: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+} *********************/
+
+/**********************
+ * Imagens
+ *********************/
+img {
+  padding: 0px;
+  max-width: 100%;
+  display: block;
+  margin: 5px auto;
+  border-radius: 2px;
+}
+
+#gallery {
+  line-height: 0;
+  transition: filter 2s;
+  column-count: 4;
+  column-gap: 5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 800px) {
+  #gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  #gallery {
+    column-count: 1;
+  }
+}
+
+/**********************
+ * Footer
+ *********************/
+.footer {
+  position: relative;
+  padding-top: 30px;
+  margin-top: 5px;
+  bottom: 30px;
+  height: 30px;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/**********************
+ * Pop-ups de anotações
+ 
+.popup {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  z-index: 10;
+  text-align: left;
+}
+
+.popup a {
+  font-size: 16px;
+}
+
+.popup .close {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+
+.note {
+  cursor: pointer;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.note:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer-note {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-note a {
+  font-size: 14px;
+}
+
+.note-number {
+  font-size: 14px;
+  margin-right: 5px;
+  font-weight: bold;
+} ********************* Não está mais ativo/
+
+/**********************
+ * Dark mode shits
+ 
+.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark a,
+.dark .menu span {
+  color: var(--dark-link);
+}
+
+.dark hr {
+  background-color: var(--dark-hr);
+}
+
+.dark blockquote {
+  color: var(--dark-text);
+}
+
+.dark .menu span:hover {
+  text-decoration: underline;
+}
+
+.dark .popup {
+  background-color: var(--dark-popup-bg);
+  color: var(--dark-text);
+  border-color: var(--dark-border);
+}
+
+.dark .popup a {
+  color: var(--dark-link);
+}
+
+.dark .popup .close {
+  color: var(--dark-close-btn);
+}
+
+.dark .note,
+.dark .footer-note,
+.dark .note-number {
+  color: var(--dark-link);
+}
+
+.dark .footer-note {
+  color: var(--dark-text);
+}
+
+.dark .footer-note a {
+  color: var(--dark-link);
+}
+********************* Não está mais ativo /
+
+/**********************
+ * Categorias de Notas
+ *********************/
+.enhanced-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.2s;
+}
+
+.enhanced-link:hover {
+  background-color: #f5f5f5;
+}
+
+.link-favicon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.link-title {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.enhanced-link.updating .link-title {
+  animation: fade 1.5s infinite;
+}
+
+/**********************
+ * Destaques em Notas
+ *********************/
+.description {
+  color: #000000;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  font-size: var(--font-size-m);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.2em 1em;
+  border: 3px solid var(--foreground);
+  border-radius: 6px;
+}
+
+.tag:hover {
+  background-color: var(--accent);
+  color: black;
+  border-color: var(--accent);
+  text-decoration: underline;
+}
+
+.tag.active {
+  background-color: var(--accent);
+  color: black;
+  text-decoration: underline;
+  border-color: var(--accent);
+}
+
+.articles-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.article-card {
+  border: 3px solid;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.article-card.hidden {
+  display: none;
+}
+
+.article-content {
+  padding: 1.25rem;
+}
+
+.article-header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.article-date {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  display: none;
+}
+
+.article-title {
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: var(--text);
+}
+
+.article-tags {
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+  font-size: var(--font-size-s);
+  color: #777777;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  margin-bottom: 0px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.article-card.highlighted {
+  border-left: 4px solid var(--accent);
+  background-color: var(--highlight);
+}
+
+.highlights-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.highlight {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.highlight:last-child {
+  margin-bottom: 0;
+}
+
+.highlight.yellow {
+  background-color: var(--yellow);
+}
+
+.highlight.pink {
+  background-color: var(--pink);
+}
+
+.highlight-text {
+  margin-bottom: 0.5rem;
+}
+
+.highlight-note {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  border-left: 2px solid var(--border);
+}
+
+.article-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-light);
+  grid-column: 1 / -1;
+}
+
+/* Estilização personalizada da scrollbar */
+.highlights-container::-webkit-scrollbar {
+  width: 8px; /* Largura um pouco maior para melhor visibilidade */
+}
+
+.highlights-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cinza claro para o track */
+  border-radius: 0px;
+}
+
+.highlights-container::-webkit-scrollbar-thumb {
+  background: white; /* Branco para o thumb */
+  border-radius: 0px;
+  border: 1px solid #e0e0e0; /* Borda sutil para contrastar com fundos brancos */
+}
+
+/* Efeito hover para melhor interatividade */
+.highlights-container::-webkit-scrollbar-thumb:hover {
+  background: #f5f5f5; /* Tom quase branco no hover */
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .search-container {
+    min-width: 100%;
+  }
+}
+
+/**********************
+ * Anotações
+ *********************/
+.expanding-footnote {
+  position: relative;
+  display: inline;
+}
+
+.footnote-ref {
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footnote-number {
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.footnote-ref sup {
+  font-size: 0.7em;
+  margin-left: 0px;
+}
+
+.footnote-text {
+  display: none;
+  width: 100%;
+  padding: 12px;
+  margin: 0 0;
+  background: #f8f8f8;
+  border-left: 3px solid currentColor; /* Usa a cor do texto */
+  border-radius: 0 4px 4px 0;
+}
+
+.expanding-footnote.active .footnote-text {
+  display: block;
+}
+
+.toggle-btn {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Efeito hover opcional */
+.footnote-ref:hover .footnote-number,
+.footnote-ref:hover .toggle-btn {
+  opacity: 0.8;
+}
