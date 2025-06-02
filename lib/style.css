@@ -52,10 +52,6 @@ body {
   padding: var(--spacing);
 }
 
-::selection {
-  background: var(--red-light);
-}
-
 /**********************
  * Links e botões
  *********************/
@@ -86,7 +82,7 @@ p {
   font-size: var(--font-size);
   margin: 0 0 1em 0; /* Margem inferior de 1em */
   line-height: 1.5;
-text-align: justify;
+  text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -159,7 +155,9 @@ figcaption a {
 }
 
 iframe {
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 /**********************
@@ -228,7 +226,7 @@ nav p {
   color: var(--foreground);
   font-family: "Rubik", sans-serif;
   font-weight: bold;
-  font-size: var(--font-size);
+  font-size: var(--font-size-m);
   line-height: 1.5;
 }
 
@@ -278,7 +276,7 @@ hr {
     position: fixed;
     left: 0;
     top: 20px;
-     text-align: left; /* Remove justificação em mobile */
+    text-align: left; /* Remove justificação em mobile */
     hyphens: none;
   }
 
@@ -379,117 +377,6 @@ img {
   font-size: 13px;
   line-height: 20px;
 }
-
-/**********************
- * Pop-ups de anotações
- 
-.popup {
-  display: none;
-  position: absolute;
-  background: #ffffff;
-  padding: 10px;
-  border: 3px solid #000000;
-  border-radius: 6px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  z-index: 10;
-  text-align: left;
-}
-
-.popup a {
-  font-size: 16px;
-}
-
-.popup .close {
-  cursor: pointer;
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
-  position: absolute;
-  top: 0px;
-  right: 2px;
-}
-
-.note {
-  cursor: pointer;
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.note:hover {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.footer-note {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.footer-note a {
-  font-size: 14px;
-}
-
-.note-number {
-  font-size: 14px;
-  margin-right: 5px;
-  font-weight: bold;
-} ********************* Não está mais ativo/
-
-/**********************
- * Dark mode shits
- 
-.dark {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
-}
-
-.dark a,
-.dark .menu span {
-  color: var(--dark-link);
-}
-
-.dark hr {
-  background-color: var(--dark-hr);
-}
-
-.dark blockquote {
-  color: var(--dark-text);
-}
-
-.dark .menu span:hover {
-  text-decoration: underline;
-}
-
-.dark .popup {
-  background-color: var(--dark-popup-bg);
-  color: var(--dark-text);
-  border-color: var(--dark-border);
-}
-
-.dark .popup a {
-  color: var(--dark-link);
-}
-
-.dark .popup .close {
-  color: var(--dark-close-btn);
-}
-
-.dark .note,
-.dark .footer-note,
-.dark .note-number {
-  color: var(--dark-link);
-}
-
-.dark .footer-note {
-  color: var(--dark-text);
-}
-
-.dark .footer-note a {
-  color: var(--dark-link);
-}
-********************* Não está mais ativo /
 
 /**********************
  * Categorias de Notas
@@ -628,10 +515,13 @@ img {
   font-size: var(--font-size-s);
   color: #777777;
   text-transform: uppercase;
-  vertical-align: baseline;
-  margin-bottom: 0px;
-  display: block;
   margin-bottom: 1rem;
+}
+
+/* Adiciona " | " após cada tag, exceto a última */
+.article-tags span:not(:last-child)::after {
+  content: " | ";
+  margin: 0 0.3em; /* Espaçamento opcional */
 }
 
 .article-card.highlighted {

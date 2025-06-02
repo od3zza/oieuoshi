@@ -1,4 +1,22 @@
-DirectoryIndex index.php
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Bloqueia acesso a arquivos ocultos (.env, .htaccess, etc.)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Desativa listagem de diretórios (evita que vejam seus arquivos)
+Options -Indexes
+
+# Ativa cache para imagens, CSS e JS (melhora velocidade)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access 1 year"
+    ExpiresByType text/css "access 1 month"
+</IfModule>
+
+# Remove .php das URLs (ex: /sobre.php → /sobre)
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
