@@ -1,20 +1,763 @@
 [
   {
-    "date": "2025-03-29",
-    "title": "Creativity in a Nutshell - Interalia Magazine",
-    "url": "https://www.interaliamag.org/articles/margaret-boden-creativity-in-a-nutshell/",
-    "thumbnail": "https://www.interaliamag.org/wp-content/uploads/2016/07/Margaret-A-Boden-the-creative-mind-Copy.jpg",
+    "date": "2025-04-29",
+    "title": "Human Curiosity in the Age of AI",
+    "url": "https://read.glasp.co/p/human-curiosity-in-the-age-of-ai",
+    "thumbnail": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2e11cdb5-30ca-40fa-8f08-72eb66bd9e62_1280x720.png",
+    "tags": ["Artificial Intelligence"],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "Yet paradoxically, as machines become more capable of answering our questions, our ability to ask meaningful ones becomes increasingly precious.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Today, we face the opposite challenge: information overload.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "We’re bombarded with more content than any human could possibly process, which creates anxiety, overwhelm, and confusion.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "What AI cannot do, however, is feel the emotional and intellectual hunger that drives humans to pursue knowledge for its own sake. The thrill of the intellectual chase remains uniquely ours.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Perhaps most importantly, human curiosity can help us explore not just what AI can do, but what it should do, ensuring that technological advancement supports human flourishing",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "In the age of AI, our most human trait – curiosity – will become our most valuable one.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-22",
+    "title": "PIG (2022) 🐽",
+    "url": "https://curtaclube.substack.com/p/pig-2022",
+    "thumbnail": "https://substackcdn.com/image/youtube/w_728,c_limit/okFodk74gyk",
+    "tags": [
+      "Cinema",
+      "Crítica",
+      "Animação",
+      "Newsletter",
+      "Curta-metragem",
+      "Cinema independente"
+    ],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "Mas existe algo único na animação que é a capacidade de lidar com o absurdo sagaz, trazendo elementos e características visuais que nos colocam em uma viagem sensorial, sem nos perdermos no que ela realmente está tentando dizer. Talvez sejam os excessos: detalhes, cores, formas, sons, símbolos… coisas que são de certa forma limitadas no filme tradicional, exceto claro, quando carregado de VFX ou hiperestilizado, mas entra em outro lugar.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "É um ciclo sem fim, ou melhor, que termina quando tudo termina.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-15",
+    "title": "The Truth in Games",
+    "url": "https://thereader.mitpress.mit.edu/the-truth-in-games/",
+    "thumbnail": "https://thereader.mitpress.mit.edu/wp-content/uploads/2023/08/beauty_games_alt1.jpg",
+    "tags": ["game design", "Aesthetics", "Dissertação", "Beleza"],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "I as an artist can see how beautiful this is but you as a scientist take this all apart and it becomes a dull thing",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "I can appreciate the beauty of a flower. At the same time, I see much more about the flower than he sees. I could imagine the cells in there, the complicated actions inside, which also have a beauty. I mean it’s not just beauty at this dimension, at one centimeter; there’s also beauty at smaller dimensions, the inner structure, also the processes. The fact that the colors in the flower evolved in order to attract insects to pollinate it is interesting; it means that insects can see the color",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "All kinds of interesting questions which the science knowledge only adds to the excitement, the mystery and the awe of a flower. It only adds. I don’t understand how it subtracts",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "the scientific perspective, with its quantified data and logical explanations, may give us new ways of understanding the world, but also may diminish our capacity to appreciate the world directly, understand it intuitively, and experience its beauty as pure sensation",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Walt Whitman’s poem “When I Heard the Learn’d Astronomer” articulated a feeling that perhaps captures something of the point of view",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "The tension between these two ways of looking at the world — as a scientist and as a poet — is, I believe, an essential aspect of games as an aesthetic form and a key concept for understanding how games work as culture",
+        "color": "Blue",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "On one side you have Thought, Intellect, and Rationality; on the other, Feeling, Emotion, and Intuition. On the left side, the realm of science and logic, on the right side, the realm of art and morality. One side is the domain of reducing, explaining, measuring, and objective truth. The other, the domain of the irreducible, the inexplicable, the immeasurable, and subjective truth.",
+        "color": "Pink",
+        "highlight_note": "Os jogos, apesar de serem formas estéticas como a pintura, a poesia e mesmo a música, possuem \"\"verdades objetivas internas\"\", por isso são únicos. No jogo você vence ou perde com base em regras claras e existem sistemas lógicos e estruturas mecânicas que podem ser analisadas, testas e aprimoradas. Por mais que o jogo seja uma obra de arte, está mais próximo da racionalidade por possuir mecânicas objetivamente verificáveis, científicas."
+      },
+      {
+        "highlight": "One of the things that makes games a very different kind of aesthetic form is that they have objective truth in them.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "art has the power to capture and express sublime truths, even if, in doing so, the work of art is plucked out of the flow of life, suspended beyond the chain of events that is the source of ordinary meaning, and made strange",
+        "color": "Yellow",
+        "highlight_note": "As obras de artes não explicam racionalmente, mas te fazem sentir coisas (solidão, amor, dor, etc), mesmo sem racionalidade, sem dados e explicações. Você sente. A arte também não muda com o tempo como a vida, ela permanece, como uma ponte pra uma emoção, momento ou verdade subjetiva, isso torna ela \"\"estranha\"\", pois ela não faz parte do fluxo normal da vida, mas de algo transcendente."
+      },
+      {
+        "highlight": "André Bazin, the power of truth to create beauty was expressed by photography’s relationship to the real",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "There was something universal, something sacred, about the physical reality of the little slice of world in front of the camera’s lens, the actual objects and people and the actual light that bounced off of them and was caught in the chemical structure of the film",
+        "color": "Blue",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "the relationship of truth to beauty goes deeper than accurate resemblance. It also includes the thrill of recognition that accompanies a moment of ecstatic emotion, the shudder of genuine joy that can’t be faked, the spark that tells us this works",
+        "color": "Blue",
+        "highlight_note": "Pensar nisso e também na relação com jogos, já que está falando sobre jogos, é curioso. Quando lembro de The Last of Us, por exemplo, há esse lado da lógica pela qual o jogo opera, mas também a emoção que não possui uma lógica, como tentar sistematizar a decisão de Joel no hospital com Ellie. É algo que se sente, não tem uma fórmula matemática que explique. Aquilo acontece e você sente, e esse sentimento é a verdade. Há também a contemplação, por mais que não totalmente livre para o jogador, mas em momentos onde você não faz \"\"nada produtivo\"\". Por exemplo, você não consegue explorar o mundo aberto, mas pode parar e apenas ouvir a Ellie contar piadas ou observas as girafas atravessando a cidade devastada. Não são momentos úteis ou lógicos, mas são essenciais pois nos fazem sentir. Essa é a beleza do jogo, sua verdade subjetiva. Essas pausas te riam da ação linear e te fazem respirar, sentir, pensar. São \"\"estranhas\"\", mas profundamente reais."
+      },
+      {
+        "highlight": "For Kant, the truth in beauty is the recognition that the pleasure one feels in its presence is something that other humans would also feel. Even though this feeling is happening to us, a vivid slice of our internal experience, it isn’t private; it is a moment of shared humanity",
+        "color": "Blue",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "why do we find flowers beautiful? After all, we are not bees. Flowers did not evolve to be attractive to us, and we did not evolve to be attracted to them, so why are we? Deutsch’s explanation is that, in the process of solving the problem of how to forge an efficient channel of communication between different species, flowers and bees tapped into something objective and universal about certain formal patterns. According to Deutsch’s explanation, we recognize the beauty of flowers because it is an objective fact",
+        "color": "Blue",
+        "highlight_note": "Aqui dá pra refletir sobre a flor ter se desenvolvido—aspectos como padrões, formas e cores—transcendendo sua própria existência e função, que é atrair os animais. A simetria, repetição com variação, contraste e outras características, são belos em si, independente de quem os observa nas flores. Isso seria uma beleza objetiva, embutida na própria estrutura do mundo, e reconhecemos por sermos parte desse mesmo universo. Se fosse apenas subjetiva, ela iria depender de gosto, cultura e contexto."
+      },
+      {
+        "highlight": "“Beauty is truth, truth beauty,” — that is all Ye know on earth, and all ye need to know.",
+        "color": "Green",
+        "highlight_note": "Esse trecho se refere a um texto onde quem diz que a \"\"beleza é a verdade, e a verdade é a beleza\"\" é a urna, a obra de arte. O que é preciso saber sobre a vida está aí, mas não é tão direto ou objetivo. A arte faz isso, diz verdades profundas, mas sem argumentos ou lógica, mas através da beleza, proporcionando emoções como solidão, amor, etc."
+      },
+      {
+        "highlight": "By virtue of being an aesthetic experience, games inherit all of these complex connections between truth and beauty. But, by being an aesthetic experience that incorporates instrumental reason, games bring these subtle and complex connections into close contact with a simpler, more direct expression of the concept of truth: simple, first-order facts about material reality — solutions that fit into problems like a key into a lock.",
+        "color": "Pink",
+        "highlight_note": "Nos jogos existe essa coexistência das duas intenções: racional e bela, que tensionam e exprimem uma unicidade no jogo e na sua experiência, que é ao mesmo tempo resolutiva e emocional. Assim, há a subjetiva, sensível e emocional; e a objetiva, baseada em fatos, regras e sistemas."
+      },
+      {
+        "highlight": "Games are conversations between players, designers, and the world — the empirical world, the old-fashioned, naturalistic, material world with its direct, stubborn, objective truth. The world on which we bang our heads and stub our toes. That world is a participant in these conversations.",
+        "color": "Blue",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "We cannot reduce games to science or math. Games always remain aesthetic experiences",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "game of Chess — each individual game of Chess, each position, can be broken down and analyzed with logic. But the act of playing Chess, devoting your life to this absurd activity, developing the self-control needed to master this demanding discipline, waking up early every day to study this arcane skill, going to tournaments, participating in elaborate rituals where you test yourself against other people . . . that isn’t logic, it’s art.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "There are objective truths in games, but the truths that emerge from games, their ultimate meaning, is the other kind of truth",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-15",
+    "title": "A Síndrome de Frankenstein: Medos e Desafios - MIT Technology Review",
+    "url": "https://mittechreview.com.br/sindrome-frankenstein-ia/",
+    "thumbnail": "https://mittechreview.com.br/wp-content/uploads/2024/10/mit_trbr_artigo_banner1140x400_20241007-2.jpg",
+    "tags": [
+      "Síndrome de Frankenstein",
+      "Inteligência Artificial",
+      "Frankenstein"
+    ],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "A síndrome de Frankenstein é um termo que foi popularizado por críticos culturais e estudiosos para descrever o medo e a desconfiança em relação às criações tecnológicas que parecem escapar do controle humano.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "simboliza o temor do desconhecido, uma criação que, embora nascida da mente humana, acaba por ultrapassar os limites de seu criador",
+        "color": "Pink",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "um sentimento que é amplificado na era moderna pela complexidade das novas tecnologias",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "A tecnologia, em particular a IA, surge como o novo “monstro” que suscita esse medo",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "A incerteza sobre como essas tecnologias serão desenvolvidas e utilizadas alimenta um sentimento de alienação, gerando resistência e temor. Assim como o monstro de Shelley, que foi rejeitado pela sociedade e acabou se voltando contra ela, a IA é vista por muitos como uma criação potencialmente perigosa, uma vez que suas capacidades avançam além da compreensão de muitos",
+        "color": "Blue",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Exemplos contemporâneos não faltam: desde o uso de deepfakes, que desafiam nossa percepção da realidade",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "manipular informações em escala global, até sistemas de vigilância avançados que levantam questões sobre privacidade e liberdade",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "O temor de que a IA possa substituir trabalhos humanos cria uma tensão entre a inovação tecnológica e a preservação da dignidade humana no ambiente corporativo",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "A síndrome de Frankenstein, em sua essência, representa uma barreira psicológica e social para aqueles que não possuem familiaridade com as novas tecnologias",
+        "color": "Pink",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "A falta de conhecimento técnico gera medo, resistência e exclusão, criando um fosso entre aqueles que compreendem e utilizam essas tecnologias e aqueles que as veem como uma ameaça. Esse fosso é agravado pela rápida evolução da IA, que está sendo incorporada em sistemas que vão desde assistentes virtuais até veículos autônomos.",
+        "color": "Blue",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Aqueles que não conseguem se adaptar às novas demandas tecnológicas correm o risco de serem marginalizados, perdendo competitividade em um mercado de trabalho cada vez mais digitalizado",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Esse medo, portanto, não é apenas irracional, é uma reação a uma realidade em que o desconhecimento se traduz em perda de oportunidade e relevância.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Por outro lado, aqueles que detêm conhecimento e compreensão das novas tecnologias, especialmente da Inteligência Artificial, encontram-se em uma posição de poder.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "A síndrome de Frankenstein é, em última análise, um reflexo das desigualdades inerentes à revolução tecnológica.",
+        "color": "Pink",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Para superar essa barreira, é fundamental que se promova uma maior democratização da educação tecnológica e analítica. Somente através da inclusão digital, interação com dados e da alfabetização tecnológica poderemos enfrentar esses medos e garantir que a IA e outras tecnologias avancem de maneira que mais indivíduos possam entender e controlar, evitando que avanços tecnológicos se tornem os “monstros” de nosso tempo.",
+        "color": "Blue",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-15",
+    "title": "You’re Trying to Do Too Much - Scott H Young",
+    "url": "https://www.scotthyoung.com/blog/2024/06/18/doing-too-much/",
+    "thumbnail": "https://www.scotthyoung.com/blog/wp-content/uploads/2024/06/Vase-productivity-1.jpg",
     "tags": [],
     "summary": "",
     "page_comment": "",
     "highlights": [
       {
-        "highlight": "Creative ideas are unpredictable. Sometimes, they even seem to be impossible — and yet they happen.",
+        "highlight": "every addition necessarily implies an equal subtraction.",
         "color": "Yellow",
         "highlight_note": ""
       },
       {
+        "highlight": "When we look at a figure-ground illusion, we don’t see that the vase and the faces coexist—one part becomes the figure, and the other recedes into the background.",
+        "color": "Yellow",
+        "highlight_note": "Quero escrever sobre isso em algum momento, quando você está vendo duas coisas, em que ponto está sua atenção?"
+      },
+      {
+        "highlight": "The conventional strategy for subtraction is to do it by default: Procrastinate on everything that isn’t a priority. Rebel against the escalating commitments on your time. Opt out and ignore.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": " we might procrastinate on our least valuable tasks, often we procrastinate on work that is harder, ambiguous or frustrating. Ironically, in our unconsidered efforts to cut back, we often cut back the very tasks that really need doing.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Instead of looking at the goals we’re trying to accomplish, look at all the things we do that suck up our time and energy and offer very little in return.",
+        "color": "Blue",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-15",
+    "title": "The future of the internet is likely smaller communities, with a focus on curated experiences",
+    "url": "https://www.theverge.com/press-room/617654/internet-community-future-research",
+    "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/257537_COMMUNITIES_.png?quality=90&strip=all&crop=0%2C10.742221417566%2C100%2C78.515557164868&w=1200",
+    "tags": [],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "The modern internet is nearly three decades old, and it’s starting to show its age. Think back to the ’90s: some of what we built back then, though groundbreaking, now feels outdated. The Verge recently created a special issue on what we were doing online in 2004, highlighting how Web 2.0 was born.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-14",
+    "title": "What are cozy games, and what makes them cozy?",
+    "url": "https://www.gamesindustry.biz/what-makes-a-cozy-game-cozy",
+    "thumbnail": "https://assetsio.gnwcdn.com/animal-crossing-new-horizons-sunset.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "tags": ["cozy games", "indie games", "game design", "Dissertação"],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "\"\"People get depressed, and they need to relax. This has always existed in gaming, but it was a less marketable idea in the past. Now, we recognize that it's an important part of playing games.\"\"",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "cozy games are generally regarded as featuring cute characters, often anthropomorphic animals or child-like humans, who engage in player activities such as farming, gathering, growing and nurturing, with a vague goal of creative personalization and in-game socialization.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "The essential nature of cozy gaming is that of helping other people through non-violent means, often by nurture and generosity. Self-expression is core to the games' progression goals, which tend to be open-ended.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Coziness is the understanding that humans are social creatures. We strive to be part of a group, and to be accepted. But being sociable can be difficult in the real world. It can be exhausting. In cozy games, the barriers come down. We can be part of a group without having to be stressed. The characters we meet are warm and welcoming and it's an easier way to enjoy a fundamentally human feeling",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "\"\"I've seen this discourse come up, where broadly marginalized people are expected to create nice content,\"\" says Ast, who estimates that 90% of the cozy gaming online forums she attends are made up of women. \"\"I would say cozy games fall into that.\"\"",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "\"\"Pacing is important, allowing the player to play at whatever pace they want,\"\"",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "\"\"Players spend time in the game interacting with characters who are warm and welcoming, and that is also the sense I get from the community when they share their in-game creations. Giving players the tools to create stuff also allows them to gather and share and connect with one another.\"\"",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-14",
+    "title": "Video Game Music Downloads - Free MP3 OST downloads - Game Soundtracks for download",
+    "url": "https://downloads.khinsider.com/",
+    "thumbnail": "https://glasp.co/images/ogps/thumbnail_empty.jpeg",
+    "tags": [
+      "Downloads",
+      "Game Soundtracks",
+      "OST Downloads",
+      "Video Game Music"
+    ],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "KHInsider's archive contains both music extracted directly from games and converted into MP3 and lossless formats, as well as long lost albums that you can't even find on ebay.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-13",
+    "title": "What Type of Experimentalist Are You?",
+    "url": "https://nesslabs.com/experimentalist",
+    "thumbnail": "https://nesslabs.com/wp-content/uploads/2025/02/experimental-mindset-pari-system-1024x575.png",
+    "tags": [],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "We all face new challenges, but each of us tends to navigate these experiences differently, in ways that can reveal fascinating insights about our relationship with uncertainty, change, and growth.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "I explore how an experimental mindset can transform not just what we achieve, but how we experience the journey itself – and how that journey is different for everyone.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "four distinct phases that work together to create meaningful change.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      { "highlight": "Pact", "color": "Yellow", "highlight_note": "" },
+      { "highlight": "Act", "color": "Yellow", "highlight_note": "" },
+      {
+        "highlight": " Pact. This is the imagination phase where you choose the hypothesis you want to test",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "2. Act. This is the action phase where you actually conduct the experiment and collect data",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": ". React. This is the metacognition phase where you analyze results, iterate, and reflect",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "3. Impact. This is the contribution phase where you use what you’ve learned to contribute to something bigger than yourself. That’s the phase a lot of ambitious people tend to focus on: we want to make our mark and create lasting change",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "In contrast, if you approach impact with an experimental mindset, you recognize that the “lone genius” is a myth and that we grow better by sharing our learning journey. You know the value of unlocking social flow, learning in public, and engaging in generative work that benefits your communities in the here and now, versus focusing on the elusive concept of long-term legacy.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Pact: Do you love researching, imagining possibilities, and forming hypotheses? Act: Do you thrive in implementation and hands-on “getting things done” work? React: Are you naturally reflective and analytical about your experiences? Impact: Do you instinctively look for ways to share your journey to help others?",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-07",
+    "title": "What If Every Failure Is Just An “Accidental Experiment?” - Jason Feifer",
+    "url": "https://www.jasonfeifer.com/accidental-experiment/",
+    "thumbnail": "https://www.jasonfeifer.com/wp-content/uploads/2025/03/Screen-Shot-2024-10-10-at-7.44.44-AM.png",
+    "tags": [],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "Because here’s the thing: Mistakes suck. They make us feel empty — like there’s a vacuum where there should have been a victory.  But the “accidental experiment” completely reframes the experience. It gives you something to ponder, explore, and learn from.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "“It was like an accidental experiment,” she said. “When the call got cut off, you got to see how many people were truly engaged and willing to come back — and almost all of them did. That’s very high retention!”",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "In her new (and excellent) book Tiny Experiments, which is about how to live a life of curiosity, neuroscientist Anne-Laure Le Cunff describes experiments as our natural way of learning",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "“But then something changes,” she writes. “We begin caring about what people think of us and we project an image of confidence, focusing on self-packaging over self-improvement. We welcome anything that provides the perception of control — whether it’s a productivity tool, a time management method, or a goal-setting framework.”",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "That’s when we begin to fear experiments — and we miss out on everything they have to offer.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "As children, we constantly experimented — testing to see what works and what doesn’t, and asking “Why?” more than 100 times per hour. (That’s a real number!)",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "So much can go wrong. Our efforts can fail. Our relationships can fracture. Our time can be wasted. Our egos can be bruised.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-04-01",
+    "title": "Efficiency is the Enemy",
+    "url": "https://fs.blog/slack/",
+    "thumbnail": "https://149664534.v2.pressablecdn.com/wp-content/uploads/2021/05/Efficiency-is-the-Enemy.png",
+    "tags": [],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "You’re efficient when you do something with minimum waste. And you’re effective when you’re doing the right something.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Many organizations are obsessed with efficiency. They want to be sure every resource is utilized to its fullest capacity and everyone is sprinting around every minute of the day doing something",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": " We view sleep, sickness, and burnout as unwelcome weaknesses and idolize those who never seem to succumb to them. This view, however, fails to recognize that efficiency and effectiveness are not the same thing",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "We schedule every minute of our day",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": " It’s slack: excess capacity allowing for responsiveness and flexibility. The slack time is important because it means she never has a backlog of tasks to complete. ",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "In Slack: Getting Past Burnout, Busywork, and the Myth of Total Efficiency, Tom DeMarco explains that most people and organizations fail to recognize the value of slack",
+        "color": "Blue",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "DeMarco writes, “As a practical matter, it is impossible to keep everyone in the organization 100 percent busy unless we allow for some buffering at each employee’s desk. That means there is an inbox where work stacks up.”",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "It’s possible to make an organization more efficient without making it better. That’s what happens when you drive out slack. It’s also possible to make an organization a little less efficient and improve it enormously. In order to do that, you need to reintroduce enough slack to allow the organization to breathe, reinvent itself, and make necessary change",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "DeMarco defines slack as “the degree of freedom required to effect change. Slack is the natural enemy of efficiency and efficiency is the natural enemy of slack.” Elsewhere, he writes: “Slack represents operational capacity sacrificed in the interests of long-term health.”",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "DeMarco defines slack as “the degree of freedom required to effect change. Slack is the natural enemy of efficiency and efficiency is the natural enemy of slack.” Elsewhere, he writes: “Slack represents operational capacity sacrificed in the interests of long-term health.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "To illustrate the concept, DeMarco asks the reader to imagine one of those puzzle games consisting of eight numbered tiles in a box, with one empty space so you can slide them around one at a time. The objective is to shuffle the tiles into numerical order. That empty space is the equivalent of slack. If you remove it, the game is technically more efficient, but “something else is lost. Without the open space, there is no further possibility of moving tiles at all. The layout is optimal as it is, but if time proves otherwise, there is no way to change it.”  ",
+        "color": "Green",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Having a little bit of wiggle room allows us to respond to changing circumstances, to experiment, and to do things that might not work",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Now, even as slack keeps becoming more and more vital for survival, we’re keener than ever to eliminate it in the name of efficiency. Survival requires constant change and reinvention, which “require a commodity that is absent in our time as it has never been before. That commodity—the catalytic ingredient of change—is slack.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Slack is the time when reinvention happens. It is time when you are not 100 percent busy doing the operational business of your firm. Slack is the time when you are 0 percent busy. Slack at all levels is necessary to make the organization work effectively and to grow. It is the lubricant of change. Good companies excel in creative use of slack. And bad ones only obsess about removing it",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Only when we are 0 percent busy can we step back and look at the bigger picture of what we’re doing. Slack allows us to think ahead",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "We are more productive when we don’t try to be productive all the time.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "DeMarco explains that the amount of work each person in an organization has is never static: “Things change on a day-to-day basis. This results in new unevenness of the tasks, with some people incurring additional work (their buffers build up), while others become less loaded, since someone ahead of them in the work chain is slower to generate their particular kind of work to pass along.” An absence of slack is unsustainable. Inevitably, we end up needing additional resources, which have to come from somewhere.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "An absence of slack is unsustainable. Inevitably, we end up needing additional resources, which have to come from somewhere",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Amos Tversky said the secret to doing good research is to always be a little underemployed; you waste years by not being able to waste hours. Those wasted hours are necessary to figure out if you’re headed in the right direction.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-03-31",
+    "title": "The Windows<SUP>®</sUP> 95 User Interface: A Case Study in Usability Engineering",
+    "url": "https://dl.acm.org/doi/fullHtml/10.1145/238386.238611",
+    "thumbnail": "https://dl.acm.org/cms/attachment/31f06410-785e-4889-935f-8a33e7a7aee9/kds_fg01.gif",
+    "tags": ["UI Design", "Estudo de caso"],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "The development of the user interface for a large commercial software product like Microsoft® Windows 95 involves many people, broad design goals, and an aggressive work schedule. This design briefing describes how the usability engineering principles of iterative design and problem tracking were successfully applied to make the development of the UI more manageable. Specific design problems and their solutions are also discussed.",
+        "color": "Yellow",
+        "highlight_note": "Um estudo de caso de um design da Microsoft em 1996 sobre a criação do design de interface do Windows 95."
+      }
+    ]
+  },
+  {
+    "date": "2025-03-31",
+    "title": "Designing Windows 95’s User Interface",
+    "url": "https://socket3.wordpress.com/2018/02/03/designing-windows-95s-user-interface/",
+    "thumbnail": "https://socket3.wordpress.com/wp-content/uploads/2018/02/win95uidesgn-8.gif",
+    "tags": [],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "DESIGNING WINDOWS 95’S USER INTERFACE",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "DESIGNING WINDOWS 95’S USER INTERFACE",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "DESIGNING WINDOWS 95’S USER INTERFACE",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Three years ago I came across an interesting paper written up by a Microsoft employee, Kent Sullivan, on the process and findings of designing the new user interface for Windows 95. The web page has since been taken down – one reason why I’m a bit of a digital hoarder.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-03-30",
+    "title": "Why Are We Building Glasp?",
+    "url": "https://read.glasp.co/p/why-im-building-glasp",
+    "thumbnail": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F93c5ca16-c25d-4bd8-a31a-46bfc4a1b04a_1280x720.jpeg",
+    "tags": [],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "Otto von Bismarck once said, “Only a fool learns from his own mistakes. The wise man learns from the mistakes of others.” ",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-03-30",
+    "title": "Thinking in maps: from the Lascaux caves to knowledge graphs",
+    "url": "https://nesslabs.com/thinking-in-maps",
+    "thumbnail": "https://nesslabs.com/wp-content/uploads/2020/05/thinking-in-maps-banner.png",
+    "tags": ["Criatividade", "Mapa mental", "Linguagem", "História"],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "In the December 2007 edition of Philosophy of Mind, Professor Elisabeth Camp, whose research has focused on forms of thoughts that do not fit standard models, wrote: “Thinking in maps is substantively different from thinking in sentences.”",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "What do hieroglyphs, flowcharts, road signs, and knowledge graphs have in common? They’re all thinking maps. Humans have been thinking in maps since the very first symbolic communication systems.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "a map does not need to be geographic—it can be any symbolic depiction of the relationship between elements of some physical or mental space, such as themes, objects, or areas.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Common visual symbols:  Pictogram. A symbol that conveys its meaning through its pictorial resemblance to a physical object. Ideogram. A graphic symbol that represents an idea or concept, independent of specific words or phrases. Logogram. A written character that represents a word or phrase.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Look around you: laundry symbols, cooking instructions, common software icons—all of these are tiny maps made of connected symbols your mind has been exposed to enough times to interpret automatically.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "almost all cultures use pictograms in addition to their written language to communicate meaning.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "When thinking in maps, word-maps (pictograms, ideograms, logograms and other visual symbols) are often amalgamated with world-maps (physical or mental space maps) to create visual representations of our knowledge, beliefs, or questions.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "“One of the characteristics you will find of polymaths is that they see links where we see separations—for Leonardo everything is linked up.”",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "“These are the principles for the development of a complete mind: study the science of art, study the art of science. Realise that everything connects to everything else,” Da Vinci wrote in one of his notes.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "one of the earliest mind maps we know of can be found in the Codex Amiatinus, the oldest surviving example of a complete Bible, which was commissioned as a gift for the Pope in 692.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "1974, when it was used by author and educational consultant Tony Buzan in a BBC TV series called Use Your Head. Tony Buzan is often credited as the inventor of the mind map. More accurately, he invented the term mind map.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "It is extremely challenging to visually represent substantial volumes of dynamic ideas, all at different stages of formulation, with intricate bi-directional relationships.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "“Consider a future device (…) in which an individual stores all his books, records, and communications, and which is mechanised so that it may be consulted with exceeding speed and flexibility. It is an enlarged intimate supplement to his memory,” he writes in 1945, coining the term memex.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "The concept of the memex influenced the early development of hypertext systems, eventually leading to the creation of the Internet as we know it today—the biggest collective knowledge management system ever built.",
+        "color": "Yellow",
+        "highlight_note": ""
+      }
+    ]
+  },
+  {
+    "date": "2025-03-30",
+    "title": "Creativity in a Nutshell - Interalia Magazine",
+    "url": "https://www.interaliamag.org/articles/margaret-boden-creativity-in-a-nutshell/",
+    "thumbnail": "https://www.interaliamag.org/wp-content/uploads/2016/07/Margaret-A-Boden-the-creative-mind-Copy.jpg",
+    "tags": ["Criatividade", "Lista de leitura"],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
         "highlight": "Creativity is the ability to come up with ideas or artefacts that are new, surprising, and valuable. “Ideas,” here, includes concepts, poems, musical compositions, scientific theories, cooking recipes, choreography, jokes … and so on, and on. “Artefacts” include paintings, sculpture, steam-engines, vacuum cleaners, pottery, origami, penny-whistles … and you can name many more.",
+        "color": "Yellow",
+        "highlight_note": ""
+      },
+      {
+        "highlight": "Creative ideas are unpredictable. Sometimes, they even seem to be impossible — and yet they happen.",
         "color": "Yellow",
         "highlight_note": ""
       }
@@ -172,7 +915,7 @@
     "title": "Of Note: Better Text Annotations for the Web | Viget",
     "url": "https://www.viget.com/articles/of-note-better-text-annotations-for-the-web/",
     "thumbnail": "https://svc.assets.viget.com/eyJidWNrZXQiOiJ2Z3QtdmlnZXRjb20tYWxsLWFzc2V0cyIsImtleSI6ImJkLWFubm90YXRpb24taWxsdXN0cmF0aW9uLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6ImNvdmVyIn0sIndpdGhNZXRhZGF0YSI6dHJ1ZSwidG9Gb3JtYXQiOiJwbmciLCJwbmciOnsiY29tcHJlc3Npb25MZXZlbCI6MiwicHJvZ3Jlc3NpdmUiOmZhbHNlfX19?signature=550344cfd429a5d3836af9adb9b42deb0ba52c9b88ce3cdfd5198fb0eeb4f0a4",
-    "tags": ["Para ler", "UI Design"],
+    "tags": ["UI Design", "Para ler"],
     "summary": "",
     "page_comment": "",
     "highlights": [
@@ -398,32 +1141,6 @@
     "highlights": [
       {
         "highlight": "É que a Gestalt dita a forma como nós iremos, mesmo que inconscientemente, compreender tudo o que estamos visualizando em uma tela. De que forma iremos interpretar um conjunto ou agrupamento de elementos contidos em uma interface, é um exemplo disso.",
-        "color": "Yellow",
-        "highlight_note": ""
-      }
-    ]
-  },
-  {
-    "date": "2025-03-25",
-    "title": "Home",
-    "url": "https://emergencemagazine.org/",
-    "thumbnail": "https://emergencemagazine.org/app/uploads/2021/03/EM-FB.jpg",
-    "tags": ["Blogs", "Para ler"],
-    "summary": "",
-    "page_comment": "",
-    "highlights": []
-  },
-  {
-    "date": "2025-03-25",
-    "title": "build a world, not an audience — kening zhu",
-    "url": "https://keningzhu.com/journal/build-a-world-not-an-audience",
-    "thumbnail": "https://static1.squarespace.com/static/51e8148de4b01c1eb79c1977/5682f162b204d5635670f310/65544de372845e682bf5a326/1720433514022/11.20_world_not_audience.jpg?format=1500w",
-    "tags": ["Lista de leitura", "Cultura digital"],
-    "summary": "",
-    "page_comment": "",
-    "highlights": [
-      {
-        "highlight": "in an age when everyone seems to be trying to build an audience in order to “monetize their passions,” the end result is a crowded digital world of people striving to be influencers-celebrities, especially on social media (let’s not even get started)",
         "color": "Yellow",
         "highlight_note": ""
       }

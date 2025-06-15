@@ -1,5 +1,6 @@
 User-agent: *
-Disallow: 
+Allow: /
+Disallow: /api/
+Disallow: /private/
 
-# Mapa do site
 Sitemap: https://oieuoshi.glitch.me/sitemap.xml
