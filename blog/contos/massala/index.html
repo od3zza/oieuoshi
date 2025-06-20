@@ -990,23 +990,7 @@ HEY U!   ( (  ;._ \\      -->
       <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
 
-      <script>
-        // Replace with your Firebase config
-        const firebaseConfig = {
-          apiKey: "AIzaSyB0m70Ej1qA61Oa5pa8mLFvKZzugFKH2LE",
-          authDomain: "commentbox-49eaf.firebaseapp.com",
-          databaseURL: "https://commentbox-49eaf-default-rtdb.firebaseio.com",
-          projectId: "commentbox-49eaf",
-          storageBucket: "commentbox-49eaf.firebasestorage.app",
-          messagingSenderId: "670405977167",
-          appId: "1:670405977167:web:ded2ce64bb16fec4d6763a",
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-      </script>
-
-      <script>
+           <script>
         db.collection("comments")
           .orderBy("timestamp", "desc")
           .onSnapshot((snapshot) => {
