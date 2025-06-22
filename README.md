@@ -5,3 +5,8 @@ Construi esse site para não depender mais de Blogspot, Tumblr e essas merdas qu
 Se você está querendo construir o seu espacinho digital, acontecelho tomar esse código, talvez, apenas como referências, pois: não, eu não sou coder, sou apenas uma pessoa hiperativa, criativa e curiosa (agora com LLMs nas mãos!).
 
 ## Miss u Glitch!
+
+## Notas para o futuro
+- Ainda não sei se uso Vercel para deixar meu site mesmo, mas parece a melhor ferramenta---queria não pagar domínio, quem sabe usar apenas um endereço de IP?
+- Organizar galerias dentro do site com imagens em Base64 (foda-se carregamento, afiar lazyload)
+- Criar caixa de comentários para usuários externos.
