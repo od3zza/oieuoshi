@@ -862,7 +862,7 @@ img {
 /* Estilos para o formulário de comentários. */
 .comments-form {
   background: #fff; /* Fundo branco */
-  border: 1px solid var(--border); /* Borda cinza clara, usando variável */
+  border: 0px solid var(--border); /* Borda cinza clara, usando variável */
   border-radius: 4px; /* Cantos arredondados */
   padding: 1.5rem; /* Preenchimento interno */
   margin-bottom: 2rem; /* Margem inferior */
