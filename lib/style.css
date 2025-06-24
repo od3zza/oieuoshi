@@ -673,3 +673,138 @@ img {
 .footnote-ref:hover .toggle-btn {
   opacity: 0.8;
 }
+
+/**********************
+ * Caixa de Comentários
+ *********************/
+  /* Sistema de Comentários - Estilo Minimalista */
+.comments-section {
+    margin: 2rem 0;
+}
+
+.comments-form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.comments-form h3,
+.comments-list h3 {
+    margin: 0 0 1rem 0;
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn-submit {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: #333;
+}
+
+.btn-submit:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-header {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.comment-author {
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.comment-author:hover {
+    text-decoration: underline;
+}
+
+.comment-date {
+    color: #666;
+}
+
+.comment-text {
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.loading,
+.no-comments {
+    text-align: center;
+    color: #666;
+    padding: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.error {
+    background: #fee;
+    color: #c00;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.success {
+    background: #efe;
+    color: #060;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
