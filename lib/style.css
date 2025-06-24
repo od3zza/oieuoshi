@@ -1,4 +1,5 @@
 /* Fonts: Importa fontes do Google Fonts */
+/* Importa as fontes 'Merriweather', 'Rubik' e 'Lato' do Google Fonts para uso no projeto. */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
@@ -6,26 +7,37 @@
 /**********************
  * Variáveis globais
  *********************/
+/* Define variáveis CSS personalizadas para espaçamento, tamanhos de fonte, cores e larguras de conteúdo. */
 :root {
-  --spacing-xs: 8px;
-  --spacing-s: 12px;
-  --spacing: 16px;
-  --spacing-m: 16px;
-  --spacing-l: 48px;
-  --foreground: black;
-  --font-size: 20px;
-  --font-size-s: 12px;
-  --font-size-m: 16px;
-  --font-size-l: 22px;
-  --font-size-xl: 30px;
-  --font-size-xxl: 36px;
-  --red-light: #fecbca;
-  --red: #f83735;
-  --yellow: #fddf8e;
-  --pink: #ffc0cb;
-  --blue: #1231b5;
-  --blue-light: #84b4f9;
-  --content-width: 800px;
+  --spacing-xs: 8px; /* Espaçamento extra pequeno */
+  --spacing-s: 12px; /* Espaçamento pequeno */
+  --spacing: 16px; /* Espaçamento padrão */
+  --spacing-l: 48px; /* Espaçamento grande */
+
+  --foreground: black; /* Cor de primeiro plano (texto principal para light mode) */
+  --background: white; /* Cor de fundo principal (para light mode) */
+  --text-light: #777777; /* Cor de texto mais clara, para datas ou descrições secundárias */
+  --accent: #f83735; /* Cor de destaque para interatividade (vermelho) */
+  --highlight: rgba(254, 203, 202, 0.5); /* Cor de fundo para itens destacados (vermelho claro semi-transparente) */
+  --border: #ddd; /* Cor de borda padrão */
+
+  --font-size-s: 12px; /* Tamanho de fonte pequeno */
+  --font-size-m: 16px; /* Tamanho de fonte médio */
+  --font-size: 20px; /* Tamanho de fonte padrão */
+  --font-size-l: 22px; /* Tamanho de fonte grande */
+  --font-size-xl: 30px; /* Tamanho de fonte extra grande */
+  --font-size-xxl: 36px; /* Tamanho de fonte extra extra grande */
+
+  --red-light: #fecbca; /* Tom de vermelho claro (específico) */
+  --red: #f83735; /* Cor vermelha principal (específico) */
+  --yellow: #fddf8e; /* Cor amarela (específico) */
+  --pink: #ffc0cb; /* Cor rosa (específico) */
+  --blue: #1231b5; /* Cor azul principal (específico) */
+  --blue-light: #84b4f9; /* Tom de azul claro (específico) */
+
+  --content-width: 800px; /* Largura máxima para o conteúdo */
+
+  /* Variáveis para Dark Mode */
   --dark-bg: #191919;
   --dark-text: white;
   --dark-link: #ecb365;
@@ -35,209 +47,363 @@
   --dark-hr: #eeeeee;
 }
 
+/* Modo escuro (alternado via JavaScript adicionando a classe 'dark-mode' ao body) */
+body.dark-mode {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode a,
+body.dark-mode button {
+  color: var(--dark-text); /* Links e botões também escurecem */
+}
+
+body.dark-mode .menu span {
+  color: var(--dark-text);
+}
+
+body.dark-mode hr {
+  background-color: var(--dark-hr);
+}
+
+body.dark-mode .comments-form {
+  background: var(--dark-popup-bg);
+  border-color: var(--dark-border);
+}
+
+body.dark-mode .comments-form h3,
+body.dark-mode .comments-list h3 {
+  color: var(--dark-text);
+}
+
+body.dark-mode .form-group label {
+  color: var(--dark-text);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: var(--dark-bg);
+  border-color: var(--dark-border);
+  color: var(--dark-text);
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  border-color: var(--dark-link);
+}
+
+body.dark-mode .comment-author {
+  color: var(--dark-text);
+}
+
+body.dark-mode .comment-date {
+  color: var(--dark-border);
+}
+
+body.dark-mode .comment-text {
+  color: var(--dark-text);
+}
+
+body.dark-mode .loading,
+body.dark-mode .no-comments {
+  color: var(--dark-border);
+}
+
+body.dark-mode .error {
+  background: #4a1919; /* Um vermelho mais escuro para o modo escuro */
+  color: #ffcccc; /* Um vermelho mais claro para o texto */
+}
+
+body.dark-mode .success {
+  background: #1e3a24; /* Um verde mais escuro para o modo escuro */
+  color: #ccffcc; /* Um verde mais claro para o texto */
+}
+
+body.dark-mode .tag {
+  border-color: var(--dark-border);
+  color: var(--dark-text);
+}
+
+body.dark-mode .tag:hover,
+body.dark-mode .tag.active {
+  background-color: var(--dark-link); /* Usando a cor de link escuro como accent */
+  color: var(--dark-bg); /* Texto escuro no fundo claro do accent */
+  border-color: var(--dark-link);
+}
+
+body.dark-mode .article-card {
+  border-color: var(--dark-border);
+  background-color: var(--dark-bg);
+}
+
+body.dark-mode .article-title {
+  color: var(--dark-text);
+}
+
+body.dark-mode .article-tags {
+  color: var(--dark-border);
+}
+
+body.dark-mode .article-card.highlighted {
+  border-left-color: var(--dark-link); /* Destaque com cor de link escuro */
+  background-color: var(--dark-popup-bg); /* Um fundo sutilmente diferente */
+}
+
+body.dark-mode .article-link {
+  color: var(--dark-link);
+}
+
+body.dark-mode .description {
+  color: var(--dark-text);
+}
+
+body.dark-mode .empty-state {
+  color: var(--dark-border);
+}
+
+body.dark-mode .highlights-container::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+body.dark-mode .highlights-container::-webkit-scrollbar-thumb {
+  background: var(--dark-border);
+  border-color: var(--dark-popup-bg);
+}
+
+body.dark-mode .highlights-container::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-link);
+  border-color: var(--dark-border);
+}
+
+body.dark-mode .footnote-text {
+  background: var(--dark-popup-bg);
+  border-left-color: var(--dark-link);
+}
+
 /**********************
  * Estilos gerais
  *********************/
+/* Aplica um comportamento de rolagem suave para âncoras. */
 html {
   scroll-behavior: smooth;
 }
 
+/* Estilos de base para o corpo do documento. */
 body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  background: white;
-  color: var(--foreground);
-  font-family: "Rubik", sans-serif;
-  margin: auto;
-  padding: var(--spacing);
+  -webkit-font-smoothing: antialiased; /* Suaviza as fontes para melhor legibilidade no WebKit */
+  text-rendering: optimizeLegibility; /* Otimiza a renderização do texto para legibilidade */
+  background: var(--background); /* Cor de fundo padrão, usa variável */
+  color: var(--foreground); /* Cor do texto herdada da variável global */
+  font-family: "Rubik", sans-serif; /* Família de fonte padrão */
+  margin: auto; /* Centraliza o body horizontalmente */
+  padding: var(--spacing); /* Preenchimento ao redor do body */
 }
 
 /**********************
  * Links e botões
  *********************/
+/* Estilos comuns para links e botões. */
 a,
 button {
-  color: var(--foreground);
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  font-size: var(--font-size);
-  line-height: 1.5;
-  text-decoration: none;
+  color: var(--foreground); /* Cor do texto herdada da variável global */
+  font-family: "Rubik", sans-serif; /* Família de fonte */
+  font-weight: bold; /* Peso da fonte negrito */
+  font-size: var(--font-size); /* Tamanho da fonte herdado da variável global */
+  line-height: 1.5; /* Altura da linha */
+  text-decoration: none; /* Remove sublinhado padrão */
 }
 
+/* Estilos específicos para botões. */
 button {
-  padding: 0.6em 2em;
-  width: 60%;
-  border: 3px solid var(--foreground);
-  border-radius: 6px;
-  background: transparent;
-  cursor: pointer;
-  position: relative;
+  padding: 0.6em 2em; /* Preenchimento interno */
+  width: 60%; /* Largura do botão */
+  border: 3px solid var(--foreground); /* Borda sólida com cor de primeiro plano */
+  border-radius: 6px; /* Cantos arredondados */
+  background: transparent; /* Fundo transparente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  position: relative; /* Posição relativa para alinhamento de elementos filhos */
 }
 
 /**********************
  * Textos e parágrafos
  *********************/
+/* Estilos para parágrafos. */
 p {
-  font-size: var(--font-size);
+  font-size: var(--font-size); /* Tamanho da fonte herdado da variável global */
   margin: 0 0 1em 0; /* Margem inferior de 1em */
-  line-height: 1.5;
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  word-break: break-word;
-  text-justify: inter-word;
+  line-height: 1.5; /* Altura da linha */
+  text-align: justify; /* Alinhamento justificado */
+  hyphens: auto; /* Permite hifenização automática */
+  -webkit-hyphens: auto; /* Hifenização para WebKit */
+  -moz-hyphens: auto; /* Hifenização para Mozilla */
+  word-break: break-word; /* Quebra palavras longas */
+  text-justify: inter-word; /* Alinhamento justificado otimizado para espaçamento entre palavras */
 }
 
+/* Estilos para todos os cabeçalhos (h1 a h6). */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  line-height: 1.2; /* Altura da linha reduzida para cabeçalhos */
 }
 
+/* Estilos específicos para h1. */
 h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: var(--font-size-xxl);
-  font-weight: 900;
-  margin: 0 10;
+  font-family: "Rubik", sans-serif; /* Família de fonte */
+  font-size: var(--font-size-xxl); /* Tamanho da fonte extra extra grande */
+  font-weight: 900; /* Peso da fonte extra negrito */
+  margin: 0 0 10px 0; /* Margem ajustada para 10px na parte inferior */
 }
 
+/* Estilos para o elemento sub (subscrito), usado para legendas ou notas. */
 sub {
-  font-family: "Merriweather", serif;
-  font-weight: normal;
-  font-size: var(--font-size-s);
-  color: #777777;
-  text-transform: uppercase;
-  vertical-align: baseline;
-  margin-bottom: 0px;
-  display: inline-block; /* Permite que as margens sejam aplicadas */
+  font-family: "Merriweather", serif; /* Família de fonte serifada */
+  font-weight: normal; /* Peso da fonte normal */
+  font-size: var(--font-size-s); /* Tamanho da fonte pequeno */
+  color: var(--text-light); /* Cor cinza, usando variável */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  vertical-align: baseline; /* Alinhamento vertical na linha de base */
+  display: inline-block; /* Permite aplicar margens e padding como um bloco, mas mantém o fluxo inline */
 }
 
+/* Estilos para links dentro de elementos sub. */
 sub a {
-  text-decoration: underline;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
-  text-transform: inherit;
-  vertical-align: inherit;
-  margin-bottom: inherit;
-  display: inherit;
+  text-decoration: underline; /* Sublinha o link */
+  font-family: inherit; /* Herda a família de fonte do pai */
+  font-weight: inherit; /* Herda o peso da fonte do pai */
+  font-size: inherit; /* Herda o tamanho da fonte do pai */
+  color: inherit; /* Herda a cor do pai */
+  text-transform: inherit; /* Herda a transformação de texto do pai */
+  vertical-align: inherit; /* Herda o alinhamento vertical do pai */
+  margin-bottom: inherit; /* Herda a margem inferior do pai */
+  display: inherit; /* Herda o display do pai */
 }
 
+/* Estilos para legendas de figuras (figcaption). */
 figcaption {
-  font-family: "Merriweather", serif;
-  font-weight: normal;
-  font-size: var(--font-size-s);
-  color: #777777;
-  text-transform: uppercase;
+  font-family: "Merriweather", serif; /* Família de fonte serifada */
+  font-weight: normal; /* Peso da fonte normal */
+  font-size: var(--font-size-s); /* Tamanho da fonte pequeno */
+  color: var(--text-light); /* Cor cinza, usando variável */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
   text-align: center; /* Centraliza o texto */
-  margin-bottom: 15px;
-  display: block; /* Altera para block para ocupar toda a largura */
+  margin-bottom: 15px; /* Margem inferior */
+  display: block; /* Ocupa toda a largura disponível */
   width: 100%; /* Garante que ocupe toda a largura do contêiner pai */
 }
 
+/* Estilos para links dentro de figcaption. */
 figcaption a {
-  text-decoration: underline;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
-  text-transform: inherit;
-  vertical-align: inherit;
-  margin-bottom: inherit;
+  text-decoration: underline; /* Sublinha o link */
+  font-family: inherit; /* Herda a família de fonte do pai */
+  font-weight: inherit; /* Herda o peso da fonte do pai */
+  font-size: inherit; /* Herda o tamanho da fonte do pai */
+  color: inherit; /* Herda a cor do pai */
+  text-transform: inherit; /* Herda a transformação de texto do pai */
+  vertical-align: inherit; /* Herda o alinhamento vertical do pai */
+  margin-bottom: inherit; /* Herda a margem inferior do pai */
   display: inline; /* Mantém o link como inline para não quebrar o fluxo do texto */
-  text-align: inherit;
+  text-align: inherit; /* Herda o alinhamento de texto do pai */
 }
 
+/* Estilos para iframes. */
 iframe {
-  margin-top: 15px;
-  margin-bottom: 0px;
-  text-align: center;
+  margin-top: 15px; /* Margem superior */
+  margin-bottom: 0px; /* Margem inferior */
+  text-align: center; /* Alinhamento de texto (não afeta o iframe em si, apenas seu conteúdo, se fosse texto) */
 }
 
 /**********************
  * Listas e blockquotes
  *********************/
+/* Reseta margens e paddings padrão para listas não ordenadas e ordenadas. */
 ul,
 ol {
   margin: 0;
   padding: 0;
 }
 
+/* Estilo para marcadores de lista ordenada dentro de .content. */
 .content ol li::marker {
-  font-weight: bold;
+  font-weight: bold; /* Marcador em negrito */
 }
 
+/* Estilos para listas não ordenadas e ordenadas dentro de .content. */
 .content ul,
 .content ol {
-  font-size: var(--font-size);
-  line-height: 1.5;
-  text-align: justify;
-  text-justify: inter-word;
-  margin: 20px 0;
-  padding-left: 10%;
-  color: var(--foreground);
-  list-style-position: inside;
+  font-size: var(--font-size); /* Tamanho da fonte padrão */
+  line-height: 1.5; /* Altura da linha */
+  text-align: justify; /* Alinhamento justificado */
+  text-justify: inter-word; /* Alinhamento justificado otimizado para espaçamento entre palavras */
+  margin: 20px 0; /* Margem superior e inferior */
+  padding-left: 10%; /* Preenchimento à esquerda */
+  color: var(--foreground); /* Cor do texto herdada da variável global */
+  list-style-position: inside; /* Posiciona o marcador dentro do conteúdo do item da lista */
 }
 
+/* Estilos para itens de lista dentro de .content. */
 .content li {
-  padding-left: 10px;
-  margin: 8px 0;
-  text-indent: -10px;
+  padding-left: 10px; /* Preenchimento à esquerda */
+  margin: 8px 0; /* Margem superior e inferior */
+  text-indent: -10px; /* Recuo negativo para alinhar o texto do item com o marcador */
 }
 
+/* Estilos para blockquotes (citações em bloco). */
 blockquote {
-  font-size: var(--font-size-m);
-  line-height: 1.5;
-  text-align: justify;
-  text-justify: inter-word;
-  margin: 20px 0;
-  padding-left: 12%;
-  border-left: 0px solid var(--foreground);
-  color: var(--foreground);
+  font-size: var(--font-size-m); /* Tamanho da fonte médio */
+  line-height: 1.5; /* Altura da linha */
+  text-align: justify; /* Alinhamento justificado */
+  text-justify: inter-word; /* Alinhamento justificado otimizado para espaçamento entre palavras */
+  margin: 20px 0; /* Margem superior e inferior */
+  padding-left: 12%; /* Preenchimento à esquerda */
+  border-left: 3px solid var(--border); /* Adiciona uma borda à esquerda usando variável */
+  color: var(--foreground); /* Cor do texto herdada da variável global */
 }
 
+/* Estilos para links dentro de blockquotes. */
 blockquote a {
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-m); /* Tamanho da fonte médio */
   color: inherit; /* Herda a cor do texto do blockquote */
-  text-decoration: underline; /* Adiciona sublinhado aos links */
+  text-decoration: underline; /* Adiciona sublinhado */
   font-weight: bold; /* Opcional: deixa o link em negrito */
 }
 
 /**********************
  * Menu e navegação
  *********************/
+/* Estilos para o elemento de navegação (nav). */
 nav {
-  align-items: center;
-  text-align: center;
+  align-items: center; /* Alinha itens ao centro (requer flexbox/grid) */
+  text-align: center; /* Centraliza o texto */
 }
 
+/* Estilos para parágrafos dentro de nav. */
 nav p {
-  text-align: center;
-  width: 100%;
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Ocupa toda a largura */
 }
 
+/* Estilos para spans dentro de elementos com a classe .menu. */
 .menu span {
-  color: var(--foreground);
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  font-size: var(--font-size-m);
-  line-height: 1.5;
+  color: var(--foreground); /* Cor do texto herdada da variável global */
+  font-family: "Rubik", sans-serif; /* Família de fonte */
+  font-weight: bold; /* Peso da fonte negrito */
+  font-size: var(--font-size-m); /* Tamanho da fonte médio */
+  line-height: 1.5; /* Altura da linha */
 }
 
+/* Efeito hover para spans dentro de .menu. */
 .menu span:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 /* Estilo da Linha Horizontal */
 hr {
-  background-color: var(--foreground); /* Cor de fundo */
-  margin: 15px auto; /* Margens de 15px para cima e para baixo, e centralizada */
+  background-color: var(--foreground); /* Cor de fundo da linha */
+  margin: 15px auto; /* Margens de 15px em cima/baixo e centralizada */
   width: 50%; /* Largura */
   height: 3px; /* Espessura da linha */
   max-width: 430px; /* Largura máxima */
@@ -247,564 +413,596 @@ hr {
 /**********************
  * Layout e contâiners
  *********************/
+/* Estilos para contêineres principais. */
 .container {
-  padding-top: var(--spacing-l);
+  padding-top: var(--spacing-l); /* Preenchimento superior grande */
 }
 
+/* Estilos para as seções .main e .content, com largura máxima e centralização. */
 .main,
 .content {
-  max-width: var(--content-width);
-  margin: auto;
-  padding: var(--spacing-m);
+  max-width: var(--content-width); /* Largura máxima do conteúdo */
+  margin: auto; /* Centraliza horizontalmente */
+  padding: var(--spacing); /* Preenchimento ao redor do conteúdo, usando --spacing */
 }
 
 /* Sidebar */
+/* Estilos para a barra lateral, fixada na tela. */
 .sidebar {
-  font-family: "Rubik", sans-serif;
-  position: fixed;
-  z-index: 100;
-  top: 20px;
-  left: 0;
-  width: 150px;
-  text-align: center;
-  margin-bottom: var(--spacing-s);
+  font-family: "Rubik", sans-serif; /* Família de fonte */
+  position: fixed; /* Posição fixa na tela */
+  z-index: 100; /* Ordem de empilhamento para ficar acima de outros elementos */
+  top: 20px; /* Distância do topo */
+  left: 0; /* Alinhado à esquerda */
+  width: 150px; /* Largura da sidebar */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: var(--spacing-s); /* Margem inferior pequena */
 }
 
+/* Media query para telas menores (mobile). */
 @media (max-width: 768px) {
   .sidebar {
-    width: 150px;
-    position: fixed;
-    left: 0;
-    top: 20px;
-    text-align: left; /* Remove justificação em mobile */
-    hyphens: none;
+    width: 150px; /* Largura da sidebar em mobile */
+    position: fixed; /* Posição fixa */
+    left: 0; /* Alinhado à esquerda */
+    top: 20px; /* Distância do topo */
+    text-align: left; /* Alinhamento de texto à esquerda em mobile */
+    hyphens: none; /* Desabilita hifenização em mobile */
   }
 
   .inner-switch {
-    right: 20px;
-    top: 20px;
+    right: 20px; /* Posição do switch para modo escuro */
+    top: 20px; /* Posição do switch para modo escuro */
   }
 }
-
-/**********************
- * Switch dark mode
-
-.switch {
-  position: absolute;
-  margin: auto;
-  top: 20px;
-  right: 30px;
-  text-align: center;
-}
-
-.inner-switch {
-  position: absolute;
-  top: 0;
-  right: -40px;
-  border: 0px solid #555555;
-  border-radius: 1.25rem;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  background-color: transparent;
-} *********************/
 
 /**********************
  * Imagens
  *********************/
+/* Estilos gerais para imagens. */
 img {
-  padding: 0px;
-  max-width: 100%;
-  display: block;
-  margin: 5px auto;
-  border-radius: 2px;
+  padding: 0px; /* Sem preenchimento */
+  max-width: 100%; /* Largura máxima de 100% do contêiner pai */
+  display: block; /* Exibe como um bloco para permitir margin: auto */
+  margin: 5px auto; /* Margem superior/inferior de 5px e centralizada */
+  border-radius: 2px; /* Cantos levemente arredondados */
 }
 
+/* Estilos para a galeria de imagens. */
 #gallery {
-  line-height: 0;
-  transition: filter 2s;
-  column-count: 4;
-  column-gap: 5px;
+  line-height: 0; /* Remove espaço extra entre imagens (útil para layouts de imagem) */
+  transition: filter 2s; /* Transição suave para o filtro (se houver) */
+  column-count: 4; /* Exibe imagens em 4 colunas como padrão */
+  column-gap: 5px; /* Espaçamento entre as colunas */
 }
 
+/* Estilos para imagens dentro da galeria. */
 #gallery img {
-  width: 100% !important;
-  height: auto !important;
-  margin-bottom: 5px;
+  width: 100% !important; /* Força a largura da imagem a 100% da coluna (se !important for realmente necessário aqui) */
+  height: auto !important; /* Mantém a proporção da imagem */
+  margin-bottom: 5px; /* Margem inferior entre as imagens */
 }
 
-@media (max-width: 1200px) {
-  #gallery {
-    column-count: 4;
-  }
-}
-
+/* Media queries para a galeria, ajustando o número de colunas em diferentes tamanhos de tela. */
 @media (max-width: 1000px) {
   #gallery {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 800px) {
-  #gallery {
-    column-count: 2;
+    column-count: 2; /* 2 colunas para telas até 1000px */
   }
 }
 
 @media (max-width: 400px) {
   #gallery {
-    column-count: 1;
+    column-count: 1; /* 1 coluna para telas até 400px (mobile) */
   }
 }
 
 /**********************
  * Footer
  *********************/
+/* Estilos para o rodapé. */
 .footer {
-  position: relative;
-  padding-top: 30px;
-  margin-top: 5px;
-  bottom: 30px;
-  height: 30px;
-  width: 100%;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 13px;
-  line-height: 20px;
+  position: relative; /* Posição relativa */
+  padding-top: 30px; /* Preenchimento superior */
+  margin-top: 5px; /* Margem superior */
+  bottom: 30px; /* Distância do fundo (funciona melhor com position: absolute/fixed) */
+  height: 30px; /* Altura do rodapé */
+  width: 100%; /* Largura total */
+  text-align: left; /* Alinhamento de texto à esquerda */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  font-size: 13px; /* Tamanho da fonte */
+  line-height: 20px; /* Altura da linha */
 }
 
 /**********************
  * Categorias de Notas
  *********************/
+/* Estilos para links aprimorados (categorias de notas). */
 .enhanced-link {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 8px;
-  text-decoration: none;
-  color: #000;
-  transition: background-color 0.2s;
+  display: flex; /* Usa flexbox para alinhamento de itens */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+  padding: 10px; /* Preenchimento interno */
+  margin-bottom: 8px; /* Margem inferior */
+  text-decoration: none; /* Remove sublinhado */
+  color: var(--foreground); /* Cor do texto, usando variável */
+  transition: background-color 0.2s; /* Transição suave para a cor de fundo */
 }
 
+/* Efeito hover para links aprimorados. */
 .enhanced-link:hover {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* Cor de fundo levemente cinza no hover */
 }
 
+/* Estilos para o favicon dentro do link aprimorado. */
 .link-favicon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
+  width: 16px; /* Largura */
+  height: 16px; /* Altura */
+  margin-right: 10px; /* Margem à direita */
 }
 
+/* Estilos para o título do link. */
 .link-title {
-  font-size: 14px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 14px; /* Tamanho da fonte */
+  white-space: nowrap; /* Evita quebra de linha */
+  overflow: hidden; /* Esconde conteúdo que excede o contêiner */
+  text-overflow: ellipsis; /* Adiciona reticências (...) para texto cortado */
 }
 
+/* Animação fade para o título de links em atualização. */
 @keyframes fade {
   0% {
-    opacity: 0.5;
+    opacity: 0.5; /* Opacidade inicial */
   }
   50% {
-    opacity: 1;
+    opacity: 1; /* Opacidade máxima no meio da animação */
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.5; /* Opacidade final (volta ao inicial) */
   }
 }
 
+/* Aplica a animação fade ao título quando o link está no estado 'updating'. */
 .enhanced-link.updating .link-title {
-  animation: fade 1.5s infinite;
+  animation: fade 1.5s infinite; /* Aplica a animação 'fade' por 1.5s infinitamente */
 }
 
 /**********************
  * Destaques em Notas
  *********************/
+/* Estilo para descrições. */
 .description {
-  color: #000000;
+  color: var(--foreground); /* Cor do texto, usando variável */
 }
 
+/* Estilos para contêiner de controles. */
 .controls {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  display: flex; /* Usa flexbox */
+  gap: 1rem; /* Espaçamento entre os itens flex */
+  margin-bottom: 1.5rem; /* Margem inferior */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
 }
 
+/* Estilos para contêiner de tags. */
 .tags-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  margin-bottom: 1rem;
+  display: flex; /* Usa flexbox */
+  flex-wrap: wrap; /* Permite que as tags quebrem para a próxima linha */
+  gap: 0.3rem; /* Espaçamento entre as tags */
+  margin-bottom: 1rem; /* Margem inferior */
 }
 
+/* Estilos para tags individuais. */
 .tag {
-  font-size: var(--font-size-m);
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0.2em 1em;
-  border: 3px solid var(--foreground);
-  border-radius: 6px;
+  font-size: var(--font-size-m); /* Tamanho da fonte médio */
+  text-align: center; /* Centraliza o texto */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: all 0.2s ease; /* Transição suave para todas as propriedades */
+  padding: 0.2em 1em; /* Preenchimento interno */
+  border: 3px solid var(--foreground); /* Borda sólida com cor de primeiro plano */
+  border-radius: 6px; /* Cantos arredondados */
 }
 
+/* Efeito hover para tags. */
 .tag:hover {
-  background-color: var(--accent);
-  color: black;
-  border-color: var(--accent);
-  text-decoration: underline;
+  background-color: var(--accent); /* Cor de fundo da variável --accent */
+  color: black; /* Cor do texto preta */
+  border-color: var(--accent); /* Cor da borda da variável --accent */
+  text-decoration: underline; /* Adiciona sublinhado */
 }
 
+/* Estilos para tags ativas. */
 .tag.active {
-  background-color: var(--accent);
-  color: black;
-  text-decoration: underline;
-  border-color: var(--accent);
+  background-color: var(--accent); /* Cor de fundo da variável --accent */
+  color: black; /* Cor do texto preta */
+  text-decoration: underline; /* Adiciona sublinhado */
+  border-color: var(--accent); /* Cor da borda da variável --accent */
 }
 
+/* Estilos para o contêiner de artigos. */
 .articles-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  display: grid; /* Usa grid layout */
+  grid-template-columns: 1fr; /* Uma coluna com largura flexível */
+  gap: 1.5rem; /* Espaçamento entre os itens do grid */
 }
 
+/* Estilos para cards de artigos. */
 .article-card {
-  border: 3px solid;
-  border-radius: 6px;
-  overflow: hidden;
-  transition: all 0.2s ease;
+  border: 3px solid var(--border); /* Borda sólida com cor de variável */
+  border-radius: 6px; /* Cantos arredondados */
+  overflow: hidden; /* Esconde conteúdo que excede a borda */
+  transition: all 0.2s ease; /* Transição suave para todas as propriedades */
 }
 
+/* Esconde cards de artigos com a classe 'hidden'. */
 .article-card.hidden {
-  display: none;
+  display: none; /* Oculta o elemento */
 }
 
+/* Estilos para o conteúdo do artigo. */
 .article-content {
-  padding: 1.25rem;
+  padding: 1.25rem; /* Preenchimento interno */
 }
 
+/* Estilos para o cabeçalho do artigo. */
 .article-header {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  margin-bottom: 1rem; /* Margem inferior */
+  display: flex; /* Usa flexbox */
+  justify-content: space-between; /* Espaço igual entre e ao redor dos itens */
+  align-items: baseline; /* Alinha itens pela linha de base */
 }
 
+/* Estilos para a data do artigo. */
 .article-date {
-  color: var(--text-light);
-  font-size: 0.85rem;
-  display: none;
+  color: var(--text-light); /* Cor do texto, usando variável */
+  font-size: 0.85rem; /* Tamanho da fonte */
+  display: none; /* Oculta a data */
 }
 
+/* Estilos para o título do artigo. */
 .article-title {
-  font-weight: bold;
-  margin-bottom: 0rem;
-  color: var(--text);
+  font-weight: bold; /* Peso da fonte negrito */
+  margin-bottom: 0rem; /* Sem margem inferior */
+  color: var(--foreground); /* Cor do texto, usando variável */
 }
 
+/* Estilos para as tags do artigo. */
 .article-tags {
-  font-family: "Merriweather", serif;
-  font-weight: normal;
-  font-size: var(--font-size-s);
-  color: #777777;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  font-family: "Merriweather", serif; /* Família de fonte serifada */
+  font-weight: normal; /* Peso da fonte normal */
+  font-size: var(--font-size-s); /* Tamanho da fonte pequeno */
+  color: var(--text-light); /* Cor cinza, usando variável */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  margin-bottom: 1rem; /* Margem inferior */
 }
 
-/* Adiciona " | " após cada tag, exceto a última */
+/* Adiciona " | " após cada tag, exceto a última. */
 .article-tags span:not(:last-child)::after {
-  content: " | ";
+  content: " | "; /* Conteúdo gerado */
   margin: 0 0.3em; /* Espaçamento opcional */
 }
 
+/* Estilos para cards de artigos destacados. */
 .article-card.highlighted {
-  border-left: 4px solid var(--accent);
-  background-color: var(--highlight);
+  border-left: 4px solid var(--accent); /* Borda esquerda com cor de destaque, usando variável */
+  background-color: var(--highlight); /* Cor de fundo de destaque, usando variável */
 }
 
+/* Estilos para o contêiner de destaques, com rolagem vertical. */
 .highlights-container {
-  max-height: 300px;
-  overflow-y: auto;
-  padding-right: 0.5rem;
+  max-height: 300px; /* Altura máxima */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical se o conteúdo exceder */
+  padding-right: 0.5rem; /* Preenchimento à direita para evitar que a barra de rolagem cubra o conteúdo */
 }
 
+/* Estilos para destaques individuais. */
 .highlight {
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  border-radius: 4px;
-  position: relative;
+  margin-bottom: 1rem; /* Margem inferior */
+  padding: 0.75rem; /* Preenchimento interno */
+  border-radius: 4px; /* Cantos arredondados */
+  position: relative; /* Posição relativa para elementos internos */
 }
 
+/* Remove margem inferior do último destaque. */
 .highlight:last-child {
   margin-bottom: 0;
 }
 
+/* Estilos para destaques com fundo amarelo. */
 .highlight.yellow {
-  background-color: var(--yellow);
+  background-color: var(--yellow); /* Cor de fundo amarela */
 }
 
+/* Estilos para destaques com fundo rosa. */
 .highlight.pink {
-  background-color: var(--pink);
+  background-color: var(--pink); /* Cor de fundo rosa */
 }
 
+/* Estilos para o texto do destaque. */
 .highlight-text {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; /* Margem inferior */
 }
 
+/* Estilos para a nota do destaque. */
 .highlight-note {
-  font-size: 1rem;
-  padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  margin-top: 0.5rem;
-  border-left: 2px solid var(--border);
+  font-size: 1rem; /* Tamanho da fonte */
+  padding: 0.5rem; /* Preenchimento interno */
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo branco semi-transparente */
+  border-radius: 4px; /* Cantos arredondados */
+  margin-top: 0.5rem; /* Margem superior */
+  border-left: 2px solid var(--border); /* Borda esquerda, usando variável */
 }
 
+/* Estilos para links de artigo. */
 .article-link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: var(--accent);
-  text-decoration: none;
+  display: inline-block; /* Exibe como um bloco mas mantém o fluxo inline */
+  margin-top: 1rem; /* Margem superior */
+  color: var(--accent); /* Cor do texto, usando variável */
+  text-decoration: none; /* Remove sublinhado */
 }
 
+/* Efeito hover para links de artigo. */
 .article-link:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+/* Estilos para o estado vazio (quando não há itens para exibir). */
 .empty-state {
-  text-align: center;
-  padding: 2rem;
-  color: var(--text-light);
-  grid-column: 1 / -1;
+  text-align: center; /* Centraliza o texto */
+  padding: 2rem; /* Preenchimento interno */
+  color: var(--text-light); /* Cor do texto, usando variável */
+  grid-column: 1 / -1; /* Ocupa todas as colunas no grid */
 }
 
 /* Estilização personalizada da scrollbar */
+/* Estilos para a barra de rolagem (largura). */
 .highlights-container::-webkit-scrollbar {
-  width: 8px; /* Largura um pouco maior para melhor visibilidade */
+  width: 8px; /* Largura da barra de rolagem */
 }
 
+/* Estilos para o track (fundo) da barra de rolagem. */
 .highlights-container::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Cinza claro para o track */
-  border-radius: 0px;
+  background: #f1f1f1; /* Cor de fundo do track */
+  border-radius: 0px; /* Cantos retos */
 }
 
+/* Estilos para o thumb (alça) da barra de rolagem. */
 .highlights-container::-webkit-scrollbar-thumb {
-  background: white; /* Branco para o thumb */
-  border-radius: 0px;
-  border: 1px solid #e0e0e0; /* Borda sutil para contrastar com fundos brancos */
+  background: white; /* Cor do thumb branca */
+  border-radius: 0px; /* Cantos retos */
+  border: 1px solid #e0e0e0; /* Borda sutil */
 }
 
-/* Efeito hover para melhor interatividade */
+/* Efeito hover para o thumb da barra de rolagem. */
 .highlights-container::-webkit-scrollbar-thumb:hover {
-  background: #f5f5f5; /* Tom quase branco no hover */
+  background: #f5f5f5; /* Cor quase branca no hover */
 }
 
+/* Media query para telas com largura máxima de 600px (celulares menores). */
 @media (max-width: 600px) {
   body {
-    padding: 1rem;
+    padding: 1rem; /* Reduz o preenchimento do body */
   }
 
   .controls {
-    flex-direction: column;
-    gap: 0.75rem;
+    flex-direction: column; /* Altera a direção do flexbox para coluna */
+    gap: 0.75rem; /* Reduz o espaçamento entre os itens */
   }
 
   .search-container {
-    min-width: 100%;
+    min-width: 100%; /* Garante que o contêiner de busca ocupe 100% da largura */
   }
 }
 
 /**********************
  * Anotações
  *********************/
+/* Estilos para o contêiner de anotações expansíveis. */
 .expanding-footnote {
-  position: relative;
-  display: inline;
+  position: relative; /* Posição relativa para o posicionamento do texto da nota */
+  display: inline; /* Exibe como inline */
 }
 
+/* Estilos para o link de referência da nota de rodapé. */
 .footnote-ref {
-  cursor: pointer;
-  text-decoration: none;
-  white-space: nowrap;
+  cursor: pointer; /* Cursor de ponteiro */
+  text-decoration: none; /* Remove sublinhado */
+  white-space: nowrap; /* Evita quebra de linha */
 }
 
+/* Estilos para o número da nota de rodapé. */
 .footnote-number {
-  font-weight: bold;
-  transition: color 0.2s ease;
+  font-weight: bold; /* Peso da fonte negrito */
+  transition: color 0.2s ease; /* Transição suave para a cor */
 }
 
+/* Estilos para o supscript do número da nota de rodapé. */
 .footnote-ref sup {
-  font-size: 0.7em;
-  margin-left: 0px;
+  font-size: 0.7em; /* Tamanho da fonte menor */
+  margin-left: 0px; /* Sem margem esquerda */
 }
 
+/* Estilos para o texto da nota de rodapé (inicialmente oculto). */
 .footnote-text {
-  display: none;
-  width: 100%;
-  padding: 12px;
-  margin: 0 0;
-  background: #f8f8f8;
-  border-left: 3px solid currentColor; /* Usa a cor do texto */
-  border-radius: 0 4px 4px 0;
+  display: none; /* Oculta o texto por padrão */
+  width: 100%; /* Ocupa 100% da largura do pai */
+  padding: 12px; /* Preenchimento interno */
+  margin: 0 0; /* Sem margem */
+  background: #f8f8f8; /* Fundo cinza claro */
+  border-left: 3px solid currentColor; /* Borda esquerda com a cor do texto atual */
+  border-radius: 0 4px 4px 0; /* Cantos arredondados apenas à direita */
 }
 
+/* Exibe o texto da nota de rodapé quando o elemento pai tem a classe 'active'. */
 .expanding-footnote.active .footnote-text {
-  display: block;
+  display: block; /* Exibe o elemento como um bloco */
 }
 
+/* Estilos para o botão de alternância (toggle) da nota de rodapé. */
 .toggle-btn {
-  display: inline-block;
-  margin-left: 3px;
-  font-size: 0.8em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.2s ease;
+  display: inline-block; /* Exibe como um bloco mas mantém o fluxo inline */
+  margin-left: 3px; /* Margem à esquerda */
+  font-size: 0.8em; /* Tamanho da fonte menor */
+  font-weight: bold; /* Peso da fonte negrito */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: color 0.2s ease; /* Transição suave para a cor */
 }
 
-/* Efeito hover opcional */
+/* Efeito hover opcional para o número e botão de alternância da nota de rodapé. */
 .footnote-ref:hover .footnote-number,
 .footnote-ref:hover .toggle-btn {
-  opacity: 0.8;
+  opacity: 0.8; /* Reduz a opacidade no hover */
 }
 
 /**********************
  * Caixa de Comentários
  *********************/
-  /* Sistema de Comentários - Estilo Minimalista */
+/* Sistema de Comentários - Estilo Minimalista */
 .comments-section {
-    margin: 2rem 0;
+  margin: 2rem 0; /* Margem superior e inferior */
 }
 
+/* Estilos para o formulário de comentários. */
 .comments-form {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+  background: #fff; /* Fundo branco */
+  border: 1px solid var(--border); /* Borda cinza clara, usando variável */
+  border-radius: 4px; /* Cantos arredondados */
+  padding: 1.5rem; /* Preenchimento interno */
+  margin-bottom: 2rem; /* Margem inferior */
 }
 
+/* Estilos para cabeçalhos dentro do formulário e lista de comentários. */
 .comments-form h3,
 .comments-list h3 {
-    margin: 0 0 1rem 0;
-    color: #000;
+  margin: 0 0 1rem 0; /* Margem inferior */
+  color: var(--foreground); /* Cor do texto, usando variável */
 }
 
+/* Estilos para grupos de formulário. */
 .form-group {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Margem inferior */
 }
 
+/* Estilos para rótulos (labels) de formulário. */
 .form-group label {
-    display: block;
-    margin-bottom: 0.25rem;
-    color: #000;
-    font-size: 0.9rem;
+  display: block; /* Exibe como bloco */
+  margin-bottom: 0.25rem; /* Pequena margem inferior */
+  color: var(--foreground); /* Cor do texto, usando variável */
+  font-size: 0.9rem; /* Tamanho da fonte */
 }
 
+/* Estilos para campos de input e textarea no formulário. */
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 0.9rem;
+  width: 100%; /* Ocupa 100% da largura */
+  padding: 0.5rem; /* Preenchimento interno */
+  border: 1px solid var(--border); /* Borda cinza clara, usando variável */
+  border-radius: 4px; /* Cantos arredondados */
+  font-size: 0.9rem; /* Tamanho da fonte */
 }
 
+/* Estilos para campos de input e textarea quando estão em foco. */
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: none;
-    border-color: #000;
+  outline: none; /* Remove o contorno padrão de foco */
+  border-color: var(--foreground); /* Altera a cor da borda para preto, usando variável */
 }
 
+/* Estilos específicos para textarea. */
 .form-group textarea {
-    resize: vertical;
-    min-height: 80px;
+  resize: vertical; /* Permite redimensionamento vertical */
+  min-height: 80px; /* Altura mínima */
 }
 
+/* Estilos para o botão de envio (submit). */
 .btn-submit {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    cursor: pointer;
+  background: var(--foreground); /* Fundo preto, usando variável */
+  color: var(--background); /* Texto branco, usando variável */
+  border: none; /* Sem borda */
+  padding: 0.5rem 1rem; /* Preenchimento interno */
+  border-radius: 4px; /* Cantos arredondados */
+  font-size: 0.8rem; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.2s ease; /* Transição suave para o fundo */
 }
 
+/* Efeito hover para o botão de envio (quando não desabilitado). */
 .btn-submit:hover:not(:disabled) {
-    background: #333;
+  background: #333; /* Fundo cinza escuro no hover */
 }
 
+/* Estilos para o botão de envio desabilitado. */
 .btn-submit:disabled {
-    background: #999;
-    cursor: not-allowed;
+  background: #999; /* Fundo cinza claro */
+  cursor: not-allowed; /* Cursor de não permitido */
 }
 
+/* Estilos para comentários individuais. */
 .comment {
-    border-bottom: 1px solid #eee;
-    padding: 1rem 0;
+  border-bottom: 1px solid #eee; /* Borda inferior cinza muito clara */
+  padding: 1rem 0; /* Preenchimento superior e inferior */
 }
 
+/* Remove a borda inferior do último comentário. */
 .comment:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
+/* Estilos para o cabeçalho do comentário. */
 .comment-header {
-    margin-bottom: 0.5rem;
-    font-size: 0.85rem;
+  margin-bottom: 0.5rem; /* Margem inferior */
+  font-size: 0.85rem; /* Tamanho da fonte */
 }
 
+/* Estilos para o autor do comentário. */
 .comment-author {
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
-    margin-right: 0.5rem;
+  font-weight: 600; /* Peso da fonte semi-negrito */
+  color: var(--foreground); /* Cor do texto, usando variável */
+  text-decoration: none; /* Remove sublinhado */
+  margin-right: 0.5rem; /* Margem à direita */
 }
 
+/* Efeito hover para o autor do comentário. */
 .comment-author:hover {
-    text-decoration: underline;
+  text-decoration: underline; /* Adiciona sublinhado no hover */
 }
 
+/* Estilos para a data do comentário. */
 .comment-date {
-    color: #666;
+  color: #666; /* Cor cinza */
 }
 
+/* Estilos para o texto do comentário. */
 .comment-text {
-    color: #000;
-    line-height: 1.5;
-    margin: 0;
-    font-size: 0.9rem;
+  color: var(--foreground); /* Cor do texto, usando variável */
+  line-height: 1.5; /* Altura da linha */
+  margin: 0; /* Sem margem */
+  font-size: 0.9rem; /* Tamanho da fonte */
 }
 
+/* Estilos para mensagens de carregamento e sem comentários. */
 .loading,
 .no-comments {
-    text-align: center;
-    color: #666;
-    padding: 1rem;
-    font-style: italic;
-    font-size: 0.9rem;
+  text-align: center; /* Centraliza o texto */
+  color: #666; /* Cor cinza */
+  padding: 1rem; /* Preenchimento interno */
+  font-style: italic; /* Texto em itálico */
+  font-size: 0.9rem; /* Tamanho da fonte */
 }
 
+/* Estilos para mensagens de erro. */
 .error {
-    background: #fee;
-    color: #c00;
-    padding: 0.75rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
+  background: #fee; /* Fundo vermelho claro */
+  color: #c00; /* Cor do texto vermelho escuro */
+  padding: 0.75rem; /* Preenchimento interno */
+  border-radius: 4px; /* Cantos arredondados */
+  margin-bottom: 1rem; /* Margem inferior */
+  font-size: 0.9rem; /* Tamanho da fonte */
 }
 
+/* Estilos para mensagens de sucesso. */
 .success {
-    background: #efe;
-    color: #060;
-    padding: 0.75rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
+  background: #efe; /* Fundo verde claro */
+  color: #060; /* Cor do texto verde escuro */
+  padding: 0.75rem; /* Preenchimento interno */
+  border-radius: 4px; /* Cantos arredondados */
+  margin-bottom: 1rem; /* Margem inferior */
+  font-size: 0.9rem; /* Tamanho da fonte */
 }
