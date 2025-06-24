@@ -913,6 +913,7 @@ img {
 
 /* Estilos para o botão de envio (submit). */
 .btn-submit {
+    width: 30%; /* Ocupa 30% da largura */
   background: var(--foreground); /* Fundo preto, usando variável */
   color: var(--background); /* Texto branco, usando variável */
   border: none; /* Sem borda */
