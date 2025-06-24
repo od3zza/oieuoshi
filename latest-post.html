@@ -1,72 +1,303 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O Futuro das Relações Humanas e a IA - oieuoshi</title>
-    <link rel="stylesheet" href="/lib/style.css" />
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="/" class="logo">oieuoshi</a>
-            <nav>
-                <ul>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/notas">Notas</a></li>
-                    <li><a href="/tutos.html">Tutos</a></li>
-                    <li><a href="/bookmarks.html">Bookmarks</a></li>
-                </ul>
-            </nav>
-        </div>
+    <title>Exemplo de Post com Comentários - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Exemplo de como integrar o sistema de comentários em um post do blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/blog">← blog</a>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-        <section class="main" data-post-id="o-futuro-relacoes-humanas-ia">
-            <article>
-                <h1>O Futuro das Relações Humanas e a IA</h1>
-                <p class="post-meta">Publicado em 23 de junho de 2025 por od3zza</p>
-                
-                <p>A inteligência artificial (IA ) está rapidamente remodelando o mundo ao nosso redor, e uma das áreas mais impactadas é a das relações humanas. Desde a forma como nos comunicamos até como trabalhamos e nos divertimos, a IA está introduzindo novas dinâmicas que merecem nossa atenção.</p>
+    <!-- Main Content -->
+    <!-- IMPORTANTE: Adicione data-post-id com um ID único para este post -->
+    <section class="main" data-post-id="exemplo-post-comentarios">
+      <sub>Dezembro 2024</sub>
+      <h1>Exemplo de Post com Sistema de Comentários</h1>
+      <br />
+      <sub>tutorial</sub>
+      <br /><br />
 
-                <h2>IA na Comunicação</h2>
-                <p>Assistentes virtuais como a Siri, Alexa e Google Assistant já são parte do nosso dia a dia, facilitando tarefas e respondendo a perguntas. No entanto, a evolução da IA conversacional, com modelos como o GPT-4, está levando a comunicação a um novo patamar. Podemos ter conversas mais fluidas e naturais com máquinas, o que levanta questões sobre a empatia e a profundidade dessas interações.</p>
+      <!-- Conteúdo do Post -->
+      <p>
+        Este é um exemplo de como integrar o sistema de comentários em um post do seu blog.
+        O sistema utiliza Google Sheets para armazenar os comentários e Google Apps Script
+        como backend.
+      </p>
 
-                <h2>IA no Trabalho</h2>
-                <p>No ambiente de trabalho, a IA está automatizando tarefas repetitivas, liberando os humanos para se concentrarem em atividades mais criativas e estratégicas. Ferramentas de IA estão auxiliando na análise de dados, na tomada de decisões e até mesmo na criação de conteúdo. Isso pode levar a uma maior eficiência, mas também exige que os profissionais desenvolvam novas habilidades para colaborar efetivamente com a IA.</p>
+      <p>
+        Cada post deve ter um ID único definido no atributo <code>data-post-id</code> da
+        seção principal. No exemplo acima, usamos <code>exemplo-post-comentarios</code>.
+      </p>
 
-                <h2>Desafios e Oportunidades</h2>
-                <p>Um dos maiores desafios é garantir que a IA seja usada de forma ética e responsável, evitando vieses e protegendo a privacidade. A dependência excessiva da IA também pode levar à diminuição das habilidades sociais e da capacidade de resolução de problemas de forma independente. Por outro lado, a IA oferece oportunidades incríveis para aprimorar a educação, a saúde e a acessibilidade, criando um futuro mais inclusivo e conectado.</p>
+      <h2>Como funciona</h2>
+      <p>
+        Quando um visitante envia um comentário, os dados são enviados para o Google Apps Script,
+        que valida e armazena as informações na planilha. Os comentários são então carregados
+        dinamicamente via JavaScript.
+      </p>
 
-                <p>Em última análise, o futuro das relações humanas com a IA dependerá de como escolhemos integrar essa tecnologia em nossas vidas. É crucial que continuemos a priorizar a interação humana, a empatia e o pensamento crítico, utilizando a IA como uma ferramenta para nos capacitar, e não para nos substituir.</p>
-            </article>
+      <h2>Recursos incluídos</h2>
+      <ul>
+        <li>✅ Validação de dados</li>
+        <li>✅ Sanitização contra XSS</li>
+        <li>✅ Filtro de palavras banidas</li>
+        <li>✅ Moderação opcional</li>
+        <li>✅ Notificações por email</li>
+        <li>✅ Design responsivo</li>
+      </ul>
 
-            <!-- Caixa de Comentários -->
-            <section id="comments-section" class="comments-section">
-                <h2>Comentários</h2>
-                <div id="comment-status" class="comment-status" style="display: none;"></div>
-                <form id="comment-form" class="comment-form">
-                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-                    <input type="email" id="email" name="email" placeholder="Seu Email (opcional)">
-                    <textarea id="comment" name="comment" placeholder="Seu Comentário" required></textarea>
-                    <button type="submit" id="submit-comment">Enviar Comentário</button>
-                </form>
-                <div id="comments-container" class="comments-container"></div>
-            </section>
-            <!-- Fim da Caixa de Comentários -->
-
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 oieuoshi. Todos os direitos reservados.</p>
+      <!-- SISTEMA DE COMENTÁRIOS -->
+      <!-- Copie todo este bloco para seus posts -->
+      
+      <!-- Caixa de Comentários -->
+      <div class="comments-section" id="comments-section">
+        <hr />
+        <h3>💬 Comentários</h3>
+        
+        <!-- Formulário para novo comentário -->
+        <div class="comment-form">
+          <h4>Deixe seu comentário:</h4>
+          <form id="comment-form">
+            <div class="form-group">
+              <label for="comment-name">Nome:</label>
+              <input type="text" id="comment-name" name="name" required maxlength="50" placeholder="Seu nome">
+            </div>
+            
+            <div class="form-group">
+              <label for="comment-email">Email (opcional):</label>
+              <input type="email" id="comment-email" name="email" placeholder="seu@email.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="comment-text">Comentário:</label>
+              <textarea id="comment-text" name="comment" required maxlength="1000" rows="4" placeholder="Digite seu comentário aqui..."></textarea>
+            </div>
+            
+            <button type="submit" id="submit-comment">Enviar Comentário</button>
+            <div id="comment-status" class="comment-status"></div>
+          </form>
         </div>
-    </footer>
+        
+        <!-- Lista de comentários existentes -->
+        <div class="comments-list" id="comments-list">
+          <h4>Comentários anteriores:</h4>
+          <div id="comments-container">
+            <!-- Os comentários serão carregados aqui via JavaScript -->
+            <div class="loading-comments">Carregando comentários...</div>
+          </div>
+        </div>
+      </div>
 
-    <script src="/lib/script.js"></script>
-</body>
+      <!-- CSS para a caixa de comentários -->
+      <style>
+      .comments-section {
+        margin-top: 2rem;
+        padding: 1rem 0;
+      }
+
+      .comments-section h3 {
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .comment-form {
+        background: #f9f9f9;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        border: 1px solid #e0e0e0;
+      }
+
+      .comment-form h4 {
+        margin-bottom: 1rem;
+        color: #555;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #666;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-family: inherit;
+        box-sizing: border-box;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      #submit-comment {
+        background-color: #007bff;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      #submit-comment:hover {
+        background-color: #0056b3;
+      }
+
+      #submit-comment:disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+      }
+
+      .comment-status {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        border-radius: 4px;
+        display: none;
+      }
+
+      .comment-status.success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        display: block;
+      }
+
+      .comment-status.error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+        display: block;
+      }
+
+      .comments-list {
+        margin-top: 2rem;
+      }
+
+      .comments-list h4 {
+        margin-bottom: 1rem;
+        color: #555;
+      }
+
+      .comment-item {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      .comment-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .comment-author {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .comment-date {
+        color: #888;
+        font-size: 0.9rem;
+      }
+
+      .comment-text {
+        color: #555;
+        line-height: 1.6;
+        white-space: pre-wrap;
+      }
+
+      .loading-comments {
+        text-align: center;
+        color: #888;
+        font-style: italic;
+        padding: 2rem;
+      }
+
+      .no-comments {
+        text-align: center;
+        color: #888;
+        font-style: italic;
+        padding: 2rem;
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        .comment-form {
+          padding: 1rem;
+        }
+        
+        .comment-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        
+        .comment-date {
+          margin-top: 0.25rem;
+        }
+      }
+      </style>
+
+      <!-- FIM DO SISTEMA DE COMENTÁRIOS -->
+
+    </section>
+
+    <!-- Footer -->
+    <hr />
+    <section class="footer"></section>
+
+    <!-- 
+    ALTERNATIVA: Se preferir definir o ID do post via JavaScript em vez do data-post-id,
+    descomente o código abaixo e remova o atributo data-post-id da seção principal:
+    
+    <script>
+      setPostId('exemplo-post-comentarios');
+    </script>
+    -->
+
+  </body>
 </html>
+
