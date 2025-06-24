@@ -856,7 +856,7 @@ img {
  *********************/
 /* Sistema de Comentários - Estilo Minimalista */
 .comments-section {
-  margin: 2rem 0; /* Margem superior e inferior */
+  margin: 2rem 0; /* Margem superior e inferior. Margens laterais (esquerda/direita) são zero por padrão */
 }
 
 /* Estilos para o formulário de comentários. */
@@ -865,7 +865,7 @@ img {
   border: 0px solid var(--border); /* Borda cinza clara, usando variável */
   border-radius: 4px; /* Cantos arredondados */
   padding: 1.5rem; /* Preenchimento interno */
-  margin-bottom: 2rem; /* Margem inferior */
+  margin: 0 0 2rem 0; /* Margem superior zero, margens laterais zero, margem inferior de 2rem */
 }
 
 /* Estilos para cabeçalhos dentro do formulário e lista de comentários. */
@@ -938,6 +938,7 @@ img {
 .comment {
   border-bottom: 1px solid #eee; /* Borda inferior cinza muito clara */
   padding: 1rem 0; /* Preenchimento superior e inferior */
+  margin: 0; /* Remove todas as margens, incluindo a esquerda e direita */
 }
 
 /* Remove a borda inferior do último comentário. */
@@ -947,7 +948,7 @@ img {
 
 /* Estilos para o cabeçalho do comentário. */
 .comment-header {
-  margin-bottom: 0.5rem; /* Margem inferior */
+  margin: 0 0 0.5rem 0; /* Remove margem esquerda e direita */
   font-size: 0.85rem; /* Tamanho da fonte */
 }
 
@@ -982,7 +983,7 @@ img {
 .no-comments {
   text-align: center; /* Centraliza o texto */
   color: #666; /* Cor cinza */
-  padding: 1rem; /* Preenchimento interno */
+  padding: 1rem 0; /* Remove preenchimento lateral */
   font-style: italic; /* Texto em itálico */
   font-size: 0.9rem; /* Tamanho da fonte */
 }
@@ -993,7 +994,7 @@ img {
   color: #c00; /* Cor do texto vermelho escuro */
   padding: 0.75rem; /* Preenchimento interno */
   border-radius: 4px; /* Cantos arredondados */
-  margin-bottom: 1rem; /* Margem inferior */
+  margin: 0 0 1rem 0; /* Remove margem esquerda e direita */
   font-size: 0.9rem; /* Tamanho da fonte */
 }
 
@@ -1003,6 +1004,6 @@ img {
   color: #060; /* Cor do texto verde escuro */
   padding: 0.75rem; /* Preenchimento interno */
   border-radius: 4px; /* Cantos arredondados */
-  margin-bottom: 1rem; /* Margem inferior */
+  margin: 0 0 1rem 0; /* Remove margem esquerda e direita */
   font-size: 0.9rem; /* Tamanho da fonte */
 }
