@@ -258,6 +258,11 @@ button {
   /* Remove sublinhado padrão */
 }
 
+a:hover {
+  text-decoration: underline;
+  /* Adicionando underline ao sobrepor o link */
+}
+
 /* Estilos específicos para botões. */
 button {
   padding: 0.6em 2em;
