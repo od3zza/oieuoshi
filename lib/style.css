@@ -420,6 +420,29 @@ iframe {
   /* Alinhamento de texto (não afeta o iframe em si, apenas seu conteúdo, se fosse texto) */
 }
 
+/* Estilo simples para blocos de código inline e em bloco */
+code {
+  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", monospace;
+  background: #f5f5f5;
+  color: #c7254e;
+  font-size: 0.95em;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  word-break: break-word;
+}
+
+/* Para blocos de código (ex: <pre><code>...</code></pre>) */
+pre code {
+  display: block;
+  background: #f5f5f5;
+  color: #222;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.98em;
+  line-height: 1.5;
+}
+
 /**********************
  * Listas e blockquotes
  *********************/
