@@ -138,7 +138,60 @@ HEY U!   ( (  ;._ \\      -->
 
     <h3>Apenas o HTML</h3>
     <p>O HTML tentei manter o mais simples possível:</p>
-# 
+
+
+    <textarea readonly id="html-code-example" rows="20" cols="80">
+<section class="comments-section">
+
+  <div class="comments-form">
+    <h3>Deixe seu comentário</h3>
+    <div id="message-area"></div>
+    <form id="comment-form">
+      <div class="form-group">
+        <label for="nome">Nome *</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="link">Website/Link (opcional)</label>
+        <input type="url" id="link" name="link" placeholder="https://exemplo.com">
+      </div>
+
+      <div class="form-group">
+        <label for="comentario">Comentário *</label>
+        <textarea id="comentario" name="comentario" required
+          placeholder="Escreva seu comentário aqui..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Enviar Comentário</button>
+    </form>
+  </div>
+
+  <div class="comments-list">
+    <h3>Comentários</h3>
+    <div id="comments-container">
+      <div class="loading">Carregando comentários...</div>
+    </div>
+  </div>
+</section>
+</textarea>
+
+<textarea readonly id="js-code-example" rows="20" cols="80">
+// Configuração do Supabase - SUBSTITUA PELOS SEUS DADOS!
+const SUPABASE_URL = 'SUA_URL_DO_SUPABASE_AQUI';
+const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_AQUI';
+
+// Função para obter o slug do post atual
+function getPostSlug() {
+  // Você pode personalizar isso baseado na estrutura das suas URLs
+  const path = window.location.pathname;
+  return path.replace(/^\//, '').replace(/\/$/, '') || 'home';
+}
+
+// ... (resto do seu código JavaScript aqui) ...
+
+</textarea>
+
+  
      <p>
       Então fiz um CSS minimalista, apenas para organizar os elementos e deixar menos feio.
     </p>
