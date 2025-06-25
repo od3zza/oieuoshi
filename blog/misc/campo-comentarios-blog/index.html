@@ -137,8 +137,9 @@ HEY U!   ( (  ;._ \\      -->
     </p>
 
     <h3>Apenas o HTML</h3>
-    <p>O HTML tentei manter o mais simples possível:
-<textarea readonly id="html-code-example" rows="20" cols="80">
+    <p>O HTML tentei manter o mais simples possível:</p>
+    
+<textarea>
         <!-- Sistema de Comentários -->
         <section class="comments-section">
 
@@ -176,13 +177,13 @@ HEY U!   ( (  ;._ \\      -->
         </section>
 </textarea>
   
-      <br />
+     <p>
       Então fiz um CSS minimalista, apenas para organizar os elementos e deixar menos feio.
     </p>
 
     <h3>E O JS?</h3>
     <p>Por fim, o JavaScript, gerado com a ajuda do Claude, pois eu me perdia o tempo todo:</p>
-    <code>
+    <textarea>
       // Configuração do Supabase - SUBSTITUA PELOS SEUS DADOS!
       const SUPABASE_URL = 'SUA_URL_DO_SUPABASE_AQUI';
       const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_AQUI';
@@ -329,7 +330,7 @@ HEY U!   ( (  ;._ \\      -->
       // Adiciona evento ao formulário
       document.getElementById('comment-form').addEventListener('submit', submitComment);
       });
-    </code>
+    </textarea>
 
     <h3>E então...</h3>
     <p>
@@ -348,7 +349,7 @@ HEY U!   ( (  ;._ \\      -->
       linguagem, mas
       é aos poucos que vamos aprendendo, certo?
 
-      <code>
+      <textarea>
         import os
         import re
         from pathlib import Path
@@ -614,8 +615,9 @@ HEY U!   ( (  ;._ \\      -->
 
               if __name__ == "__main__":
               main()
-      </code>
-    </p>
+      </textarea>
+                <p></p>
+
     <hr />
 
     <hr /> <!-- Sistema de Comentários -->
