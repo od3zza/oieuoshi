@@ -420,7 +420,28 @@ iframe {
   /* Alinhamento de texto (não afeta o iframe em si, apenas seu conteúdo, se fosse texto) */
 }
 
-/* Estilo simples para blocos de código inline e em bloco */
+/* Estilo para elementos <textarea> que contêm código */
+textarea[readonly] {
+  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", monospace; /* Sua fonte monoespaçada */
+  background: #f5f5f5; /* Cor de fundo clara */
+  color: #222; /* Cor do texto (mais escura, como seu pre code) */
+  padding: 1em; /* Preenchimento interno */
+  border: 1px solid #ddd; /* Borda (ou ajuste para combinar com seu estilo) */
+  border-radius: 6px; /* Cantos arredondados */
+  overflow: auto; /* Mantém as barras de rolagem se o conteúdo for grande */
+  white-space: pre; /* Garante que os espaços e quebras de linha sejam preservados */
+  word-break: break-all; /* Quebra palavras longas para caber */
+  resize: vertical; /* Permite redimensionar apenas verticalmente (ou 'none' para desativar) */
+  box-sizing: border-box; /* Inclui padding e border na largura/altura total */
+  width: 100%; /* Ocupa a largura total do contêiner pai */
+}
+
+/* Você pode adicionar estilos para quando o textarea estiver desabilitado se usar 'disabled' */
+textarea[disabled] {
+  opacity: 0.7; /* Torna-o um pouco transparente */
+  cursor: not-allowed; /* Altera o cursor */
+}
+
 code {
   font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", monospace;
   background: #f5f5f5;
@@ -429,18 +450,6 @@ code {
   padding: 0.2em 0.4em;
   border-radius: 4px;
   word-break: break-word;
-}
-
-/* Para blocos de código (ex: <pre><code>...</code></pre>) */
-pre code {
-  display: block;
-  background: #f5f5f5;
-  color: #222;
-  padding: 1em;
-  border-radius: 6px;
-  overflow-x: auto;
-  font-size: 0.98em;
-  line-height: 1.5;
 }
 
 /**********************
