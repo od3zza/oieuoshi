@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link
-      rel="stylesheet"
-      href="/lib/style.css"
-      type="text/css"
-      media="screen, projection"
-    />
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
 
     <script src="/lib/script.js" defer></script>
 
@@ -20,7 +16,7 @@
             grid-template-columns: 1fr;
             gap: var(--spacing-m);
         }
-        
+
         .highlight-card {
             border: 3px solid var(--foreground);
             border-radius: 6px;
@@ -28,11 +24,11 @@
             position: relative;
             transition: transform 0.3s ease;
         }
-        
+
         .highlight-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .page-number {
             position: absolute;
             top: var(--spacing-xs);
@@ -43,7 +39,7 @@
             border-radius: 12px;
             font-size: var(--font-size-s);
         }
-        
+
         .highlight-text {
             background-color: var(--yellow);
             padding: var(--spacing-s);
@@ -51,7 +47,7 @@
             margin-bottom: var(--spacing-s);
             position: relative;
         }
-        
+
         .highlight-text::before,
         .highlight-text::after {
             content: '"';
@@ -59,17 +55,17 @@
             color: rgba(0, 0, 0, 0.1);
             position: absolute;
         }
-        
+
         .highlight-text::before {
             top: 5px;
             left: 5px;
         }
-        
+
         .highlight-text::after {
             bottom: -15px;
             right: 5px;
         }
-        
+
         .note {
             background-color: var(--red-light);
             padding: var(--spacing-s);
@@ -77,26 +73,26 @@
             border-left: 4px solid var(--red);
             font-size: var(--font-size-m);
         }
-        
+
         .note-title {
             font-weight: bold;
             margin-bottom: 5px;
             color: var(--red);
         }
-        
+
         .loading {
             text-align: center;
             padding: var(--spacing-l);
             font-size: var(--font-size-l);
         }
-        
+
         .filter-container {
             margin-bottom: var(--spacing-l);
             display: flex;
             gap: var(--spacing-s);
             flex-wrap: wrap;
         }
-        
+
         .filter-input {
             padding: var(--spacing-xs) var(--spacing-s);
             border: 3px solid var(--foreground);
@@ -106,7 +102,7 @@
             font-family: "Rubik", sans-serif;
             font-size: var(--font-size-m);
         }
-        
+
         @media (max-width: 768px) {
             .filter-container {
                 flex-direction: column;
@@ -114,6 +110,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container main">
         <header>
@@ -132,11 +129,11 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const container = document.getElementById('highlightsContainer');
             const searchInput = document.getElementById('searchInput');
             const sortBtn = document.getElementById('sortBtn');
-            
+
             let highlightsData = [];
             let currentSort = 'original';
 
@@ -149,7 +146,8 @@
                 })
                 .catch(error => {
                     console.error('Erro ao carregar os destaques:', error);
-                    container.innerHTML = '<div class="highlight-card">Erro ao carregar os destaques. Verifique o console para mais detalhes.</div>';
+                    container.innerHTML =
+                        '<div class="highlight-card">Erro ao carregar os destaques. Verifique o console para mais detalhes.</div>';
                 });
 
             // Função para exibir os destaques
@@ -160,65 +158,68 @@
                 }
 
                 container.innerHTML = '';
-                
+
                 highlights.forEach(highlight => {
                     const card = document.createElement('div');
                     card.className = 'highlight-card';
-                    
+
                     const pageNumber = document.createElement('div');
                     pageNumber.className = 'page-number';
                     pageNumber.textContent = `Página ${highlight.Page}`;
-                    
+
                     const highlightText = document.createElement('div');
                     highlightText.className = 'highlight-text';
                     highlightText.textContent = highlight.highlight;
-                    
+
                     card.appendChild(pageNumber);
                     card.appendChild(highlightText);
-                    
+
                     if (highlight.highlight_note && highlight.highlight_note.trim() !== '') {
                         const note = document.createElement('div');
                         note.className = 'note';
-                        
+
                         const noteTitle = document.createElement('div');
                         noteTitle.className = 'note-title';
                         noteTitle.textContent = 'Minha anotação:';
-                        
+
                         const noteContent = document.createElement('div');
                         noteContent.textContent = highlight.highlight_note;
-                        
+
                         note.appendChild(noteTitle);
                         note.appendChild(noteContent);
                         card.appendChild(note);
                     }
-                    
+
                     container.appendChild(card);
                 });
             }
 
             // Função de busca
-            searchInput.addEventListener('input', function() {
+            searchInput.addEventListener('input', function () {
                 const searchTerm = this.value.toLowerCase();
-                
+
                 if (!searchTerm) {
                     displayHighlights(highlightsData);
                     return;
                 }
-                
+
                 const filtered = highlightsData.filter(highlight => {
-                    const highlightText = highlight.highlight.toLowerCase().includes(searchTerm);
-                    const noteText = highlight.highlight_note ? highlight.highlight_note.toLowerCase().includes(searchTerm) : false;
+                    const highlightText = highlight.highlight.toLowerCase().includes(
+                    searchTerm);
+                    const noteText = highlight.highlight_note ? highlight.highlight_note
+                        .toLowerCase().includes(searchTerm) : false;
                     return highlightText || noteText;
                 });
-                
+
                 displayHighlights(filtered);
             });
 
             // Função de ordenação
-            sortBtn.addEventListener('click', function() {
+            sortBtn.addEventListener('click', function () {
                 if (currentSort === 'original') {
                     // Ordenar por página (ascendente)
-                    const sorted = [...highlightsData].sort((a, b) => parseInt(a.Page) - parseInt(b.Page));
+                    const sorted = [...highlightsData].sort((a, b) => parseInt(a.Page) - parseInt(b
+                        .Page));
                     displayHighlights(sorted);
                     currentSort = 'page-asc';
                     this.textContent = 'Ordenar original';
@@ -232,4 +233,5 @@
         });
     </script>
 </body>
+
 </html>
