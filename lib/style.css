@@ -817,68 +817,6 @@ img {
   /* Permite que os itens quebrem para a próxima linha */
 }
 
-/************************
-*************************
-*************************/
-
-/* Estilos para contêiner de tags. */
-/*.tags-container {
-  display: flex;
-  /* Usa flexbox */
-/*  flex-wrap: wrap;
-  /* Permite que as tags quebrem para a próxima linha */
-/*  gap: 0.3rem;
-  /* Espaçamento entre as tags */
-/*  margin-bottom: 1rem;
-  /* Margem inferior */
-/*}
-
-/* Estilos para tags individuais. */
-/*.tag {
-  font-size: var(--font-size-m);
-  /* Tamanho da fonte médio */
-/*  text-align: center;
-  /* Centraliza o texto */
-/*  cursor: pointer;
-  /* Cursor de ponteiro ao passar o mouse */
-/*  transition: all 0.2s ease;
-  /* Transição suave para todas as propriedades */
-/*  padding: 0.2em 1em;
-  /* Preenchimento interno */
-/*  border: 3px solid var(--foreground);
-  /* Borda sólida com cor de primeiro plano */
-/*  border-radius: 6px;
-  /* Cantos arredondados */
-/*}
-
-/* Efeito hover para tags. */
-/*.tag:hover {
-  background-color: var(--accent);
-  /* Cor de fundo da variável --accent */
-/*  color: black;
-  /* Cor do texto preta */
-/*  border-color: var(--accent);
-  /* Cor da borda da variável --accent */
-/*  text-decoration: underline;
-  /* Adiciona sublinhado */
-/*}
-
-/* Estilos para tags ativas. */
-/*.tag.active {
-  background-color: var(--accent);
-  /* Cor de fundo da variável --accent */
-/*  color: black;
-  /* Cor do texto preta */
-/*  text-decoration: underline;
-  /* Adiciona sublinhado */
-/*  border-color: var(--accent);
-  /* Cor da borda da variável --accent */
-/*}
-
-/************************
-*************************
-*************************/
-
 /* Estilos para o contêiner de artigos. */
 .articles-container {
   display: grid;
