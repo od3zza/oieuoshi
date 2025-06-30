@@ -22,8 +22,8 @@
 }
 
 .blog-tags-button:hover {
-    background-color: var(--foreground);
-    color: var(--accent);
+    background-color: #000;
+    color: #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
