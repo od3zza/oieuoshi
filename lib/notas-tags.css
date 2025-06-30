@@ -7,11 +7,15 @@
     width: fit-content;
     margin-bottom: 20px;
     padding: 0.8em 1.5em;
-    background-color: #fff;
     color: black;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+     border: 3px solid var(--foreground);
+  /* Borda sólida com cor de primeiro plano */
+  border-radius: 6px;
+  /* Cantos arredondados */
+  background: transparent;
+  /* Fundo transparente */
+  cursor: pointer;
+  /* Cursor de ponteiro ao passar o mouse */
     font-size: var(--font-size-m);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
