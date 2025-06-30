@@ -954,6 +954,18 @@ img {
   /* Cor de fundo rosa */
 }
 
+/* Estilos para destaques com fundo azul. */
+.highlight.blue {
+  background-color: var(--blue);
+  /* Cor de fundo amarela */
+}
+
+/* Estilos para destaques com fundo verde. */
+.highlight.green {
+  background-color: var(--green);
+  /* Cor de fundo rosa */
+}
+
 /* Estilos para o texto do destaque. */
 .highlight-text {
   margin-bottom: 0.5rem;
