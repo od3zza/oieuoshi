@@ -817,60 +817,118 @@ img {
   /* Permite que os itens quebrem para a próxima linha */
 }
 
-/* Estilos para contêiner de tags. */
-.tags-container {
-  display: flex;
-  /* Usa flexbox */
-  flex-wrap: wrap;
-  /* Permite que as tags quebrem para a próxima linha */
-  gap: 0.3rem;
-  /* Espaçamento entre as tags */
-  margin-bottom: 1rem;
-  /* Margem inferior */
+/*##############################################
+/*##############################################
+/*##############################################
+
+/* --- Estilos para o Botão "Tags" --- */
+.tags-button {
+    position: fixed; /* Pode ser 'fixed' ou 'absolute' dependendo da sua necessidade */
+    right: 20px;
+    top: 50%; /* Ou outra posição, ajuste conforme o design */
+    transform: translateY(-50%);
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    padding: 0.8em 1.5em;
+    background-color: var(--accent);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--font-size-m);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-/* Estilos para tags individuais. */
-.tag {
-  font-size: var(--font-size-m);
-  /* Tamanho da fonte médio */
-  text-align: center;
-  /* Centraliza o texto */
-  cursor: pointer;
-  /* Cursor de ponteiro ao passar o mouse */
-  transition: all 0.2s ease;
-  /* Transição suave para todas as propriedades */
-  padding: 0.2em 1em;
-  /* Preenchimento interno */
-  border: 3px solid var(--foreground);
-  /* Borda sólida com cor de primeiro plano */
-  border-radius: 6px;
-  /* Cantos arredondados */
+.tags-button:hover {
+    background-color: var(--foreground); /* Exemplo de hover */
+    color: var(--accent);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Efeito hover para tags. */
-.tag:hover {
-  background-color: var(--accent);
-  /* Cor de fundo da variável --accent */
-  color: black;
-  /* Cor do texto preta */
-  border-color: var(--accent);
-  /* Cor da borda da variável --accent */
-  text-decoration: underline;
-  /* Adiciona sublinhado */
+/* --- Estilos para o Painel Lateral (Sidebar) --- */
+.tags-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Esconde o painel fora da tela inicialmente */
+    width: 300px; /* Largura do painel */
+    height: 100%;
+    background-color: var(--background); /* Use a cor de fundo do seu site */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Maior que o botão para ficar por cima */
+    transition: right 0.3s ease-in-out; /* Transição para o movimento */
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    overflow-y: auto; /* Adiciona scroll se as tags ultrapassarem a altura */
+    border-left: 1px solid var(--foreground); /* Borda sutil */
 }
 
-/* Estilos para tags ativas. */
-.tag.active {
-  background-color: var(--accent);
-  /* Cor de fundo da variável --accent */
-  color: black;
-  /* Cor do texto preta */
-  text-decoration: underline;
-  /* Adiciona sublinhado */
-  border-color: var(--accent);
-  /* Cor da borda da variável --accent */
+.tags-sidebar.open {
+    right: 0; /* Move o painel para dentro da tela */
 }
 
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--foreground);
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    color: var(--foreground);
+    font-size: var(--font-size-l);
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--foreground);
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: var(--accent);
+}
+
+
+/* --- Estilos para a Lista de Tags dentro do Painel --- */
+.tags-list {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.tags-list li {
+    margin-bottom: 0.5rem; /* Espaçamento entre os itens da lista */
+}
+
+/* Reutilizando seus estilos existentes para as tags individuais */
+.tags-list .tag {
+    display: block; /* Para que a tag ocupe a largura total do item da lista */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    /* Seus estilos de .tag (font-size, padding, border, border-radius, etc.) */
+    font-size: var(--font-size-m);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0.4em 1.2em; /* Um pouco mais de padding para itens de lista */
+    border: 2px solid var(--foreground); /* Borda um pouco mais fina */
+    border-radius: 6px;
+    color: var(--foreground); /* Cor padrão da tag na lista */
+}
+
+.tags-list .tag:hover,
+.tags-list .tag.active {
+    background-color: var(--accent);
+    color: black;
+    text-decoration: underline;
+    border-color: var(--accent);
+}
 /* Estilos para o contêiner de artigos. */
 .articles-container {
   display: grid;
@@ -880,6 +938,10 @@ img {
   gap: 1.5rem;
   /* Espaçamento entre os itens do grid */
 }
+
+/*##############################################
+/*##############################################
+/*##############################################
 
 /* Estilos para cards de artigos. */
 .article-card {
