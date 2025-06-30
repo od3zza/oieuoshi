@@ -24,6 +24,12 @@
       type="text/css"
       media="screen, projection"
     />
+     <link
+      rel="stylesheet"
+      href="/lib/blog-tags.css"
+      type="text/css"
+      media="screen, projection"
+    />
 
     <script src="/lib/script.js" defer></script>
 
@@ -107,26 +113,23 @@ HEY U!   ( (  ;._ \\      -->
         <!-- Tags serão geradas dinamicamente pelo JavaScript 
       </div> -->
 
-<main>
-    <button id="open-tags-panel" class="tags-button">Tags</button>
-</main>
-      
       <!-- novo código -->
-<aside id="tags-sidebar" class="tags-sidebar">
-    <div class="sidebar-header">
+<button id="open-blog-tags-panel" class="blog-tags-button">Tags</button>
+
+<aside id="blog-tags-panel" class="blog-tags-panel">
+    <div class="blog-sidebar-header">
         <h2>Tags</h2>
-        <button id="close-tags-panel" class="close-button">&times;</button>
+        <button id="close-blog-tags-panel" class="blog-close-button">&times;</button>
     </div>
-    <ul id="tags-list" class="tags-list">
+    <ul id="blog-tags-list" class="blog-tags-list">
         </ul>
 </aside>
+
 <!-- novo código -->
 
-      
-      <div class="articles-container" id="articles-container">
-        <!-- Conteúdo será carregado dinamicamente -->
-        <div class="empty-state">Carregando artigos...</div>
-      </div>
+  <div class="articles-container" id="articles-container">
+    <div class="empty-state">Carregando artigos...</div>
+</div>
     </section>
     <hr />
 
