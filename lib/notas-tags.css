@@ -2,14 +2,13 @@
 
 /* Estilos para o Botão "Tags" */
 .blog-tags-button {
-    /* REMOVIDO: position: fixed, top, right, transform */
-    margin-left: auto; /* Empurra o botão para a direita dentro de um flex container */
-    display: block; /* Garante que o botão ocupe sua própria linha */
-    width: fit-content; /* Ajusta a largura ao conteúdo do botão */
-    margin-bottom: 20px; /* Adiciona um espaço abaixo do botão */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block;
+    width: fit-content;
+    margin-bottom: 20px;
 
     padding: 0.8em 1.5em;
-    background-color: var(--accent);
+    background-color: #000;
     color: black;
     border: none;
     border-radius: 8px;
@@ -29,7 +28,7 @@
 .blog-tags-panel {
     position: fixed;
     top: 0;
-    right: -300px; /* **ESSENCIAL: ESCONDE O PAINEL FORA DA TELA INICIALMENTE** */
+    right: -100vw; /* Use -100vw para garantir que ele esteja fora da tela */
     width: 300px;
     height: 100%;
     background-color: var(--background); /* Usa as variáveis de cor do seu CSS principal */
