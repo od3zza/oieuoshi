@@ -111,6 +111,48 @@
     </section>
     <hr />
 
+    <form id="formComentario">
+  <input type="text" id="nome" placeholder="Seu nome" required />
+  <textarea id="mensagem" placeholder="Deixe um comentário" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+<ul id="listaComentarios"></ul>
+
+<script>
+  const postagem = 'campo-comentarios-blog'; // slug da postagem
+  const API_URL = 'https://oieuoshi.vercel.app'; // Substitua se necessário
+
+  document.getElementById('formComentario').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const nome = document.getElementById('nome').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    await fetch(`${API_URL}/comentarios`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nome, mensagem, postagem }),
+    });
+
+    document.getElementById('formComentario').reset();
+    carregarComentarios();
+  });
+
+  async function carregarComentarios() {
+    const res = await fetch(`${API_URL}/comentarios/${postagem}`);
+    const comentarios = await res.json();
+
+    const lista = document.getElementById('listaComentarios');
+    lista.innerHTML = '';
+    comentarios.forEach(({ nome, mensagem, criado_em }) => {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${nome}</strong>: ${mensagem} <em>${new Date(criado_em).toLocaleString()}</em>`;
+      lista.appendChild(li);
+    });
+  }
+
+  carregarComentarios();
+</script>
 
   </body>
 </html>
