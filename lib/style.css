@@ -703,13 +703,13 @@ img {
 .footer {
   position: relative;
   /* Posição relativa */
-  padding-top: 30px;
+  padding-top: 5px;
   /* Preenchimento superior */
   margin-top: 5px;
   /* Margem superior */
-  bottom: 30px;
+  bottom: 5px;
   /* Distância do fundo (funciona melhor com position: absolute/fixed) */
-  height: 30px;
+  height: 0px;
   /* Altura do rodapé */
   width: 100%;
   /* Largura total */
