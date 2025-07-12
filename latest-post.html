@@ -77,82 +77,56 @@
     -->
 
     <!-- Sistema de Comentários -->
-        <section class="comments-section">
-            <!-- Formulário de comentários -->
-            <div class="comments-form">
-                <h3>Deixe seu comentário</h3>
-                <div id="message-area"></div>
-                <form id="comment-form">
-                    <div class="form-group">
-                        <label for="nome">Nome *</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="link">Website/Link (opcional)</label>
-                        <input type="url" id="link" name="link" placeholder="https://exemplo.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="comentario">Comentário *</label>
-                        <textarea id="comentario" name="comentario" required
-                            placeholder="Escreva seu comentário aqui..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Enviar Comentário</button>
-                </form>
-            </div>
-            <!-- Lista de comentários -->
-            <div class="comments-list">
-                <h3>Comentários</h3>
-                <div id="comments-container">
-                    <div class="loading">Carregando comentários...</div>
-                </div>
-            </div>
+      <section id="comments">
+  <h3>Comentários</h3>
+  <form id="comment-form">
+    <input type="text" name="name" placeholder="Seu nome" required />
+    <textarea name="content" placeholder="Seu comentário" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <ul id="comments-list"></ul>
+</section>
+
+<script>
+  const slug = window.location.pathname.replace(/^\/|\/$/g, '');
+
+  async function loadComments() {
+    const res = await fetch(`/api/get-comments?slug=${slug}`);
+    const comments = await res.json();
+    const list = document.getElementById('comments-list');
+    list.innerHTML = '';
+    comments.forEach(c => {
+      const item = document.createElement('li');
+      item.innerHTML = `<strong>${c.name}</strong>: ${c.content}`;
+      list.appendChild(item);
+    });
+  }
+
+  document.getElementById('comment-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const form = e.target;
+    await fetch('/api/post-comment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: form.name.value,
+        content: form.content.value,
+        slug,
+      }),
+    });
+    form.reset();
+    loadComments();
+  });
+
+  loadComments();
+</script>
+
         </section>
 
     </section>
     <hr />
 
-    <form id="formComentario">
-  <input type="text" id="nome" placeholder="Seu nome" required />
-  <textarea id="mensagem" placeholder="Deixe um comentário" required></textarea>
-  <button type="submit">Enviar</button>
-</form>
-
-<ul id="listaComentarios"></ul>
-
-<script>
-  const postagem = 'campo-comentarios-blog'; // slug da postagem
-  const API_URL = 'https://oieuoshi.vercel.app'; // Substitua se necessário
-
-  document.getElementById('formComentario').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const nome = document.getElementById('nome').value;
-    const mensagem = document.getElementById('mensagem').value;
-
-    await fetch(`${API_URL}/comentarios`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nome, mensagem, postagem }),
-    });
-
-    document.getElementById('formComentario').reset();
-    carregarComentarios();
-  });
-
-  async function carregarComentarios() {
-    const res = await fetch(`${API_URL}/comentarios/${postagem}`);
-    const comentarios = await res.json();
-
-    const lista = document.getElementById('listaComentarios');
-    lista.innerHTML = '';
-    comentarios.forEach(({ nome, mensagem, criado_em }) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${nome}</strong>: ${mensagem} <em>${new Date(criado_em).toLocaleString()}</em>`;
-      lista.appendChild(li);
-    });
-  }
-
-  carregarComentarios();
-</script>
+  
 
   </body>
 </html>
