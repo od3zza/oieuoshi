@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="[http://www.w3.org/1999/xhtml](http://www.w3.org/1999/xhtml)" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>🪴 Notas - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Designer multidisciplinar e filmmaker apaixonado por processos criativos e experimentais." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; line-height: 1.6; color: #333; }
+        .main { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .article-card { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .article-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
+        .article-title a { font-size: 1.5em; font-weight: bold; text-decoration: none; color: #007BFF; }
+        .article-date { color: #666; font-size: 0.9em; }
+        .article-comment { font-style: italic; color: #555; border-left: 3px solid #007BFF; padding-left: 10px; margin-top: 10px; }
+        .highlight-list { list-style: none; padding: 0; margin-top: 15px; }
+        .highlight-item { background: #fff7e6; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .highlight-text { font-weight: bold; color: #e6a200; }
+        .tags-list { list-style: none; padding: 0; margin-top: 10px; }
+        .tag-item { display: inline-block; background: #eee; border-radius: 12px; padding: 5px 10px; font-size: 0.8em; color: #666; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <h1>🪴 Notas</h1>
+        <p>Eu nunca aprendi a surfar no mar, mas amo as ondas da internet 😊. E como um bom apaixonado por fazer marcações em textos pela web, tentei organizar eles para que você possa acompanhar o que eu ando explorando, ou você também pode acompanhar no meu <a href="[https://glasp.co/oieuoshi](https://glasp.co/oieuoshi)">Glasp</a>. Abaixo, você pode navegar pelas tags para ver os links que tenho coletado.</p>
+        <hr />
+        <div id="articles-container">
+            <p>Carregando artigos...</p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('articles-container');
+            
+            async function fetchHighlights() {
+                try {
+                    const response = await fetch('highlights.json');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+                    renderHighlights(data);
+                } catch (error) {
+                    console.error('Erro ao buscar highlights:', error);
+                    container.innerHTML = '<p>Não foi possível carregar os destaques.</p>';
+                }
+            }
+
+            function renderHighlights(highlights) {
+                container.innerHTML = '';
+                if (highlights.length === 0) {
+                    container.innerHTML = '<p>Nenhum destaque encontrado.</p>';
+                    return;
+                }
+
+                highlights.forEach(article => {
+                    const articleCard = document.createElement('div');
+                    articleCard.className = 'article-card';
+                    
+                    const highlightsHtml = article.highlights.map(h => `
+                        <li class="highlight-item">
+                            <span class="highlight-text">${h.highlight}</span>
+                        </li>
+                    `).join('');
+
+                    const tagsHtml = article.tags.map(tag => `
+                        <li class="tag-item">${tag}</li>
+                    `).join('');
+
+                    articleCard.innerHTML = `
+                        <div class="article-header">
+                            <h2 class="article-title"><a href="${article.url}" target="_blank">${article.title}</a></h2>
+                            <span class="article-date">${article.date}</span>
+                        </div>
+                        ${article.page_comment ? `<p class="article-comment">${article.page_comment}</p>` : ''}
+                        <ul class="highlight-list">${highlightsHtml}</ul>
+                        ${article.tags.length > 0 ? `<ul class="tags-list">${tagsHtml}</ul>` : ''}
+                    `;
+                    
+                    container.appendChild(articleCard);
+                });
+            }
+
+            fetchHighlights();
+        });
+    </script>
+</body>
+</html>
