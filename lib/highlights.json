@@ -1,24 +1,5 @@
 [
-  {
-    "date": "2025-08-01",
-    "title": "One Cyberpunk 2077 Theory May Explain The Game's Most Mysterious Character",
-    "url": "https://screenrant.com/cyberpunk-2077-zen-master-true-identity-netrunner-theory/",
-    "thumbnail": "",
-    "tags": [
-      "Cyberpunk 2077",
-      "games"
-    ],
-    "summary": "",
-    "page_comment": "Página ScreenRant",
-    "highlights": [
-      {
-        "highlight": "Each time V encounters the Zen Master, they help them with another meditative braindance before mysteriously vanishing. The final interaction with the Zen Master sees them disappear forever, making them yet another aspect of Cyberpunk 2077 that makes no sense. However, there are plenty of theories surrounding who the Zen Master could be, several of which are very compelling.",
-        "color": "Yellow",
-        "highlight_note": "Essa teoria pode ser verdade?"
-      }
-    ]
-  },
-  {
+ {
     "date": "2025-07-30",
     "title": "Vibe Coding: The Revolutionary Approach Transforming Software Development",
     "url": "https://itrevolution.com/articles/vibe-coding-the-revolutionary-approach-transforming-software-development/",
@@ -31,6 +12,8 @@
         "highlight": "At its core, vibe coding represents a fundamental shift in the developer-machine relationship. Rather than manually crafting every line yourself, you collaborate with AI that generates the actual code implementation. This extends beyond just writing functionsâit encompasses the entire software creation life cycle, where AI becomes your partner in brainstorming architecture, researching solutions, implementing features, crafting tests, and hardening security.",
         "color": "Blue",
         "highlight_note": ""
+      }
+    ]
       },
       {
         "highlight": "Vibe coding fundamentally changes the relationship between developers and machines. Rather than manually crafting every line of code by hand, developers collaborate with AI to generate the actual code",
