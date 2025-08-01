@@ -1,90 +1,572 @@
 <!DOCTYPE html>
-<html xmlns="[http://www.w3.org/1999/xhtml](http://www.w3.org/1999/xhtml)" xml:lang="pt" lang="pt-BR">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
     <meta charset="utf-8" />
     <title>🪴 Notas - Uoshi</title>
     <meta name="author" content="Uoshi" />
-    <meta name="description" content="Designer multidisciplinar e filmmaker apaixonado por processos criativos e experimentais." />
+    <meta
+      name="description"
+      content="Designer multidisciplinar e filmmaker apaixonado por processos criativos e experimentais."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body { font-family: sans-serif; background-color: #f4f4f4; line-height: 1.6; color: #333; }
-        .main { max-width: 900px; margin: 0 auto; padding: 20px; }
-        .article-card { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .article-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
-        .article-title a { font-size: 1.5em; font-weight: bold; text-decoration: none; color: #007BFF; }
-        .article-date { color: #666; font-size: 0.9em; }
-        .article-comment { font-style: italic; color: #555; border-left: 3px solid #007BFF; padding-left: 10px; margin-top: 10px; }
-        .highlight-list { list-style: none; padding: 0; margin-top: 15px; }
-        .highlight-item { background: #fff7e6; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
-        .highlight-text { font-weight: bold; color: #e6a200; }
-        .tags-list { list-style: none; padding: 0; margin-top: 10px; }
-        .tag-item { display: inline-block; background: #eee; border-radius: 12px; padding: 5px 10px; font-size: 0.8em; color: #666; margin-right: 5px; }
-    </style>
-</head>
-<body>
-    <section class="main">
-        <h1>🪴 Notas</h1>
-        <p>Eu nunca aprendi a surfar no mar, mas amo as ondas da internet 😊. E como um bom apaixonado por fazer marcações em textos pela web, tentei organizar eles para que você possa acompanhar o que eu ando explorando, ou você também pode acompanhar no meu <a href="[https://glasp.co/oieuoshi](https://glasp.co/oieuoshi)">Glasp</a>. Abaixo, você pode navegar pelas tags para ver os links que tenho coletado.</p>
-        <hr />
-        <div id="articles-container">
-            <p>Carregando artigos...</p>
-        </div>
-    </section>
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Libs -->
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Ícone -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const container = document.getElementById('articles-container');
-            
-            async function fetchHighlights() {
-                try {
-                    const response = await fetch('highlights.json');
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    const data = await response.json();
-                    renderHighlights(data);
-                } catch (error) {
-                    console.error('Erro ao buscar highlights:', error);
-                    container.innerHTML = '<p>Não foi possível carregar os destaques.</p>';
-                }
-            }
-
-            function renderHighlights(highlights) {
-                container.innerHTML = '';
-                if (highlights.length === 0) {
-                    container.innerHTML = '<p>Nenhum destaque encontrado.</p>';
-                    return;
-                }
-
-                highlights.forEach(article => {
-                    const articleCard = document.createElement('div');
-                    articleCard.className = 'article-card';
-                    
-                    const highlightsHtml = article.highlights.map(h => `
-                        <li class="highlight-item">
-                            <span class="highlight-text">${h.highlight}</span>
-                        </li>
-                    `).join('');
-
-                    const tagsHtml = article.tags.map(tag => `
-                        <li class="tag-item">${tag}</li>
-                    `).join('');
-
-                    articleCard.innerHTML = `
-                        <div class="article-header">
-                            <h2 class="article-title"><a href="${article.url}" target="_blank">${article.title}</a></h2>
-                            <span class="article-date">${article.date}</span>
-                        </div>
-                        ${article.page_comment ? `<p class="article-comment">${article.page_comment}</p>` : ''}
-                        <ul class="highlight-list">${highlightsHtml}</ul>
-                        ${article.tags.length > 0 ? `<ul class="tags-list">${tagsHtml}</ul>` : ''}
-                    `;
-                    
-                    container.appendChild(articleCard);
-                });
-            }
-
-            fetchHighlights();
-        });
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-HZNDKKGKW8");
     </script>
-</body>
+    
+    <!-- SSL Protocol Config -->
+    <script>
+      if (location.protocol != "https:") {
+        location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+
+    <style>
+      /* Estilos específicos para highlights mantendo o minimalismo */
+      .highlight-item {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      .highlight-item:last-child {
+        border-bottom: none;
+      }
+
+      .article-meta {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+      }
+
+      .article-title {
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .article-title:hover {
+        text-decoration: underline;
+      }
+
+      .article-url {
+        font-size: 0.8rem;
+        color: #999;
+        word-break: break-all;
+      }
+
+      .page-comment {
+        font-style: italic;
+        color: #444;
+        margin: 1rem 0;
+        padding: 0.5rem 0;
+        border-left: 3px solid #f0f0f0;
+        padding-left: 1rem;
+      }
+
+      .highlights-list {
+        margin-top: 1rem;
+      }
+
+      .highlight {
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .highlight-text {
+        background: rgba(255, 255, 0, 0.1);
+        padding: 0.5rem;
+        border-radius: 3px;
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+        border-left: 3px solid #ffd700;
+      }
+
+      .highlight-text.green {
+        background: rgba(72, 187, 120, 0.1);
+        border-left-color: #48bb78;
+      }
+
+      .highlight-text.blue {
+        background: rgba(66, 153, 225, 0.1);
+        border-left-color: #4299e1;
+      }
+
+      .highlight-text.red {
+        background: rgba(245, 101, 101, 0.1);
+        border-left-color: #f56565;
+      }
+
+      .highlight-text.pink {
+        background: rgba(237, 100, 166, 0.1);
+        border-left-color: #ed64a6;
+      }
+
+      .highlight-note {
+        font-size: 0.9rem;
+        color: #555;
+        font-style: italic;
+        margin-left: 1rem;
+        position: relative;
+      }
+
+      .highlight-note:before {
+        content: "💭 ";
+        margin-right: 0.5rem;
+      }
+
+      .tags {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .tag {
+        background: #f5f5f5;
+        color: #333;
+        padding: 0.2rem 0.5rem;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .tag:hover {
+        background: #e0e0e0;
+        border-color: #bbb;
+      }
+
+      .tag.active {
+        background: #000;
+        color: #fff;
+        border-color: #000;
+      }
+
+      .search-container {
+        margin-bottom: 2rem;
+        position: relative;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-family: inherit;
+      }
+
+      .search-input:focus {
+        outline: none;
+        border-color: #000;
+      }
+
+      .filters {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .filter-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .filter-group label {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      .filter-select {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        font-family: inherit;
+      }
+
+      .stats {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: #f9f9f9;
+        border-radius: 4px;
+      }
+
+      .loading {
+        text-align: center;
+        padding: 3rem;
+        color: #666;
+      }
+
+      .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: #666;
+      }
+
+      .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: #000;
+        color: white;
+        padding: 0.8rem;
+        border-radius: 50%;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 100;
+      }
+
+      .back-to-top.visible {
+        opacity: 1;
+      }
+
+      /* Responsivo */
+      @media (max-width: 768px) {
+        .filters {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .filter-group {
+          justify-content: space-between;
+        }
+
+        .article-url {
+          font-size: 0.7rem;
+        }
+
+        .tags {
+          gap: 0.3rem;
+        }
+
+        .tag {
+          font-size: 0.7rem;
+          padding: 0.1rem 0.4rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/">← início</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main">
+      <h1>🪴 Notas</h1>
+
+      <p>
+        Eu nunca aprendi a surfar no mar, mas amo as ondas da internet 😊. E como um
+        bom apaixonado por fazer marcações em textos pela web, tentei organizar
+        eles para que você possa acompanhar o que eu ando explorando, ou você
+        também pode acompanhar no meu
+        <a href="https://glasp.co/oieuoshi">Glasp</a>. Abaixo, você pode navegar
+        pelos highlights organizados por artigo.
+      </p>
+
+      <hr />
+
+      <!-- Search and Filters -->
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Buscar por texto, título ou tag..."
+        >
+      </div>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label for="date-filter">Período:</label>
+          <select id="date-filter" class="filter-select">
+            <option value="all">Todos</option>
+            <option value="week">Última semana</option>
+            <option value="month">Último mês</option>
+            <option value="3months">Últimos 3 meses</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="color-filter">Cor:</label>
+          <select id="color-filter" class="filter-select">
+            <option value="all">Todas</option>
+            <option value="Yellow">Amarelo</option>
+            <option value="Green">Verde</option>
+            <option value="Blue">Azul</option>
+            <option value="Red">Vermelho</option>
+            <option value="Pink">Rosa</option>
+          </select>
+        </div>
+
+        <button id="clear-filters" style="padding: 0.5rem 1rem; background: #f5f5f5; border: 1px solid #ddd; border-radius: 3px; cursor: pointer;">
+          Limpar Filtros
+        </button>
+      </div>
+
+      <!-- Stats -->
+      <div id="stats" class="stats">
+        <div id="loading" class="loading">Carregando highlights...</div>
+      </div>
+
+      <!-- Highlights Container -->
+      <div id="highlights-container">
+        <!-- Highlights serão carregados aqui via JavaScript -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="empty-state" style="display: none;">
+        <div style="font-size: 2rem; margin-bottom: 1rem;">📚</div>
+        <p>Nenhum highlight encontrado com os filtros aplicados.</p>
+      </div>
+    </section>
+
+    <hr />
+    <section class="footer"></section>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" class="back-to-top">↑</a>
+
+    <script>
+      // Variáveis globais
+      let allHighlights = [];
+      let filteredHighlights = [];
+      let allTags = new Set();
+
+      // Elementos DOM
+      const searchInput = document.getElementById('search-input');
+      const dateFilter = document.getElementById('date-filter');
+      const colorFilter = document.getElementById('color-filter');
+      const clearFiltersBtn = document.getElementById('clear-filters');
+      const statsDiv = document.getElementById('stats');
+      const highlightsContainer = document.getElementById('highlights-container');
+      const emptyState = document.getElementById('empty-state');
+      const backToTop = document.getElementById('back-to-top');
+      const loadingDiv = document.getElementById('loading');
+
+      // Carregar dados
+      async function loadHighlights() {
+        try {
+          const response = await fetch('/lib/highlights.json');
+          if (!response.ok) throw new Error('Arquivo não encontrado');
+          
+          allHighlights = await response.json();
+          filteredHighlights = [...allHighlights];
+          
+          // Extrair todas as tags
+          allHighlights.forEach(item => {
+            if (item.tags) {
+              item.tags.forEach(tag => allTags.add(tag));
+            }
+          });
+
+          updateStats();
+          renderHighlights();
+          loadingDiv.style.display = 'none';
+          
+        } catch (error) {
+          loadingDiv.innerHTML = `❌ Erro ao carregar highlights: ${error.message}`;
+        }
+      }
+
+      // Atualizar estatísticas
+      function updateStats() {
+        const totalArticles = filteredHighlights.length;
+        const totalHighlights = filteredHighlights.reduce((sum, item) => sum + (item.highlights?.length || 0), 0);
+        const totalTags = allTags.size;
+
+        statsDiv.innerHTML = `
+          📊 <strong>${totalArticles}</strong> artigos • 
+          <strong>${totalHighlights}</strong> highlights • 
+          <strong>${totalTags}</strong> tags únicas
+        `;
+      }
+
+      // Renderizar highlights
+      function renderHighlights() {
+        if (filteredHighlights.length === 0) {
+          highlightsContainer.innerHTML = '';
+          emptyState.style.display = 'block';
+          return;
+        }
+
+        emptyState.style.display = 'none';
+        
+        const html = filteredHighlights.map(item => {
+          const date = new Date(item.date).toLocaleDateString('pt-BR');
+          const highlightsHtml = item.highlights?.map(highlight => `
+            <div class="highlight">
+              <div class="highlight-text ${highlight.color.toLowerCase()}">
+                ${highlight.highlight}
+              </div>
+              ${highlight.highlight_note ? `<div class="highlight-note">${highlight.highlight_note}</div>` : ''}
+            </div>
+          `).join('') || '';
+
+          const tagsHtml = item.tags?.length ? `
+            <div class="tags">
+              ${item.tags.map(tag => `<span class="tag" onclick="filterByTag('${tag}')">${tag}</span>`).join('')}
+            </div>
+          ` : '';
+
+          return `
+            <article class="highlight-item">
+              <div class="article-meta">
+                <a href="${item.url}" target="_blank" class="article-title">${item.title}</a>
+                <div class="article-url">${item.url}</div>
+                <div style="margin-top: 0.5rem; color: #888; font-size: 0.8rem;">📅 ${date}</div>
+              </div>
+              
+              ${item.page_comment ? `<div class="page-comment">${item.page_comment}</div>` : ''}
+              
+              <div class="highlights-list">
+                ${highlightsHtml}
+              </div>
+              
+              ${tagsHtml}
+            </article>
+          `;
+        }).join('');
+
+        highlightsContainer.innerHTML = html;
+      }
+
+      // Filtros
+      function applyFilters() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const dateFilterValue = dateFilter.value;
+        const colorFilterValue = colorFilter.value;
+
+        filteredHighlights = allHighlights.filter(item => {
+          // Filtro de busca
+          if (searchTerm) {
+            const searchMatch = 
+              item.title.toLowerCase().includes(searchTerm) ||
+              item.highlights?.some(h => 
+                h.highlight.toLowerCase().includes(searchTerm) ||
+                h.highlight_note?.toLowerCase().includes(searchTerm)
+              ) ||
+              item.tags?.some(tag => tag.toLowerCase().includes(searchTerm)) ||
+              item.page_comment?.toLowerCase().includes(searchTerm);
+            
+            if (!searchMatch) return false;
+          }
+
+          // Filtro de data
+          if (dateFilterValue !== 'all') {
+            const itemDate = new Date(item.date);
+            const now = new Date();
+            const diffTime = now - itemDate;
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+            switch (dateFilterValue) {
+              case 'week':
+                if (diffDays > 7) return false;
+                break;
+              case 'month':
+                if (diffDays > 30) return false;
+                break;
+              case '3months':
+                if (diffDays > 90) return false;
+                break;
+            }
+          }
+
+          // Filtro de cor
+          if (colorFilterValue !== 'all') {
+            const hasColor = item.highlights?.some(h => h.color === colorFilterValue);
+            if (!hasColor) return false;
+          }
+
+          return true;
+        });
+
+        updateStats();
+        renderHighlights();
+      }
+
+      // Filtrar por tag
+      function filterByTag(tag) {
+        searchInput.value = tag;
+        applyFilters();
+        searchInput.focus();
+      }
+
+      // Limpar filtros
+      function clearFilters() {
+        searchInput.value = '';
+        dateFilter.value = 'all';
+        colorFilter.value = 'all';
+        applyFilters();
+      }
+
+      // Back to top
+      function toggleBackToTop() {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      }
+
+      // Event listeners
+      searchInput.addEventListener('input', applyFilters);
+      dateFilter.addEventListener('change', applyFilters);
+      colorFilter.addEventListener('change', applyFilters);
+      clearFiltersBtn.addEventListener('click', clearFilters);
+      window.addEventListener('scroll', toggleBackToTop);
+      
+      backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Inicializar
+      loadHighlights();
+    </script>
+  </body>
 </html>
