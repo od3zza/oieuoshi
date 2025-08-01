@@ -90,6 +90,127 @@
         padding-left: 1rem;
       }
 
+      .highlight-header {
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+
+.highlight-item:first-child .highlight-header {
+  border-top: none;
+}
+
+.tags {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.article-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+.toggle-btn {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background: #e6e6e6;
+}
+
+.highlight-body {
+  padding: 1rem 0;
+}
+
+.highlight-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+  background: #fff;
+}
+
+.highlight-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  position: relative;
+}
+
+.card-favicon img {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-badge {
+  font-size: 0.8rem;
+  color: #888;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.tags {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.article-url {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.article-date {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.highlight-body {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.hide-btn {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hide-btn:hover {
+  background: #e0e0e0;
+}
+
+
       .highlights-list {
         margin-top: 1rem;
       }
@@ -219,7 +340,7 @@
       .stats {
         font-size: 0.9rem;
         color: #666;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         padding: 1rem;
         background: #f9f9f9;
         border-radius: 4px;
@@ -319,35 +440,7 @@
           placeholder="Buscar por texto, título ou tag..."
         >
       </div>
-
-      <div class="filters">
-        <div class="filter-group">
-          <label for="date-filter">Período:</label>
-          <select id="date-filter" class="filter-select">
-            <option value="all">Todos</option>
-            <option value="week">Última semana</option>
-            <option value="month">Último mês</option>
-            <option value="3months">Últimos 3 meses</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="color-filter">Cor:</label>
-          <select id="color-filter" class="filter-select">
-            <option value="all">Todas</option>
-            <option value="Yellow">Amarelo</option>
-            <option value="Green">Verde</option>
-            <option value="Blue">Azul</option>
-            <option value="Red">Vermelho</option>
-            <option value="Pink">Rosa</option>
-          </select>
-        </div>
-
-        <button id="clear-filters" style="padding: 0.5rem 1rem; background: #f5f5f5; border: 1px solid #ddd; border-radius: 3px; cursor: pointer;">
-          Limpar Filtros
-        </button>
-      </div>
-
+      
       <!-- Stats -->
       <div id="stats" class="stats">
         <div id="loading" class="loading">Carregando highlights...</div>
@@ -379,8 +472,6 @@
 
       // Elementos DOM
       const searchInput = document.getElementById('search-input');
-      const dateFilter = document.getElementById('date-filter');
-      const colorFilter = document.getElementById('color-filter');
       const clearFiltersBtn = document.getElementById('clear-filters');
       const statsDiv = document.getElementById('stats');
       const highlightsContainer = document.getElementById('highlights-container');
@@ -426,62 +517,92 @@
         `;
       }
 
-      // Renderizar highlights
-      function renderHighlights() {
-        if (filteredHighlights.length === 0) {
-          highlightsContainer.innerHTML = '';
-          emptyState.style.display = 'block';
-          return;
-        }
+ 
+ function renderHighlights() {
+  if (filteredHighlights.length === 0) {
+    highlightsContainer.innerHTML = '';
+    emptyState.style.display = 'block';
+    return;
+  }
 
-        emptyState.style.display = 'none';
-        
-        const html = filteredHighlights.map(item => {
-          const date = new Date(item.date).toLocaleDateString('pt-BR');
-          const highlightsHtml = item.highlights?.map(highlight => `
-            <div class="highlight">
-              <div class="highlight-text ${highlight.color.toLowerCase()}">
-                ${highlight.highlight}
-              </div>
-              ${highlight.highlight_note ? `<div class="highlight-note">${highlight.highlight_note}</div>` : ''}
-            </div>
-          `).join('') || '';
+  emptyState.style.display = 'none';
 
-          const tagsHtml = item.tags?.length ? `
-            <div class="tags">
-              ${item.tags.map(tag => `<span class="tag" onclick="filterByTag('${tag}')">${tag}</span>`).join('')}
-            </div>
-          ` : '';
+  const html = filteredHighlights.map((item, index) => {
+    const date = new Date(item.date).toLocaleDateString('pt-BR');
+    const hostname = new URL(item.url).hostname;
+    const favicon = `https://www.google.com/s2/favicons?domain=${hostname}&sz=64`;
+    const highlightCount = item.highlights?.length || 0;
 
-          return `
-            <article class="highlight-item">
-              <div class="article-meta">
-                <a href="${item.url}" target="_blank" class="article-title">${item.title}</a>
-                <div class="article-url">${item.url}</div>
-                <div style="margin-top: 0.5rem; color: #888; font-size: 0.8rem;">📅 ${date}</div>
-              </div>
-              
-              ${item.page_comment ? `<div class="page-comment">${item.page_comment}</div>` : ''}
-              
-              <div class="highlights-list">
-                ${highlightsHtml}
-              </div>
-              
-              ${tagsHtml}
-            </article>
-          `;
-        }).join('');
+    const highlightsHtml = item.highlights?.map(highlight => `
+      <div class="highlight">
+        <div class="highlight-text ${highlight.color.toLowerCase()}">
+          ${highlight.highlight}
+        </div>
+        ${highlight.highlight_note ? `<div class="highlight-note">${highlight.highlight_note}</div>` : ''}
+      </div>
+    `).join('') || '';
 
-        highlightsContainer.innerHTML = html;
-      }
+    const tagsHtml = item.tags?.length ? `
+      <div class="tags">
+        ${item.tags.map(tag => `
+          <span class="tag" onclick="event.stopPropagation(); filterByTag('${tag}')">${tag}</span>
+        `).join('')}
+      </div>
+    ` : '';
+
+    return `
+      <article class="highlight-card" onclick="toggleHighlight(${index})">
+        <div class="card-content">
+          <div class="card-favicon">
+            <img src="${favicon}" alt="favicon">
+          </div>
+          <div class="card-info">
+            <a href="${item.url}" target="_blank" class="article-title" onclick="event.stopPropagation();">${item.title}</a>
+            <div class="article-url">${hostname}</div>
+            ${tagsHtml}
+            <div class="article-date">📅 ${date}</div>
+          </div>
+          <div class="card-badge">
+            <span title="${highlightCount} notas">🟡 ${highlightCount}</span>
+          </div>
+        </div>
+
+        <div class="highlight-body" id="highlight-body-${index}" style="display: none;" onclick="event.stopPropagation();">
+          ${item.page_comment ? `<div class="page-comment">${item.page_comment}</div>` : ''}
+          <div class="highlights-list">${highlightsHtml}</div>
+          <button class="hide-btn" onclick="hideHighlight(${index})">Esconder notas</button>
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  highlightsContainer.innerHTML = html;
+}
+
+
+function toggleHighlight(index) {
+  const body = document.getElementById(`highlight-body-${index}`);
+  if (body) {
+    const isOpen = body.style.display === 'block';
+    body.style.display = isOpen ? 'none' : 'block';
+  }
+}
+
+function hideHighlight(index) {
+  const body = document.getElementById(`highlight-body-${index}`);
+  if (body) body.style.display = 'none';
+}
+
+
+
+
 
       // Filtros
       function applyFilters() {
         const searchTerm = searchInput.value.toLowerCase();
-        const dateFilterValue = dateFilter.value;
-        const colorFilterValue = colorFilter.value;
 
         filteredHighlights = allHighlights.filter(item => {
+         
           // Filtro de busca
           if (searchTerm) {
             const searchMatch = 
@@ -495,34 +616,7 @@
             
             if (!searchMatch) return false;
           }
-
-          // Filtro de data
-          if (dateFilterValue !== 'all') {
-            const itemDate = new Date(item.date);
-            const now = new Date();
-            const diffTime = now - itemDate;
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-            switch (dateFilterValue) {
-              case 'week':
-                if (diffDays > 7) return false;
-                break;
-              case 'month':
-                if (diffDays > 30) return false;
-                break;
-              case '3months':
-                if (diffDays > 90) return false;
-                break;
-            }
-          }
-
-          // Filtro de cor
-          if (colorFilterValue !== 'all') {
-            const hasColor = item.highlights?.some(h => h.color === colorFilterValue);
-            if (!hasColor) return false;
-          }
-
-          return true;
+         return true;
         });
 
         updateStats();
@@ -536,15 +630,7 @@
         searchInput.focus();
       }
 
-      // Limpar filtros
-      function clearFilters() {
-        searchInput.value = '';
-        dateFilter.value = 'all';
-        colorFilter.value = 'all';
-        applyFilters();
-      }
-
-      // Back to top
+          // Back to top
       function toggleBackToTop() {
         if (window.scrollY > 300) {
           backToTop.classList.add('visible');
@@ -555,9 +641,6 @@
 
       // Event listeners
       searchInput.addEventListener('input', applyFilters);
-      dateFilter.addEventListener('change', applyFilters);
-      colorFilter.addEventListener('change', applyFilters);
-      clearFiltersBtn.addEventListener('click', clearFilters);
       window.addEventListener('scroll', toggleBackToTop);
       
       backToTop.addEventListener('click', (e) => {
