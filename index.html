@@ -54,10 +54,10 @@
 
     <!-- SSL Protocol Config -->
     <script>
-      if (location.protocol != "https:") {
+      if (location.protocol !== "https:" && location.hostname !== "localhost") {
         location.href =
           "https:" +
-          window.location.href.substring(window.location.protocol.length)
+          window.location.href.substring(window.location.protocol.length);
       }
     </script>
     <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />

@@ -1,0 +1,17 @@
+{
+  "name": "Uoshi",
+  "short_name": "Uoshi",
+  "description": "Jardim digital e caótico de um designer multidisciplinar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
