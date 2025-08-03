@@ -1,0 +1,66 @@
+# Addon
+
+# .htaccess para o sistema de comentários
+
+# Permitir execução do PHP
+<Files "comments.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Proteger arquivos JSON de acesso direto
+<Files "comments.json">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "rate_limit.json">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "comments_errors.log">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "comments.json.backup">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Headers CORS para API
+<IfModule mod_headers.c>
+    <Files "comments.php">
+        Header always set Access-Control-Allow-Origin "*"
+        Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        Header always set Access-Control-Allow-Headers "Content-Type, Accept, Origin, X-Requested-With"
+        Header always set Access-Control-Max-Age "3600"
+    </Files>
+</IfModule>
+
+# Configurações de segurança
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Bloquear tentativas de acesso a arquivos sensíveis via URL
+    RewriteRule ^comments\.json$ - [F,L]
+    RewriteRule ^rate_limit\.json$ - [F,L]
+    RewriteRule ^.*\.log$ - [F,L]
+    RewriteRule ^.*\.backup$ - [F,L]
+</IfModule>
+
+# Configurações PHP para o arquivo de comentários
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 2M
+    php_value post_max_size 2M
+    php_value max_execution_time 30
+    php_value max_input_time 30
+</IfModule>
+
+<IfModule mod_php8.c>
+    php_value upload_max_filesize 2M
+    php_value post_max_size 2M
+    php_value max_execution_time 30
+    php_value max_input_time 30
+</IfModule>
