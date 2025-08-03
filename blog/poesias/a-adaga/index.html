@@ -132,13 +132,17 @@ HEY U!   ( (  ;._ \\      -->
   
 </section>
 
- <script>
+  
+
+    <script>
         class CommentsSystem {
             constructor(apiUrl, categoria, titulo) {
                 this.apiUrl = apiUrl;
                 this.categoria = categoria;
                 this.titulo = titulo;
                 this.container = document.getElementById('comments-section');
+                this.retryCount = 0;
+                this.maxRetries = 3;
                 
                 this.init();
             }
@@ -190,17 +194,51 @@ HEY U!   ( (  ;._ \\      -->
 
             async loadComments() {
                 try {
-                    const response = await fetch(`${this.apiUrl}?categoria=${encodeURIComponent(this.categoria)}&titulo=${encodeURIComponent(this.titulo)}`);
+                    const response = await fetch(`${this.apiUrl}?categoria=${encodeURIComponent(this.categoria)}&titulo=${encodeURIComponent(this.titulo)}`, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        credentials: 'same-origin'
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
+                    const contentType = response.headers.get('content-type');
+                    if (!contentType || !contentType.includes('application/json')) {
+                        throw new Error('Resposta não é JSON válido');
+                    }
+                    
                     const data = await response.json();
                     
                     if (data.success) {
                         this.renderComments(data.comments, data.total);
+                        this.retryCount = 0; // Reset retry count on success
                     } else {
-                        this.showError('Erro ao carregar comentários');
+                        throw new Error(data.error || 'Erro desconhecido ao carregar comentários');
                     }
                 } catch (error) {
-                    console.error('Erro:', error);
-                    this.showError('Erro ao conectar com o servidor');
+                    console.error('Erro ao carregar comentários:', error);
+                    
+                    if (this.retryCount < this.maxRetries) {
+                        this.retryCount++;
+                        console.log(`Tentativa ${this.retryCount}/${this.maxRetries} em 2 segundos...`);
+                        setTimeout(() => this.loadComments(), 2000);
+                        return;
+                    }
+                    
+                    this.showError(`Erro ao carregar comentários: ${error.message}`);
+                    document.getElementById('comments-list').innerHTML = `
+                        <div class="error-message">
+                            Não foi possível carregar os comentários. 
+                            <button onclick="location.reload()" style="margin-left: 10px; padding: 5px 10px; cursor: pointer;">
+                                Tentar novamente
+                            </button>
+                        </div>
+                    `;
                 }
             }
 
@@ -211,8 +249,24 @@ HEY U!   ( (  ;._ \\      -->
                 const link = document.getElementById('link').value.trim();
                 const comentario = document.getElementById('comentario').value.trim();
 
+                // Validações do frontend
                 if (!nome || !comentario) {
                     this.showError('Por favor, preencha todos os campos obrigatórios');
+                    return;
+                }
+
+                if (nome.length > 100) {
+                    this.showError('Nome muito longo (máximo 100 caracteres)');
+                    return;
+                }
+
+                if (comentario.length > 1000) {
+                    this.showError('Comentário muito longo (máximo 1000 caracteres)');
+                    return;
+                }
+
+                if (link && !this.isValidUrl(link)) {
+                    this.showError('Por favor, insira uma URL válida (ex: https://exemplo.com)');
                     return;
                 }
 
@@ -223,8 +277,10 @@ HEY U!   ( (  ;._ \\      -->
                     const response = await fetch(this.apiUrl, {
                         method: 'POST',
                         headers: {
+                            'Accept': 'application/json',
                             'Content-Type': 'application/json'
                         },
+                        credentials: 'same-origin',
                         body: JSON.stringify({
                             categoria: this.categoria,
                             titulo: this.titulo,
@@ -234,6 +290,15 @@ HEY U!   ( (  ;._ \\      -->
                         })
                     });
 
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const contentType = response.headers.get('content-type');
+                    if (!contentType || !contentType.includes('application/json')) {
+                        throw new Error('Resposta não é JSON válido');
+                    }
+
                     const data = await response.json();
 
                     if (data.success) {
@@ -241,14 +306,39 @@ HEY U!   ( (  ;._ \\      -->
                         form.reset();
                         this.loadComments(); // Recarregar comentários
                     } else {
-                        this.showError(data.error || 'Erro ao enviar comentário');
+                        throw new Error(data.error || 'Erro desconhecido ao enviar comentário');
                     }
                 } catch (error) {
-                    console.error('Erro:', error);
-                    this.showError('Erro ao conectar com o servidor');
+                    console.error('Erro ao enviar comentário:', error);
+                    
+                    let errorMessage = 'Erro ao enviar comentário';
+                    if (error.message.includes('403')) {
+                        errorMessage = 'Acesso negado. Verifique as permissões do servidor.';
+                    } else if (error.message.includes('429')) {
+                        errorMessage = 'Muitos comentários enviados. Tente novamente mais tarde.';
+                    } else if (error.message.includes('NetworkError') || error.message.includes('Failed to fetch')) {
+                        errorMessage = 'Erro de conexão. Verifique sua internet e tente novamente.';
+                    } else {
+                        errorMessage = `${errorMessage}: ${error.message}`;
+                    }
+                    
+                    this.showError(errorMessage);
                 } finally {
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Enviar Comentário';
+                }
+            }
+
+            isValidUrl(string) {
+                try {
+                    // Adicionar protocolo se não tiver
+                    if (!/^https?:\/\//i.test(string)) {
+                        string = 'http://' + string;
+                    }
+                    new URL(string);
+                    return true;
+                } catch (_) {
+                    return false;
                 }
             }
 
