@@ -1,0 +1,92 @@
+# .htaccess para /lib
+
+# Permitir execução de PHP na pasta lib
+<Files "*.php">
+    Order allow,deny
+    Allow from all
+    SetHandler application/x-httpd-php
+</Files>
+
+# Proteger arquivos de dados JSON
+<Files "*.json">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "*.backup">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Headers CORS específicos para arquivos PHP
+<IfModule mod_headers.c>
+    <FilesMatch "\.(php)$">
+        Header always set Access-Control-Allow-Origin "*"
+        Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS, DELETE"
+        Header always set Access-Control-Allow-Headers "Origin, Content-Type, Accept, Authorization, X-Requested-With"
+        Header always set Access-Control-Allow-Credentials "true"
+        Header always set Access-Control-Max-Age "86400"
+    </FilesMatch>
+</IfModule>
+
+# Permitir acesso ao JavaScript
+<Files "comments.js">
+    Order allow,deny
+    Allow from all
+    Header set Content-Type "application/javascript"
+</Files>
+
+# Configurações PHP específicas
+<IfModule mod_php7.c>
+    php_value max_execution_time 30
+    php_value memory_limit 128M
+    php_value upload_max_filesize 1M
+    php_value post_max_size 1M
+    php_flag display_errors Off
+    php_flag log_errors On
+</IfModule>
+
+<IfModule mod_php8.c>
+    php_value max_execution_time 30
+    php_value memory_limit 128M
+    php_value upload_max_filesize 1M
+    php_value post_max_size 1M
+    php_flag display_errors Off
+    php_flag log_errors On
+</IfModule>
+
+# Bloquear acesso direto via URL a arquivos sensíveis
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Bloquear acesso direto aos arquivos de dados
+    RewriteRule ^comments-data\.json$ - [F,L]
+    RewriteRule ^rate-limits\.json$ - [F,L]
+    RewriteRule ^.*\.log$ - [F,L]
+    RewriteRule ^.*\.backup$ - [F,L]
+    
+    # Permitir apenas comments-data.php e comments.js
+    RewriteCond %{REQUEST_FILENAME} !^.*(comments-data\.php|comments\.js)$
+    RewriteCond %{REQUEST_FILENAME} \.(php|json|log|backup)$
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
+
+# Configurações de segurança adicionais
+<IfModule mod_security.c>
+    SecFilterEngine Off
+</IfModule>
+
+# Desabilitar indexação da pasta
+Options -Indexes
+
+# Configurar tipos MIME
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType application/json .json
+    AddType text/plain .log
+</IfModule>
