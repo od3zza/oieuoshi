@@ -1,6 +1,26 @@
 [
   {
     "date": "2025-08-09",
+    "title": "The Designer's Notebook: A Few Remarks on Creative Play",
+    "url": "https://www.gamedeveloper.com/design/the-designer-s-notebook-a-few-remarks-on-creative-play",
+    "thumbnail": "",
+    "tags": [
+      "game design",
+      "creative play",
+      "taxonomy"
+    ],
+    "summary": "",
+    "page_comment": "Uma lista rudimentar que Ernest criou para tentar 'classificar' alguns tipos de 'creative play' como experiência de jogo. Ele cita primeiro que considera o 'creative play' como algo que permite que o jogador em algum momento diga algo como \"olhe, eu fiz (criei) isso\".",
+    "highlights": [
+      {
+        "highlight": "Self-expressive play is critical in persistent online worlds, where the player may have the same avatar character for years, and wants that avatar to reflect their own fantasy self, and to be able to change it as time goes on.",
+        "color": "yellow",
+        "highlight_note": "Ernest coloca aqui o 'self-expressive play' como uma categoria de jogo onde o jogador pode expressar suas vontades e desejos dentro do jogo, seja construindo algo ou um próprio 'self'. RPGs tem um lugar especial aqui, pois o jogador pode criar um personagem que gostaria de ser, não apenas fisicamente, como também socialmente, sendo a máxima da expressão dentro do jogo."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-09",
     "title": "GDC 2005: Iwata Keynote Transcript - IGN",
     "url": "https://www.ign.com/articles/2005/03/11/gdc-2005-iwata-keynote-transcript?page=3",
     "thumbnail": "",
