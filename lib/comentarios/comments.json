@@ -1,0 +1,16 @@
+{
+  "blog/post-exemplo": [
+    {
+      "nome": "Ana",
+      "link": "https://meusite.com",
+      "comentario": "Amei este post!",
+      "data": "2025-08-29T14:00:00Z"
+    },
+    {
+      "nome": "Carlos",
+      "link": "",
+      "comentario": "Muito bom!",
+      "data": "2025-08-29T14:05:00Z"
+    }
+  ]
+}

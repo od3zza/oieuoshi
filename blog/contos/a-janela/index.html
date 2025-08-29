@@ -267,16 +267,17 @@ HEY U!   ( (  ;._ \\      -->
 
 <section id="comentarios">
   <h3>Comentários</h3>
-  <div id="comentarios-lista"></div>
-
+  <div id="lista-comentarios"></div>
   <form id="form-comentario">
-    <input id="nome" type="text" placeholder="Seu nome" required>
-    <input id="link" type="url" placeholder="Seu site (opcional)">
-    <textarea id="comentario" placeholder="Escreva seu comentário" required></textarea>
+    <input type="text" id="nome" placeholder="Seu nome" required>
+    <input type="url" id="link" placeholder="Seu site (opcional)">
+    <textarea id="comentario" placeholder="Escreva seu comentário..." required></textarea>
     <button type="submit">Enviar</button>
   </form>
 </section>
-<script src="/lib/comentarios/index.js"></script>
+
+<script src="/lib/comentarios/comentarios.js"></script>
+<script src="/lib/comentarios/ui-comentarios.js"></script>
 
   
 </section>
