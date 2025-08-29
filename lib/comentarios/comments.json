@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "comments": {
+    "/blog/tecnologia/meu-primeiro-post": [
+      {
+        "id": "1640995200000_abc123",
+        "author": "João Silva",
+        "website": "https://joaosilva.dev",
+        "comment": "Excelente post! Muito útil.",
+        "timestamp": "2024-01-01T12:00:00Z",
+        "approved": true,
+        "ip_hash": "hash_do_ip_para_controle",
+        "user_agent_hash": "hash_do_user_agent"
+      }
+    ],
+    "/blog/design/cores-e-tipografia": [
+      {
+        "id": "1640995300000_def456",
+        "author": "Maria Santos",
+        "website": "",
+        "comment": "Adorei as dicas sobre paleta de cores!",
+        "timestamp": "2024-01-01T12:05:00Z",
+        "approved": true,
+        "ip_hash": "hash_do_ip_para_controle",
+        "user_agent_hash": "hash_do_user_agent"
+      }
+    ]
+  },
+  "stats": {
+    "total_comments": 2,
+    "total_posts_with_comments": 2,
+    "last_updated": "2024-01-01T12:05:00Z"
+  }
+}
