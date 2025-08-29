@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Moderação de Comentários</title>
+    <link rel="stylesheet" href="comments.css">
+    <style>
+        .admin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .admin-header {
+            background: #2d3748;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .admin-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4299e1;
+        }
+        
+        .stat-label {
+            color: #718096;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+        
+        .posts-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .post-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+        
+        .post-header {
+            background: #f7fafc;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .post-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        
+        .post-path {
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        
+        .post-comments {
+            padding: 1.5rem;
+        }
+        
+        .admin-comment {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .admin-comment:last-child {
+            margin-bottom: 0;
+        }
+        
+        .comment-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .action-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .approve-btn {
+            background: #48bb78;
+            color: white;
+        }
+        
+        .approve-btn:hover {
+            background: #38a169;
+        }
+        
+        .reject-btn {
+            background: #f56565;
+            color: white;
+        }
+        
+        .reject-btn:hover {
+            background: #e53e3e;
+        }
+        
+        .edit-btn {
+            background: #ed8936;
+            color: white;
+        }
+        
+        .edit-btn:hover {
+            background: #dd6b20;
+        }
+        
+        .approved {
+            background: #f0fff4;
+            border-color: #9ae6b4;
+        }
+        
+        .pending {
+            background: #fffaf0;
+            border-color: #fbd38d;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .status-approved {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+        
+        .status-pending {
+            background: #feebc8;
+            color: #c05621;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>Moderação de Comentários</h1>
+            <p>Gerencie os comentários do seu blog</p>
+        </header>
+        
+        <!-- Estatísticas -->
+        <div class="admin-stats" id="admin-stats">
+            <div class="stat-card">
+                <div class="stat-number" id="total-comments">0</div>
+                <div class="stat-label">Total de Comentários</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="approved-comments">0</div>
+                <div class="stat-label">Aprovados</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="pending-comments">0</div>
+                <div class="stat-label">Pendentes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="total-posts">0</div>
+                <div class="stat-label">Posts com Comentários</div>
+            </div>
+        </div>
+        
+        <!-- Lista de Posts com Comentários -->
+        <div class="posts-grid" id="posts-list">
+            <!-- Conteúdo será carregado via JavaScript -->
+        </div>
+    </div>
+    
+    <script src="comments-manager.js"></script>
+    <script>
+        class CommentsAdmin {
+            constructor() {
+                this.commentsData = null;
+            }
+
+            async loadComments() {
+                try {
+                    const response = await fetch('comments.json');
+                    if (!response.ok) throw new Error('Erro ao carregar comentários');
+                    
+                    this.commentsData = await response.json();
+                    this.renderStats();
+                    this.renderPosts();
+                } catch (error) {
+                    console.error('Erro ao carregar comentários:', error);
+                    alert('Erro ao carregar comentários. Verifique se o arquivo existe.');
+                }
+            }
+
+            renderStats() {
+                if (!this.commentsData) return;
+
+                let totalComments = 0;
+                let approvedComments = 0;
+                let pendingComments = 0;
+                const totalPosts = Object.keys(this.commentsData.posts).length;
+
+                Object.values(this.commentsData.posts).forEach(post => {
+                    post.comments.forEach(comment => {
+                        totalComments++;
+                        if (comment.approved) {
+                            approvedComments++;
+                        } else {
+                            pendingComments++;
+                        }
+                    });
+                });
+
+                document.getElementById('total-comments').textContent = totalComments;
+                document.getElementById('approved-comments').textContent = approvedComments;
+                document.getElementById('pending-comments').textContent = pendingComments;
+                document.getElementById('total-posts').textContent = totalPosts;
+            }
+
+            renderPosts() {
+                if (!this.commentsData) return;
+
+                const postsContainer = document.getElementById('posts-list');
+                const postsHtml = Object.entries(this.commentsData.posts)
+                    .map(([postPath, postData]) => this.renderPost(postPath, postData))
+                    .join('');
+
+                postsContainer.innerHTML = postsHtml;
+            }
+
+            renderPost(postPath, postData) {
+                const commentsHtml = postData.comments
+                    .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
+                    .map(comment => this.renderAdminComment(comment, postPath))
+                    .join('');
+
+                return `
+                    <div class="post-card">
+                        <div class="post-header">
+                            <div class="post-title">${this.formatPostTitle(postPath)}</div>
+                            <div class="post-path">/blog/${postPath}</div>
+                        </div>
+                        <div class="post-comments">
+                            ${commentsHtml}
+                        </div>
+                    </div>
+                `;
+            }
+
+            renderAdminComment(comment, postPath) {
+                const date = new Date(comment.timestamp).toLocaleDateString('pt-BR', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+
+                const statusClass = comment.approved ? 'approved' : 'pending';
+                const statusBadge = comment.approved ? 
+                    '<span class="status-badge status-approved">Aprovado</span>' :
+                    '<span class="status-badge status-pending">Pendente</span>';
+
+                const websiteLink = comment.website ? 
+                    `<br><strong>Website:</strong> <a href="${comment.website}" target="_blank">${comment.website}</a>` : 
+                    '';
+
+                return `
+                    <div class="admin-comment ${statusClass}" data-comment-id="${comment.id}" data-post-path="${postPath}">
+                        <div class="comment-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.75rem;">
+                                <div>
+                                    <strong>${this.escapeHtml(comment.author)}</strong>
+                                    ${statusBadge}
+                                </div>
+                                <small style="color: #718096;">${date}</small>
+                            </div>
+                            <div style="font-size: 0.875rem; color: #4a5568;">
+                                ID: ${comment.id}${websiteLink}
+                            </div>
+                        </div>
+                        <div class="comment-content" style="margin: 1rem 0;">
+                            <p style="white-space: pre-wrap;">${this.escapeHtml(comment.comment)}</p>
+                        </div>
+                        <div class="comment-actions">
+                            ${comment.approved ? 
+                                '<button class="action-btn reject-btn" onclick="adminManager.toggleApproval(\'' + comment.id + '\', \'' + postPath + '\', false)">Reprovar</button>' :
+                                '<button class="action-btn approve-btn" onclick="adminManager.toggleApproval(\'' + comment.id + '\', \'' + postPath + '\', true)">Aprovar</button>'
+                            }
+                            <button class="action-btn edit-btn" onclick="adminManager.editComment('${comment.id}', '${postPath}')">Editar</button>
+                            <button class="action-btn reject-btn" onclick="adminManager.deleteComment('${comment.id}', '${postPath}')">Excluir</button>
+                        </div>
+                    </div>
+                `;
+            }
+
+            formatPostTitle(postPath) {
+                return postPath
+                    .split('/')
+                    .map(part => part.replace(/-/g, ' '))
+                    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+                    .join(' › ');
+            }
+
+            escapeHtml(str) {
+                const div = document.createElement('div');
+                div.textContent = str;
+                return div.innerHTML;
+            }
+
+            toggleApproval(commentId, postPath, approved) {
+                if (!this.commentsData.posts[postPath]) return;
+
+                const comment = this.commentsData.posts[postPath].comments.find(c => c.id === commentId);
+                if (comment) {
+                    comment.approved = approved;
+                    
+                    // Simular salvamento (em produção, enviaria para servidor)
+                    console.log(`Comentário ${commentId} ${approved ? 'aprovado' : 'reprovado'}`);
+                    alert(`Comentário ${approved ? 'aprovado' : 'reprovado'} com sucesso!`);
+                    
+                    // Re-renderizar
+                    this.renderStats();
+                    this.renderPosts();
+                }
+            }
+
+            editComment(commentId, postPath) {
+                const comment = this.commentsData.posts[postPath].comments.find(c => c.id === commentId);
+                if (!comment) return;
+
+                const newAuthor = prompt('Nome do autor:', comment.author);
+                if (newAuthor === null) return;
+
+                const newWebsite = prompt('Website (opcional):', comment.website || '');
+                if (newWebsite === null) return;
+
+                const newComment = prompt('Comentário:', comment.comment);
+                if (newComment === null) return;
+
+                // Validações básicas
+                if (newAuthor.trim().length < 2) {
+                    alert('Nome deve ter pelo menos 2 caracteres.');
+                    return;
+                }
+
+                if (newComment.trim().length < 10) {
+                    alert('Comentário deve ter pelo menos 10 caracteres.');
+                    return;
+                }
+
+                // Atualizar comentário
+                comment.author = newAuthor.trim();
+                comment.website = newWebsite.trim();
+                comment.comment = newComment.trim();
+
+                console.log(`Comentário ${commentId} editado`);
+                alert('Comentário editado com sucesso!');
+                
+                // Re-renderizar
+                this.renderPosts();
+            }
+
+            deleteComment(commentId, postPath) {
+                if (!confirm('Tem certeza que deseja excluir este comentário? Esta ação não pode ser desfeita.')) {
+                    return;
+                }
+
+                const post = this.commentsData.posts[postPath];
+                if (!post) return;
+
+                const commentIndex = post.comments.findIndex(c => c.id === commentId);
+                if (commentIndex !== -1) {
+                    post.comments.splice(commentIndex, 1);
+                    
+                    // Se não há mais comentários, remover o post
+                    if (post.comments.length === 0) {
+                        delete this.commentsData.posts[postPath];
+                    }
+
+                    console.log(`Comentário ${commentId} excluído`);
+                    alert('Comentário excluído com sucesso!');
+                    
+                    // Re-renderizar
+                    this.renderStats();
+                    this.renderPosts();
+                }
+            }
+
+            exportComments() {
+                if (!this.commentsData) {
+                    alert('Nenhum dado para exportar.');
+                    return;
+                }
+
+                const dataStr = JSON.stringify(this.commentsData, null, 2);
+                const blob = new Blob([dataStr], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `comments-backup-${new Date().toISOString().split('T')[0]}.json`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+
+            init() {
+                this.loadComments();
+                
+                // Adicionar botão de exportação
+                const header = document.querySelector('.admin-header');
+                const exportBtn = document.createElement('button');
+                exportBtn.textContent = 'Exportar Backup';
+                exportBtn.style.cssText = 'background: #4299e1; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.375rem; cursor: pointer; margin-top: 1rem;';
+                exportBtn.onclick = () => this.exportComments();
+                header.appendChild(exportBtn);
+            }
+        }
+
+        // Instância global para usar nos eventos onClick
+        let adminManager;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            adminManager = new CommentsAdmin();
+            adminManager.init();
+        });
+    </script>
+</body>
+</html>
