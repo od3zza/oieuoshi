@@ -264,51 +264,21 @@ HEY U!   ( (  ;._ \\      -->
 <section class="footer">
 
 
-<!-- Seção de Comentários -->
-<section class="comments-section" id="comments">
-    <h2 class="comments-title">
-        Comentários
-        <span class="comments-count" id="comments-count">0</span>
-    </h2>
-    
-    <div class="comments-message" id="comments-message"></div>
-    
-    <div class="comments-form-container">
-        <h3 class="comments-form-title">Deixe seu comentário</h3>
-        <form class="comments-form" id="comments-form">
-            <div class="form-row">
-                <div class="form-group">
-                    <label class="form-label" for="author">Nome *</label>
-                    <input type="text" id="author" name="author" class="form-input" required maxlength="50" placeholder="Seu nome">
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="website">Website (opcional)</label>
-                    <input type="url" id="website" name="website" class="form-input" placeholder="https://seusite.com">
-                </div>
-            </div>
-            
-            <div class="form-group">
-                <label class="form-label" for="comment">Comentário *</label>
-                <textarea id="comment" name="comment" class="form-input form-textarea" required maxlength="1000" placeholder="Escreva seu comentário aqui..."></textarea>
-            </div>
-            
-            <button type="submit" class="form-submit">Publicar Comentário</button>
-        </form>
-    </div>
-    
-    <div class="comments-list" id="comments-list"></div>
+
+<section id="comentarios">
+  <h3>Comentários</h3>
+  <div id="comentarios-lista"></div>
+
+  <form id="form-comentario">
+    <input id="nome" type="text" placeholder="Seu nome" required>
+    <input id="link" type="url" placeholder="Seu site (opcional)">
+    <textarea id="comentario" placeholder="Escreva seu comentário" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
 </section>
+<script src="/lib/comentarios/index.js"></script>
 
-<link rel="stylesheet" href="/lib/comentarios/comments.css">
-<script src="/lib/comentarios/comments-manager.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const commentsManager = new CommentsManager();
-        commentsManager.init();
-    });
-</script>
-
-
+  
 </section>
   </body>
 </html>

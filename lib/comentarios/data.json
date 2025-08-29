@@ -1,0 +1,12 @@
+{
+  "posts": {
+    "/blog/categoria/exemplo": [
+      {
+        "nome": "Fulano",
+        "link": "https://site.com",
+        "comentario": "Muito bom!",
+        "data": "2025-08-29T12:00:00Z"
+      }
+    ]
+  }
+}
