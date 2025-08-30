@@ -126,10 +126,49 @@ HEY U!   ( (  ;._ \\      -->
  
 <section class="footer">
 
-<section id="comentarios-container"></section>
+<h3>Comentários</h3>
+<div id="comentarios"></div>
 
-<script src="/lib/comentarios/comentarios.js"></script>
-<script src="/lib/comentarios/config.js"></script>
+<form id="form-comentario">
+  <input type="hidden" name="postId" value="blog/categoria1/post1">
+  <input type="text" name="nome" placeholder="Seu nome" required><br>
+  <textarea name="mensagem" placeholder="Escreva seu comentário" required></textarea><br>
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+const postId = document.querySelector('input[name="postId"]').value;
+
+async function carregarComentarios() {
+  const res = await fetch(`/api/comentarios?postId=${encodeURIComponent(postId)}`);
+  const data = await res.json();
+  const div = document.getElementById("comentarios");
+  div.innerHTML = data
+    .map(
+      (c) => `<p><strong>${c.nome}</strong> (${new Date(c.data).toLocaleString()}):<br>${c.mensagem}</p>`
+    )
+    .join("");
+}
+
+document.getElementById("form-comentario").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const body = {};
+  formData.forEach((v, k) => (body[k] = v));
+
+  await fetch("/api/comentarios", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+
+  e.target.reset();
+  carregarComentarios();
+});
+
+carregarComentarios();
+</script>
+
     
 </section>
 
