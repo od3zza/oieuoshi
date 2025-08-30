@@ -13,6 +13,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+<link rel="stylesheet" href="/lib/comentarios/comentarios.css">
 
     <!-- Manifest .json-->
     <link rel="manifest" href="/manifest.json" />
@@ -125,23 +126,10 @@ HEY U!   ( (  ;._ \\      -->
  
 <section class="footer">
 
-<!-- Adicionar no <head> -->
-<link rel="stylesheet" href="/lib/comentarios/comments-styles.css">
+<section id="comentarios-container"></section>
 
-<!-- Adicionar antes do </body> -->
-<script src="/lib/comentarios/comments-validator.js"></script>
-<script src="/lib/comentarios/comments-api.js"></script>
-<script src="/lib/comentarios/comments-ui.js"></script>
-
-<!-- Container dos comentários -->
-<div id="comments-container"></div>
-
-<!-- Inicializar comentários -->
-<script>
-// Substitua pela URL real do post
-const postUrl = window.location.pathname; // Ex: "/blog/tecnologia/meu-post"
-initComments('comments-container', postUrl);
-</script>
+<script src="/lib/comentarios/comentarios.js"></script>
+<script src="/lib/comentarios/config.js"></script>
     
 </section>
 
