@@ -135,52 +135,7 @@ HEY U!   ( (  ;._ \\      -->
   <button type="submit">Enviar</button>
 </form>
 
-<script>
-const slug = window.location.pathname; // pega /blog/CATEGORIA/TITULO-DO-POST
-const apiUrl = 'https://script.google.com/macros/s/AKfycbyS0hI34SJypOKtq4EGkYkXZ7Q8h25jUdpZ7It4zsBphwx6xvYS-OdHhDvdbXEqUXHUmQ/exec';
-
-function renderComments(comments) {
-  const container = document.getElementById('comments-list');
-  container.innerHTML = comments.map(c => `
-    <div class="comment">
-      <strong>${c[2]}</strong> ${c[3] ? `<a href="${c[3]}">(Link)</a>` : ''}
-      <p>${c[4]}</p>
-      <small>${c[0]}</small>
-    </div>
-  `).join('');
-}
-
-// Fetch comments
-fetch(`${apiUrl}?slug=${encodeURIComponent(slug)}`)
-  .then(res => res.json())
-  .then(data => renderComments(data));
-
-// Submit comment
-document.getElementById('comment-form').addEventListener('submit', e => {
-  e.preventDefault();
-  const form = e.target;
-  const payload = {
-    slug,
-    name: form.name.value,
-    link: form.link.value,
-    comment: form.comment.value
-  };
-
-  fetch(apiUrl, {
-    method: 'POST',
-    body: JSON.stringify(payload),
-    headers: { 'Content-Type': 'application/json' }
-  })
-  .then(res => res.json())
-  .then(() => {
-    form.reset();
-    return fetch(`${apiUrl}?slug=${encodeURIComponent(slug)}`);
-  })
-  .then(res => res.json())
-  .then(data => renderComments(data));
-});
-</script>
-
+<script type="module" src="/lib/comments.js"></script>
 
     
 </section>
