@@ -1376,3 +1376,157 @@ img {
   font-size: 0.9rem;
   /* Tamanho da fonte */
 }
+
+
+
+
+ /* Estilos para os comentários - deixei algo simples apenas para a caixa, você pode adicionar no seu .css para puxar os estilos que faltam */
+        .comments-section {
+            max-width: 800px;
+            margin: 0rem auto;
+            padding: 0 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        }
+
+        .comments-form {
+            background: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            border: 0px solid #e9ecef;
+        }
+
+        .comments-form h3 {
+            margin-top: 0;
+            color: #000;
+            font-size: 1.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+            color: #000;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.15s ease-in-out;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .btn-submit {
+            background: #000;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.15s ease-in-out;
+        }
+
+        .btn-submit:hover {
+            background: #000;
+        }
+
+        .btn-submit:disabled {
+            background: #000;
+            cursor: not-allowed;
+        }
+
+        .comments-list {
+            margin-top: 2rem;
+        }
+
+        .comments-list h3 {
+            color: #212529;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .comment {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .comment-author:hover {
+            text-decoration: underline;
+        }
+
+        .comment-date {
+            color: #6c757d;
+            font-size: 0.875rem;
+        }
+
+        .comment-text {
+            color: #212529;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .loading {
+            text-align: center;
+            color: #6c757d;
+            padding: 1rem;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .success {
+            background: #d1edff;
+            color: #0c5460;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .no-comments {
+            text-align: center;
+            color: #6c757d;
+            padding: 2rem;
+            font-style: italic;
+        }
