@@ -126,34 +126,60 @@ HEY U!   ( (  ;._ \\      -->
  
 <section class="footer">
 
-<h3>Comentários</h3>
-<div id="comentarios"></div>
+<section id="comments">
+  <h3>Comentários</h3>
+  <div id="comments-list"></div>
 
-<form id="form-comentario">
-  <input type="hidden" name="postId" value="blog/categoria1/post1">
-  <input type="text" name="nome" placeholder="Seu nome" required><br>
-  <textarea name="mensagem" placeholder="Escreva seu comentário" required></textarea><br>
-  <button type="submit">Enviar</button>
-</form>
+  <h4>Deixe seu comentário</h4>
+  <form id="comment-form">
+    <input type="text" name="name" placeholder="Seu nome" required>
+    <input type="url" name="website" placeholder="Seu site (opcional)">
+    <textarea name="comment" placeholder="Seu comentário" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
-<script src="/scripts/comentarios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 <script>
-  const postId = document.querySelector('input[name="postId"]').value;
-  carregarComentarios(postId);
+  const postPath = window.location.pathname.replace('/blog/', '').split('/');
+  const category = postPath[0];
+  const post = postPath[1];
 
-  document
-    .getElementById("form-comentario")
-    .addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const formData = new FormData(e.target);
-      await enviarComentario(
-        postId,
-        formData.get("nome"),
-        formData.get("mensagem")
-      );
-      e.target.reset();
-      setTimeout(() => carregarComentarios(postId), 5000);
+  async function loadComments() {
+    const res = await fetch('/comments.yaml');
+    const yamlText = await res.text();
+    const data = jsyaml.load(yamlText);
+
+    const comments = data.blog?.[category]?.[post] || [];
+    const list = document.getElementById('comments-list');
+    list.innerHTML = comments.map(c => `
+      <div>
+        <p><strong>${c.name}</strong> ${c.website ? `(<a href="${c.website}" target="_blank">site</a>)` : ''}</p>
+        <p>${c.comment}</p>
+        <small>${new Date(c.date).toLocaleString()}</small>
+      </div>
+    `).join('');
+  }
+
+  document.getElementById('comment-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const payload = {
+      category, post,
+      name: formData.get('name'),
+      website: formData.get('website'),
+      comment: formData.get('comment')
+    };
+    await fetch('/api/add-comment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
     });
+    e.target.reset();
+    loadComments();
+  });
+
+  loadComments();
 </script>
 
     
