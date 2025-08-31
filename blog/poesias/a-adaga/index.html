@@ -126,16 +126,56 @@ HEY U!   ( (  ;._ \\      -->
  
 <section class="footer">
 
-<div id="comments-list"></div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post com seção de comentários</title>
+</head>
+  
+<body>
+    <!-- Conteúdo do seu post aqui -->
+    <article style="max-width: 800px; margin: 2rem auto; padding: 0 1rem;">
+        <h1>Título do Post</h1>
+        <p>Este é um exemplo de post do  blog.</p>
+    </article>
 
-<form id="comment-form">
-  <input type="text" name="name" placeholder="Seu nome" required>
-  <input type="url" name="link" placeholder="Seu link (opcional)">
-  <textarea name="comment" placeholder="Comentário" required></textarea>
-  <button type="submit">Enviar</button>
-</form>
+    <!-- Sistema de Comentários -->
+    <section class="comments-section">
+      
+        <!-- Formulário de comentários -->
+        <div class="comments-form">
+            <h3>Deixe seu comentário</h3>
+            <div id="message-area"></div>
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="link">Website/Link (opcional)</label>
+                    <input type="url" id="link" name="link" placeholder="https://exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentário *</label>
+                    <textarea id="comentario" name="comentario" required placeholder="Escreva seu comentário aqui..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Comentário</button>
+            </form>
+        </div>
 
-<script type="module" src="/lib/comments.js"></script>
+        <!-- Lista de comentários -->
+        <div class="comments-list">
+            <h3>Comentários</h3>
+            <div id="comments-container">
+                <div class="loading">Carregando comentários...</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
 
     
 </section>
