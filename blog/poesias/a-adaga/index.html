@@ -126,61 +126,61 @@ HEY U!   ( (  ;._ \\      -->
  
 <section class="footer">
 
-<section id="comments">
-  <h3>Comentários</h3>
-  <div id="comments-list"></div>
+<div id="comments-list"></div>
 
-  <h4>Deixe seu comentário</h4>
-  <form id="comment-form">
-    <input type="text" name="name" placeholder="Seu nome" required>
-    <input type="url" name="website" placeholder="Seu site (opcional)">
-    <textarea name="comment" placeholder="Seu comentário" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+<form id="comment-form">
+  <input type="text" name="name" placeholder="Seu nome" required>
+  <input type="url" name="link" placeholder="Seu link (opcional)">
+  <textarea name="comment" placeholder="Comentário" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
 
-<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 <script>
-  const postPath = window.location.pathname.replace('/blog/', '').split('/');
-  const category = postPath[0];
-  const post = postPath[1];
+const slug = window.location.pathname; // pega /blog/CATEGORIA/TITULO-DO-POST
+const apiUrl = 'https://script.google.com/macros/s/AKfycbyS0hI34SJypOKtq4EGkYkXZ7Q8h25jUdpZ7It4zsBphwx6xvYS-OdHhDvdbXEqUXHUmQ/exec';
 
-  async function loadComments() {
-    const res = await fetch('/comments.yaml');
-    const yamlText = await res.text();
-    const data = jsyaml.load(yamlText);
+function renderComments(comments) {
+  const container = document.getElementById('comments-list');
+  container.innerHTML = comments.map(c => `
+    <div class="comment">
+      <strong>${c[2]}</strong> ${c[3] ? `<a href="${c[3]}">(Link)</a>` : ''}
+      <p>${c[4]}</p>
+      <small>${c[0]}</small>
+    </div>
+  `).join('');
+}
 
-    const comments = data.blog?.[category]?.[post] || [];
-    const list = document.getElementById('comments-list');
-    list.innerHTML = comments.map(c => `
-      <div>
-        <p><strong>${c.name}</strong> ${c.website ? `(<a href="${c.website}" target="_blank">site</a>)` : ''}</p>
-        <p>${c.comment}</p>
-        <small>${new Date(c.date).toLocaleString()}</small>
-      </div>
-    `).join('');
-  }
+// Fetch comments
+fetch(`${apiUrl}?slug=${encodeURIComponent(slug)}`)
+  .then(res => res.json())
+  .then(data => renderComments(data));
 
-  document.getElementById('comment-form').addEventListener('submit', async e => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const payload = {
-      category, post,
-      name: formData.get('name'),
-      website: formData.get('website'),
-      comment: formData.get('comment')
-    };
-    await fetch('/api/add-comment', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-    e.target.reset();
-    loadComments();
-  });
+// Submit comment
+document.getElementById('comment-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const form = e.target;
+  const payload = {
+    slug,
+    name: form.name.value,
+    link: form.link.value,
+    comment: form.comment.value
+  };
 
-  loadComments();
+  fetch(apiUrl, {
+    method: 'POST',
+    body: JSON.stringify(payload),
+    headers: { 'Content-Type': 'application/json' }
+  })
+  .then(res => res.json())
+  .then(() => {
+    form.reset();
+    return fetch(`${apiUrl}?slug=${encodeURIComponent(slug)}`);
+  })
+  .then(res => res.json())
+  .then(data => renderComments(data));
+});
 </script>
+
 
     
 </section>
