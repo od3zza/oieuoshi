@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /private/
 
-Sitemap: https://oieuoshi.glitch.me/sitemap.xml
+Sitemap: https://oieuoshi.vercel.app/sitemap.xml
