@@ -125,6 +125,23 @@ HEY U!   ( (  ;._ \\      -->
     </section>
  
 <section class="footer">
+<div id="comentarios"></div>
+
+<form id="form-comentario">
+    <input type="text" name="autor" placeholder="Seu nome" required />
+    <textarea name="comentario" placeholder="Escreva seu comentário" required></textarea>
+    <button type="submit">Enviar</button>
+</form>
+
+<script src="/lib/comments.js"></script>
+<script>
+    // Cria um post_id único baseado na URL
+    const postId = window.location.pathname.replace(/^\/blog\//, ""); // remove /blog/
+    
+    // Inicializa renderização de comentários
+    renderComentarios(postId, "comentarios");
+    initFormulario(postId, "form-comentario", "comentarios");
+</script>
 
 </section>
 
