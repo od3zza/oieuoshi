@@ -1,12 +1,7 @@
-# Hey!
+## Nota
 
-Construi esse site para não depender mais de Blogspot, Tumblr e essas merdas que tomam o que é nosso e tratam como lixo. Criar conteúdo, pequenas notas, seja o que for, pra mim, é mais do que uma expressão, é uma forma de eu me comunicar com que está do outro lado da tela, uma maneira de manter a sanidade e também uma prática pessoal de expansão cognitiva. Decidi tornar esse site um código aberto, pois sempre tive um certo esmero com algumas filosofias open source, e acredito que semear essa experiência de um jardim digital possa ser interessante para outras pessoas também.
+Acabei desativando meu site, pois não tinha certeza se queria ainda ter o esforço de fazer tantas alterações visuais em um espaço que deveria ser apenas um repositório de "coisas", de ideias. Eu já sonhei várias vezes em ter um portfolio, porém, nessa busca por um espaço perfeito, acabei despendendo inúmeras horas aqui e ali preocupado com a estética do espaço, ao invés de compartilhar essas "coisas" que eu tanto queria. Por causa disso, decidi dar um passo para trás e me dedicar ao blogspot. O projeto ainda via ficar no Github como um arquivo, porém, não será mais atualizado. A partir de agora, usarei apenas o Blogspot. Já crei um repositório "oieuoshi.blogspot.com" onde vou manter um backup dos conteúdos e também usar como db para algumas features, como os highlights. Talvez ninguém leia isso, mas é apenas uma nota mental para o Uoshi do futuro se preocupar menos com o perfeccionismo das coisas, e mais com fazer o que gosta sem cobranças.
 
-Se você está querendo construir o seu espacinho digital, acontecelho tomar esse código, talvez, apenas como referências, pois: não, eu não sou coder, sou apenas uma pessoa hiperativa, criativa e curiosa (agora com LLMs nas mãos!).
+É isso.
 
-## Miss u Glitch!
-
-## Notas para o futuro
-- Ainda não sei se uso Vercel para deixar meu site mesmo, mas parece a melhor ferramenta---queria não pagar domínio, quem sabe usar apenas um endereço de IP?
-- Organizar galerias dentro do site com imagens em Base64 (foda-se carregamento, afiar lazyload)
-- Criar caixa de comentários para usuários externos.
+xoxo
