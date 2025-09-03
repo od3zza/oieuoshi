@@ -1382,7 +1382,7 @@ img {
             max-width: 800px;
             margin: 0rem auto;
             padding: 0 1rem;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            font-family: "Rubik", sans-serif;
         }
 
         .comments-form {
@@ -1423,7 +1423,7 @@ img {
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #007bff;
+            border-color: #000000;
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
         }
 
@@ -1480,7 +1480,7 @@ img {
 
         .comment-author {
             font-weight: 600;
-            color: #007bff;
+            color: #000000;
             text-decoration: none;
         }
 
@@ -1501,13 +1501,13 @@ img {
 
         .loading {
             text-align: center;
-            color: #6c757d;
+            color: #000000;
             padding: 1rem;
         }
 
         .error {
             background: #f8d7da;
-            color: #721c24;
+            color: #000000;
             padding: 1rem;
             border-radius: 4px;
             margin-bottom: 1rem;
@@ -1515,7 +1515,7 @@ img {
 
         .success {
             background: #d1edff;
-            color: #0c5460;
+            color: #000000;
             padding: 1rem;
             border-radius: 4px;
             margin-bottom: 1rem;
@@ -1523,7 +1523,7 @@ img {
 
         .no-comments {
             text-align: center;
-            color: #6c757d;
+            color: #000000;
             padding: 2rem;
             font-style: italic;
         }
