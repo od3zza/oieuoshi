@@ -429,226 +429,192 @@
 
       <hr />
 
-      <!-- Search and Filters -->
-      <div class="search-container">
-        <input 
-          type="text" 
-          id="search-input" 
-          class="search-input" 
-          placeholder="Buscar por texto, título ou tag..."
-        >
-      </div>
+  <div class="search-container">
+  <input class="search-input" id="search-input" placeholder="Buscar por texto, título ou tag..." type="text" />
+</div>
+<div class="stats" id="stats">
+  <div class="loading" id="loading">Carregando highlights...</div>
+</div>
+<div id="highlights-container">
+  </div>
+<div class="empty-state" id="empty-state" style="display: none;">
+  <div style="font-size: 2rem; margin-bottom: 1rem;">📚</div>
+  <p>Nenhum highlight encontrado com os filtros aplicados.</p>
+</div>
+
+<script>
+  // Variáveis globais
+  let allHighlights = [];
+  let filteredHighlights = [];
+  let allTags = new Set();
+
+  // Elementos DOM
+  const searchInput = document.getElementById('search-input');
+  const statsDiv = document.getElementById('stats');
+  const highlightsContainer = document.getElementById('highlights-container');
+  const emptyState = document.getElementById('empty-state');
+  const loadingDiv = document.getElementById('loading');
+
+  // Carregar dados 
+  async function loadHighlights() {
+    try {
+      // Usando o novo arquivo corrigido que geramos
+      const url = "https://raw.githubusercontent.com/od3zza/oieuoshi.blogspot.com/refs/heads/main/lib/highlights/highlights.json";
+const response = await fetch(`${url}?v=${new Date().getTime()}`);
       
-      <!-- Stats -->
-      <div id="stats" class="stats">
-        <div id="loading" class="loading">Carregando highlights...</div>
-      </div>
-
-      <!-- Highlights Container -->
-      <div id="highlights-container">
-        <!-- Highlights serão carregados aqui via JavaScript -->
-      </div>
-
-      <!-- Empty State -->
-      <div id="empty-state" class="empty-state" style="display: none;">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">📚</div>
-        <p>Nenhum highlight encontrado com os filtros aplicados.</p>
-      </div>
-    </section>
-
-    <hr />
-    <section class="footer"></section>
-
-    <!-- Back to Top -->
-    <a href="#" id="back-to-top" class="back-to-top">↑</a>
-
-    <script>
-      // Variáveis globais
-      let allHighlights = [];
-      let filteredHighlights = [];
-      let allTags = new Set();
-
-      // Elementos DOM
-      const searchInput = document.getElementById('search-input');
-      const clearFiltersBtn = document.getElementById('clear-filters');
-      const statsDiv = document.getElementById('stats');
-      const highlightsContainer = document.getElementById('highlights-container');
-      const emptyState = document.getElementById('empty-state');
-      const backToTop = document.getElementById('back-to-top');
-      const loadingDiv = document.getElementById('loading');
-
-      // Carregar dados
-      async function loadHighlights() {
-        try {
-          const response = await fetch('/lib/highlights.json');
-          if (!response.ok) throw new Error('Arquivo não encontrado');
-          
-          allHighlights = await response.json();
-          filteredHighlights = [...allHighlights];
-          
-          // Extrair todas as tags
-          allHighlights.forEach(item => {
-            if (item.tags) {
-              item.tags.forEach(tag => allTags.add(tag));
-            }
-          });
-
-          updateStats();
-          renderHighlights();
-          loadingDiv.style.display = 'none';
-          
-        } catch (error) {
-          loadingDiv.innerHTML = `❌ Erro ao carregar highlights: ${error.message}`;
-        }
-      }
-
-      // Atualizar estatísticas
-      function updateStats() {
-        const totalArticles = filteredHighlights.length;
-        const totalHighlights = filteredHighlights.reduce((sum, item) => sum + (item.highlights?.length || 0), 0);
-        const totalTags = allTags.size;
-
-        statsDiv.innerHTML = `
-          📊 <strong>${totalArticles}</strong> artigos • 
-          <strong>${totalHighlights}</strong> highlights • 
-          <strong>${totalTags}</strong> tags únicas
-        `;
-      }
-
- 
- function renderHighlights() {
-  if (filteredHighlights.length === 0) {
-    highlightsContainer.innerHTML = '';
-    emptyState.style.display = 'block';
-    return;
-  }
-
-  emptyState.style.display = 'none';
-
-  const html = filteredHighlights.map((item, index) => {
-    const date = new Date(item.date).toLocaleDateString('pt-BR');
-    const hostname = new URL(item.url).hostname;
-    const favicon = `https://www.google.com/s2/favicons?domain=${hostname}&sz=64`;
-    const highlightCount = item.highlights?.length || 0;
-
-    const highlightsHtml = item.highlights?.map(highlight => `
-      <div class="highlight">
-        <div class="highlight-text ${highlight.color.toLowerCase()}">
-          ${highlight.highlight}
-        </div>
-        ${highlight.highlight_note ? `<div class="highlight-note">${highlight.highlight_note}</div>` : ''}
-      </div>
-    `).join('') || '';
-
-    const tagsHtml = item.tags?.length ? `
-      <div class="tags">
-        ${item.tags.map(tag => `
-          <span class="tag" onclick="event.stopPropagation(); filterByTag('${tag}')">${tag}</span>
-        `).join('')}
-      </div>
-    ` : '';
-
-    return `
-      <article class="highlight-card" onclick="toggleHighlight(${index})">
-        <div class="card-content">
-          <div class="card-favicon">
-            <img src="${favicon}" alt="favicon">
-          </div>
-          <div class="card-info">
-            <a href="${item.url}" target="_blank" class="article-title" onclick="event.stopPropagation();">${item.title}</a>
-            <div class="article-url">${hostname}</div>
-            ${tagsHtml}
-            <div class="article-date">📅 ${date}</div>
-          </div>
-          <div class="card-badge">
-            <span title="${highlightCount} notas">🟡 ${highlightCount}</span>
-          </div>
-        </div>
-
-        <div class="highlight-body" id="highlight-body-${index}" style="display: none;" onclick="event.stopPropagation();">
-          ${item.page_comment ? `<div class="page-comment">${item.page_comment}</div>` : ''}
-          <div class="highlights-list">${highlightsHtml}</div>
-          <button class="hide-btn" onclick="hideHighlight(${index})">Esconder notas</button>
-        </div>
-      </article>
-    `;
-  }).join('');
-
-  highlightsContainer.innerHTML = html;
-}
-
-
-function toggleHighlight(index) {
-  const body = document.getElementById(`highlight-body-${index}`);
-  if (body) {
-    const isOpen = body.style.display === 'block';
-    body.style.display = isOpen ? 'none' : 'block';
-  }
-}
-
-function hideHighlight(index) {
-  const body = document.getElementById(`highlight-body-${index}`);
-  if (body) body.style.display = 'none';
-}
-
-
-
-
-
-      // Filtros
-      function applyFilters() {
-        const searchTerm = searchInput.value.toLowerCase();
-
-        filteredHighlights = allHighlights.filter(item => {
-         
-          // Filtro de busca
-          if (searchTerm) {
-            const searchMatch = 
-              item.title.toLowerCase().includes(searchTerm) ||
-              item.highlights?.some(h => 
-                h.highlight.toLowerCase().includes(searchTerm) ||
-                h.highlight_note?.toLowerCase().includes(searchTerm)
-              ) ||
-              item.tags?.some(tag => tag.toLowerCase().includes(searchTerm)) ||
-              item.page_comment?.toLowerCase().includes(searchTerm);
-            
-            if (!searchMatch) return false;
-          }
-         return true;
-        });
-
-        updateStats();
-        renderHighlights();
-      }
-
-      // Filtrar por tag
-      function filterByTag(tag) {
-        searchInput.value = tag;
-        applyFilters();
-        searchInput.focus();
-      }
-
-          // Back to top
-      function toggleBackToTop() {
-        if (window.scrollY > 300) {
-          backToTop.classList.add('visible');
-        } else {
-          backToTop.classList.remove('visible');
-        }
-      }
-
-      // Event listeners
-      searchInput.addEventListener('input', applyFilters);
-      window.addEventListener('scroll', toggleBackToTop);
+      if (!response.ok) throw new Error(`Falha na rede: ${response.statusText}`);
       
-      backToTop.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      // 1. Recebemos o novo formato de objeto
+      const highlightsObject = await response.json(); 
+
+      // 2. Transformamos o objeto em uma lista que o resto do script entende
+      allHighlights = Object.keys(highlightsObject).map(url => {
+        return {
+          url: url, // Adicionamos a URL de volta como uma propriedade do objeto
+          ...highlightsObject[url] // Usamos o spread operator para copiar o resto dos dados
+        };
+      });
+      
+      // Opcional, mas recomendado: Ordenar os artigos pela data mais recente
+      allHighlights.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      // Daqui para baixo, o código funciona perfeitamente com a lista que criamos
+      filteredHighlights = [...allHighlights];
+      
+      allHighlights.forEach(item => {
+        if (item.tags) {
+          item.tags.forEach(tag => allTags.add(tag));
+        }
       });
 
-      // Inicializar
-      loadHighlights();
-    </script>
+      updateStats();
+      renderHighlights();
+      loadingDiv.style.display = 'none';
+      
+    } catch (error) {
+      loadingDiv.innerHTML = `❌ Erro ao carregar highlights: ${error.message}. Verifique se a URL no código está correta e se o repositório é público.`;
+    }
+  }
+
+  // NENHUMA MUDANÇA NECESSÁRIA DAQUI PARA BAIXO
+  function updateStats() {
+    const totalArticles = filteredHighlights.length;
+    const totalHighlights = filteredHighlights.reduce((sum, item) => sum + (item.highlights?.length || 0), 0);
+    const totalTags = allTags.size;
+
+    statsDiv.innerHTML = `
+      📊 <strong>${totalArticles}</strong> artigos • 
+      <strong>${totalHighlights}</strong> destaques • 
+      <strong>${totalTags}</strong> tags únicas
+    `;
+  }
+
+  function renderHighlights() {
+    if (filteredHighlights.length === 0) {
+      highlightsContainer.innerHTML = '';
+      emptyState.style.display = 'block';
+      return;
+    }
+
+    emptyState.style.display = 'none';
+
+    const html = filteredHighlights.map((item, index) => {
+      const date = new Date(item.date).toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+      const hostname = new URL(item.url).hostname;
+      const favicon = `https://www.google.com/s2/favicons?domain=${hostname}&sz=64`;
+      const highlightCount = item.highlights?.length || 0;
+
+      const highlightsHtml = item.highlights?.map(highlight => `
+        <div class="highlight">
+          <div class="highlight-text ${highlight.color.toLowerCase()}">
+            ${highlight.highlight}
+          </div>
+          ${highlight.highlight_note ? `<div class="highlight-note">${highlight.highlight_note}</div>` : ''}
+        </div>
+      `).join('') || '';
+
+      const tagsHtml = item.tags?.length ? `
+        <div class="tags">
+          ${item.tags.map(tag => `
+            <span class="tag" onclick="event.stopPropagation(); filterByTag('${tag}')">${tag}</span>
+          `).join('')}
+        </div>
+      ` : '';
+
+      return `
+        <article class="highlight-card" onclick="toggleHighlight(${index})">
+          <div class="card-content">
+            <div class="card-favicon">
+              <img src="${favicon}" alt="favicon">
+            </div>
+            <div class="card-info">
+              <a href="${item.url}" target="_blank" class="article-title" onclick="event.stopPropagation();">${item.title}</a>
+              <div class="article-url">${hostname}</div>
+              ${tagsHtml}
+              <div class="article-date">📅 ${date}</div>
+            </div>
+            <div class="card-badge">
+              <span title="${highlightCount} notas">👇 ${highlightCount}</span>
+            </div>
+          </div>
+
+          <div class="highlight-body" id="highlight-body-${index}" style="display: none;" onclick="event.stopPropagation();">
+            ${item.page_comment ? `<div class="page-comment">${item.page_comment}</div>` : ''}
+            <div class="highlights-list">${highlightsHtml}</div>
+            <button class="hide-btn" onclick="hideHighlight(${index})">☝️</button>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    highlightsContainer.innerHTML = html;
+  }
+
+  function toggleHighlight(index) {
+    const body = document.getElementById(`highlight-body-${index}`);
+    if (body) {
+      const isOpen = body.style.display === 'block';
+      body.style.display = isOpen ? 'none' : 'block';
+    }
+  }
+
+  function hideHighlight(index) {
+    const body = document.getElementById(`highlight-body-${index}`);
+    if (body) body.style.display = 'none';
+  }
+
+  function applyFilters() {
+    const searchTerm = searchInput.value.toLowerCase();
+    filteredHighlights = allHighlights.filter(item => {
+      if (searchTerm) {
+        const searchMatch = 
+          item.title.toLowerCase().includes(searchTerm) ||
+          item.highlights?.some(h => 
+            h.highlight.toLowerCase().includes(searchTerm) ||
+            h.highlight_note?.toLowerCase().includes(searchTerm)
+          ) ||
+          item.tags?.some(tag => tag.toLowerCase().includes(searchTerm)) ||
+          item.page_comment?.toLowerCase().includes(searchTerm);
+        if (!searchMatch) return false;
+      }
+      return true;
+    });
+    updateStats();
+    renderHighlights();
+  }
+
+  function filterByTag(tag) {
+    searchInput.value = tag;
+    applyFilters();
+    searchInput.focus();
+  }
+
+  // Event listeners
+  searchInput.addEventListener('input', applyFilters);
+  
+  // Inicializar
+  loadHighlights();
+</script>
   </body>
 </html>
 
