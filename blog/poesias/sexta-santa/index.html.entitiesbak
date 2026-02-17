@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Sexta Santa - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Eu acordei durante a madrugada. Não tenho certeza se sequer dormi ou alucinei de exaustão.Caminhei por algumas horas de manhã... me despi da solidão e..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Abril, 2025 </sub>
+        
+        <h1>Sexta Santa</h1>
+        <br />
+        
+        <sub> Poesias 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p><img data-original-height="783" data-original-width="540" src="/lib/media/sexta-santa-01.jpg" class="blog-image"></p>Eu acordei durante a madrugada. Não tenho certeza se sequer dormi ou alucinei de exaustão.<p>Caminhei por algumas horas de manhã... me despi da solidão e sai.&nbsp;</p><p>Vi o sol nascer e senti meus pés começarem a doer até a fome incomodar mais do que os pensamentos.</p><p>Havia uma bolsa de agonia esmagando meus pulmões, e aquele desafio constante de aceitar que o hoje é a única verdade, que o ontem não existe mais e o amanhã é apenas um delírio.</p><p>Não consegui chorar quando lembrei do meu melhor amigo e do calor da presença dele, algo que nunca mais vou sentir.&nbsp;</p><p>Foi agridoce, pois apenas ele me fazia sentir bem quando dizia que "tudo vai ficar bem". Fora o sangue, acho que esse foi o único amor que conheci.</p><p>Apenas ecos. Eu me sustento sobre ecos. Eu me alimento desses ecos. Uma reprogramação constante da mente para não deixar que tudo simplesmente acabe.&nbsp;</p><p>O esforço mor para nadar contra a correnteza que sempre me abraça com carinho em seu convite para a escuridão.</p><p>Queria chorar por coisas bonitas. Mas estou aqui, sendo engolido pelo tempo em tantas realidades distintas, que não sei mais o que é prazer ou o que é dor.</p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

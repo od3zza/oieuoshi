@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Veneno</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Antigos contos, poesias, textos, traduções e outras coisas. Um backup do Blogspot." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-HZNDKKGKW8");
+    </script>
+    <script>
+      if (location.protocol != "https:") {
+        location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+  </head>
+<body>
+    <!-- retorno -->
+    <a href="/blog/arquivo">← arquivo</a>
+    <!-- fecha retorno -->
+    <article>
+        <div class="post-meta">
+            Publicado em: 2014-02-13 | 
+            <a href="https://oieuoshi.blogspot.com/2014/02/ugdu-nova-coluna-experimente-veneno.html" target="_blank">Link original</a>
+        </div>
+        <div class="post-content">
+            <div class="separator" style="clear: both; text-align: center;">
+<a href="http://31.media.tumblr.com/tumblr_m7c870ZDIe1rye5njo1_500.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="200" src="http://31.media.tumblr.com/tumblr_m7c870ZDIe1rye5njo1_500.jpg" width="177" /></a></div>
+<br /><span style="font-family: inherit;"><span lang="pt" style="line-height: 115%;">&nbsp;Amor, a qu</span><span lang="pt" style="line-height: 115%;">ímica próspera do apogeu enigmático, consumismo
+presencial e fome de tais lábios, porém como uma avalanche de imprevisões e
+uma ambiguidade decorrente de sumas incertezas, Amor lido ao contrário, pode
+entender-se por: Veneno.</span></span><br /><br />
+        </div>
+        
+    </article>
+</body>
+</html>

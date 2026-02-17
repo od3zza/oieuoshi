@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Já é setembro? - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Toda primeira semana de cada mês eu costumo postar fotos e vídeos que tiro durante o mês anterior, algo como um dump, mas dificilmente solto arquivos ..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Setembro, 2025 </sub>
+        
+        <h1>Já é setembro?</h1>
+        <br />
+        
+        <sub> Misc 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            Toda primeira semana de cada mês eu costumo postar fotos e vídeos que tiro durante o mês anterior, algo como um <em>dump</em>, mas dificilmente solto arquivos crus, pois sempre edito logo que capturo. Porém, acabei de notar que eu não tenho nada pra <em>dropar</em>&nbsp;esse mês, e que talvez agosto tenha sido o mês mais introspectivo do meu ano. Há vários motivos: dissertação, trampos, correrias, eu tava sem minha bike (sempre faço <em>shots</em>&nbsp;quando saio pedalar), mas eu também não estava no meu melhor momento com as pessoas, com a vida - apesar de eu ter frequentado algumas manhas/noites de Pauper pela cidade.<p>Apesar de não ter tirado fotos ou gravado algo despretensiosamente, eu notei que <em>codei</em>&nbsp;muitas coisas. Antes de tudo, se alguém chegou agora, eu não sou <em>dev</em>, mas conheço um pouco de HTML, CSS, JS e PY, e mano, com LLMs correndo soltas, nunca fiz tanto em tão pouco tempo, além de estar usando essas experiências pra estudar. E felizmente, grande parte do que eu produzi está ligado às artes e eu queria muito compartilhar com vocês... talvez esse seja meu <em>dump</em>&nbsp;de agosto, e acredito que vocês vão gostar, pelo menos de alguma coisa :)</p><!--more--><p>Recebi um convite pra bolar alguma arte num evento que vai rolar na cidade, mas como eu já estava bem desconectado da pintura, pensei em experimentar algo mais digital. Há algumas semanas eu adaptei um Kinect de XBOX na esperança de criar umas artes <em>real time</em>&nbsp;no Touch designer e falhei miseravelmente, não que não tenha rolado, mas o modo <em>free</em>&nbsp;do bagulho é paia e o pago é... absurdo de caro. Então, com a mesma ideia do que faria no software, tentei encontrar caminhos usando <em>javascript</em>. Essa linguagem é maneirissima, super dinâmica e possui várias bibliotecas para fazer "coisas" diferentes. Também descobrir o <a href="https://openprocessing.org/" target="_blank" rel="nofollow ugc noopener">OpenProcessing</a>, uma plataforma pra projeto de <em>coding + art </em>que usa <a href="https://p5js.org/" rel="nofollow ugc noopener">p5.js</a>, uma biblioteca gratuita de <em>javascript.</em>&nbsp;Tem muito projeto incrível lá e eu decidi meter a mão na massa. Assim, sugiram o <em>paintthetown</em>&nbsp;e <em>meltingintoblocks</em>.</p><h3><strong>1. <a href="https://openprocessing.org/sketch/2712352" target="_blank" rel="nofollow ugc noopener">meltingintoblocks</a></strong></h3><p>Esse projeto em <em>js </em>captura a imagem da câmera e converte em blocos pretos e brancos, quase como uma retícula. Então, se o microfone estiver ativado, ele cria distorções baseadas na captura do som. A ideia é deixa uma projeção rolando em uma parede e captura com infravermelho o movimento das pessoas que estariam circulando pela sala. Simples, mas eu gosto muito dessa "desconstrução" da forma, e fiz isso especificamente pra provocar as pessoas para interagirem direto com a câmera e o caos visual.</p><p><img data-original-height="864" data-original-width="688" src="/lib/media/ja-e-setembro-01.gif" class="blog-image"></p><h3><strong>2. <a href="https://openprocessing.org/sketch/2712610" target="_blank" rel="nofollow ugc noopener">paintthetown</a></strong></h3><p>Semelhante a ideia do <em>meltingintoblocks</em>, esse projeto também <em>js&nbsp;</em>capta o som<em>&nbsp;</em>e distorce alguns padrões de linhas e partículas que flutuam na tela. Eu já queria há algum tempo explorar abstrações com preto e branco, linhas e algumas composições orgânicas e etéreas, a com esse projeto eu consegui chegar muito perto - juro que eu queria mais <em>glow</em>, mas funciona. Quero ainda projetar isso em parceria com alguma <em>DJ</em>&nbsp;pra deixar como <em>background </em>ou projetado de cima sobre a galera na pista, que também ficaria irado.</p><h3><strong>3. <a href="https://dqad.vercel.app/" target="_blank" rel="nofollow ugc noopener">DQAD</a> &amp; <a href="https://letmeflowsketching.vercel.app/" target="_blank" rel="nofollow ugc noopener">FlowSketch</a></strong></h3><p>Estes dois projetos já são mais experimentações de destruição e construção.&nbsp;</p><p><strong>DQAD</strong>&nbsp;é um <em>web app</em>&nbsp;estático que usa <em>js&nbsp;</em>pra desconstruir e mixar imagens. Quando criei o site, queria que as pessoas destruissem suas imagens, subindo várias para o site que iria reciclar e reconstruir elas mixadas, cagando um pouco pra normalidade das imagens perfeitas e também dando um novo contexto para o "lixo" de imagens que acabam apenas sendo deletadas por não serem... perfeitas.&nbsp;</p><p><img data-original-height="800" data-original-width="800" src="/lib/media/ja-e-setembro-02.jpg" class="blog-image"></p><strong></strong><p><strong>FlowSketch</strong>&nbsp;já foi por outra <em>vibe</em>. Ele é uma extensão de navegador que rastreia os movimentos e cliques do mouse e transforma em diferentes cores e <em>brushes </em>que vão "pintando" em um canva digital. Depois de algum tempo com a extensão ativada, você pode abrir ela pra ver o resultado das suas rotinas de ações com o mouse sobre a tela. Não é apenas uma pintura inconsciente, mas uma forma curiosa também de ver o seu próprio fluxo enquanto navega, pois movimentos rápidos criam linhas mais grossas, por exemplo. Atualmente há uma galeria pública onde tenho compartilhado alguns resultados, quem sabe no futuro eu disponibilizo para o público.</p><p><img data-original-height="600" data-original-width="800" src="/lib/media/ja-e-setembro-03.jpg" class="blog-image"></p><p>Sinto falta de fazer arte mais tradicional, mas confesso que o digital tem me atraído muito. Meu próximo projeto será um curta-metragem - eu espero rs - gravado em <em>Grand Theft Auto: San Andreas</em>... depois dou mais <em>spoilers</em>. Todas essas criações estão disponíveis, a maioria você pode até experimentar - e não esquece de compartilhar comigo no Instagram ou por aí.</p><p>Até logo.</p><p><em>xoxo</em></p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

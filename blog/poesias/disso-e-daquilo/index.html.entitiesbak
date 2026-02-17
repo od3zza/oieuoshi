@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Disso e daquilo - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Há tintas pelo chão e pincéis por todos os lados, Rabiscos e um borrão e traços desconcentrados, Mas há arte e inspiração e o âmago do pintor, Será um..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Julho, 2014 </sub>
+        
+        <h1>Disso e daquilo</h1>
+        <br />
+        
+        <sub> Poesias 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            Há tintas pelo chão e pincéis por todos os lados,&nbsp;Rabiscos e um borrão e traços desconcentrados, Mas há arte e inspiração e o âmago do pintor, Será uma doce composição com arte, sujeira e um toque de amor. 
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            <div class="comments-section"><h3>Comentários da época (4)</h3><br><div class="old-comment" style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;"><p style="margin: 0; font-size: 0.9em;"><strong>Laura Ribeiro</strong> <span style="color: #666;">em Julho, 2014</span>:</p><p style="margin-top: 4px;">Gente, que poema divo! Cada um mais lindo que o outro. Amo os que você escreve sobre a arte &lt;3
+Beijos || <a href="http://unlocked-land.blogspot.com.br/" rel="nofollow">Unlocked Land ❤</a></p></div><div class="old-comment" style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;"><p style="margin: 0; font-size: 0.9em;"><strong>Larissa Fonseca</strong> <span style="color: #666;">em Julho, 2014</span>:</p><p style="margin-top: 4px;">&quot;O que lhe disse, outro dia, sobre a pintura pode ser aplicado também à poesia: basta reconhecer o belo e ousar exprimi-lo. Em outros termos, é dizer muito em poucas palavras&quot;. Um trecho de <i>Os Sofrimentos do Jovem Werther</i>, um dos meus livros preferidos e que agora está sobre minha escrivaninha — eu estava relendo alguns dos meus quotes grifados e achei que este caiu bem aqui... Sabe por quê? Concluí que, sendo sua poesia sobre a pintura, você exprimiu o belo duas vezes. Grande feito, moço artista!
+
+Beijos ♥ <a href="http://blogjeitounico.blogspot.com.br/" rel="nofollow">Jeito Único</a></p></div><div class="old-comment" style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;"><p style="margin: 0; font-size: 0.9em;"><strong>Albuquerque</strong> <span style="color: #666;">em Julho, 2014</span>:</p><p style="margin-top: 4px;">Laura, obrigado e aguarde pois ainda escreverei mais rs  &lt;3</p></div><div class="old-comment" style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;"><p style="margin: 0; font-size: 0.9em;"><strong>Albuquerque</strong> <span style="color: #666;">em Julho, 2014</span>:</p><p style="margin-top: 4px;">Ai Lari, é sempre inspirador te ver por aqui *-* Eu tento fazer o mais agradável possível em tudo e dar muito de mim rs E vou comprar esse livro, fiquei curioso :o. Obrigado pelas belas palavras querida e até a próxima visita &lt;3</p></div></div>
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

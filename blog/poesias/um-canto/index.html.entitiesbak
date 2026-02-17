@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Um canto  - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="
+  
+Há um canto na minha casaO sol nunca cobre ele todoNão é coberto, é apenas um cantoAs sombras das paredes em V são durasDuras como a solidão bruta..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Março, 2025 </sub>
+        
+        <h1>Um canto </h1>
+        <br />
+        
+        <sub> Poesias 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p>
+  <img src="/lib/media/um-canto-01.jpg" class="blog-image">
+</p><p>Há um canto na minha casa</p><p>O sol nunca cobre ele todo</p><p>Não é coberto, é apenas um canto</p><p>As sombras das paredes em V são duras</p><p>Duras como a solidão brutal desse canto</p><p>Não tinha nada nas paredes</p><p>Nunca teve nada no chão, além do chão</p><p>Às vezes eu</p><p>Esse canto é e não é parte da casa</p><p>Pois da casa vem lembranças e nostalgia</p><p>Do canto, é apenas um canto</p><p>Tem vezes em que junta&nbsp;um tico de casca ali</p><p>Tinta véia que cai da parede úmida</p><p>Pois o sol nunca cobre ele todo, o canto</p><p>De noite, parece que as coisas ocultas se arrastam pra lá</p><p>Tem algum mistério agridoce aqui</p><p>Pois ele deixa de ser da casa, é outra coisa</p><p>Eu vejo algo colado nesse canto</p><p>Mais escuro que a escuridão</p><p>Eu ouço algo colado nesse canto</p><p>Menos silencioso do que a noite</p><p>Eu... Sinto a parede descascada arranjar meu braço</p><p>O chão frio congelar meus pés</p><p>E a solidão engolindo meu corpo nu</p><p>Minha pele arrepia e naquele canto</p><p>EU ME PERCO TODA NOITE</p><p>Estou colado nesse canto</p><p>E não consigo gritar</p><p>Amanhã <em>coloquei</em>&nbsp;flores ali</p><p>Nunca vi vida viver ali</p><p>Mas elas viveram</p><p>São flores de morte</p><p>Esse canto também é irônico</p><p>***</p><p><em>Imagem registrada em algum momento entre 2010/14.</em></p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

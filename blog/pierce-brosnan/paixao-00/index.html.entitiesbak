@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Paixão 00. - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="
+
+
+ Lembro-me do primeiro livro que li do agente mais conhecido do mundo, James Bond. Posso dizer que Ian Fleming deixou um verdadeiro tesouro para tr..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Março, 2013 </sub>
+        
+        <h1>Paixão 00.</h1>
+        <br />
+        
+        <sub> pierce brosnan 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p>
+<img src="/lib/media/paixao-00-01.jpg" class="blog-image"></p>
+
+&nbsp;Lembro-me do primeiro livro que li do agente mais conhecido do mundo, <strong>James Bond</strong>. Posso dizer que <strong>Ian Fleming </strong>deixou um verdadeiro tesouro para trás, tanto seus livros e contos, como os filmes lançados pós <em>Era Fleming</em>, trazem em si não só o patriotismo de um agente, mas mostra também os limites do psicológico, da sedução e também a coração e força de vontade por algo que está além do que podemos imaginar.<p>
+&nbsp;Comecei a paixão com<strong> A Serviço Secreto de Sua Majestade</strong>, um conto incrível, o qual mostra a paixão do agente pelo compromisso com a Coroa. Porém, tive a ascensão da minha paixão por<strong> 007</strong>, com o game <strong>GoldenEye</strong> para o <strong>Nintendo 64</strong>.</p><p>
+&nbsp;Como fã, minha opinião pode ser suspeita, mas para quem gosta de histórias envolventes, com muita sedução e ação, os livros que compõem a série de James Bond, são indispensáveis, e para quem prefere um filme, as sequências com <strong>Pierce Brosnan</strong> e <strong>Daniel Craig</strong>, são maravilhosas.</p><p>
+&nbsp;Espero em breve trazer algumas matérias mais recheadas sobre as histórias de James Bond e também dos atores que o incorporaram no cinema.</p><p>
+&nbsp;Pelo momento é isto, espero que tenham gostado da imagem e compartilhado deste precioso tesouro comigo.</p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

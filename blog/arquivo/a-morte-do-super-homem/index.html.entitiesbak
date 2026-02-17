@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>A Morte do Super-Homem - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="
+
+
+ E quando uma longa história chega ao fim. Não é simplesmente o fim, é? A edição de Super-Homem mais especial que já passou pelas minhas mãos, é ta..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Outubro, 2012 </sub>
+        
+        <h1>A Morte do Super-Homem</h1>
+        <br />
+        
+        <sub> Arquivo 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p>
+<img src="/lib/media/a-morte-do-super-homem-01.jpg" class="blog-image"></p>
+
+&nbsp;E quando uma longa história chega ao fim. Não é simplesmente o fim, é?&nbsp;A edição de Super-Homem mais especial que já passou pelas minhas mãos, é também o final da sua história, ou melhor, uma delas.
+&nbsp;A Morte do Super-Homem, é uma edição especial, uma pocket de 7 edições lançadas no EUA na década de 90. A história mostra um novo inimigo que surge das profundezas da Terra, não manifesta sentimentos além do ódio, demonstra muita sede por sangue e destruição, e uma loucura insaciável.
+&nbsp;Este ser, começa a destruir tudo por onde passa, e sem explicação nenhuma esta se guiando para a Metrópoles. Dando de cara com a Liga da Justiça.
+&nbsp;<!--more-->A batalha começa, mas a Liga não é o bastante para deter o inimigo, e acaba sendo abatida, entrando em cena o Homem de Aço. Uma batalha brutal é travada, muitos ambientes são destruídos, até que o monstro alcança a cidade. Super-Homem encontra Lane, e após se despedir, entra no round final com o monstro, batizado pela Liga como, Apocalipse.
+&nbsp;Após uma dura pancadaria, o Homem de Aço e Apocalipse se golpeiam, e caem, é a morte para o mal, e a morte para o bem.<p>
+&nbsp;Pode parecer estranho ler a morte de um dos heróis mais poderosos de todos os tempos, mas até que faz muito sentido. Nada pode durar para sempre, e sempre haverá um herói mais poderoso. Super-Homem é o tipo de herói que nada pode deter, mas assim como qualquer outro ser no universo, ele pode morrer. O desfecho foi bem elabora, porém, a história não ficou tão salgada quanto deveria, podemos dizer que ficou um tanto quanto sem pé nem cabeça, porém, está foi a edição nacional lançada, ao contrário dos 7 volumes americanos, os quais mostram um pouco mais sobre o inimigo e sobre a Liga da Justiça.
+&nbsp;Em relação aos heróis, a Liga também mostra alguns membros até então não muito conhecidos, ou de pontas, mas não deixam a desejar, lutando bravamente ao lado do Homem de Aço.</p><p>
+&nbsp;A história é fantástica e vale muito a pena para quem é fã da série.</p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

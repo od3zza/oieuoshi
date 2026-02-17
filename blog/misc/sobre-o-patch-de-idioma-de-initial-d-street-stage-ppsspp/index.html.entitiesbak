@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sobre o patch de idioma de Initial D Street Stage (PPSSPP) - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description"
+        content=" Acho que esse é o tipo de publicação que entra na categoria MISC, pois é sobre algo que amo, mas talvez você não faça ideia do que tô falando (mas su..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png"
+        href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Fevereiro, 2026 </sub>
+
+        <h1>Sobre o patch de idioma de Initial D Street Stage (PPSSPP)</h1>
+        <br />
+
+        <sub> Misc 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p>&nbsp;Acho que esse é o tipo de publicação que entra na categoria MISC, pois é sobre algo que amo, mas
+                talvez você não faça ideia do que tô falando (mas sugiro que você experimente, pelo menos), e tudo bem,
+                pois a intenção é compartilhar... então vamos nessa!</p>
+            <p><img src="/lib/media/sobre-o-patch-de-idioma-de-initial-d-street-stage-ppsspp-01.gif" class="blog-image">
+            </p>
+            <h3>Nerd mode</h3>
+            <p><strong>Initial D Street Stage </strong>é um jogo de corrida lançado em 2006 para o console Playstation
+                Portable (PSP) da Sony. Esse jogo foi produzido pela Sega e teve um sucesso interessante no Japão,
+                principalmente por ser um jogo baseado no mangá/anime Initial D (頭文字D) de Shuichi Shigeno. Não vou
+                entrar em detalhes sobre a história, pois você pode encontrar muito sobre ele no TikTok ou Instagram...
+                mas, basicamente a <em>lore</em>&nbsp;trata de rachas japoneses que se desenrolam nas montanhas e com
+                uma ênfase no estilo de corrida <em>drift</em>&nbsp;(derrapagem) — pra quem já viu <em>Velozes e
+                    Furiosos Desafio em Tóquio </em>(2006)&nbsp;isso vai ser bem familiar.</p>
+            <!--more-->O mangá foi publicado no Japão entre 1995 e 2013, mas também saiu no Brasil pela Panini entre
+            2024 e ainda está rolando (2026). O anime teve uma porrada de episódios (e alguns filmes), começando em 1998
+            e tendo temporadas (<em>Stages</em>) até 2022. O primeiro jogo saiu no Game Boy ainda em 1998 e também teve
+            publicações no PS1, PS2, PS3, Arcade, GBA, Nintendo 3DS e PC, foram mais de 10 jogos. Ou seja, ele tem lá
+            seus méritos.<p><img src="/lib/media/sobre-o-patch-de-idioma-de-initial-d-street-stage-ppsspp-02.jpg"
+                    class="blog-image"></p>
+            <p>Meu contato com esse jogo veio depois de uma temporada viciado no anime do mesmo criador MF Ghost,
+                disponível no Crunchyroll, onde a <em>vibe </em>se mantém, mas agora as corridas são gerenciadas por uma
+                empresa gigantesca e é só carro, tipo, Lambo, Ferrari, Porsche, etc., exceto pelo carro do protagonista
+                que é um Toyota 86, mas o cara é <em>zica</em>&nbsp;e consegue fazer geral comer poeira. Ele tem lá seus
+                altos e baixos, mas é uma narrativa interessante, o visual é maneiro e não fica apenas nas corridas. E
+                tem algumas trilhas sonoras que precisam ir para a sua playlist.</p>
+            <p><img data-original-height="124" data-original-width="220"
+                    src="/lib/media/sobre-o-patch-de-idioma-de-initial-d-street-stage-ppsspp-03.gif" class="blog-image">
+            </p>
+            <h3>Agora o que interessa</h3>
+            <p>Os jogos, ao menos os que eu tive contato no PS2 e PSP, só possuem versão oficial em japonês.
+                Inicialmente foi frustrante, pois eu estava curioso para experimentar a <em>gameplay </em>e
+                <em>amarradão</em>&nbsp;na estética. Então, fuçando no Reddit e YouTube, encontrei uma publicação com um
+                <em>patch</em>&nbsp;(são arquivos modificados que alteram alguns aspectos dos jogos) em inglês. Eu
+                tentei fazer a instalação, mas não funcionava, pois no tutorial não indicava que o
+                <em>patch</em>&nbsp;era pra uma versão específica do jogo, a 1.01.</p>
+            <p>Então, consegui descolar a <em>ROM</em>&nbsp;(o arquivo "acessível") do jogo com a versão correta pra
+                emular no PPSSPP, um emulador de PSP para Android. E funcionou! Melhor ainda, <em>fuçando </em>por aí
+                também encontrei no Discord uma tradução em PT-BR, pensa na alegria de ter uma tradução também em
+                português. Vou compartilhar com quem interessar aqui o passo a passo bem reduzido e ainda falar um pouco
+                de outra <em>patch </em>que achei e o motivo dessas modificações serem tão importantes (e a
+                acessibilidade para a <em>ROM</em>&nbsp;desses jogos também — não, não é pirataria).</p>
+            <ul>
+                <li>
+                    <p>Instale o <a href="https://www.ppsspp.org/" target="_blank"
+                            rel="nofollow ugc noopener">PPSSPP</a> no Android;</p>
+                </li>
+                <li>
+                    <p>Abra o emulador e defina uma pasta onde os arquivos vão ficar (você pode também criar uma pasta
+                        "jogos" no mesmo local e adicionar as <em>ROMs</em>);</p>
+                </li>
+                <li>
+                    <p><a href="https://archive.org/details/patch_202602" target="_blank"
+                            rel="nofollow ugc noopener">Baixe a <em>ROM </em>e a pasta do </a><em><a
+                                href="https://archive.org/details/patch_202602" target="_blank"
+                                rel="nofollow ugc noopener">patch</a> </em>(você vai notar que terão duas pastas, uma EN
+                        e uma PT)<em>;</em></p>
+                </li>
+                <li>
+                    <p>Salve a <em>ROM</em>&nbsp;na pasta que você escolheu para jogos e extraia a pasta do <em>patch
+                        </em>da língua que você preferir EN (inglês) ou PT (português) para dentro da pasta
+                        <em>TEXTURES;</em></p>
+                </li>
+                <li>
+                    <p>Agora, abra o emulador. Em jogos você escolhe a pasta onde os jogos estão. E então abre o Initial
+                        D;</p>
+                </li>
+                <li>
+                    <p>Por fim, quando o jogo iniciar, você vai nas opções do emulador &gt; Configurações &gt;
+                        Ferramentas &gt; Ferram. do Desenvolvedor &gt; Subst. das Texturas &gt; Clica pra deselecionar e
+                        novamente para selecionar a opção "Substituir Texturas". Então é só voltar pro jogo;</p>
+                </li>
+                <li>
+                    <p>Se algo der errado, experimenta abrir o jogo, logo vai no menu do emulador, clica em "Salvar
+                        State", aí faz todo o processo acima. Por fim, antes de "Continuar", você clica em "Carregar
+                        State".</p>
+                </li>
+            </ul>
+            <p>Fácil né? Vou deixar aqui o vídeo do <a href="https://www.youtube.com/watch?v=_IhGjRjtRGM"
+                    target="_blank" rel="nofollow ugc noopener">tutorial gringo</a>&nbsp;(<a
+                    href="https://www.youtube.com/watch?v=WnHWfkkzqSc" target="_blank" rel="nofollow ugc noopener">tem
+                    esse também</a> que pode ajudar) e do <a href="https://www.youtube.com/watch?v=XlVRh9QKSXk"
+                    target="_blank" rel="nofollow ugc noopener">tutorial em BR</a>.</p>
+            <p>Agora, sobre o lance da acessibilidade... eu entendo que existem diversos fatores relacionados a diretos
+                autorais que envolvem a circulação desse tipo de mídia (que na teoria não deveria ter uma versão
+                digitalizada da mídia física, exceto se criada pela desenvolvedora), porém, jogos desses consoles mais
+                antigos, a grande maioria, são produções de empresas que já não existem, que não há distribuição, ou
+                seja, você só tem acesso se comprar usada (e com sorte em boas condições). Sendo assim, é um tipo de
+                "produto" que não gera um capital, e é um poderoso recurso de troca cultural, experiência e tem uma
+                riqueza <em>fudida</em>&nbsp;para estudos.&nbsp;</p>
+            <p>Eu sei que hoje a circulação de <em>ROMs</em>&nbsp;acontece até mesmo para os consoles atuais, e como eu
+                disse, sim, direitos autorais existem para serem respeitados, mas deixando minha opinião pessoal, os
+                jogos hoje são quase experiências de luxo, o valor não é acessível e é a partir desse mercado
+                capitalista agressivos que a indústria <em>indie</em>&nbsp;cresce tanto em diferentes formas, modelos e
+                obras. E também é legal ver como a comunidade se une e engaja, não só para recuperar muitos jogos que
+                acabam perdidos, como pra fazer traduções e modificações, como essas do Initial D.</p>
+            <p>No final das contas, acredito que toda obra deveria ter uma versão acessível. No nicho
+                <em>indie</em>&nbsp;de TTRPGs (<em>tabletop role-playing games</em>), por exemplo, há diversos designers
+                e editoras que publicam seus jogos com uma versão gratuita, mesmo que seja sem cores ou ilustrações, um
+                texto simples, pois sabem que a acessibilidade ao conteúdo é mais importante do que a capitalização
+                imediata, e isso gera muito mais do que clientes, mas coletividade.&nbsp;</p>
+            <p>Já pensou como seria no mercado literário? Se todos os livros tivessem uma versão de texto simples
+                gratuita? Hoje, entendo que as pessoas não comprar livros pelo conteúdo, mas pela experiência, uma
+                versão acessível não vai impedir o consumo, mas potencializar esferas que não tinham contato para
+                consumos futuros.&nbsp;</p>
+            <p>Não sei como isso seria para jogos digitais, mas é algo interessante para se pensar, não?</p>
+            <p><em>Let's drift!</em></p>
+        </div>
+
+        <hr />
+
+        <section class="comments">
+            <div class="comments-section">
+                <h3>Comentários da época (2)</h3><br>
+                <div class="old-comment"
+                    style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;">
+                    <p style="margin: 0; font-size: 0.9em;"><strong>Willian Ernani</strong> <span
+                            style="color: #666;">em Fevereiro, 2026</span>:</p>
+                    <p style="margin-top: 4px;">Bom dia, tudo bem?
+                        Encontrei seu blog no &quot;Blogueiros Raiz&quot; e cara, que surpresa boa! Otimo e
+                        multifacetado conteúdo! Parabéns tambem pelas produções audiovisuais do canal! E voce trouxe
+                        algo que eu queria a anos, tradução do InitialD kkk, vou jogar no meu R36s hoje ainda! Ah, e seu
+                        blog ja esta no meu blogroll!Um abraço!
+                        <a href="https://prazerwillian.blogspot.com" rel="nofollow">Prazer! Willian.</a>.
+                    </p>
+                </div>
+                <div class="old-comment"
+                    style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;">
+                    <p style="margin: 0; font-size: 0.9em;"><strong>uoshi</strong> <span style="color: #666;">em
+                            Fevereiro, 2026</span>:</p>
+                    <p style="margin-top: 4px;">oi Willian. tranquilo, obrigado. e que maneiro isso, eu fiquei
+                        muuuuuuito inquieto com a frustração e dei sorte de encontrar os tutoriais. depois me conta se
+                        deu certo, e logo te visito! obrigado pelo blogroll</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="footer"></section>
+</body>
+
+</html>

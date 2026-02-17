@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Despedaços - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Dizem que nada é como a liberdade, mas poucas coisas parecem tão absurdas quanto pensar em liberdade.Todas as noites meu suor azedo é um repúdio ao on..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Novembro, 2025 </sub>
+        
+        <h1>Despedaços</h1>
+        <br />
+        
+        <sub> Poesias 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            Dizem que nada é como a liberdade, mas poucas coisas parecem tão absurdas quanto pensar em liberdade.<p>Todas as noites meu suor azedo é um repúdio ao ontem, amanhã e ao agora, enquanto a liberdade se desfaz em uma corrente que me prende em uma realidade incapaz de preencher meus vazios.</p><p>E eu tento, com futilidades.</p><p>
+  <img src="/lib/media/despedacos-01.jpg" class="blog-image">
+</p><!--more--><p>Tantas palavras pra justificar isso... essa sensação de que tudo está perdendo a sua verdade, perdendo o sentido, e observar o canto vazio do meu quarto se torna mais prazeroso do que a foda, uma pizza suculenta ou a porra de um vinho.&nbsp;</p><p>As microrrealidades já não são suficientes para sustentar o sistema e eu me sinto derretendo sobre essa merda iludida que você chama de alegria, tão passageira quanto um relâmpago que podia cair sobre meu peito, mas me castiga apenas pelo desejo.</p><p>Já tentei tantas ilusões, me provoquei tantos prazeres básicos e simulei tantas emoções que me sinto como o limão espremido, desgraçado e no seu fim... ainda assim, sou mais um <em>glitch</em> nesse sistema corrosivo como você.</p><p>Um ser que se alimenta de impulsos temporários pois mais do que se odiar, acredita nesse amor por alguém, alguém que está ali, e que precisa do seu amor e você sabe... mas quando o relógio chama a meia-noite tu percebe que seja como for, para quem se foi, sinto apenas que... faz sentido não haver sentido e lamento não ter sua fibra.</p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

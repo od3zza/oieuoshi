@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Quatro Linhas (2025) - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content=" Ao chegar em casa, uma garota mergulha em emoções enquanto conversa com seu melhor amigo, até que as mensagens se tornam um gatilho desastroso..É dif..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Julho, 2025 </sub>
+        
+        <h1>Quatro Linhas (2025)</h1>
+        <br />
+        
+        <sub> Arte Multimedia 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p>&nbsp;<iframe allowfullscreen="" src="https://www.youtube.com/embed/Cz9YEVzXFdw" youtube-src-id="Cz9YEVzXFdw"></iframe></p><em>Ao chegar em casa, uma garota mergulha em emoções enquanto conversa com seu melhor amigo, até que as mensagens se tornam um gatilho desastroso..</em><p>É difícil explicar o número de causas que levam ao isolamento. Não apenas o isolamento social, mas também o psicológico. Hoje, mais conectados do que nunca, encontramos conforto na solidão, e torna-se tão difícil deixá-la que nos agarramos ao etéreo, ao sintético, ao pixel. Penso que podemos e devemos refletir sobre isto nos mais variados e possíveis aspectos, e também dói.</p><p>✨ Selecionado na&nbsp;Mostra Brasileira Independente de Cinema de Rua 2025</p>✨ Selecionado no Festival Araucária dos Campos Gerais 2025✨ Selecionado no Lift-Off Network - Sessions 2025✨ Selecionado no Festival Interamericano de Cinema - LUMIAR 2025✨ Selecionado na&nbsp;<a href="https://web.archive.org/web/20250411211121/https://sites.google.com/view/mofin-2025/programacao" rel="nofollow ugc noopener">Mostra do Filme Independente - MOFIN 2025</a><p><strong>Equipe</strong>:Julia Testoni: Interpretação, figurino e produçãoLoui: Assist. de direção e roteiro, cap. de som e produçãoMaju Ribeiro: Edição e produçãoRosana Oliveira: Assist. de direção, roteiro e produçãoRuan Galvão: Mixagem, música e produçãoUoshi: Direção, edição, fotografia, roteiro e produção</p><p><strong>Equipamento</strong>:Câmera Sony Nex 5nLente Sony 16-50mm E-mount OSSMic Shotgun KSR KT81</p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

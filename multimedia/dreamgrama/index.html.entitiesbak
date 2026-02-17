@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>dream grama - Uoshi</title>
+    <link rel="canonical" href="https://oieuoshi.glitch.me/videoarte/dreamgrama" />
+    <meta name="author" content="dream grama - Uoshi" />
+    <meta
+      name="description"
+      content="Curta-metragem - Experimental -
+    Uma garota conta para sua amiga sobre um recente sonho estranho do qual
+        ela ainda não se recuperou e tem a sensação de que ainda está sonhando."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+
+    <!-- Manifest .json-->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Libs -->
+    <link
+      rel="stylesheet"
+      href="/lib/style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <script src="/lib/script.js" defer></script>
+
+    <!-- Theme Color - https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Ícone-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAADmklEQVRoge0a23HbMAzo9d/eoNqg3qAewRtEI2gEdQN3gsgbKBvEG7gbKBvIE6DHFExhmIT4UJKf4o5niSLeIAjwjEQEawIi7gFgBwBbRXYGgAsRPa/K0ClQO1jggYWkhTHz2t0qvKuQARoAGBOEjg2H23yKAgDQBiw+AcARAA7SwuyhA3+bFI6j0X6oAiy8FjxZCMbXihQpsYbwLp63BXTcJh+gUolcpvtahgkG2b+LAmwx6fauVnhBu1PhmOzRHCa9YDKuJbygL7NZv6oCbP1ZZI2q1Bfh0SgeSV74knjeuRS44eeBiKYVz9JXYJoDv26YZxJirntXt77yQlaYJtVCiDizVV6IqKky9TKvCwB8B4ArEel66g6+GoT24tWHz6TmU2CyQg4Rt3xSe5g9T0Q8+PdoEWi4s7S+0cNMtypBREftJq6Bi4VLRLOwejZEQwgAfvKvi/kHfj4DgHalC6kfJcwR0e+nQUxLeic+2OJQkhnY7V2gIAuNYDYRoTMxrS3Py/posWdITW+e4CWjcZHj7mRlT+p1A/Mw474kjfrUFoInVujBpgIvvoHhMHHPYOD9JqJd5Ns/WAidPmLtmZuTJlBN5oxW8AmF4xuf7BCKuNgPH69a+JT2UtNtxZ6I4pSkUZltThwqHnpEdMI/qjUS5yyer4ruSbw/Mq1ezD3xmqvAyQ6hVmWHxti8A6+RYSC9c5SVZiDb6LBphFdaq3HKLbY6Q3jZrY3qvVcCt4YSWY1S7kkcOjH9SduJuWNgnZxrFe4SjzhkWN/KNnJjTgGP9Dx3ieDokdxrJ3kgsmHlRpSlxLMoESSNRm1GiaPp+Y1d74HQNYr4dkgsJ2LDhctB0Mu+ZlkSvokJnxhaS+NOwIASZgeY4oE5JnzgwPP5fFTxPvFcz17z85cITa/EXOUBQSwmfBMTJrSJI0oHK06Lb64C8Trkb2oMxuuCAq0Vlim8kxVIDK+7exxLgSXcnFHcUnKa883+yK1hDviDbSMOtmyo6Ynlydsb62Ig28guE/cNihRAxJ1ocM4lN3WM4yvcbwXXNa9Q6gFpscFYtwQStyyMCjbuVpfGkXXmJhbrptRDKzRKPHBz0VtktVsIVanJUKKAzDahsjkXpBHMS7AQWBdbQSCiERF/sburr9ld+kXEE4fjmIByA9kKMNOOM9Fa0Jcao/gcIKJsdxu0ij35EZe77wr/FfhsKNrEieDi2l/Rr/sXGw8A8AcMMnsWCy/E1QAAAABJRU5ErkJggg=="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAADmklEQVRoge0a23HbMAzo9d/eoNqg3qAewRtEI2gEdQN3gsgbKBvEG7gbKBvIE6DHFExhmIT4UJKf4o5niSLeIAjwjEQEawIi7gFgBwBbRXYGgAsRPa/K0ClQO1jggYWkhTHz2t0qvKuQARoAGBOEjg2H23yKAgDQBiw+AcARAA7SwuyhA3+bFI6j0X6oAiy8FjxZCMbXihQpsYbwLp63BXTcJh+gUolcpvtahgkG2b+LAmwx6fauVnhBu1PhmOzRHCa9YDKuJbygL7NZv6oCbP1ZZI2q1Bfh0SgeSV74knjeuRS44eeBiKYVz9JXYJoDv26YZxJirntXt77yQlaYJtVCiDizVV6IqKky9TKvCwB8B4ArEel66g6+GoT24tWHz6TmU2CyQg4Rt3xSe5g9T0Q8+PdoEWi4s7S+0cNMtypBREftJq6Bi4VLRLOwejZEQwgAfvKvi/kHfj4DgHalC6kfJcwR0e+nQUxLeic+2OJQkhnY7V2gIAuNYDYRoTMxrS3Py/posWdITW+e4CWjcZHj7mRlT+p1A/Mw474kjfrUFoInVujBpgIvvoHhMHHPYOD9JqJd5Ns/WAidPmLtmZuTJlBN5oxW8AmF4xuf7BCKuNgPH69a+JT2UtNtxZ6I4pSkUZltThwqHnpEdMI/qjUS5yyer4ruSbw/Mq1ezD3xmqvAyQ6hVmWHxti8A6+RYSC9c5SVZiDb6LBphFdaq3HKLbY6Q3jZrY3qvVcCt4YSWY1S7kkcOjH9SduJuWNgnZxrFe4SjzhkWN/KNnJjTgGP9Dx3ieDokdxrJ3kgsmHlRpSlxLMoESSNRm1GiaPp+Y1d74HQNYr4dkgsJ2LDhctB0Mu+ZlkSvokJnxhaS+NOwIASZgeY4oE5JnzgwPP5fFTxPvFcz17z85cITa/EXOUBQSwmfBMTJrSJI0oHK06Lb64C8Trkb2oMxuuCAq0Vlim8kxVIDK+7exxLgSXcnFHcUnKa883+yK1hDviDbSMOtmyo6Ynlydsb62Ig28guE/cNihRAxJ1ocM4lN3WM4yvcbwXXNa9Q6gFpscFYtwQStyyMCjbuVpfGkXXmJhbrptRDKzRKPHBz0VtktVsIVanJUKKAzDahsjkXpBHMS7AQWBdbQSCiERF/sburr9ld+kXEE4fjmIByA9kKMNOOM9Fa0Jcao/gcIKJsdxu0ij35EZe77wr/FfhsKNrEieDi2l/Rr/sXGw8A8AcMMnsWCy/E1QAAAABJRU5ErkJggg=="
+    />
+
+    <!-- Abre Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HZNDKKGKW8");
+    </script>
+    <!-- Fecha Google tag (gtag.js) -->
+
+    <!-- SSL Protocol Config -->
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+    <!-- End SSL Protocol Config -->
+
+    <!-- ///////////////////////////////////////////////// Fecha Tags + SSL -->
+  </head>
+
+  <!-- Hey u!
+───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
+───█▒▒░░░░░░░░░▒▒█───
+────█░░█░░░░░█░░█────
+─▄▄──█░░░▀█▀░░░█──▄▄─
+█░░█─▀▄░░░░░░░▄▀─█░░█ 
+-->
+
+  <!-- ///////////////////////////////////////////////// Abre Corpo -->
+  <body>
+    <!-- Abre Header -->
+    <!-- sidebar esquerdo -->
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/videoarte">← videoarte</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end sidebar -->
+
+
+    <!-- Fecha Header -->
+
+    <!-- Abre Title -->
+    <section class="content">
+      <sub> Agosto, 2024 </sub>
+      <!-- título -->
+      <h2>dream grama</h2>
+      <sub> Experimental | 1' </sub>
+      <br /><br />
+      <!-- Fecha Title -->
+
+      <!-- conteúdo -->
+
+      <center>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/1ZXrZWUiuQc?si=ZlJ1sS1FOsBfVWAj"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </center>
+      <br />
+
+      <p>
+        <em>
+          Uma garota conta para sua amiga sobre um recente sonho estranho do
+          qual ela ainda não se recuperou e tem a sensação de que ainda está
+          sonhando.
+        </em>
+      </p>
+      <hr />
+      <p>
+        Projeto desenvolvido na disciplina de Poesia no Cinema no mestrado de
+        Cinema e Artes do Vídeo da Universidade Estadual do Paraná, inspirado
+        pelas obras e estudos de Maya Deren e reflexões sobre o delírio e
+        descontinuidade do espaço e do tempo.
+      </p>
+      <p>
+        Roteiro, Direção e Montagem: Uoshi <br />Dir. de Arte e Fotografia:
+        Castro Pizzano <br />Elenco e Figurino: Sali Cimi <br />Apoio: Masdon +
+        CasaTreze Studio
+      </p>
+
+      <hr />
+
+      <h3>Sobre o processo criativo</h3>
+      <sub>Justificativa da criação entregue junto ao vídeo na disciplina.</sub
+      ><br /><br />
+
+      <p>
+        Particularmente, antes de me propor (pois mais do que um projeto para
+        disciplina, esse material também é um desafio pessoal) a criação do
+        projeto “<em>Dream Grama</em>”, buscar como inspiração e referências os
+        trabalhos de Maya Deren parecia assustador e impossível. Meu primeiro
+        contato com Deren me permitiu compreender algo que eu sabia que existia
+        no cinema, mas estava sem uma forma, sem um nome, sem uma estrutura
+        analítica. Refletindo sobre isso, entendi que o maior desafio está em
+        nos desprendermos do que é convencional, das estruturas narrativas
+        tradicionais, as quais, inclusive, estamos tão enraizados que e o
+        primeiro ato ao observar uma obra é buscar por significados e leituras,
+        ao invés da pura experiência do observar.
+      </p>
+      <p>
+        Durante a estruturação do roteiro, me vi apagando e reescrevendo linhas
+        e linhas com diálogos, descrições de imagens e frustrado por sempre
+        acabar com páginas de discursos racionais, sobretudo, que não
+        expressavam minimamente o que eu buscava com esse projeto. Pensar no
+        realismo, como Deren, exigia não negá-lo, mas usar o que estava sendo
+        registrado de forma a construir a partir de uma desconstrução, usar a
+        imagem para que seja mais do que uma imagem, um registro, mas uma
+        fragmentação da lógica frente a sobreposição da subjetividade - e aqui o
+        subjetivo é a experiência desse caos ilógico. 
+      </p>
+      <p>
+        Não descarto a narrativa, mas ao contrário de quando se estuda, ao criar
+        baseado em, se constróem novas paredes que precisam ser derrubadas com a
+        auto reflexão. Em Tarkovski, foi onde encontrei um caminho para primeiro
+        entender a relação da realidade e a construção a partir dela, e não me
+        refiro ao que de fato é o real ou sua estética, mas no sentido de que
+        “[...]
+        <em>a partir da ‘observação direta da vida’ e de seus fenômenos</em>
+        [...]
+        <em
+          >uma realidade na qual a fronteira entre subjetividade e mundo
+          objetivo se dissolve, gerando uma (intro)visão.” </em
+        >(Vasconcelos, 2020, p. 161), e a formatação desse pensamento é o que eu
+        assumi como um ponto de partida.
+      </p>
+      <p>
+        Pensar no cinema vertical proporciona uma emocionante e excitante
+        maneira de desaprender a observar, de forma que o olhar curioso não seja
+        contido, apenas domado para que os sentidos e o corpo respondam a imagem
+        de maneira mais instintiva e emocionalmente direta. “<em
+          >Tal proposta cinematográfica subentende a inclusão do espectador na
+          construção do sentido do filme.</em
+        >” (Ribeiro, 2017, p. 303), e mais do que criador, ao me colocar como
+        espectador foi onde senti a dificuldade em articular criativamente a
+        partir da perspectiva de Deren, onde tão incisiva ela argumente e
+        elabora narrativas não lineares, deslocamentos e desconexões tão
+        conscientes, que tornam lúcida essa separação entre a narrativa
+        dramática e o mergulho poético.
+      </p>
+      <p>
+        Vejo a importância desse diálogo entre realismo e a poesia, pois é fácil
+        nesse caminho nos deixarmos levar pelo abstrato, permeando então outros
+        significados e valores. Encontrei na proposta de Deren uma aderência ao
+        realismo pela sensação de proximidade que esse tem com o espectador, que
+        tem menos desdém pela imagem do que quando ela apresenta algo não
+        familiar, fantasioso. Estar na presença de uma imagem que te aproxima
+        pelas particularidades da personagem e/ou <em>mise-en-scène</em>, é
+        estar a mercê do imprevisível, da possibilidade de habitarmos o vale da
+        estranheza e beirar ao bizarro ou sermos jogados em um estado ordinário,
+        mas também explora nossa sensibilidade ao que é visto, e portanto,
+        quando a imagem toma um novo rumo, se desprendendo da narrativa, nós
+        estamos juntos à deriva desse processo sensorial.
+      </p>
+      <p>
+        Há uma fala de Deren no “<em>Poetry and the Film: A Symposium</em>”, que
+        ocorreu em outubro de 1953, transcrito no
+        <em>Film Culture Reader</em> (2000), p. 174, editado por P. Adams
+        Sitney, e que me serve como alicerce ao pensar sobre a visão da autora
+        sobre essa construção fílmica dicotômica: 
+      </p>
+
+      <blockquote>
+        A poem, to my mind, creates visible or auditory forms for something that
+        is invisible, which is the feeling, or the emotion, or the metaphysical
+        content of the movement. Now it also may include action, but its attack
+        is what I would call the “vertical“ attack, and this may be a little bit
+        clearer if you will contrast it to what I would call the “horizontal“
+        attack of drama, which is concerned with the development, let’s say,
+        within a very small situation from feeling to feeling. 
+      </blockquote>
+
+      <p>
+        Assistindo algumas obras de Deren, notei como a sagacidade na montagem é
+        importante, mas não tanto quanto a visão criativa. Aqui eu gostaria de
+        pontuar algumas observações práticas: durante meu processo de criação,
+        entendi que Deren tinha capricho por compreender o que estava criando,
+        do ponto de vista processual, justamente para dominar a imagem. Quando,
+        no meu processo, a captação veio através de outras mãos, a falta de
+        entendimento da tecnologia e controle sobre esse médium foi um
+        potencializador de frustração e forçou a reorganização do que eu
+        vislumbrava para adequar ao que foi captado. Deren ter o domínio sobre o
+        médium, possivelmente foi um fator importante para a sua percepção
+        narrativa e além, no processo de montagem. Tomo isso como uma nota de
+        experiência, uma vez que foi de suas obras que me inspirei.
+      </p>
+      <p>
+        Quando iniciei os primeiros rascunhos de <em>Dream Grama</em>, tinha
+        certo de que - ao contrário de incontáveis projetos inspirados por Deren
+        que encontrei no <em>YouTube </em>e valorizavam a estética da película,
+        a ausência do som e quase reproduções das suas imagens - eu queria fazer
+        o uso do som, não de um <em>score</em>, mas ambiência e voz. Como a
+        premissa do projeto era um diálogo onde uma personagem narraria um sonho
+        para outra, ao estruturar a ideia acabei dividindo ela em duas partes -
+        que se somariam - e desenhei um esquema de narrativa convencional para
+        me guia no meu processo e que cada vez que eu parecesse estar navegando
+        por ela, pudesse me afastar. A prática pode parecer meio absurda de
+        início, mas o exercício de se desprender do comum é difícil, e por mais
+        que não pareça, quando se está experimentando uma tecnologia, uma forma
+        de produção de arte e existe uma régua - mesmo que apenas conceitual, é
+        preciso estabelecer alguns limites para que não se faça muito ou pouco.
+      </p>
+      <p>
+        O primeiro esquema se baseou em três quadrados, no qual cada um
+        representava a estrutura narrativa sólida: início, meio e fim. Dentro de
+        cada quadro havia ainda:
+        <em
+          >exposição (1.1), valores (1.1), evento (2.2), ação (2.3), crise
+          (2.4), reflexão (2.3), clímax (2.5), consequências (3.3) e resultado
+          (3.1)</em
+        >. Dos números entre parênteses, o primeiro se refere ao quadrado, a
+        etapa da estrutura, e o segundo a escala crescente dramática. O segundo
+        esquema era mais simples, três linhas saíam do meio do quadrado 1,
+        subindo e descendo em cruzamentos como ondas, até o quadrado 3,
+        representando o tempo, espaço e objeto, o formato de história que eu
+        buscava contar.
+      </p>
+      <p>
+        O primeiro esquema foi desenhado para manter o roteiro e o storyboard
+        afastados, enquanto o segundo foi uma elaboração visual do meu
+        entendimento quanto a teoria do cinema vertical e uma análise a partir
+        de reflexões sobre os filmes <em>At Land </em>(1944),
+        <em>Meshes of Afternoon </em>(1943) e
+        <em>The Witche’s Cradle</em> (1943).
+      </p>
+      <p>
+        Na tentativa de experimentar, tal como o cinema de Deren, mas buscando
+        também explorar outras ideias que poderiam ser interessantes para
+        contato, encontrei na narrativa paramétrica de Bordwell, a possibilidade
+        de empregar o som e ao mesmo tempo que contrapor a imagem, também tornar
+        ele uma ferramenta da mesma. Para Bordwell, nesse tipo de narrativa
+        estão filmes “<em
+          >in which syuzhet patterning and stylistic patterning are out of sync </em
+        >[...]” (Bordwell, 2007, p. 14), ou seja, suas perspectivas (como será
+        exemplificado no próximo parágrafo) possuem também valores individuais.
+      </p>
+      <p>
+        <em>Dream Grama</em> então se faz como um curta-metragem experimental, e
+        que também se pauta na ideia de <em>daydream</em>, ao resgatar em seus
+        extremos a elaboração de uma segmento infinito e surreal. A partir das
+        inspirações e base teórica já citadas, a experiência de distorcer
+        imagens e sons, trabalhando sobre a narrativa clássica e sua
+        desconstrução, acabou por dar ao projeto uma forma consciente que pode
+        ser observada de três perspectivas, juntas ou individualmente:
+      </p>
+      <ol>
+        <li>
+          O filme como imagem se faz a partir de cenas curtas - inicialmente
+          havia a intenção da preservação de planos longos, mas foram
+          construídas assim devido às limitações de ferramentas, deslocamento e
+          espaço -, que através de cortes, mostram a personagem principal
+          (Garota) contando sobre um sonho para outra personagem que permanece a
+          maior parte do tempo fora de quadro (chama Duplo). Essas cenas são
+          baseadas no movimento da caneca de café e das mãos da Garota, que a
+          cada corte seguido desses movimentos, a situa em um espaço diferente.
+          A descontinuidade espacial existe no filme para o primeiro contato de
+          estranheza com o espectador, a experiência da desconexão.
+        </li>
+        <li>
+          O som ambiente é preservado do início ao fim, foi uma escolha de
+          ancoragem contemplativa para a repetição sobre a experiência fílmica.
+        </li>
+        <li>
+          A história narrada, tal como apoiada à penúltima cena, cria a terceira
+          camada e se faz pela ideia do <em>daydream</em>, carregando
+          ambiguidade e uma tentativa de representar a quebra racional
+          narrativa, a experiência sensorial e situar o espectador dentro de um
+          espaço concreto, mas imaginativo/impossível.
+        </li>
+      </ol>
+      <p>
+        Entendo que muito do esforço empregado para a criação desse projeto,
+        após reflexão sobre as teorias abordadas, mesmo que brevemente neste
+        texto, tiveram resultados que não corresponderam à ideia original. Mas
+        ao mesmo tempo, me permitiu também pensar sobre todas as “paredes”
+        criadas pela forma como consumimos e criamos arte na contemporaneidade.
+        Apesar da poesia ainda ser sustentada pela herança desses pensamentos,
+        existem diversos atravessamentos que ocorreram para mim como potenciais
+        criativos e ao mesmo tempo destrutivos, mas também acredito que essa é a
+        base da experiência e descoberta, tal como Tarkovski e Deren tiveram que
+        caminhar, experimentar, aprender, elaborar, se arriscar, pensar
+        poeticamente é um exercício único, assim como traduzir esse pensamento
+        em imagem, som, ou simplesmente tentar dar espaço para que se faça -
+        como Deren pôs - visível algo que é invisível através de uma
+        sensibilidade que dispensa ser racionalizada, mas profundamente sentida.
+      </p>
+      <hr />
+      <p><strong>Referências:</strong></p>
+      <p>
+        BORDWELL, D. <em>Poetics of Cinema</em>. Nova York: Routledge, 2007.
+      </p>
+      <p>
+        VASCONCELOS, Beatriz Avila.
+        <em
+          >Um modo de relacionamento com a realidade: Noções de poesia de Andrei
+          Tarkovski</em
+        >. Aniki, AIM – Associação de Investigadores da Imagemem Movimento, v.
+        7, n. 2, p. 152-172, 2020. Disponível em: &lt;<a
+          href="https://aim.org.pt/ojs/index.php/revista/article/view/649"
+          >https://aim.org.pt/ojs/index.php/revista/article/view/649</a
+        >&gt;. Acesso em: 26 jul. 2024.
+      </p>
+      <p>
+        RIBEIRO, Ana Costa.
+        <em>Corpo, memória, paisagem: o Cinema Vertical de Maya Deren</em>. ln
+        Atas do VII Encontro Anual da AIM, editado por Ana Baiona de Oliveira,
+        Catarina Maia e Madalena Oliveira, 297-307. 2017. Lisboa: AIM. ISBN
+        978-989-98215-8-3.
+      </p>
+      <p>
+        SITNEY, A. P. Film Culture Reader. Nova York: Cooper Square Press, 2000.
+        ISBN 978-0-8154-11 01-7.
+      </p>
+    </section>
+    <section class="footer"></section>
+  </body>
+</html>

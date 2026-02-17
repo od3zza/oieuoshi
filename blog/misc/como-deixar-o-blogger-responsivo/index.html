@@ -52,7 +52,7 @@
         <br /><br />
 
         <div class="post-content">
-            <p>Eu sempre amei brincar com códigos HTML, CSS e JS no Blogger, isso desde que me conheço na blogsfera – podemos voltar em 2008, talvez. Porém, foi triste ver como o Blogger se manteve simples e não acompanhou todas as necessidades que a usabilidade exige hoje em dia, como a responsividade. Mas, encontrei um tutorial super interessante e vou deixar compartilhado aqui para quem está tentando deixar o Blogger responsivo e ainda não conseguiu encontrar boas respostas!</p><!--more--><p>A versão /m (mobile) da plataforma não é de toda ruim, se propõe de maneira muito simples a ser uma lista das postagens, nada mais. Mas manter uma leitora engajada hoje exige mais do que o conteúdo, mas também um bom trabalho estético. Existem, claro, diversos temas por aí, vendidos até mesmo no Etsy, mas também há muita gente que, como eu, ainda gosta dos temas clássicos e de trabalhar sobre eles.</p><p>Pensando na praticidade do Blogger e também na nostalgia de estar em um espaço mais comunitário, mesmo que em uma dimensão bem menor do que antes, eu acabei desativando meus sites e migrando novamente para cá, mas precisava resolver algo muito importante: como deixar o tema básico do Blogger responsivo, mesmo que ainda o preservando simples. E nessa busca encontrei um tutorial que me ajudou e pode te ajudar também.</p><p>Basicamente você terá que fazer algumas alterações dentro do editor do seu tema, é bem simples, mas aconselho você usar esse tutorial somente se estiver utilizando o "tema clássico" ou o "simples", pois eu não cheguei a testar como ele se comporta com os demais. Dito isso, vamos lá.</p><h3>Tema com barra lateral do lado direito</h3>1. Acesse tema &gt; personalizar e escolha o tema com a barra lateral do lado direito.<p>2. Acesse tema &gt; fazer backup (dentro do botão personalizar) para baixar o seu tema caso algo dê errado e você precise restaurar.</p><p>3. Acesse tema &gt; editar html (dentro do botão personalizar)&nbsp;e faça as alterações abaixo:</p><p>Encontre esse código abaixo da tag &lt;head&gt;</p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/&gt;</textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;</textarea></p><p>Encontre e selecione o código <em>]]&gt;&lt;/b:skin&gt;</em> até <em>]]&gt;&lt;/b:template-skin&gt;</em>&nbsp;e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
+            <p>Eu sempre amei brincar com códigos HTML, CSS e JS no Blogger, isso desde que me conheço na blogsfera – podemos voltar em 2008, talvez. Porém, foi triste ver como o Blogger se manteve simples e não acompanhou todas as necessidades que a usabilidade exige hoje em dia, como a responsividade. Mas, encontrei um tutorial super interessante e vou deixar compartilhado aqui para quem está tentando deixar o Blogger responsivo e ainda não conseguiu encontrar boas respostas!</p><!--more--><p>A versão /m (mobile) da plataforma não é de toda ruim, se propõe de maneira muito simples a ser uma lista das postagens, nada mais. Mas manter uma leitora engajada hoje exige mais do que o conteúdo, mas também um bom trabalho estético. Existem, claro, diversos temas por aí, vendidos até mesmo no Etsy, mas também há muita gente que, como eu, ainda gosta dos temas clássicos e de trabalhar sobre eles.</p><p>Pensando na praticidade do Blogger e também na nostalgia de estar em um espaço mais comunitário, mesmo que em uma dimensão bem menor do que antes, eu acabei desativando meus sites e migrando novamente para cá, mas precisava resolver algo muito importante: como deixar o tema básico do Blogger responsivo, mesmo que ainda o preservando simples. E nessa busca encontrei um tutorial que me ajudou e pode te ajudar também.</p><p>Basicamente você terá que fazer algumas alterações dentro do editor do seu tema, é bem simples, mas aconselho você usar esse tutorial somente se estiver utilizando o "tema clássico" ou o "simples", pois eu não cheguei a testar como ele se comporta com os demais. Dito isso, vamos lá.</p><h3>Tema com barra lateral do lado direito</h3>1. Acesse tema > personalizar e escolha o tema com a barra lateral do lado direito.<p>2. Acesse tema > fazer backup (dentro do botão personalizar) para baixar o seu tema caso algo dê errado e você precise restaurar.</p><p>3. Acesse tema > editar html (dentro do botão personalizar) e faça as alterações abaixo:</p><p>Encontre esse código abaixo da tag &lt;head></p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/></textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/></textarea></p><p>Encontre e selecione o código <em>]]>&lt;/b:skin></em> até <em>]]>&lt;/b:template-skin></em> e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
 .post-body iframe {width: 100%; display: block;} .post-body img {width: 100%; display: block; margin: -5px;}
 .separator a {margin-left: 0px!important; margin-right: 0px!important;} .post img {max-width: 100%; height: auto;}
 @media screen and (max-width: 1024px) {body {width: 100%!important; padding: 0;}.content-inner {overflow: hidden;}}
@@ -61,8 +61,8 @@
 .footer-inner, .main-inner .column-center-inner, .main-inner .column-right-inner {padding: 0;}}
 @media screen and (max-width:414px){.footer-inner .section, .main-inner .column-center-inner .section, .main-inner .column-right-inner.section {margin:10px;}}
  @media screen and (max-width:320px){fauxcolumn-right-outer .fauxcolumn-inner{border-left: none;}.fauxcolumn-left-outer .fauxcolumn-inner{border-right:none;} footer-inner .section, .main-inner .column-center-inner .section, .main-inner .column-right-inner .section{margin: 0;}
-]]&gt;&lt;/b:skin&gt;
-&lt;b:template-skin&gt;
+]]>&lt;/b:skin>
+&lt;b:template-skin>
 &lt;![CDATA[
 body {width: 1133px; margin: 0 auto; min-width:$(content.width);}
 .main-inner .column-right-outer {width: 30%; float: right; margin-right:-$(main.column.right.width);}
@@ -72,8 +72,8 @@ body {width: 1133px; margin: 0 auto; min-width:$(content.width);}
 #layout .region-inner {min-width: 0; width: auto;}
 body#layout div.add_widget {padding: 8px;}
 body#layout div.add_widget a {margin-left: 32px;}
-]]&gt;&lt;/b:template-skin&gt;</textarea></p>
-<p><strong>***</strong></p><h3>Tema com barra lateral do lado esquerdo</h3><p>Siga os passos 1, 2 e 3 escolhendo a barra lateral esquerda e então:</p><p>Encontre esse código abaixo da tag &lt;head&gt;.</p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/&gt;</textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;</textarea></p><p>Encontre e selecione o código&nbsp;<em>]]&gt;&lt;/b:skin&gt;</em>&nbsp;até&nbsp;<em>]]&gt;&lt;/b:template-skin&gt;</em>&nbsp;e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
+]]>&lt;/b:template-skin></textarea></p>
+<p><strong>***</strong></p><h3>Tema com barra lateral do lado esquerdo</h3><p>Siga os passos 1, 2 e 3 escolhendo a barra lateral esquerda e então:</p><p>Encontre esse código abaixo da tag &lt;head>.</p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/></textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/></textarea></p><p>Encontre e selecione o código <em>]]>&lt;/b:skin></em> até <em>]]>&lt;/b:template-skin></em> e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
 .post-body iframe{width:100%; display:block;}.post-body img{width:100%; display:block; margin:-5px;}
 .separator a{margin-left:0px!important;margin-right:0px!important;}.post img{max-width:100%;height:auto;}
 @media screen and (max-width:1024px){body{width:100%!important;padding:0;}.content-inner{overflow: hidden;}}
@@ -84,8 +84,8 @@ body#layout div.add_widget a {margin-left: 32px;}
 .Header .description{font-size:14px;text-align:center;}}
 @media screen and (max-width:414px){.footer-inner .section, .main-inner .column-left-inner .section, .main-inner .column-center-inner .section {margin:10px;}}
 @media screen and (max-width:320px){.fauxcolumn-right-outer .fauxcolumn-inner{border-left:none;} .fauxcolumn-left-outer .fauxcolumn-inner{border-right:none;} .footer-inner .section, .main-inner .column-left-inner .section, .main-inner .column-center-inner .section {margin:0;}}
-]]&gt;&lt;/b:skin&gt;
- &lt;b:template-skin&gt;
+]]>&lt;/b:skin>
+ &lt;b:template-skin>
  &lt;![CDATA[
 body {width:1133px;margin:0 auto; min-width:$(content.width);}
 .main-inner .column-left-outer {width:30%;right:70%; position:absolute; margin-left:-$(main.column.left.width);}
@@ -95,9 +95,9 @@ body {width:1133px;margin:0 auto; min-width:$(content.width);}
 #layout .region-inner{min-width:0; width:auto;}
 body#layout div.add_widget{padding:8px;}
 body#layout div.add_widget a{margin-left:32px;}
-]]&gt;&lt;/b:template-skin&gt;</textarea></p><p><strong>***</strong></p>
-<h3>Tema com barra lateral do lado direito e esquerdo</h3><p>Siga os passos 1, 2 e 3 escolhendo a barra lateral em ambos os lados e então:</p><p>Encontre esse código abaixo da tag &lt;head&gt;</p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/&gt;</textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;
-</textarea></p><p>Encontre e selecione o código&nbsp;<em>]]&gt;&lt;/b:skin&gt;</em>&nbsp;até&nbsp;<em>]]&gt;&lt;/b:template-skin&gt;</em>&nbsp;e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
+]]>&lt;/b:template-skin></textarea></p><p><strong>***</strong></p>
+<h3>Tema com barra lateral do lado direito e esquerdo</h3><p>Siga os passos 1, 2 e 3 escolhendo a barra lateral em ambos os lados e então:</p><p>Encontre esse código abaixo da tag &lt;head></p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/></textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+</textarea></p><p>Encontre e selecione o código <em>]]>&lt;/b:skin></em> até <em>]]>&lt;/b:template-skin></em> e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
 .post-body iframe{width:100%; display:block;}.post-body img{width:100%; display:block; margin:-5px;}
 .separator a{margin-left:0px!important;margin-right:0px!important;}.post img{max-width:100%;height:auto;}
 @media screen and (max-width:1024px){body{width:100%!important;padding:0;}}
@@ -110,8 +110,8 @@ body#layout div.add_widget a{margin-left:32px;}
 @media screen and (max-width:320px){.fauxcolumn-right-outer .fauxcolumn-inner{border-left:none;}
 .fauxcolumn-left-outer .fauxcolumn-inner{border-right:none;}
 .footer-inner .section, .main-inner .column-left-inner .section, .main-inner .column-center-inner .section, .main-inner .column-right-inner .section{margin:0;}}
-]]&gt;&lt;/b:skin&gt;
- &lt;b:template-skin&gt;
+]]>&lt;/b:skin>
+ &lt;b:template-skin>
 &lt;![CDATA[
 body {width:1133px; margin:0 auto; min-width:$(content.width);}
 .main-inner .column-left-outer {width:20%; right:80%; position:absolute; margin-left:-$(main.column.left.width);}
@@ -122,7 +122,7 @@ body {width:1133px; margin:0 auto; min-width:$(content.width);}
 #layout .region-inner {min-width:0; width:auto;}
 body#layout div.add_widget {padding:8px;}
 body#layout div.add_widget a {margin-left:32px;}
-]]&gt;&lt;/b:template-skin&gt;</textarea></p><p><strong>***</strong></p><p>O processo é simples e espero que ajude. Caso algo dê errado ou você precise de ajuda – como eu já precisei, deixe um comentário e eu tento ajudar.&nbsp;</p><p>Até logo.</p>
+]]>&lt;/b:template-skin></textarea></p><p><strong>***</strong></p><p>O processo é simples e espero que ajude. Caso algo dê errado ou você precise de ajuda – como eu já precisei, deixe um comentário e eu tento ajudar. </p><p>Até logo.</p>
         </div>
 
         <hr />

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Rotina em curto (como adaptar/destruir uma câmera com circuit bending) - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Circuit bending é uma técnica curiosa, ela vem dá música e é basicamente uma modificação/criação de instrumentos eletrônicos provocando curtos propo..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Outubro, 2025 </sub>
+        
+        <h1>Rotina em curto (como adaptar/destruir uma câmera com circuit bending)</h1>
+        <br />
+        
+        <sub> Misc 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p><em>Circuit bending</em>&nbsp;é uma técnica curiosa, ela vem dá música e é basicamente uma modificação/criação de instrumentos eletrônicos provocando "curtos" propositais pra ter resultados únicos e experimentais. A tradução seria algo como "dobrar" ou "torcer" circuitos, o que também é legal, pois você literalmente distorce a conexão entre os circuitos eletrônicos fazendo contato entre fios que não deveriam se conectar.</p><p>O termo foi cunhado lá em 1992 (ano que eu nasci :D) pelo artista Reed Ghazala, mas ele já vinha praticando e fazendo experimentos desde a década de 1960. Encontrei no canal da Motherboard no YouTube um vídeo bem legal sobre ele, vou deixar aqui pra você (ele é em inglês, mas dá de boa pra ativar a legenda e tradução).</p><div><iframe allowfullscreen="" src="https://www.youtube.com/embed/KHDL9iGxDPM" youtube-src-id="KHDL9iGxDPM"></iframe></div><!--more--><p>Essa prática também é muito ligada ao acaso, uma vez que esses pequenos "curtos" podem causar resultados diferentes e imprevisíveis, além de ser uma técnica relativamente acessível; com um brinquedo que faça som, por exemplo, já é possível praticar. Apesar de conhecimentos de solda ajudarem, pelo menos na minha experiência, não é algo essencial, você vão ver que isso depende muito do tipo de aparelho eletrônico que vocês escolhem, mas há formas de contornar.</p><p>Se você quiser descobrir ainda mais sobre esse <em>background</em>&nbsp;histórico, encontrei o artigo do <em>Jason J. B. Hodgson no Research Gate<span class="note">1|Hodgson, J. J. B.&nbsp;<em>Circuit-Bending: A Micro History. </em>2017 —<a href="https://boardgamegeek.com/boardgamepublisher/16/tactical-studies-rules-tsr" rel="nofollow ugc noopener">https://boardgamegeek.com/boardgamepublisher/16/tactical-studies-rules-tsr</a>.</span></em> bem legal,&nbsp;ele está em inglês, <em>mas vamos lá né</em>, se você precisar de ajudar, joga no Gemini ou ChatGPT aos poucos que eles ajudam a traduzir.&nbsp;</p><p>Ele também vem sendo muito explorada também na fotografia e no audiovisual, onde dá pra criar distorções,&nbsp;<em>glitches</em>&nbsp;e outros efeitos de maneira analógica, sem precisar de&nbsp;<em>softwares</em>. E pra variar, eu acabei fazendo alguns experimentos por aqui e vou compartilhar com você o processo e alguns resultados.&nbsp;Como eu gosto de por <em>label</em>&nbsp;em tudo, acabei chamando essa série de "<em>Rotina em curto</em>" e é o resultado de algumas semanas de exploração de luz e sombra com uma câmera modificado com <em>circuit bending</em>, vamos lá!</p><h3>O <em>circuit bending</em></h3><p>O projeto que eu fiz foi usando uma câmera simples. Eu até pensei em começar com uma <em>cybershot</em>&nbsp;ou semelhante, mas não queria arriscar minha primeira experiência e destruir uma câmera cara, então decidi usar aquelas câmera infantis que você encontra em sites como Shopee e Aliexpress. A que eu comprei, especificamente, custou R$35 com a entrega.</p><p><img data-original-height="4624" data-original-width="3472" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-01.jpg" class="blog-image"></p><p>A primeira coisa que fiz, usando luvas de latex, uma chave simples e uma pinça de plástico, foi desmontar a câmera. Removi a frente, ela é bem fácil de abrir, e com cuidado desconectei o cabo&nbsp;<em>flat</em>&nbsp;da câmera da placa. Em seguida, puxei a placa pra lateral pra ter uma visão dela e do visor da câmera e reconectei o <em>flat</em>&nbsp;da câmera.</p><p>Com a câmera ligada e um pequeno pedaço de cabo descascado nas pontas, comecei a conectar pontos aleatórios dos conectores do <em>flat</em>. Cada "combinação" que eu fazia, acabavam gerando um tipo de <em>glitch</em>&nbsp;diferente na imagem. Algumas vezes a câmera chegou a travar, mas era só reiniciar e dava para continuar testando (evitando os pontos combinados que estavam travando).</p><p><img data-original-height="4624" data-original-width="3472" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-02.jpg" class="blog-image"></p><p>Quando encontrei uma combinação que achei legal, como eu não tinha solda, ao invés de fixar a ligação nos conectores do <em>flat</em>, eu encaixei as pontas <em>sob</em>&nbsp;o <em>flat </em>e elas acabaram fixadas pela trava do cabo.</p><p><img data-original-height="1600" data-original-width="1200" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-03.jpg" class="blog-image"></p><p>A experiência foi bem curiosa e fácil, acredito que pela simplicidade dessa câmera. Eu já vi algumas modificações, nesse mesmo modelo em que haviam várias combinações de cabos em diferentes conectores e alguns botões de <em>switch</em>&nbsp;entre os cabos, assim dava pra desligar uma conexão e ativar outra, variando os efeitos que eram produzidos... mas definitivamente precisaria de uma solda.</p><p>Agora vou te deixar com o resultado e um encorajamento pra você tirar um tempinho no seu final de semana pra <em>go wild</em>&nbsp;e experimentar algo diferente!</p><p>***</p><h3>Rotina em curto (2025)</h3><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-04.jpg" class="blog-image"></p><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-05.jpg" class="blog-image"></p><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-06.jpg" class="blog-image"></p><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-07.jpg" class="blog-image"></p><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-08.jpg" class="blog-image"></p><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-09.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-10.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-11.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-12.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-13.jpg" class="blog-image"></p><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-14.jpg" class="blog-image"></p><p><img data-original-height="2048" data-original-width="1536" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-15.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-16.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-17.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-18.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-19.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-20.jpg" class="blog-image"></p><p><img data-original-height="1536" data-original-width="2048" src="/lib/media/rotina-em-curto-como-adaptardestruir-uma-camera-com-circuit-bending-21.jpg" class="blog-image"></p><p>***</p>
+<p>
+  Notas:
+
+  </p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            <div class="comments-section"><h3>Comentários da época (2)</h3><br><div class="old-comment" style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;"><p style="margin: 0; font-size: 0.9em;"><strong>Barbara Moretti</strong> <span style="color: #666;">em Outubro, 2025</span>:</p><p style="margin-top: 4px;">o cachorro (pelo menos acho que eu vi um cachorro) pensando: até eu vou fazer parte do experimento? </p></div><div class="old-comment" style="margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #e0e0e0;"><p style="margin: 0; font-size: 0.9em;"><strong>uoshi</strong> <span style="color: #666;">em Outubro, 2025</span>:</p><p style="margin-top: 4px;">yey hahah ela é minha modelo pra tudo hahah tá acostumada já</p></div></div>
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Quebra ondas - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="
+  
+As ondas que quebram na costa Violentas como o passado que se esmigalha por detrás dos olhosE o mar puxa furiosoO pouco que resta de suspiros, mas..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Janeiro, 2025 </sub>
+        
+        <h1>Quebra ondas</h1>
+        <br />
+        
+        <sub> Poesias 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p>
+  <img src="/lib/media/quebra-ondas-01.jpg" class="blog-image">
+</p>As ondas que quebram na costa&nbsp;<p>Violentas como o passado que se esmigalha por detrás dos olhos</p><p>E o mar puxa furioso</p><p>O pouco que resta de suspiros, mas deixa a dor do tempo implacável</p><p>Enquanto o sol se põe no horizonte</p><p>As pegadas na areia se transformam em melodias esquecidas</p><p>Melodias esquisitas, esguias, murmúrios, lástimas, lágrimas, sangue</p><p>As pegadas então queimam</p><p>De fora para dentro, até os ossos</p><p>Além dos ossos</p><p>No vazio, aquele profundo e perdido</p><p>As brisas encobrem os suspiros</p><p>As brisas encobrem os soluços</p><p>As brisas encobrem as lembranças</p><p>E quando o mar toma de volta o que é seu</p><p>Não há mais nada do que um dia existiu ali</p><p>Ao menos, que seja doce</p><p>***</p><p><a href="https://pin.it/1vG2KyMu9" rel="nofollow ugc noopener">(img)</a></p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>
