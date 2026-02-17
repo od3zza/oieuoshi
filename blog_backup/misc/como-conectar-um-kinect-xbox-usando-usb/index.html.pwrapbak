@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Como conectar um Kinect XBOX usando USB - Misc - Uoshi</title>
+
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Como conectar um Kinect XBOX usando USB." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+
+    <!-- Manifest .json-->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+
+    <!-- Theme Color - https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Ícone-->
+    <link rel="icon" type="image/png"
+        href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+
+    <!-- Abre Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+    <!-- Fecha Google tag (gtag.js) -->
+
+    <!-- SSL Protocol Config -->
+    <script>
+        if (location.protocol != "https:") {
+            location.href =
+                "https:" +
+                window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+    <!-- End SSL Protocol Config -->
+</head>
+
+<!--
+          )      (\_
+         ((    _/{  "-;
+          )).-' {{ ;'`
+HEY U!   ( (  ;._ \\      -->
+
+<body>
+    <!-- Abre Header -->
+    <!-- sidebar esquerdo -->
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- end sidebar -->
+
+    <!-- Fecha Header -->
+
+    <!-- Abre base -->
+    <section class="main">
+        <sub> Agosto, 2025 </sub>
+        <!-- título -->
+        <h1>Como conectar um Kinect XBOX usando USB</h1>
+        <br />
+        <sub> misc 🗂️</sub>
+        <br /><br />
+
+        <!-- conteúdo -->
+
+
+
+        <p>Há algumas semanas venho me coçando pra descolar um <em>Kinect</em> de <em>XBOX</em>. Ou melhor, faz algumas
+            semanas que eu estou nessa espécie de hiperfoco com arte digital interativa e consumindo horrores de vídeos
+            no <em>TikTok </em>de tutoriais de <em>TouchDesigner</em>. E tudo bem se tu não faz ideia do que seja isso,
+            ou mesmo <em>Kinect</em>, pois essa publicação está prestes a ficar interessante... prometo!</p>
+        <p> <img
+                src="https://blogger.googleusercontent.com/img/a/AVvXsEjoXhDU6cm5-vl_m6PgsF0ylOPx5YAM5B9HapSRBNBUktdci9N_W02HJg020yhTKmhwStOiUAMLX-4ttLMBvSFz8STjOvzBwvTC0odLeXWpxGwu2OF_ixQCDPlJXZtRay_ZKDnsGEFt13Jvk0BCmqaKENMowCvknCbhoqYbZ_rEowfC6OLG2vh0vNAby6I=w524-h349-rw">
+        </p>
+        <figcaption>Imagem via <a
+                href="https://www.creativeapplications.net/member/space-odyssey-azure-kinect-touchdesigner-powered-interactive-projection/">Creativa Applications</a></figcaption>
+        <p><em>Kinect</em> é uma câmera do videogame XBOX 360 e ONE que captura e reconhece movimentos.
+            E <em>TouchDesigner</em> é um software de programação visual (a galera usa para criar
+            conteúdo/arte <em>multimedia</em> e interativa em tempo real—como a imagem acima, que é uma projeção na qual
+            o público consegue interagir). Okay, agora que você tem o contexto, vamos lá.</p>
+        <p> </p>
+        <p>Eu nunca tive experiência com arte interativa, muito menos em tempo real, mas tenho visto tanto potencial
+            legal em vídeos que exploram diferentes formas de criar com esse software, que comecei a reimaginar algumas
+            ideias que eu tinha, dentro desse cenário, desse "formato" de obra. Vou deixar um vídeo aqui pra você ver um
+            pouco dessa pira na prática.</p>
+       
+        <p>Maneiro demais, né!? Eu poderia, claro, usar apenas a <em>webcam</em> do meu notebook ou até mesmo conectar a
+            câmera do celular, mas o <em>Kinect</em> tem recursos interessantes—como sensor de profundidade e
+            rastreamento do corpo— e também é mais fácil de movimentar para lá e para cá, sendo que ele serviria
+            exclusivamente pra isso. Porém, acabei esbarrando em um problema que possivelmente você vai
+            entender: <em>no_money!</em></p>
+        <p>É, grana escassa. Por sorte, encontrei um <em>Kinect</em> nas redes por R$30, mas outro problema é o uso
+            dele. Essa câmera é para um console de videogame e como esperado, o <em>plug</em> é diferente dos que se
+            usam em computadores, ou seja, eu precisaria de um adaptar USB. Eu até pensei "<em>pô, vou cortar tudo os
+                fio e liga, e boa!</em>", mas no <em>Kinect</em> o mesmo cabo transfere dados e também energia.</p>
+        <p>O adaptador está R$130 (pelo menos quando pesquisei), e achei até por 1/4 disso, mas
+            no <em>Aliexpress</em> e... eu não curto esperar. Então a solução foi: encontrar na internet alguém tão
+            impaciente e curioso quanto com um plano B. E eu achei. Existe uma comunidade chamada "Instructables" com
+            diversos tutoriais diferentes e interessantes de <em>hacks</em><em>tech</em>, usando Arduino, Raspyberry Pi
+            e outras <em>piras</em>, e por acaso, havia um tópico de um usuário (obrigado <em>squiggy2</em>) mostrando
+            como ele fez para adaptar um <em>plug</em> USB no <em>Kinect</em> sem usar uma adaptador. E sim, eu tentei e
+            deu certo. Então, se você quer saber como se faz uma monstruosidade dessa ou se você tem
+            um <em>Kinect</em> pegando poeira na sua casa e/ou quer experimentar <em>TouchDesigner</em>, ou apenas matar
+            um tempo criando uma <em>webcam</em> Frankenstein—pois você também gosta de inventar moda, eu vou deixar um
+            tutorial bem simples de como eu fiz essa adaptação.</p>
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimCrYsA4BN04Ux68BZjplTjW0kneJ_iLBeIGX_wusIsNlEnI3F9uhA4BOBBmYBOck5a-5m0yCgjOHx7UnuDbHz6Rx6mWAJNcFaGgj1kPcbMmjesds2iA99OKtG3iKdT9XMTrZOA15Fo5NL220vIFpfg4t_xDmj4pV9xcRjEw6JD-kenBRVpyJ-t3jeORE/w256-h320-rw/IMG_20250722_142328.jpg">
+        <p><b>A. (Muitos ou's depois) O que você vai precisar:</b></p>
+        <p>Basicamente você irá precisar de um <em>Kinect</em>, um cabo USB que você possa destruir, uma fonte de 12V (é
+            aquelas fontes de energia pra modem de internet ou videogame ou notebook antigo, e também por R$15 acha em
+            qualquer lugar). Também de fita isolante (ou tubo termoretrátil) e uma tesoura.</p>
+        <p><b>B. Corta e descasca</b></p>
+        <p>Com cuidado, corta o cabo do <em>Kinect </em>deixando uns 15cm do <em>plug</em> (se você cortar, não terá
+            como reconstruir esse cabo, então caso você queira ainda usar no XBOX, você pode apenas descascar os cabos,
+            sem cortar, e fazer as emendas nesses espaços descascados, é também importante que você use
+            um <em>swtich</em> nas emendas para que não haja conflito na troca de dados nos cabos), corta o USB deixando
+            ele longo. Corta a ponta da fonte de 12V e deixa o cabo longo pra usar. Descasca todos os cabos e vamos
+            começar a emendar. De cara você vai notar que o <em>Kinect</em> tem cinco cores de fios, enquanto o USB
+            apenas 4. A fonte deve ter um fio preto (normalmente negativo) e um vermelho (normalmente positivo)
+            (aconselho usar um multímetro pra testar ou perguntar na loja, ou pode ser que na própria fonte esteja
+            marcado qual lado é qual).</p>
+        <p><b>C. Emendando tudo</b></p>
+        <p>Essa parte tem que ter cuidado, você pode soldar as emendas ou enrolar (como eu fiz) e isolar com o tubo
+            termoretrátil ou fita isolante (emende e isole bem!). Abaixo tem um esquema de como os fios devem ser
+            ligados:</p>
+        <p><br />USB Verde ───> Kinect Verde (D+)<br /><br />USB Branco ───> Kinect Branco (D−)</p>
+        <p>USB Vermelho ───> Kinect Vermelho (5V)<br /><br />USB Preto ───> Kinect Preto (GND) ───> Fonte
+            (GND) (sim, você liga todos os 2 pretos e o negativo da fonte juntos)<br /><br />Fonte +12V ───> Kinect
+            Marrom (+12V)</p>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBvfgYl2O2NoOSiiTcODLaTyw0TsSESPqzJZghKR0oBGOCZunYpZNwwVJnJBbNC6I-VhGaon_h75wwO3tbqT6FruuB0MrK3iU9hbS5aet3hraD8zqKwrbzni_DsY1tOzzZRzk3kklypy91-nXizNG8QM_-ymH7431LsRE7_QTdkitBnhH3IavvN5ee88c/s320-rw/IMG_20250722_142335.jpg">
+
+
+        <p>Na imagem, é mais ou menos como ficaria (apesar de eu ter deixado os meus vermelhos juntos, eles não estão
+            conectados!). Então é só ligar e testar. Pra usar o <em>Kinect</em> você pode também baixar um <a
+                href="https://www.microsoft.com/en-us/download/details.aspx?id=40278" target="_blank"><em>driver</em>
+                direto da </a><em><a href="https://www.microsoft.com/en-us/download/details.aspx?id=40278"
+                    target="_blank">Microsoft</a> </em>(o <em>TouchDesigner</em> tem conexão nativa). Também tem
+            o <em><a href="https://www.microsoft.com/en-us/download/details.aspx?id=40276" target="_blank">Kinect for
+                    Windows Developer Toolkit</a> </em> que disponibiliza umas ferramentas bem legais pra você
+            experimentar com o dispositivo.</p>
+        <p>Futuramente, assim que eu fizer minhas experiências, eu compartilho com vocês os resultados. Espero que esse
+            tutorial tenha sido pelo menos interessante, é muito louco como podemos ir manipulando as tecnologias
+            antigas pra usar em ideias novas e experimentações, meio que me lembra muito a <em>vibe</em> de usar
+            impressoras térmicas antigas como <a href="https://www.instructables.com/My-Portable-Photo-Printer/"
+                target="_blank"><em>printers</em> de fotografias</a> e tal... massa demais!</p>
+
+
+        <hr />
+
+        <section class="footer"></section>
+</body>
+
+</html>

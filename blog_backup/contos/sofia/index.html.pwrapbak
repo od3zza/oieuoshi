@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Sofia - Contos - Uoshi</title>
+
+    <meta name="author" content="Uoshi" />
+    <meta
+      name="description"
+      content="Sofia é um conto inspirado na cultura cyberpunk em um futuro distópico. Criado com o incentivo de um desafio no Twitter e também dedicado ao apoiadores mensais."
+    />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+
+    <!-- Manifest .json-->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Libs -->
+    <link
+      rel="stylesheet"
+      href="/lib/style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <script src="/lib/script.js" defer></script>
+
+    <!-- Theme Color - https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Ícone-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+
+    <!-- Abre Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HZNDKKGKW8");
+    </script>
+    <!-- Fecha Google tag (gtag.js) -->
+
+    <!-- SSL Protocol Config -->
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+    <!-- End SSL Protocol Config -->
+  </head>
+
+  <!--
+          )      (\_
+         ((    _/{  "-;
+          )).-' {{ ;'`
+HEY U!   ( (  ;._ \\      -->
+
+  <body>
+    <!-- Abre Header -->
+    <!-- sidebar esquerdo -->
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/blog">← blog</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end sidebar -->
+
+    <!-- Fecha Header -->
+
+    <!-- Abre base -->
+    <!-- <link rel="stylesheet" href="/css/scroller.css" type="text/css" media="screen, projection"/> -->
+    <section class="main">
+       <sub>
+          Maio 28, 2021
+        </sub>
+        <!-- título -->
+        <h1>
+          sofia
+        </h1>
+        <br />
+        <sub> contos 📖</sub>
+        <br /><br />
+
+        <!-- conteúdo -->
+
+        <p>
+          Sofia é um conto inspirado na cultura cyberpunk em um futuro
+          distópico. Criado com o incentivo de um desafio no Twitter e também
+          dedicado ao apoiadores mensais.
+        </p>
+        <p>
+          Um agradecimento especial para toda a galera que deu
+          <a href="https://twitter.com/heyalbqrq/">like no tweet</a>
+          e tornou essa publicação realidade e também as Apoiadoras.
+          <strong>&lt;3 </strong>
+        </p>
+
+        <!--  <p>
+          Baixe esse e outros contos em PDF, EPUB e MOBI:
+        </p>
+        <center>
+         <iframe frameborder="0" src="https://itch.io/embed/1360218?link_color=fb922b" width="552" height="167"><a href="https://heyalbqrq.itch.io/mour">Mour by heyalbqrq</a></iframe>
+        </center>
+        <p>
+          Considere se tornar
+          <a href="https://heyalbqrq.substack.com/subscribe"
+            >apoiadora na minha newsletter</a
+          >, sua contribuição me ajuda a continuar produzindo cada vez mais!
+          Você também pode acompanhar sem compromisso todo o conteúdo livre e
+          maneiro!
+        </p> -->
+        
+        <p>Sugestão para acompanhar a leitura:</p>
+        <center>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mZS3OYfpiYk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </center>
+        <hr />
+<!--     <p>
+            Adicione na sua estante
+            <a href="https://www.goodreads.com/book/show/58600072-sofia"
+              >Goodreads</a
+            >.
+            Deixe também sua avaliação na 
+            <a href="https://www.amazon.com.br/Sofia-Cr%C3%B4nicas-Cadentes-Washington-Albuquerque-ebook/dp/B098YVBQ5K/ref=pd_sbs_2/146-7589104-2692849?pd_rd_w=Lslhe&pf_rd_p=8097bfa3-b5f9-418d-8cea-cd5e7772e537&pf_rd_r=43BN4RN2K0RB6TN42S5F&pd_rd_r=3b8c6f46-9f39-4d93-8044-1f5e0532d3a8&pd_rd_wg=ERRcq&pd_rd_i=B098YVBQ5K&psc=1"
+              >Amazon</a
+            >.
+          </p> -->
+        <br />
+        <h3><center>Sofia</center></h3>
+
+        <!-- wp:paragraph -->
+        <p><strong>I.</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          As luzes do palacete criavam um show psicodélico de cores que
+          mergulhavam pela janela se espalhando pela sala do estúdio, pintando
+          com cores quase abstratas e serpenteadas. Os hologramas se estendiam
+          tanto que pareciam invadir as paredes vizinhas, mas se desfaziam em
+          fragmentos pixelados antes mesmo de atingi-las, como uma estrela
+          cadente que morre antes de tocar o chão. Do lado de dentro da grossa
+          janela que protegia o estúdio das adversidades de um mundo tóxico,
+          Sofia observava, com um olhar vago e monótono, a agitação desfigurada
+          da sociedade caótica sob seus pés, corpos equivocadamente livres e tão
+          semelhantes quanto as gotas da garoa prateada que se chocava contra o
+          vidro. Ela tentava imaginar os sons da cidade, vozes que oscilavam em
+          tons e idiomas que ela nem sequer conhecia, apitos e sirenes
+          misturadas a motores roucos e poderosos, gritos de desconhecidas
+          vítimas da noite, cochichos sensuais entre cúmplices do pecado e,
+          eventualmente, clones metálicos ou orgânicos de animais que não
+          passavam de uma sombra do que Sofia imaginava do passado que nunca
+          viveu.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+           Seus olhos se ajustaram, com lentes nanoangulares do tipo
+          popular entre a elite, flagrando a imagem mais próxima ofuscada pelo
+          seu bafo. Por um momento, seu reflexo parecia se desfazer em um
+          movimento descompassado de pequenas ondas sobre a pele, os lábios
+          incharam sumindo com as linhas finas e gentis, as bolsas sob seus
+          olhos pareciam se desfazer como as sardas e o tom vermelho do seu
+          cabelo, a maçã se destacava se prestasse mais atenção e esses pequenos
+          detalhes mutáveis que se espalhavam por todo o seu corpo como se ela
+          própria fosse uma miragem oscilante no deserto escuro e neon.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia suspirou como se carregasse um peso anômalo sobre seus ombros.
+          Além da realidade como percebia ordinariamente, ela pensou se poderiam
+          ser pelas incontáveis horas mergulhadas na virtualidade do
+          <em>xCeos</em>, algo que a fazia se sentir cansada, mas não cabia em
+          palavras, ela apenas sentia. Por muitas vezes ela se pegava pensando
+          se aquele sentimento não era pura curiosidade, talvez um descaso por
+          motivos ocultos em seu inconsciente. Fosse como fosse, ela suspirou
+          outra vez.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Você está se recuperando bem. Mas por que não oculta a cicatriz? —
+          comentou um homem se aproximando. Sofia nem sequer se virou.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Ela me deixa fodona — respondeu. O homem riu. Ela o encarou com um
+          meio sorriso. Ele retribuiu e passou cuidadosamente a ponta do dedo
+          sobre a cicatriz que se abria sob os olhos até o queixo de Sofia.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Não entendo o que você vê de tão interessante lá embaixo.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia desfez sua atenção, pressionando a palma direita sobre seu
+          diafragma e suspirando.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Nada me interessa lá — disse com desdém.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Há muito mais do que imaginamos nesse mundo, minha filha — disse
+          cabisbaixo, também olhando pela janela. —  Lúcio Avati, eu sempre
+          sonhei que meu nome traria algo benéfico, sabe, mas parece que a
+          ascensão exige brutalidade.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>Sofia encarou o pai, que permaneceu perdido em pensamentos.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Do que você está falando, pai?</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Hoje eu não quero que você vá à reunião! — Ele exigiu em um tom
+          ríspido.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Mas eu sou diretora no Conselho... — Antes que pudesse terminar,
+          três pessoas entraram pela porta principal sem cerimônias, entre elas,
+          o motorista de Lúcio.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Precisamos ir, imediatamente, senhor! — Sofia sentiu urgência quando
+          a última palavra foi dita. Seu pai parecia carregar lástimas por
+          antecedência, uma premonição inconsciente.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Sempre torcer pelo melhor, não é? — Lúcio questionou com um sorriso
+          frouxo enquanto acariciava o rosto de sua filha com todo o carinho do
+          mundo. — Não vá, eu tenho um negócio inacabado para resolver antes da
+          reunião do Conselho.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Ela viu Lúcio partir sem entender o que havia acontecido, mas por mais
+          que sentisse traços de preocupação, ela não se importava. Amava seu
+          pai, mas estava tão habituada às mentiras que possíveis verdades
+          pareciam enganações esmagadoras.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia caminhou até uma poltrona larga ao lado da janela, observando as
+          ruas e a chuva. Jogou-se na poltrona e acendeu um cigarro. Coçou os
+          olhos que dispararam em um tique sutil que voltava ocasionalmente, e
+          sentiu uma saudade familiar, mas entorpecente, talvez incômoda, tanto
+          quanto uma coceira no fundo da garganta. Desfez-se dos sapatos e
+          calçou um par de coturnos. Bebericou um copo cristalino de conhaque
+          que descansava sobre a mesa ao lado da poltrona e levantou-se.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Agarrou um sobretudo preto vinílico e jogou o cabelo para trás, pronta
+          para encarar a selva. A porta bateu quando ela saiu, deixando apenas o
+          silêncio em seu espaço seguro.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><strong>II.</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia passou pelo salão principal do prédio sem dar atenção para
+          ninguém. Não que houvesse muitas pessoas lá, o lugar era tão grande e
+          vistoso que duas pessoas poderiam facilmente se perder uma da outra se
+          decidissem explorar todos os corredores. Havia uma certa urgência em
+          seu âmago, um grito desesperado por libertação. Ela fechou seu
+          sobretudo ao sentir o primeiro sopro gelado de vento entrar pela porta
+          quando um casal passou adentrando a instalação. Ela queria correr, mas
+          ao mesmo tempo não queria parecer desesperada.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Um rapaz empurrou a grande porta de vidro para que Sofia saísse. Ela
+          parou por um momento sentindo a chuva encharcar seu rosto, seus olhos
+          se acostumaram rapidamente com o contraste violento entre a escuridão
+          e as luzes dos painéis, hologramas, veículos e tantos outros pontos de
+          poluição visual que a cidade poderia oferecer. A urgência tomou tons
+          de ansiedade. Continuou caminhando até o outro lado da calçada,
+          atravessou sem nem dar atenção à própria segurança. Buscava por um
+          transporte, precisava de um pouco de abstração. Enquanto sinalizava
+          para um táxi, da sombra de um beco próximo saiu uma silhueta esguia.
+          Seus passos tortos pareciam pisar em ovos e a fumaça do bueiro a
+          seguiu como uma aura desgarrada. Sofia não se mexeu, apenas se
+          atentou. A pessoa caminhou em breves cambaleios em sua direção,
+          aproximando-se o suficiente para tentar não espantar a moça rica que
+          estava em sua frente.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Por favor, moça, por favor — disse a pessoa com a voz trêmula e
+          rouca, uma mulher. Ela estava com os pés nus, canelas à mostra e
+          claras marcas de feridas, a <em>doença do pó</em>. Mantinha-se 
+          com os braços envoltos ao corpo, enrolada, para se aquecer, em uma
+          manta plástica do tipo que usam em acampamentos militares nos
+          desertos. Sofia conhecia a manta, tinha a etiqueta da empresa de sua
+          família.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>“Avati Inc.”</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Eu não tenho nada pra você! — Ela exclamou sem nenhuma expressão.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Um trocado, comida ou um pouco de Q. Eu sei que você tem, só um
+          pouco, por favor.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia encarou a pedinte, sentiu um embrulho no estômago ao ver o resto
+          esquelético feminino deformado pelo consumo excessivo de drogas e
+          também pela falta delas. A pele carecia de vida, oscilando entre tons
+          escuros de bege e cinza. O olhar profundo possuía um brilho fraco, já
+          sem cores que permitissem dizer que  eram olhos humanos. Mesmo
+          encharcada, a mulher exalava um cheiro forte de enxofre, fluído graxo
+          e alguma coisa que Sofia não conseguia identificar.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Não chegue perto de mim, você não vai querer arriscar — disse Sofia
+          agora em um tom agressivo. O sinal do outro lado da calçada abriu e
+          logo algumas pessoas começaram a passar entre as duas mulheres. A
+          pedinte baixou as mãos e a cabeça, afastando-se oculta novamente na
+          sombra do beco. Sofia respirou fundo e pegou o táxi.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia enviou o endereço para o navegador do veículo, enquanto, no
+          caminho, ela se perguntava como a sociedade havia chegado naquele
+          estado deplorável, lamentável e assustador. Passou por algumas áreas
+          pobres da Cidade Baixa, consumidas pelo breu e pela violência,
+          enquanto, nos centros, os sequelas se empilhavam nos becos, viadutos e
+          túneis, despedaçando uns aos outros e aguardando a próxima vítima
+          vacilar. Uma selva de carbono, metal e fluidos.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Ao chegar no seu destino, ela saiu já tomada por uma fúria visceral,
+          seus batimentos estavam tão acelerados que quase descompassavam. Ela
+          foi em direção à boate, passou direto pela fila, entrando como VIP
+          após cumprimentar o segurança. Ela ignorou o estrobo e as luzes
+          frenéticas, trombou com ombros alheios como se os levasse junto se
+          vacilassem e, quando flagrou a porta da sauna, já se despia antes
+          mesmo de atravessá-la. Largou as roupas em um canto, dirigiu-se até
+          uma das pequenas docas fitando os demais burgueses que se deleitavam
+          em seus prazeres mundanos e se sentou. Deu um suspiro profundo e
+          agarrou um frasco que descansava em um aparato na parede. Com o dedão
+          ela empurrou o topo do frasco, quebrando-o, e uma substância exalou se
+          misturando à neblina densa. Todos os poros de seu corpo se abriram
+          absorvendo a quimera.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Ela fechou os olhos relaxando por um momento. Sentiu, então, um toque
+          quente em seus joelhos e que correu rápido sobre suas coxas. Ela
+          flagrou Manae, a amante virtuosa por quem ela ansiava nos breves
+          momentos em que viajava na frenesi da sauna. A garota nua encostou
+          todo o corpo sobre Sofia, até que seus lábios se tocaram. Enquanto o
+          beijo ganhava intensidade, seus corpos se adaptavam um ao outro. Sofia
+          sentiu os seios de Manae crescendo em suas mãos, enquanto a garota
+          fitava os olhos de Sofia tomando tons de fogo, seu cabelo assumindo
+          formas cacheadas de cor preta como o céu sem estrelas;  o rosto
+          de Manae se redesenhava com curvas orientais.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia saiu da boate uma hora depois, com um péssimo pressentimento.
+          Seu coração ainda palpitava e ela ainda estava dormente das intensas
+          doses de drogas. Na calçada, ela encarou a fila que parecia aumentar
+          cada vez mais. Havia todo o tipo de gente: de pobres que roubavam para
+          se drogar naquele maldito quarto infernal a mauricinhos que esbanjavam
+          dinheiro agitando a festa também na rua. Ela checou os bolsos do
+          sobretudo, aliviada ao sentir os frascos reservados. Então pegou um
+          táxi e embarcou em direção ao domínio da corporação Avati.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><strong>III.</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Os gritos de Lúcio ecoavam pelo corredor da cobertura, enquanto os
+          membros do Conselho apenas o encaravam com desdém.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Nós não permitiremos que o seu legado caia, Lúcio, mas chegou a sua
+          hora. Você vai assumir as consequências e não terá nenhuma ligação com
+          a corporação.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Vocês querem me fuder! Isso não vai apenas arruinar minha vida —
+          Lúcio deu uma pausa e socou a mesa enquanto se inclinava sobre ela. Os
+          seguranças, que estavam incomumente na sala, deram um passo em sua
+          direção. Lúcio apenas os encarou, incrédulo. — Eu dei minha vida pra
+          criar esse império, vocês não vão se safar dessa merda!
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Você fez a sua parte, Lúcio, mas deveria ter jogado a toalha antes
+          de começar a agir sem consultar o Conselho — disse uma mulher com tom
+          imponente sentada na outra ponta da mesa. Ela apertou os olhos quando
+          ele a encarou, sua expressão era tão desafiadora quanto todos os
+          aspectos estéticos daquele lugar, um berço de guerras. — Esse é seu
+          último papel, e então deverá sair de cena, você sabe o que deve fazer.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Lúcio cerrou os dentes e uma aflição descontrolada brotou em seu
+          interior fazendo-o suar frio. Ele encarou todos os presentes e deu as
+          costas, mas não antes de dizer:
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p> —Vocês vão pagar!</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          No corredor, ele flagrou Sofia. Seus olhos se arregalaram e a aflição
+          ganhou sentido. Ele a agarrou pelo braço e apressou os passos até o
+          elevador.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— O que está acontecendo, pai?</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Ele não respondeu. Ela tentou insistir e ele fez um sinal para que ela
+          permanecesse em silêncio. Pegaram o elevador até o
+          estacionamento. 
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O motorista aguardava fumando. Ao ver o patrão se aproximar, ele
+          pareceu entender que algo estava errado, jogou o cigarro para longe e
+          correu para abrir a porta.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Porra! Porra! — Lúcio repetia enquanto esmurrava as próprias pernas
+          ao sentar no carro.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Pai! Você está me assustando…</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Para onde, senhor? — perguntou o motorista, encarando-o no
+          retrovisor.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Lúcio parou, ofegante, fitou a face preocupada de sua filha e engoliu
+          seco o desespero que subia como ácido pela traqueia.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— A Latente, Joaquim, vamos para a Latente!</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— O que está acontecendo? —  insistiu Sofia.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Ele me foderam. Todos esses anos, eu não acreditava…</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Tiraram você da mesa?</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — A Hochu era uma cilada, Sofia. Eles confiscaram minha posição e
+          demandaram que eu assumisse o acordo.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Mas foram eles que te enviaram para Taipei!</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Sim, para a jaula dos leões — Lúcio refletiu por um momento. — Há um
+          amigo na Latente que pode nos ajudar, toda a transação foi monitorada,
+          mas acho que só ele pode descriptografar. Se ele fizer isso, eu vou
+          acabar com aqueles desgraçados.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Você ia sabotar o acordo?</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Lúcio encarou Sofia, seu olhar melancólico dispensava explicações.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Eu recebi uma dica, filha. Mas não esperava que fosse verdade. Nós
+          precisamos apenas sair logo daqui e chegar na Latente, tudo vai ficar
+          bem.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O carro seguiu pela marginal. As vias livres os favoreciam em tempo,
+          mas Lúcio estava inquieto, olhando para trás o tempo todo, imaginando
+          que alguém pudesse estar seguindo-os. Atravessaram metade do Centro e,
+          quando o motorista virou a primeira esquina em direção à Baixada,
+          Sofia sentiu um mau pressentimento subindo pela sua espinha como um
+          calafrio: aquela estranha coceira voltou a incomodar, mas ela
+          resistia. O carro saiu da principal, entrando em uma via paralela.
+          Sofia flagrou as luzes dos outros carros ficando para trás enquanto
+          entravam na rua que levava para a Cidade Baixa. Estranhou que um
+          silêncio mórbido houvesse recaído nas redondezas, assim como a
+          paisagem não exibia nada além do breu. Ela encarou seu pai com um
+          olhar assustado. Ele apenas moveu a cabeça de um lado para o outro e
+          puxou o cinto, prendendo-a. 
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Passando por uma passarela, Sofia viu o braço do motorista indo até o
+          outro banco e então seu pai se jogou sobre ele, agarrando o braço que
+          voltava sacando uma pistola. Ela ficou sem reação, enquanto seu pai
+          lutava para impedir que algo lhes acontecesse. O motorista travou o
+          volante com um joelho e pisou no acelerador ao se esticar sobre Lúcio,
+          golpeando-o duas vezes e encharcando o punho com sangue, mas Lúcio não
+          o largava.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O braço com a arma resistia, indo de um lado para o outro em uma
+          disputa de força. O primeiro disparo atravessou o teto, o segundo
+          passou de raspão no ombro de Sofia. Ela gritou, Lúcio golpeou o
+          motorista com a testa. Quando sentiu que ele havia fraquejado,
+          acertou-o outra vez e jogou a ponta de pistola para a têmpora,
+          estourando os miolos do motorista contra a janela.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Sofia! Sofia! — Ele gritou, fitando a filha com o aperto no coração
+          de quem espera pelo pior.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Pai! — Sofia apontou para frente.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Um descuido, um momento, um segundo. Um carro que vinha na outra mão
+          bateu de frente com eles. Sofia ficou cega com um clarão e, no
+          instante seguinte, perdeu a consciência enquanto o carro capotava e se
+          despedaçava na via.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><strong>IV.</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O sol já brilhava e ela sentia dores em todas as partes do corpo em
+          que conseguia sentir alguma coisa. Esforçou-se para sair do veículo.
+          Sua visão estava um pouco turva quando reconheceu seu pai estirado
+          mais adiante. Ela foi até ele e se agachou sobre uma poça de sangue.
+          Lúcio estava morto, seu corpo frio começava a dar sinais da reação da
+          quimera. Sofia quase engasgou com o choro e perdeu a noção do tempo
+          enquanto se lamentava naquele deserto de concreto.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Minutos depois, ela despertou como se voltasse de um sonho vívido.
+          Ainda horrorizada com a cena devastadora, percebeu algumas pessoas
+          espiando de longe, mas sem fazer nada. Notou também algumas figuras
+          irreconhecíveis que pareciam querer se arriscar a chegar mais perto.
+          Seu coração disparou e ela sentiu o quão nocivo era aquele lugar. De
+          repente, algumas vozes como rosnados se ergueram e pareciam se
+          aproximar. O céu laranja e coberto por nuvens iniciava uma garoa. O
+          odor da quimera exalando do defunto se espalhou pelo ar como o perfume
+          de rosas na primavera.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Um estranho começou a avançar em direção a Sofia. Ela se arrastou o
+          mais rápido que pôde até o canto de um dos destroços do carro, ainda
+          soluçando. Logo outros começaram a se aproximar também e Sofia foi
+          pêga de surpresa ao sentir uma mão apertando seu ombro. Ela se
+          levantou em um pulo e gritou:
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>— Sai! Sai! Socorro!</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O sequela assustado quase caiu para trás. O homenzinho esquelético
+          correu para longe, mas, quando ela se deu conta, uma dúzia de sequelas
+          compactuavam consumindo o corpo de Lúcio.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia se levantou e correu para longe, o máximo que aguentou. Não
+          demorou para ela flagrar, no horizonte, perdido em meio ao deserto
+          devastado do que um dia fora uma vila comercial, um posto de gasolina.
+          Ela insistiu além da sua resistência e, quando conseguiu alcançá-lo,
+          foi direto ao banheiro. Nesse ponto, ela já sentia a abstinência
+          devorando-a de dentro para fora, era o “Rugido da Quimera”, como
+          diziam. Primeiro seus dedos começaram a formigar, dos pés e das mãos.
+          Ela se apoiou sobre a pia e encarou o espelho, observando suas pupilas
+          se dilatarem assumindo tons acinzentados. Um frio súbito cobriu seu
+          corpo como se mergulhasse no ártico e seus músculos se contraíram
+          perante dores que pareciam alfinetadas nos nervos. Ela tateou o
+          sobretudo em busca dos frascos, mas sentiu uma dor aguda e notou que
+          haviam se quebrado e restavam apenas fragmentos estilhaçados cravados
+          em sua pele.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Sofia não havia notado. Talvez fosse todo o preto que vestia. Talvez
+          fosse toda a chuva que se misturava ao sangue. Talvez… não fizesse
+          mais diferença.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Quando os efeitos amenizaram antes da próxima onda de tormenta, ela
+          usou as forças que restavam em seu corpo para se levantar. Caminhou
+          até a loja do posto e passou pela porta deixando um rastro de sangue e
+          digitais. No balcão, uma I.A estava voltada para o painel que exibia
+          uma propaganda de cerveja. A máquina humanóide se voltou para Sofia,
+          estampando os dentes holográficos em um sorriso artificial. Apesar da
+          sua forma humana, a I.A estava sem a pele, coberta apenas pela malha
+          resistiva e quase translúcida, como músculos gelatinosos ou o corpo de
+          uma caravela.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>Sofia tossiu.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Água, dexataurina e uma cápsula kdeoide — pediu com a voz trêmula
+          esticando a palma da mão sobre o balcão.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          A I.A se desfez do sorriso, exibindo uma linha azulada que brilhou
+          diante de Sofia, buscando a identificação da retina e da estrutura
+          óssea, tal como o balcão escaneou sua mão. Ela apertou os olhos em
+          reação, as pupilas já haviam dilatado além do limite, as reações
+          cutâneas começavam a se espalhar e a tormenta parecia se aproximar
+          como passos sobre algodão. A audição de Sofia ficou sensível e um
+          chiado ininterrupto se instalou como um sinal emitido do fundo da sua
+          mente; a luz falha do velho posto oscilava causando-lhe náuseas e a
+          poeira e odores de quase abandono do local instigavam o seu desespero.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Identidade não confirmada. Solicitação indevida notificada às
+          autoridades — notificou a I.A.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>Sofia rosnou furiosa.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Sofia Avati, entregue o que eu mandei! — Ela exclamou, mas a máquina
+          repetiu a mensagem.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          A quimera mutando em seu sistema nervoso justificaria a falha na sua
+          identificação física, todo viciado sabia disso, mas ela não imaginou
+          que sua voz ou seu DNA pudessem ser desvirtuados. O desespero então
+          engoliu a razão e Sofia avançou sobre o balcão.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O ataque de fúria foi contido pela I.A, que a empurrou de volta contra
+          o chão. Sofia sentiu o corpo doer. Ela viu a I.A contornando o balcão
+          com um par de algemas e rolou para o lado, forçou os joelhos tentando
+          firmá-los e saiu disparada da loja embarcando em outra desventura sob
+          a chuva ácida.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Dom estava encostado do lado da loja de bebidas. Ele espiava pela
+          janela enquanto seus amigos, lá dentro, surrupiavam garrafas da seção
+          de importados. Do outro lado da rua, outro esperava com o Lexus
+          ligado. Qualquer pessoa se perguntaria o que garotos da elite estariam
+          fazendo na Zona Sul roubando uma loja de bebidas em meio à madrugada;
+          emoção, tédio, malevolência.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O garoto se virou ao ouvir um estalo logo atrás dele. Flagrou o beco
+          vazio, mas logo uma silhueta esquelética surgiu como se atraísse o
+          calor da fumaça que vinha do bueiro. Ela se aproximou vagarosamente,
+          não querendo desafiar o garoto de porte atlético.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Por favor, por favor… eu só quero um pouco, Q, por favor — implorou
+          a silhueta, revelando-se na luz. Dom encarou enojado a pele calejada e
+          deformada da mulher que mal conseguia se manter em pé.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Malditos sequelas! — exclamou. — Eu não vou te dar porra nenhuma, é
+          melhor você vazar.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          — Por favor… você não sabe quem eu sou, eu posso te pagar, eu juro —
+          ela insistiu.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Dom se virou completamente em direção à mulher e avançou com um
+          movimento violento. Ele esticou a mão tentando agarrá-la, mas ela se
+          esquivou, agarrou o braço do garoto e girou pendurando-se sobre suas
+          costas. Em seguida, mordeu fundo o pescoço dele, fundo o bastante para
+          triturar a pele com os dentes corroídos e romper a artéria.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          O corpo caiu contra o chão e, enquanto sentia a vida o abandonar, o
+          garoto encarou a mulher. Os ossos agredidos pelo tempo haviam se
+          moldado monstruosamente, os olhos eram como um convite obscuro e
+          penoso, mas nada se destacava como a cicatriz que se abria sob os
+          olhos se estendendo até o queixo: era a marca de um passado que ela
+          jamais esperava compreender naquela cidade tóxica e caótica.
+        </p>
+        <!-- /wp:paragraph -->
+      
+    <hr /> 
+
+<section class="footer"></section>
+  </body>
+</html>

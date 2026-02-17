@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Reminiscência - Contos - Uoshi</title>
+
+    <meta name="author" content="Uoshi" />
+    <meta
+      name="description"
+      content="Esse é um breve conto, criado para e publicado pela editora Cavalo Café na antologia Insólitos. Reminiscência tem uma narrativa forte e punitiva, não escondendo com beleza aspectos cruéis da realidade, porém, também busca trabalhar a fantasia como gatilho das percepções históricas. Um conto breve e, espero que, prazeroso."
+    />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+
+    <!-- Manifest .json-->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Libs -->
+    <link
+      rel="stylesheet"
+      href="/lib/style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <script src="/lib/script.js" defer></script>
+
+    <!-- Theme Color - https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Ícone-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+
+    <!-- Abre Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HZNDKKGKW8");
+    </script>
+    <!-- Fecha Google tag (gtag.js) -->
+
+    <!-- SSL Protocol Config -->
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+    <!-- End SSL Protocol Config -->
+  </head>
+
+  <!--
+          )      (\_
+         ((    _/{  "-;
+          )).-' {{ ;'`
+HEY U!   ( (  ;._ \\      -->
+
+  <body>
+    <!-- Abre Header -->
+    <!-- sidebar esquerdo -->
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/blog">← blog</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end sidebar -->
+
+    <!-- Fecha Header -->
+
+    <!-- Abre base -->
+    <!-- <link rel="stylesheet" href="/css/scroller.css" type="text/css" media="screen, projection"/> -->
+    <section class="main">
+        <sub>
+          Abril 26, 2021
+        </sub>
+        <!-- título -->
+        <h1>
+          reminiscência
+        </h1>
+        <br />
+        <sub> contos 📖</sub>
+        <br /><br />
+
+        <!-- conteúdo -->
+
+        <p>
+          Esse é um breve conto, criado para e publicado pela editora Cavalo
+          Café na antologia Insólitos. Reminiscência tem uma narrativa forte e
+          punitiva, não escondendo com beleza aspectos cruéis da realidade,
+          porém, também busca trabalhar a fantasia como gatilho das percepções
+          históricas. Um conto breve e, espero que, prazeroso.
+        </p>
+        <p>
+          Um agradecimento especial para toda a galera que deu
+          <a href="https://twitter.com/heyalbqrq/status/1386824773355909129"
+            >like no tweet</a
+          >
+          e tornou essa publicação realidade e também as Apoiadoras.
+          <strong>&lt;3 </strong>
+        </p>
+
+        <p>Sugestão para acompanhar a leitura:</p>
+        <iframe
+          width="100%"
+          height="300"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/100555863&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
+        <hr />
+
+        <br />
+        <h3><center>Reminiscência</center></h3>
+
+        <p>
+          <em
+            >“Ela estava presa, com as garras da Onça cruel rasgando sua pele e
+            manchando o seu manto branco de vermelho escarlate. Do chão, as
+            tribos em pânico entoavam canções tentando animar sua deusa que
+            perecia diante do poder do inimigo, eles não acreditavam quando viam
+            o brilho agora todo vermelho no céu, como se sangrasse sobre a
+            Terra.”</em
+          >
+        </p>
+        <p>
+          As palavras da velha não eram para assustar, mas enriquecer a criança
+          com fragmentos daquilo que fazia sua cultura forte, suas histórias e
+          origem. A menina se revirava com a cabeça sobre o colo da anciã, que
+          não perdia o fôlego. A noite estava agitada, o vento vindo do litoral
+          prometia uma tempestade. As luzes das fogueiras fora da oca
+          atravessavam pelas frestas da madeira e ilustravam a narrativa com
+          formas abstratas.<br /><br />
+          — Yasy gritava, tão alto que o próprio mar se enfurecia tentando
+          desgrudar da Terra para ir ampará-la, mas era em vão, pois ele tinha
+          uma dívida e não podia apenas nos abandonar. Foram horas de agonia,
+          até que um raio de esperança se ergueu no horizonte.<br /><br />
+          — Ele trazia calor, vovó? — A velha encarou a criança com um sorriso
+          estampado de orelha a orelha.<br /><br />
+          — Ela trazia, sim, o calor e sua bravura. A Onça sentiu o coração na
+          garganta e tremeu quando o rugido de Kûarasy acalmou o mar e os
+          humanos, e assim que deu as caras, a criatura se debateu cega do
+          brilho do Sol e caiu do céu, foi engolida pelo mar e desapareceu para
+          sempre.<br /><br />
+          — Mas e a Lua vovó?<br /><br />
+          A velha limpou a garganta sutilmente.
+        </p>
+        <p>
+          <em
+            >Sob as garras, a luz se desfez,<br />
+            Temente, mas sem perecer,<br />
+            Em seu âmago a faísca se fez,<br />
+            Encharcada por si.<br />
+            <br />
+            O véu de uma cor, como cascatas,<br />
+            E entre as tribos o temor,<br />
+            De vermelho cobria as matas.<br />
+            <br />
+            O horizonte rugiu, <br />
+            Um feixe surgiu,<br />
+            Com poder o Sol emergiu,<br />
+            E brandou, a criatura puniu,<br />
+            E a Lua que chorava riu,<br />
+            De seu amor, nem dor sentiu,<br />
+            Apenas renasceu.<br />
+            <br />
+            O véu de uma cor, como cascatas,<br />
+            E entre as tribos o fervor,<br />
+            Da vitória cobria as matas.
+          </em>
+        </p>
+
+        <p>
+          A voz da velha preenchia a história e a imaginação da criança, ela
+          piscava com os olhos pesados, mas ao mesmo tempo lutava para se manter
+          acordada e acompanhar a história, se recordava de seus pais que, ainda
+          em vida, tiravam horas da sua noite para cantar e aproveitar a
+          presença que ainda tinha da sua avó como conforto para o vazio que
+          permanecia em seus corações tão jovens. A velha abraçou a pequena em
+          seus braços com lágrimas escorrendo sobre suas bochechas, se recordava
+          de momentos semelhantes com seu único e precioso filho, em tempos de
+          paz, tempos mais simples. Sentiu o calor do corpo de sua neta contra
+          seu peito e aquilo lhe fez pensar em tudo o que havia perdido, mas
+          assim como a Lua, ali tinha sua segunda chance, pois isso era o amor,
+          ela entendia bem disso. Quando a criança pegou no sono, a velha apenas
+          permaneceu ali, sentada ao seu lado, ouvindo o estalar da fogueira e o
+          assobio do vento ao passar pelos vãos das construções do pequeno
+          vilarejo. Ela flagrou fagulhas da luz do luar escapando pelo telhado
+          amarrado e suspirou ao imaginar que toda aquela beleza estrelada logo
+          estaria oculta sobre as nuvens carregadas. <br /><br />
+          Do lado de fora, sons de movimentos lhe despertaram a curiosidade.
+          Sorrateira ela se afastou da neta e caminhou até a porta, espiou e não
+          viu nada além de ocas fechadas, das fogueiras agitadas, um ou outro
+          guerreiro e a escuridão, mas foi de um estalo incomum que lhe causou
+          um calafrio sinistro na espinha. <br /><br />
+          Ela saiu pela porta e contornou com passos leves a parede da oca,
+          ouviu novamente o estalo, agora mais perto e mesmo com o olhar
+          cansado, mas com anos de vida no meio da floresta, ela flagrou o
+          brilho tímido e mortal de um rifle.<br /><br />
+          Seu coração disparou.<br /><br />
+          Rapidamente voltou para dentro da oca, se envolveu em uma manta e
+          acordou sua neta.<br /><br />
+          — Jaci! Jaci! — sussurrou.<br /><br />
+          — Vovó?<br /><br />
+          Logo ela ouviu os passos se dispersando em todas as direções. Uma
+          agitação aos poucos tomava conta das instalações vizinhas. Notou pés
+          se arrastando ao lado da sua parede, puxou rapidamente o cobertor
+          sobre a criança.<br /><br />
+          — Silêncio.<br /><br />
+          Se afastou e colou o corpo ao lado da porta.<br /><br />
+          A madeira rangeu ao ser empurrada. Na escuridão, a velha arrancou uma
+          arma afiada da manta, uma silhueta adentrou e foi surpreendida com um
+          golpe ágil na jugular e empurrada para o canto à espera da morte.<br /><br />
+          — Jaci! — disse a velha, se aproximando da criança. Ela abraçou a
+          menina o mais forte que pôde, já ouvindo o conflito tomando conta do
+          vilarejo.<br /><br />
+          — Vovó! — exclamou a menina ao ver uma explosão vermelha tomar conta
+          do teto da oca, foi um breve segundo para que tudo estivesse em
+          chamas.<br /><br />
+          — Preste atenção! Você precisa fugir, está bem? Entre na mata, vá até
+          o riacho e avise os outros. Por favor, Jaci, não olhe para trás,
+          apenas chegue ao riacho e diga que os estrangeiros invadiram nossas
+          terras. — A menina a encarou horrorizada, nova demais para compreender
+          a gravidade do que acontecia, mas com idade suficiente para saber que
+          se tratava de vida ou morte. <br /><br />
+          — Jaci! — insistiu a velha. — Kûarasy vai te proteger. Chegue ao
+          riacho, não pare por nada!<br /><br />
+          A menina se levantou, a avó cobriu seu corpo com um tecido escuro, o
+          suficiente para lhe aquecer e camuflar na mata. Ela abraçou outra vez
+          a menina e foi até a porta. Espiou. Do lado de fora o caos era
+          dominante, os nativos enfrentavam os forasteiros em um combate
+          ferrenho e sangrento. Com toda a dor que jamais imaginou que sentiria
+          outra vez, ela pegou a menina pelas mãos e correu, desviando das lutas
+          corpo-a-corpo, pedidos de socorro e gritos de horror. <br /><br />
+          Passou ágil pelas fogueiras no centro do vilarejo, contornou algumas
+          ocas se ocultando nas sombras e evitando dar as caras onde havia luz,
+          sem sequer alcançar o limite das instalações, uma explosão contra suas
+          costas a derrubou brutalmente. A criança caiu ao seu lado. O soldado
+          avançou sobre ela, ergueu o rifle segurando em sua ponta para usar
+          como bastão, mas antes de desferir o golpe, uma lança atravessou sua
+          garganta.<br /><br />
+          A menina encarou sua avó. Com toda a fragilidade que lhe restava, a
+          velha soltou sua mão.<br /><br />
+          — Vá!<br /><br />
+          A menina se levantou e correu, passou pelas últimas instalações se
+          esforçando para não olhar para trás, entrou na mata ofegante, mas
+          antes de sumir completamente, algo a agarrou no calcanhar. Ela bateu
+          contra o chão, se virou aos gritos, um homem a segurava, mesmo se
+          debatendo, lhe faltavam forças para se livrar. O homem então se
+          ajoelhou, ainda a segurando, ela fitou a silhueta demoníaca e o fogo
+          consumindo o seu lar e tomando a vida de seu povo, o inimigo puxou uma
+          lâmina longa da cintura e sem hesitar, tomou a vida alheia, aos berros
+          com nada mais do que insanidade no olhar.
+          <br /><br />
+          Satisfeito com seu feito. Ele se levantou cambaleando e se afastou,
+          voltando para o massacre.
+        </p>
+
+        <p>
+          A consciência de Jaci aos poucos a abandonava, naquele momento, o seu
+          mundo parou. Não ouvia os gritos de terror, não sentia o cheiro das
+          madeiras e corpos queimados, não sentia o frio e nem a dor dos
+          ferimentos em seu corpo, apenas a voz de seus pais e sua avó unidos em
+          um único tom doce. E com o que lhe restava de forças, ela entoava uma
+          canção aos sussurros.
+        </p>
+
+        <p>
+          <em
+            >Como o vento que canta,<br />
+            Quando passa e levanta,<br />
+            Folhas e flores ao amanhecer,<br />
+            Mesmo que haja neve, chuva ou areia.<br />
+            <br />
+            Da montanha ele desce,<br />
+            Ao seu belo nascer,<br />
+            Trazendo não só a luz,<br />
+            Mas calor para aquecer.<br />
+            <br />
+            Sol, o Sol, da montanha ele desce,<br />
+            Trazendo o brilho para a mata crescer,<br />
+            Pois há vida, muita vida,<br />
+            Mais vida para aquecer...
+          </em>
+        </p>
+
+        <p>
+          Do meio da escuridão, um brilho refletiu nos olhos da menina, se
+          tornando cada vez maior e intenso. Lentamente a luz tomava forma,
+          crescia como um humanóide, sobre duas pernas, com dois braços, uma
+          cabeça, possuía garras que saíam das pontas dos dedos, chifres longos
+          que enfeitavam a cabeça, a pele cintilava tons desconhecidos e marcas
+          de guerra estavam pintadas com barro por todo seu corpo e sua face. A
+          criatura se aproximou, deixando um rastro de luz por onde pisava.
+          Parou ao lado da criança quase desfalecida em seu último sopro de vida
+          e se abaixou.<br /><br />
+          — Você se lembra de mim — disse a criatura.<br /><br />
+          — Sinto seu calor — respondeu Jaci.<br /><br />
+          — Mas mesmo agora, você ainda lembra de mim! — A criatura exibiu um
+          sorriso largo, fitou tudo ao seu redor e levou a mão sobre a face da
+          menina, afastando os cabelos que lhe cobriam os olhos encharcados com
+          sangue. — Jaci, como minha Yasy. A besta também rasgou sua pele, meu
+          amor.<br /><br />
+          A criatura se deitou ao lado da menina, enquanto a observava, chorava
+          e tentava encontrar palavras para o que sentia e queria
+          compartilhar.<br /><br />
+          — Parece que é um castigo. Comigo, com meu povo — disse a criatura. —
+          Me ajude a entender o que há de tão ruim além mar que corrompe nossa
+          terra.<br /><br />
+          — Talvez apenas seja… como deve ser.<br /><br />
+          — Não deveria ser assim. — O ser rebateu.<br /><br />
+          — Faça ser diferente, então.<br /><br />
+          Kûarasy se levantou, segurando a criança em seus braços. Um brilho
+          majestoso cobriu os dois.<br /><br />
+          — Façamos diferente, então.<br /><br />
+          O feixe de luz intenso aos poucos diminuiu e o reflexo nos olhos da
+          criança se tornou um ponto se esvaindo até sumir. A menina se ergueu
+          exalando uma aura intensa de seu corpo, seus olhos brilhavam como a
+          lua cheia, seus primeiros passos foram pesados, a mata se abria em seu
+          caminho. Conforme avançava pelo vilarejo, onde havia fogo, ele se
+          apagava, onde haviam corpos caídos, eles se erguiam, onde estava
+          molhado de sangue, secava, tudo voltava ao seu lugar, assim como os
+          invasores recuavam de volta para a costa. Até que ela parou no meio da
+          mata, no meio da escuridão. <br /><br />
+          Do corpo da menina, espectros monstruosos surgiram compartilhando seus
+          sentimentos, eram formados por criaturas meio felinas, com chifres e
+          presas brilhantes. O solo ocultou mais do que raízes, assim como as
+          árvores que camuflavam olhares ardentes e defensores. Ali estavam as
+          testemunhas de Kûarasy, certos de que nada mais iria ameaçar seu povo.
+        </p>
+
+        <p>
+          O grupo de forasteiros armados avançou sorrateiro pela mata.<br /><br />
+          Sem perceberem, silenciosamente um a um começou a desaparecer.<br /><br />
+          Um deles se afastou da maioria, se sentindo ofegante com a neblina que
+          descia na floresta. <br /><br />Ele encostou em um tronco, uma sombra
+          surgiu sobre suas costas e o partiu em pedaços antes mesmo que se
+          desse conta de que não estava sozinho. Outro sentiu o pé afundar em
+          algo que parecia uma poça, logo foi puxado para as profundezas da
+          terra. E das sombras, a criança observava, seus espectros se
+          espalharam e destruíram tudo aquilo que um dia poderia lhe trazer
+          dor.<br /><br />
+          Assim, o grupo de forasteiros armados, desapareceu pela floresta.
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          <em
+            >O véu de uma cor, como cascatas,<br />
+            E entre as tribos o fervor,<br />
+            Da vitória cobria as matas.
+          </em>
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          A voz da velha preenchia a história e a imaginação da criança. A
+          menina se aninhou nos braços da avó, que respondeu ao gesto
+          amoroso.<br />
+          <br />
+          — Kûarasy nos protege, vovó.
+        </p>
+      
+    <hr /> 
+
+<section class="footer"></section>
+  </body>
+</html>

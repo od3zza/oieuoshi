@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
 
+<html lang="pt-BR" xml:lang="pt" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-
-  <title>Como criei um campo de comentários para meu Blog - Misc - Uoshi</title>
-
-  <meta name="author" content="Uoshi" />
-  <meta name="description"
-    content="Como criei um campo personalizado de comentários para meu blog com HTML, CSS, JS e usando Supabase como base de dados." />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
-
-  <!-- Manifest .json-->
-  <link rel="manifest" href="/manifest.json" />
-
-  <!-- Libs -->
-  <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
-  <script src="/lib/script.js" defer></script>
-
-  <!-- Theme Color - https://goo.gl/qRE0vM -->
-  <meta name="theme-color" content="#ffffff" />
-
-  <!-- Ícone-->
-  <link rel="icon" type="image/png"
-    href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
-
-  <!-- Abre Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
-  <script>
+<meta charset="utf-8"/>
+<title>Como criei um campo de comentários para meu Blog - Misc - Uoshi</title>
+<meta content="Uoshi" name="author"/>
+<meta content="Como criei um campo personalizado de comentários para meu blog com HTML, CSS, JS e usando Supabase como base de dados." name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="/sitemap.xml" rel="alternate" type="application/rss+xml"/>
+<!-- Manifest .json-->
+<link href="/manifest.json" rel="manifest"/>
+<!-- Libs -->
+<link href="/lib/style.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+<script defer="" src="/lib/script.js"></script>
+<!-- Theme Color - https://goo.gl/qRE0vM -->
+<meta content="#ffffff" name="theme-color"/>
+<!-- Ícone-->
+<link href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" rel="icon" type="image/png"/>
+<!-- Abre Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -39,55 +29,48 @@
 
     gtag("config", "G-HZNDKKGKW8");
   </script>
-  <!-- Fecha Google tag (gtag.js) -->
-
-  <!-- SSL Protocol Config -->
-  <script>
+<!-- Fecha Google tag (gtag.js) -->
+<!-- SSL Protocol Config -->
+<script>
     if (location.protocol != "https:") {
       location.href =
         "https:" +
         window.location.href.substring(window.location.protocol.length);
     }
   </script>
-  <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
-  <!-- End SSL Protocol Config -->
+<meta content="fd7d215910ea0cf1c785c7c7cf7a7c0f" name="p:domain_verify"/>
+<!-- End SSL Protocol Config -->
 </head>
-
 <!--
           )      (\_
          ((    _/{  "-;
           )).-' {{ ;'`
 HEY U!   ( (  ;._ \\      -->
-
 <body>
-  <!-- Abre Header -->
-  <!-- sidebar esquerdo -->
-  <div class="container"></div>
-  <header class="sidebar">
-    <div class="sidebar-text">
-      <nav class="sections">
-        <ul>
-          <a href="/blog">← blog</a>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- end sidebar -->
-
-  <!-- Fecha Header -->
-
-  <!-- Abre base -->
-  <section class="main">
-    <sub> Junho, 2025 </sub>
-    <!-- título -->
-    <h1>Como criei um campo de comentários para meu Blog</h1>
-    <br />
-    <sub> misc 🗂️</sub>
-    <br /><br />
-
-    <!-- conteúdo -->
-
-    <p>Há bastante tempo venho tentando criar uma “simples” caixa de comentários para os posts do blog. O que parecia
+<!-- Abre Header -->
+<!-- sidebar esquerdo -->
+<div class="container"></div>
+<header class="sidebar">
+<div class="sidebar-text">
+<nav class="sections">
+<ul>
+<a href="/blog">← blog</a>
+</ul>
+</nav>
+</div>
+</header>
+<!-- end sidebar -->
+<!-- Fecha Header -->
+<!-- Abre base -->
+<section class="main">
+<sub> Junho, 2025 </sub>
+<p>título</p>
+<h1>Como criei um campo de comentários para meu Blog</h1>
+<br/>
+<sub> misc 🗂️</sub>
+<br/><br/>
+<p>conteúdo</p>
+<p>Há bastante tempo venho tentando criar uma “simples” caixa de comentários para os posts do blog. O que parecia
       ser
       uma tarefa fácil acabou se tornando uma das maiores desventuras que já enfrentei como <i>coder</i> amador. Passei
       horas pesquisando possíveis soluções e, na maioria das vezes, encontrava artigos e tutoriais que recomendavam o
@@ -95,59 +78,50 @@ HEY U!   ( (  ;._ \\      -->
       de serviços de terceiros, como Disqus ou o próprio Github. No entanto, como desenvolvi este site do zero, codando
       linha por linha, minha intenção sempre foi depender cada vez menos de plataformas externas, que acabam se tornando
       quase “proprietárias” do conteúdo que publico.</p>
-
-    <p>Buscando alternativas menos convencionais (e mais desafiadoras), encontrei alguns caminhos interessantes. Percebi
+<p>Buscando alternativas menos convencionais (e mais desafiadoras), encontrei alguns caminhos interessantes. Percebi
       que criar a caixa de comentários em si não era o maior obstáculo, mas sim encontrar uma forma de armazenar os
       comentários em um servidor próprio. Testei soluções como Firebase, Google Script e várias outras, mas falhei
       miseravelmente em todas. Até conseguia enviar o comentário para o banco de dados, mas ele nunca retornava
       corretamente. Foi então que, com um bom <i>prompt</i> e muita paciência, recorri ao Gemini e ao Claude para
       explorar
       possibilidades e validar, com calma, as melhores opções entre as LLMs.</p>
-
-    <p>No fim, encontrei uma solução. Talvez não seja a ideal, mas funcionou. Basicamente, criei um formulário de
+<p>No fim, encontrei uma solução. Talvez não seja a ideal, mas funcionou. Basicamente, criei um formulário de
       comentários usando HTML, CSS e JS, e utilizei o Supabase como banco de dados. No Supabase, consegui armazenar e
       organizar os comentários pelo <i>slug</i> da URL, permitindo que cada post do blog tenha sua própria área de
       comentários. Como tudo o que faço nasce da curiosidade <i>rs</i>, gosto de compartilhar o que aprendo. Por isso,
       deixo aqui o caminho que trilhei para criar essa funcionalidade — quem sabe pode ser útil para você também.</p>
-
-    <p>Se você quiser ir direto ver o código do projeto, eu deixei ele <a href="https://github.com/od3zza/blog-comments">disponível no Github</a>.</p>
-
-    <h2>Qual é a pira?</h2>
-
-    <p>O primeiro passo é configurar o <a href="https://supabase.com/">Supabase</a>. A versão gratuita é mais do que
+<p>Se você quiser ir direto ver o código do projeto, eu deixei ele <a href="https://github.com/od3zza/blog-comments">disponível no Github</a>.</p>
+<h2>Qual é a pira?</h2>
+<p>O primeiro passo é configurar o <a href="https://supabase.com/">Supabase</a>. A versão gratuita é mais do que
       suficiente
       para um projeto como esse, pois a ideia é apenas armazenar conteúdos de texto. Em seguida, a criação do
       <i>JavaScript</i>,
       que para mim foi bem pagado, mas rolou. E então, o HTML e o CSS, que foram os mais tranquilos de fazer.
     </p>
-
-    <h2>Configurar o Supabase</h2>
-    <p>No Supabase, criei uma conta gratuita e então um "new project". Escolhi um nome simples (você pode colocar o que
+<h2>Configurar o Supabase</h2>
+<p>No Supabase, criei uma conta gratuita e então um "new project". Escolhi um nome simples (você pode colocar o que
       preferir),
       criei uma senha e escolhi a região de São Paula, que é a única do Brasil.
     </p>
-    <p>No painel esquerdo, em "Table Editor", fui até "Create a new table", nomeei como "comentarios" e desmarquei
+<p>No painel esquerdo, em "Table Editor", fui até "Create a new table", nomeei como "comentarios" e desmarquei
       "Enable row level security".
       E então adicionei as seguintes colunas: "id" (já vem criada), "post_slug" (text), "nome" (text), "link" (text),
       "comentario" (text) e "created_at" (já vem criada). Salvei.
     </p>
-    <p>Em "Authentication" > "Polices", criei duas políticas: "Enable read acess for all user", que já vinha previamente
+<p>Em "Authentication" &gt; "Polices", criei duas políticas: "Enable read acess for all user", que já vinha previamente
       configurada
-      e "Enable insert acess for all user", a qual tive que criar manualmente. Depois fui em "Settings" > "Data API" e
+      e "Enable insert acess for all user", a qual tive que criar manualmente. Depois fui em "Settings" &gt; "Data API" e
       peguei a URL do projeto, algo como: https://xxxxxxxxx.supabase.co e depois em "API Keys" e peguei a chave pública.
     </p>
-
-    <h2>Apenas o HTML</h2>
-    <p>O HTML tentei manter o mais simples possível, apenas com os elementos que realmente importam, quem sabe depois eu vou pirar um pouco mais. <a href="https://github.com/od3zza/blog-comments/blob/main/index.html">Veja o HTML aqui</a>.</p>
-    <p>
+<h2>Apenas o HTML</h2>
+<p>O HTML tentei manter o mais simples possível, apenas com os elementos que realmente importam, quem sabe depois eu vou pirar um pouco mais. <a href="https://github.com/od3zza/blog-comments/blob/main/index.html">Veja o HTML aqui</a>.</p>
+<p>
       Então fiz um CSS minimalista, apenas para organizar os elementos e deixar menos feio. O ideal é adicionar ele dentro do seu .css existente, pra puxar o estilo dos elementos que faltam. <a href="https://github.com/od3zza/blog-comments/blob/main/style.css">Veja o CSS aqui</a>.
     </p>
-
-    <h2>E O JS?</h2>
-    <p>Por fim, o JavaScript, gerado com a ajuda do Claude, pois eu me perdia o tempo todo. <a href="https://github.com/od3zza/blog-comments/blob/main/script.js">Veja o JS aqui</a>.</p>
-    
-    <h2>E então...</h2>
-    <p>
+<h2>E O JS?</h2>
+<p>Por fim, o JavaScript, gerado com a ajuda do Claude, pois eu me perdia o tempo todo. <a href="https://github.com/od3zza/blog-comments/blob/main/script.js">Veja o JS aqui</a>.</p>
+<h2>E então...</h2>
+<p>
       Supabase configura e códigos criados, adicionei tudo em uma página teste chamada "latest-post.html" e rezei para
       dar certo. O teste
       foi melhor do que eu esperava! Os comentários foram salvos e carregados corretamente, e o formulário funcionou
@@ -156,17 +130,12 @@ HEY U!   ( (  ;._ \\      -->
       simples,
       mas que atende às minhas necessidades e me permite ter controle total sobre os dados.
     </p>
-
-    <p>Por fim, gerei um Python para me ajudar a adicionar o código do campo de comentários nos HTMLs que faziam parte
+<p>Por fim, gerei um Python para me ajudar a adicionar o código do campo de comentários nos HTMLs que faziam parte
       do blog.
       Eu gosto muito de usar Python para essas tarefas, sei que é um modo ainda meio <i>noob</i> de aproveitar essa
       linguagem, mas
       é aos poucos que vamos aprendendo, certo?</p>
-
- 
-    <hr /> 
-
+<hr/>
 <section class="footer"></section>
-</body>
-
+</section></body>
 </html>

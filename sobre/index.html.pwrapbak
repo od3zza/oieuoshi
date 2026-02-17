@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>😊 Sobre - Uoshi</title>
+
+    <meta name="author" content="Uoshi" />
+    <meta
+      name="description"
+      content="Designer multidisciplinar e filmmaker apaixonado por processos criativos e experimentais."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+
+    <!-- Manifest .json-->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Libs -->
+    <link
+      rel="stylesheet"
+      href="/lib/style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <script src="/lib/script.js" defer></script>
+
+    <!-- Theme Color - https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Ícone-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+
+    <!-- Abre Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HZNDKKGKW8");
+    </script>
+    <!-- Fecha Google tag (gtag.js) -->
+
+    <!-- SSL Protocol Config -->
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+    <!-- End SSL Protocol Config -->
+  </head>
+
+  <!--
+          )      (\_
+         ((    _/{  "-;
+          )).-' {{ ;'`
+HEY U!   ( (  ;._ \\      -->
+
+  <body>
+    <!-- Abre Header -->
+    <!-- sidebar esquerdo -->
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/">← início</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end sidebar -->
+
+    <!-- Fecha Header -->
+
+    <!-- Abre base -->
+    <section class="main">
+      <!-- título -->
+      <h1>😊 Sobre</h1>
+
+      <!-- conteúdo -->
+
+      <p>
+        Hei! Uoshi aqui. Sou mestrando em cinema no programa PPG-CINEAV,
+        designer multidisciplinar no Masdon Studio, artista plástico e tatuador
+        nômade, e game designer. Apaixonado por processos criativos e
+        experimentais.
+      </p>
+
+      <p>
+        Esse espaço é como um porto seguro, um backup de tudo o que eu faço—ou
+        tento. Atualmente, venho produzindo diversos conteúdos diferentes e em
+        várias plataformas, mas a maioria deles você vai encontrar aqui.
+      </p>
+      <p>
+        <a href="http://lattes.cnpq.br/4829312235037252">Lattes</a> |
+        <a href="htps://instagram.com/oiuoshi">Instagram</a>
+      </p>
+
+      <hr />
+
+      <h2>Por aí</h2>
+
+      <h3>Talks 🐸</h3>
+
+      <p>
+        - 2025 – Hipercorte: Hackeando o Cinema com o TikTok - 5º CINE-FÓRUM – Cinema, Letras, Arte, Sociedade e Debate - <a href="https://oieuoshi.vercel.app/videoarte/deadpoolwolverineetiktok">Texto + Obra</a>
+        | <a href="https://docs.google.com/presentation/d/1oRtURkvfCXmtNGqjAVNLTYctYRFy4KIQkc_yyNtTV_s/edit?usp=sharing">Slides</a>
+        <br/>
+        
+        - 2025 – Samurai Negão: Atravessamentos Culturais em Ghost Dog (1999) e
+        Afro Samurai (2007) - 5º CINE-FÓRUM – Cinema, Letras, Arte, Sociedade e
+        Debate -
+        <a
+          href="https://docs.google.com/document/d/10SM5MWhZ0ceyKNDCb8_v3taASuBV-Y4U4Mi8GmYd-Js/edit?usp=sharing"
+          >Texto</a
+        >
+        /
+        <a href="#">Vídeo</a>
+        (em breve) /
+        <a
+          href="https://docs.google.com/presentation/d/1HpZTV056M8VkEw8OGB7rH3Eu6kNkdx-jN1GuJcFpMv4/edit?usp=sharing"
+          >Slides</a
+        ><br />
+
+        - 2025 - Pausa Contemplativa nos Jogos Eletrônicos | Palestra em Escola
+        Pública <br />
+        - 2024 – Um Pixel Morreu e Chorei: Hiper-realidade Emocional em Logan
+        (2017) e The Last of Us Part II (2020) - SEANIMA: Seminário Brasileiro
+        de Estudos em Animação –
+        <a
+          href="https://docs.google.com/document/d/1BUVxV6B_1RWDpbXuTy-zI_6-HU2OE_qkNFltqTsmnSY/edit?usp=sharing"
+          >Texto</a
+        >
+        /
+        <a
+          href="https://www.youtube.com/live/8SdLKt_PCxE?si=RF7pi-dhRvB92YdF&t=2671#"
+          >Vídeo</a
+        >
+        (Início em 44’30” ~ 60’30”) /
+        <a
+          href="https://docs.google.com/presentation/d/1c5jB_xRl5jrg54i603CKm1rQm9wYqMEPIcIkxn9qof4/edit?usp=sharing"
+          >Slides</a
+        ><br />
+
+        - 2024 – VIII SAU @UEM | Conversa sobre o curta-metragem "Minhas Vozes
+        Minhas" (mga)<br />
+        - 2024 – FESTAR
+        <a href="https://www.instagram.com/p/C79yUFIPg9N/?img_index=3"
+          >@UnesparParanavai</a
+        >
+        | Exibição e conversa sobre o curta-metragem "Minhas Vozes Minhas" (pva)
+        <br />
+      </p>
+
+      <br />
+
+      <h3>Curtas 🐸</h3>
+      <p>
+        - 2025 - Quatro Linhas | Drama (<a
+          href="https://www.youtube.com/watch?v=Cz9YEVzXFdw&t=503s"
+          >YouTube</a
+        >
+        | <a href="/videoarte/quatrolinhas">Saiba mais</a>)<br />
+        - 2024 - Minhas Vozes Minhas | Drama, Poesia (<a
+          href="https://www.youtube.com/watch?v=Te6bj0TAenQ&t=49s"
+          >YouTube</a
+        >
+        | <a href="/videoarte/minhasvozesminhas">Saiba mais</a>)<br />
+        - 2024 - deadpoolwolverineetiktok | Experimental (<a
+          href="https://vimeo.com/1064832893"
+          >YouTube</a
+        >
+        | <a href="/videoarte/deadpoolwolverineetiktok">Saiba mais</a>)<br />
+        - 2024 - Dream Grama | Experimental (<a
+          href="https://www.youtube.com/watch?v=1ZXrZWUiuQc"
+          >YouTube</a
+        >
+        | <a href="/videoarte/dreamgrama">Saiba mais</a>)<br />
+        - 2024 - KT4RSE | Machinima, Experimental (<a
+          href="https://www.youtube.com/watch?v=cQTgY1IuJGA&t=1s"
+          >YouTube</a
+        >
+        | <a href="/videoarte/kt4rs3">Saiba mais</a>)
+      </p>
+
+      <br />
+      <h3>Skills 🥊</h3>
+
+      <p>
+        - 2024/~ – Cinema e Artes do Vídeo - Mestrado - Unespar/FAP II<br />
+        - 2020/23 – História da Arte - Especialização - Estácio de Sá<br />
+        - 2014/18 – Comunicação Social - Graduação - Unicuritiba
+      </p>
+
+      <br />
+      <h3>Publicações 📝</h3>
+      <p>
+        - 2020 – Reminiscência - Antologia Insólitos - Editora Cavalo Café -
+        9788569564997<br />
+        - 2019 – Um Conto do Mar - Masdon<br />
+        - 2019 – Santo Amaro - Antologia Creepypastas Vol. 3 -
+        <a
+          href="https://www.amazon.com.br/Creepypastas-Lendas-Internet-Alane-Brito/dp/8569243464"
+          >Editora Lendari</a
+        >
+        - 9788569243465<br />
+        - 2015 – A Fera e a Rosa - Antologia Mundos Vol.5 -
+        <a
+          href="https://web.archive.org/web/20180409004754/http://editoraburiti.com.br/mundos-5/"
+          >Editora Buriti</a
+        ><br />
+        - 2015 – Sob Sangue e Trevas - Antologia Híbridos -
+        <a
+          href="https://web.archive.org/web/20150728001432/http://editoraburiti.com.br/hibridos/"
+          >Editora Buriti</a
+        ><br />
+        - 2015 – Os Herdeiros da Terra de Mour - Editora Inverso - 9788562266706
+      </p>
+
+      <br />
+      <h3>Projetos 🎨</h3>
+      <p>
+        - 2021 – Antologia Caminhos Escuros - Direção de arte + Design
+        Editorial<br />
+        - 2021 – Antologia Bestio - Direção de arte + Design Editorial<br />
+        - 2020 – Antologia Infinitos - Direção de arte + Design Editorial<br />
+        - 2020 – Antologia ACID+NEON 2.0 - Direção de arte + Design Editorial<br />
+        - 2020 – Antologia Mirage II - Direção de arte + Design Editorial<br />
+        - 2020 – Antologia ACID+NEON - Upgrade - Direção de arte + Design
+        Editorial<br />
+        - 2019 – Antologia ACID+NEON - Direção de arte + Design Editorial<br />
+        - 2019 – Antologia Nemephile - Direção de arte + Design Editorial<br />
+        - 2019 – Antologia Carcoma - Direção de arte + Design Editorial<br />
+        - 2019 – Antologia Mirage - Direção de arte + Design Editorial<br />
+        - 2019 – escreve/apaga -
+        <a href="https://escreveapaga.glitch.me/">Back + Front End</a><br />
+        - 2018 – Antologia ACID+NEON - Direção de arte + Design Editorial<br />
+        - 2018 – Telas Vivas - Direção de arte + Fotografia
+      </p>
+
+      <br />
+      <h3>Exposições ☕</h3>
+      <p>
+        - 2024 - Yeosu International Webfest | Exibição curta-metragem "Minhas
+        Vozes Minhas" - Yeosu, Coréia do Sul <br />
+        - 2024 - Lift-Off Filmmaker Sessions | Exibição curta-metragem "Minhas
+        Vozes Minhas" <br />
+        - 2024 – VIII SAU @UEM | EExibição curta-metragem "Minhas Vozes Minhas"
+        (mga)<br />
+        - 2024 – FESTAR
+        <a href="https://www.instagram.com/p/C79yUFIPg9N/?img_index=3"
+          >@UnesparParanavai</a
+        >
+        | Exibição curta-metragem "Minhas Vozes Minhas" (pva)
+        <br />
+        - 2019 – BOM @HangarBar - (cwb)<br />
+        - 2019 – Papum @MercadoSal - (cwb)<br />
+        - 2019 – Papum - Edição Primavera
+        <a
+          href="https://www.facebook.com/canariobrecho/posts/pfbid02dE2r6gCcsHNs2dyEZsUVVo5MNxCpp1Vd5zz58WtQBn4s5CARiv9yCaDPzchvyaiWl"
+          >@VilaUrbana</a
+        >
+        - (cwb)<br />
+        - 2018 – Telas Vivas @Unicuritiba - (cwb)<br />
+        - 2018 – Mikami In Memorian
+        <a
+          href="https://zelig.digital/2018/07/01/flash-day-e-exposicao-homenageiam-tatuadora-curitibana-leticia-mikami/"
+          >@RoyalStreet</a
+        >
+        - (cwb)<br />
+        - 2018 – Wild Tattoo Day Ed.2
+        <a
+          href="https://www.facebook.com/events/212658649454319/?post_id=221295588590625&view=permalink"
+          >@HausTattoo</a
+        >
+        - (gyn)<br />
+        - 2018 – Wild Tattoo Day Ed.1
+        <a
+          href="https://www.facebook.com/events/141568923133742?post_id=149176059039695&view=permalink"
+          >@BacktoBlack</a
+        >
+        - (cwb)<br />
+        - 2017 – Apamonama
+        <a
+          href="https://www.facebook.com/photo/?fbid=1810483959214946&set=a.1537346506528694"
+          >@PurpleReis x @cstrz</a
+        >
+        - (cwb)<br />
+        - 2017 – StarWarsWeekTattoo @CoolDown - (cwb)<br />
+        - 2017 – Unlike @CasaTrezeStudio - (cwb)<br />
+        - 2016 – Beat’n’Ink @CasaTrezeStudio - (cwb)<br />
+        - 2016 – Festival Flutuante
+        <a
+          href="https://www.facebook.com/photo?fbid=149563815448892&set=a.135735626831711"
+          >@Pitangaazul</a
+        >
+        (cwb)<br />
+        - 2016 – Rizoma
+        <a href="https://castropizzano.com/at-rizoma">@CasasTrezeStudio</a>
+        - (cwb)<br />
+        - 2016 – Dog and Roll Expo
+        <a
+          href="https://www.facebook.com/photo/?fbid=1348974615131963&set=a.1300246583338100"
+          >@DogandRoll</a
+        >
+        - (cwb)<br />
+        - 2016 – Feira Multicultural @EmporiumHandmade - (cwb)<br />
+        - 2015 – Flash Day
+        <a href="https://www.facebook.com/events/994315157274586/?ref=newsfeed"
+          >@Lots x @cstrz</a
+        >
+        - (cwb)<br />
+        - 2015 – Aquarele-se
+        <a
+          href="https://poetrialivraria.wordpress.com/2015/03/12/exposicao-aquarele-se-de-washington-albuquerque/?fbclid=IwZXh0bgNhZW0CMTEAAR12jpFKOhW8blQqhxXwK2Yp_BaTTrHkgp7jHcXiCCPnqIEZhISskRPaNQs_aem_ZmFrZWR1bW15MTZieXRlcw"
+          >@Poetria</a
+        >
+        - (cwb)<br />
+        - 2015 – [des]Construa
+        <a
+          href="https://www.facebook.com/casatrezestudio/photos/a.593299484028285/1047561698602059/"
+          >@SemanaD</a
+        >
+        - (cwb)<br />
+        - 2015 – Produção Literária
+        <a
+          href="https://www.facebook.com/pg/editorainverso/photos/?tab=album&album_id=803203259773340"
+          >@Ensitec</a
+        >
+        - (cwb)
+      </p>
+    </section>
+    <hr />
+
+    <section class="footer"></section>
+  </body>
+</html>
