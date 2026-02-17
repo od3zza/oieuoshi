@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Amostras do Amontoado, por Bernard Schütze (2003) -
+      Traduções - Uoshi
+    </title>
+    <link
+      rel="canonical"
+      href="https://oieuoshi.glitch.me/blog/traducoes/samples-from-the-heap"
+    />
+    <meta name="author" content="Uoshi" />
+    <meta
+      name="description"
+      content="Experiências com a cultura da remixagem e seus conceitos."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348"
+    />
+    <link rel="manifest" href="/manifest.json" />
+   
+    <link
+      rel="stylesheet"
+      href="/lib/style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <script src="/lib/script.js" defer></script>
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAADmklEQVRoge0a23HbMAzo9d/eoNqg3qAewRtEI2gEdQN3gsgbKBvEG7gbKBvIE6DHFExhmIT4UJKf4o5niSLeIAjwjEQEawIi7gFgBwBbRXYGgAsRPa/K0ClQO1jggYWkhTHz2t0qvKuQARoAGBOEjg2H23yKAgDQBiw+AcARAA7SwuyhA3+bFI6j0X6oAiy8FjxZCMbXihQpsYbwLp63BXTcJh+gUolcpvtahgkG2b+LAmwx6fauVnhBu1PhmOzRHCa9YDKuJbygL7NZv6oCbP1ZZI2q1Bfh0SgeSV74knjeuRS44eeBiKYVz9JXYJoDv26YZxJirntXt77yQlaYJtVCiDizVV6IqKky9TKvCwB8B4ArEel66g6+GoT24tWHz6TmU2CyQg4Rt3xSe5g9T0Q8+PdoEWi4s7S+0cNMtypBREftJq6Bi4VLRLOwejZEQwgAfvKvi/kHfj4DgHalC6kfJcwR0e+nQUxLeic+2OJQkhnY7V2gIAuNYDYRoTMxrS3Py/posWdITW+e4CWjcZHj7mRlT+p1A/Mw474kjfrUFoInVujBpgIvvoHhMHHPYOD9JqJd5Ns/WAidPmLtmZuTJlBN5oxW8AmF4xuf7BCKuNgPH69a+JT2UtNtxZ6I4pSkUZltThwqHnpEdMI/qjUS5yyer4ruSbw/Mq1ezD3xmqvAyQ6hVmWHxti8A6+RYSC9c5SVZiDb6LBphFdaq3HKLbY6Q3jZrY3qvVcCt4YSWY1S7kkcOjH9SduJuWNgnZxrFe4SjzhkWN/KNnJjTgGP9Dx3ieDokdxrJ3kgsmHlRpSlxLMoESSNRm1GiaPp+Y1d74HQNYr4dkgsJ2LDhctB0Mu+ZlkSvokJnxhaS+NOwIASZgeY4oE5JnzgwPP5fFTxPvFcz17z85cITa/EXOUBQSwmfBMTJrSJI0oHK06Lb64C8Trkb2oMxuuCAq0Vlim8kxVIDK+7exxLgSXcnFHcUnKa883+yK1hDviDbSMOtmyo6Ynlydsb62Ig28guE/cNihRAxJ1ocM4lN3WM4yvcbwXXNa9Q6gFpscFYtwQStyyMCjbuVpfGkXXmJhbrptRDKzRKPHBz0VtktVsIVanJUKKAzDahsjkXpBHMS7AQWBdbQSCiERF/sburr9ld+kXEE4fjmIByA9kKMNOOM9Fa0Jcao/gcIKJsdxu0ij35EZe77wr/FfhsKNrEieDi2l/Rr/sXGw8A8AcMMnsWCy/E1QAAAABJRU5ErkJggg=="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAADmklEQVRoge0a23HbMAzo9d/eoNqg3qAewRtEI2gEdQN3gsgbKBvEG7gbKBvIE6DHFExhmIT4UJKf4o5niSLeIAjwjEQEawIi7gFgBwBbRXYGgAsRPa/K0ClQO1jggYWkhTHz2t0qvKuQARoAGBOEjg2H23yKAgDQBiw+AcARAA7SwuyhA3+bFI6j0X6oAiy8FjxZCMbXihQpsYbwLp63BXTcJh+gUolcpvtahgkG2b+LAmwx6fauVnhBu1PhmOzRHCa9YDKuJbygL7NZv6oCbP1ZZI2q1Bfh0SgeSV74knjeuRS44eeBiKYVz9JXYJoDv26YZxJirntXt77yQlaYJtVCiDizVV6IqKky9TKvCwB8B4ArEel66g6+GoT24tWHz6TmU2CyQg4Rt3xSe5g9T0Q8+PdoEWi4s7S+0cNMtypBREftJq6Bi4VLRLOwejZEQwgAfvKvi/kHfj4DgHalC6kfJcwR0e+nQUxLeic+2OJQkhnY7V2gIAuNYDYRoTMxrS3Py/posWdITW+e4CWjcZHj7mRlT+p1A/Mw474kjfrUFoInVujBpgIvvoHhMHHPYOD9JqJd5Ns/WAidPmLtmZuTJlBN5oxW8AmF4xuf7BCKuNgPH69a+JT2UtNtxZ6I4pSkUZltThwqHnpEdMI/qjUS5yyer4ruSbw/Mq1ezD3xmqvAyQ6hVmWHxti8A6+RYSC9c5SVZiDb6LBphFdaq3HKLbY6Q3jZrY3qvVcCt4YSWY1S7kkcOjH9SduJuWNgnZxrFe4SjzhkWN/KNnJjTgGP9Dx3ieDokdxrJ3kgsmHlRpSlxLMoESSNRm1GiaPp+Y1d74HQNYr4dkgsJ2LDhctB0Mu+ZlkSvokJnxhaS+NOwIASZgeY4oE5JnzgwPP5fFTxPvFcz17z85cITa/EXOUBQSwmfBMTJrSJI0oHK06Lb64C8Trkb2oMxuuCAq0Vlim8kxVIDK+7exxLgSXcnFHcUnKa883+yK1hDviDbSMOtmyo6Ynlydsb62Ig28guE/cNihRAxJ1ocM4lN3WM4yvcbwXXNa9Q6gFpscFYtwQStyyMCjbuVpfGkXXmJhbrptRDKzRKPHBz0VtktVsIVanJUKKAzDahsjkXpBHMS7AQWBdbQSCiERF/sburr9ld+kXEE4fjmIByA9kKMNOOM9Fa0Jcao/gcIKJsdxu0ij35EZe77wr/FfhsKNrEieDi2l/Rr/sXGw8A8AcMMnsWCy/E1QAAAABJRU5ErkJggg=="
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HZNDKKGKW8");
+    </script>
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    <meta name="p:domain_verify" content="fd7d215910ea0cf1c785c7c7cf7a7c0f" />
+    </head>
+  <body>
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/blog">← blog</a>
+          </ul>
+        </nav>
+      </div>
+   
+    </header>
+    <section class="main">
+      <sub> Julho, 2025 </sub>
+      <h1>
+        Amostras do Amontoado
+      </h1>
+      <sub>traduções 🤓</sub>
+      <br />
+      <br />
+
+      <div>
+        
+          <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiXWtpjGKxqLBNU6tpjyMhrtM1igZPKPHMJxp4BP9OV9_E0gTLVqNP2L8Y5WDV7Ml8gBtMeTJLHXAvcjQhdrohorBdAKM0TaBK3W-JfZCVwWknirU1qyEpdBekGO1QyvP4ZFdFLW3Acw2u_h_CW5cJ3W2ivwm2I3Offq9vEHEiIAQVf1wf83aOXQjGazr0=w615-h271-rw">
+        </a>
+      </div>
+      <blockquote>
+        <p>Texto original — <b>Samples From the Heap: Notes on recycling the detritus of a remixed culture</b>, de Bernard Schütze na Horizon Zero - Issue 8: Remix - Generate | Regenerate | Transform - Abr/May 2003 — <a href="https://web.archive.org/web/20080527204656/http://www.horizonzero.ca/textsite/remix.php?is=8&amp;art=0&amp;file=5&amp;tlang=0">https://web.archive.org/web/20080527204656/http://www.horizonzero.ca/textsite/remix.php?is=8&amp;art=0&amp;file=5&amp;tlang=0</a>.</p>
+      </blockquote>
+      <p><i>Obs:. Eu li esse texto há algum tempo atrás ainda em junho de 2025, estava estudando sobre a cultura da remixagem e tal para um projeto machinima e encontrei ele graças ao Wayback Machine. Infelizmente, a página original dessa postagem não existe mais, mas felizmente o Wayback conseguiu preservar uma cópia. Não encontrei traduções e como apenas no Wayback é possível encontrar o original, resolvi compartilhar aqui com vocês para que ele continue vivendo. Esse texto é parte de uma revista que foca em discussões em torno do Remix, super interessante e dá pra navegar nela no link que deixei ali em cima!</i></p>
+      <p><i>Tanto o título original quanto o subtítulo não foram traduzidos literalmente, pois o sentido ficaria esquisito no português. A melhor tradução para “heap” no título, seria “pilha”, mas foi traduzido como “amontoado” para dar melhor ideia de coisas empilhadas juntas. Enquanto “detritus” seria “detrito”, mas vem aqui como “restos”, a partir da ideia de algo que foi desconstruído, não necessariamente “destruído”.</i></p>
+      <p><i>Alguns termos no meio do texto, como “dub”, “copyleft”, etc., não foram traduzidos, mas terão notas com os significados devido à complexidade e possibilidade de erro de significado real se forem traduzidas. Assim, mantive as palavras não traduzidas entre "aspas" e adicionei um glossário ao final do texto. É isso. Boa leitura!</i></p>
+      <hr />
+      <h2 style="text-align: left;">Amostras do Amontoado</h2>
+      <h3 style="text-align: left;">Notas sobre a reciclagem dos restos de uma cultura remixada por Bernard Schütze</h3>
+      <p>Misturar, misturar de novo, remixar: "<i>copyleft</i>", copiar e colar, quebra-cabeça digital, "<i>cross-fade</i>", "<i>dub</i>", mexer nos controles, <i>"drop the needle</i>", girar, fundir, "<i>morph</i>", "<i>bootleg</i>", piratear, plagiar, enriquecer, "<i>sample</i>", desconstruir, remontar, multiplicar a fonte de entrada, fundir a saída, decompor, recompor, apagar fronteiras, remixar novamente. Essas são algumas das muitas ações possíveis envolvidas no que pode ser amplamente rotulado como “cultura remix”—um termo abrangente que cobre uma vasta gama de posturas e iniciativas como: "<i>plunderphonics</i>", <i>detritus.net</i>, cultura recombinante, "<i>open source</i>", "<i>compostmodernism</i>", "<i>mash-ups</i>", "<i>cut-ups</i>", "<i>bastard pop</i>", covers, mixologia, "<i>peer to peer</i>", "<i>creative commons</i>", “surfar, samplear, manipular”, e "<i>uploadphonix</i>".</p>
+      <p>Como essa excessividade de atividades indica, estamos claramente vivendo em uma cultura remix: uma cultura que está constantemente renovando, manipulando e modificando material cultural já mediado e misturado. Uma distinção deve ser feita, no entanto, entre os lucrativos "remixes" culturais do <i>mainstream</i>, que são protegidos por direitos autorais, e os métodos de remix de práticas e abordagens artísticas <i>underground</i> mais marginais. Pode-se argumentar que a cultura dominante tem pouco a ver com o remix como um processo aberto — trata-se de uma cultura de “<i>remakes</i>” que prospera em uma infinita série de reedições, reembalagens e repetições que nada mais fazem do que recircular o antigo sob uma nova roupagem.</p>
+      <p>A cultura remix, como entendida neste ensaio, defende o remix como um desafio aberto a uma cultura baseada em propriedade exclusiva, autoria e distribuição controlada. Contra essas forças culturais, o remix underground se opõe a um questionamento contínuo dos dados econômicos e culturais. Contra a propriedade, ele defende uma ética de empréstimo e compartilhamento criativos. Contra o original, ele oferece um processo aberto de recombinação e transformação criativa. Igualmente, ele questiona as categorias, brechas e fronteiras entre as culturas high and low, as práticas artísticas pop e elitistas, bem como borra as linhas entre as disciplinas artísticas.</p>
+      <p>A pluralidade e multiplicidade dos fenômenos do remix resistem a qualquer categorização clara baseada em termos estéticos, artísticos ou políticos compartilhados. Esses fenômenos, no entanto, compartilham uma ampla ética de abertura, uma estética de impureza e uma ideologia de circulação irrestrita. Em vez de tentar construir uma caixa sólida em torno desse amontoado de estratégias de remix variadas, então, parece mais convidativo mergulhar as mãos diretamente nela, a fim de descobrir que tipo de diversos fenômenos transformadores esperam ser desenterrados.</p>
+      <p>No espírito do remix, vou agora apresentar quatro faixas textuais compostas por samples de atividades de remix relevantes retiradas do amontoado. Seus títulos: "Impureza"; "Decompor-Recompor"; "Enriquecimento"; e "Espalhar e Contaminar".</p>
+      <p><b>Impureza</b></p>
+      <p>"Um "<i>detritívoro</i>" pega materiais preexistentes, os decompõe e os usa como blocos de construção para formar algo novo." Esta citação retirada de detritus.net resume sucintamente a atividade central do remix. Remixar é um processo: é uma atividade, a ser usada como um verbo e não um substantivo. Ao remixar, atua-se sobre materiais culturais existentes amontoados dos vastos aterros da paisagem já misturada e mediada. O remix nega ativamente as reivindicações de originalidade e origem, e igualmente não aspira a qualquer finalidade ou obra final. Pela própria lógica do processo, qualquer material remixado pode ser submetido a novas reelaborações na pilha. Essa atividade de jumbling, sampling, "<i>splicing</i>" e recombinante é baseada em ideais de impureza – um estado em que não há nem conteúdo original "puro" no início, nem "produto puro" no final. Os elementos essenciais estão sempre abundantes. O remix abraça e celebra a hibridização e a contaminação.</p>
+      <p>O impuro é também uma característica de muitos precursores da cultura remix, como o pastiche barroco, a colagem dadaísta e surrealista, a montagem construtivista, os múltiplos da pop art, o método de cut up de W. S. Burrough, e (por que não) o karaokê. A diferença fundamental entre essas formas anteriores e o remix é que este último faz mais do que coletar, justapor ou rearranjar materiais preexistentes: ele transforma e reelabora ativamente esses elementos de uma maneira – e em uma extensão – que não era possível antes. Isso se deve em grande parte ao aproveitamento criativo de tecnologias eletrônicas e digitais, bem como ao clima cultural de uma pós-modernidade em declínio.</p>
+      <p>Como a origem técnica do termo implica, o remix está enraizado em explorações musicais e sonoras. O Dub jamaicano, como praticado por King Tubby e Lee "Scratch" Perry no início dos anos setenta, tem sido frequentemente citado como a manifestação mais antiga da cultura remix. Usando a <i>dub plate</i> (de "double") – uma prensagem com apenas a faixa instrumental de uma música – os primeiros artistas de Dub empregavam uma mesa de quatro canais para adicionar uma variedade de efeitos improvisados e <i>vocal mic-overs</i>, seja em eventos de dança com <i>sound-system</i> ao vivo ou no estúdio. A contribuição inovadora do Dub é que ele transformou o ato do remix ao vivo e do remix de estúdio em uma forma artística por si só. Hoje, DJs, VJs e "<i>turntablists</i>" – embora agora equipados com uma vasta gama de tecnologias de remix, como samplers, mesas de mixagem sofisticadas e software de áudio e imagem – perpetuam e expandem essa prática. Através de sua aplicação musical inicial, o remix abriu caminho para uma multiplicidade de práticas impuras em todo o espectro artístico: colaborações de escrita hipertextual, atos integrados de VJ e DJ, Net e Web art, e assim por diante.</p>
+      <p><b>Decompondo-Recompondo</b></p>
+      <p>No cerne de todas essas práticas está um processo contínuo de decomposição e recomposição da matéria do amontoado. Um músico alemão vasculha sua vasta biblioteca de discos antigos de soul e funk americanos. Samples muito curtos são retirados e loopados. Um loop de "Oh yeah" gritante e rouco serve como bloco de construção elementar; decomposto e sobreposto com efeitos, o pequeno "Oh yeah" se transforma em uma rica tapeçaria de textura e ritmo. Enquanto isso, um músico eletrônico canadense varre o éter do rádio, pegando sons, palavras e estática ao acaso. Traços de sua origem radiofônica permanecem, mas, uma vez recompostos na obra do artista, nada resta de seu contexto – eles agora vivem como parte de um novo contexto, revitalizados.</p>
+      <p>Em outro lugar, uma dupla brasileiro-austríaca de VJ/DJ brinca com as imagens e sons um do outro. Imagens de um teatro de anatomia renascentista, instrumentos cirúrgicos antigos bizarros e gráficos médicos se misturam e giram na tela. Zumbidos e sons pulsantes se misturam às imagens, que respondem e aceleram seu tempo; o som, por sua vez, reage e desacelera. Nesta intermix, som e imagem se borram à medida que o material original é decomposto e recomposto em um mar de cintilações flutuantes e glitches sonoros. Juntos, essas imagens e sons se tornam outra coisa – algo ainda não ouvido e não visto. Nada permanece como estava: à medida que a agitação continua, os menores elementos se tornam blocos de construção para novas arquiteturas.</p>
+      <p><b>Enriquecimento</b></p>
+      <p>As matérias-primas a serem decompostas são abundantes, e um enriquecimento emerge desse processo de remix e recomposição de materiais – uma forma de fertilização cruzada. O processo de remix reconhece as contribuições de outros para o amontoado. É, afinal, sobre uma forma de troca mútua. No entanto, no processo, também se renuncia às noções de autoridade e propriedade exclusiva, e deve-se necessariamente aceitar quaisquer transformações futuras que possam ocorrer. O processo é aberto, e não há espaço para assinaturas; é um ambiente compartilhado ao qual grupos de ativadores adicionam de bom grado e regularmente seu material mais recente em um espírito de colaboração e coenriquecimento. Uma creative commons de músicos eletrônicos, videoartistas, artistas multimídia e programadores se agrupa em grupos de ativadores. Nessas configurações móveis, noções de autoria exclusiva (ou a noção romântica do artista-gênio) dão lugar a células criativas anônimas ou heterônimas. Na pilha, o status do artista como “único criador” é, ele próprio, sujeito a uma remixagem substancial.</p>
+      <p><b>Espalhar e Disseminar</b></p>
+      <p>Em nenhum lugar esse deslocamento de autoridade, propriedade e originalidade foi mais prevalente do que na Internet. A Net é, sem dúvida, o lugar onde o amontoado atingiu a maior massa crítica, permitindo que as práticas de remix se espalhassem e se disseminassem em escala planetária. Com seu compartilhamento de arquivos grátis-flutuantes, <i>splicing </i>e <i>sampling</i>, e distribuição instantânea de mídia digital, a Web se tornou um terreno ideal para práticas de remix de todos os tipos.</p>
+      <p>O site Digital Landfill de Mark Napier é projetado como um gigantesco sistema de compostagem digital onde materiais peneirados da Web podem ser despejados e reciclados em algo irreconhecível. detritus.net atua como uma plataforma e portal para o remix artístico de restos digitais em todas as suas formas (<i>plunderphonics</i>, <i>anticopyright</i>, reciclagem multicultural, "<i>detournement</i>" digital e muito mais). E em Macrosound você pode participar de uma vibrante lista de e-mails dedicada à "cultura remix, técnica, estética e teoria".</p>
+      <p>Outra forma interessante (e atualmente muito popular) de remix é o "<i>mash-up</i>". <i>Mash-ups</i> pegam a faixa instrumental de uma música e, usando software de processamento de som, a mixam com a faixa lírica de outra (por exemplo, <i>God save the Queen </i>dos Sex Pistols pode ser mixada sobre uma ária de Maria Callas). <i>Mash-ups</i> circulam via sites de compartilhamento de arquivos MP3 pós-Napster, têm uma grande base de fãs participantes/criadores e agora fazem parte do repertório de muitos DJs. Vídeos também foram submetidos a esse processo de <i>mash-up</i>. Claramente em violação das leis de direitos autorais, os <i>mash-ups </i>passaram a ser conhecidos como "remixes não oficiais" – um rótulo adequado, pois de fato contrariam a apropriação do remix pela indústria fonográfica oficial¹. Essa tendência atual é mais um exemplo de como a cultura remix busca continuamente flanquear as restrições e barreiras impostas pelos canais e <i>gatekeepers </i>sancionados.</p>
+      <p>Muitos outros fenômenos de remix atualmente proliferam na Internet e em outros lugares, e muitos estão certamente esperando para surgir, se espalhar e disseminar. Acima e além de exemplos específicos, o remix continua a ser guiado por uma postura estética, ética e política que celebra a impureza, decompõe e recompõe noções de produção e distribuição cultural, e assim enriquece o terreno criativo para que novas ideias, visões e sons possam se disseminar, se espalhar e temporariamente criar raízes novamente.</p>
+      <p><i>Bernard Schütze é um teórico de mídia, crítico de arte e tradutor. Seus campos de interesse incluem novas mídias e cultura, tecnologia e corpo, e a estética da arte eletrônica. Ele traduziu obras de Jean Baudrillard, Félix Guattari e Gilles Deleuze. Ele vive, trabalha e dorme em Montreal.</i></p>
+      <p>Nota: ¹ Para um bom resumo do "mash-up", veja o artigo de Pete Rojas "Bootleg Culture" em Salon.com, agosto de 2002. (http://www.salon.com/tech/feature/2002/08/01/bootlegs/print.html)</p>
+      <hr /> 
+      <h3>Glossário (ou algo assim)</h3>
+      <p>
+        - Bastard pop: Semelhante ao "mash-up", é a mistura de duas ou três músicas diferentes, normalmente misturando vocal de uma com instrumental de outra.<br/>
+         - Bootleg: São gravações não autorizadas de eventos ou shows e distribuídas ilegalmente, e também se refere a remixagens não autorizadas (o que no contexto desse texto é basicamente toda remixagem).<br/>
+         - Compostmodernism: Essa palavra é interessante: "compost" se refere a composto, ou seja, restos (fertilizante, adubo, matéria orgânica reutilizável), enquanto "modernism" se refere ao movimento cultural. É uma palavra que aponta a reciclagem da cultura moderna.<br/>
+         - Copyleft: É um termo usado para designar o contrário de "copyright", ou seja, algo que não é regido por "direitos autorais", é um tipo de fonte livre.<br/>
+         - Creative commons: É uma lei de direitos autorais aberta, que permite uso, modificações, comercialização dessas alterações, desde que o "novo produto" também seja disponibilizado sob as mesmas regras. É semelhante à ideia de "open source", mas se aplica principalmente a produtos.<br/>
+         - Cross-fade: Um efeito de transição sutil que sobrepõe diferentes faixas de áudio e/ou vídeo.<br/>
+         - Cut-ups: São recortes de melodia ou lírico rearranjados e reordenados.<br/>
+         - Detournement: Um termo para músicas que são mixadas, mas propositalmente removidas do seu sentido, aplicadas em um contexto. A ideia é subverter formas e padrões, normalmente com engajamento crítico.<br/>
+         - Detritívoro: Essa palavra tem tradução literal, mas achei interessante trazer o significado. Se refere a animais que se alimentam de restos orgânicos e vegetais.<br/>
+         - Drop the needle: Possivelmente se refere a um termo entre DJs usado quando a transição entre sons é repentina, sem uma pré-marcação.<br/>
+         - Dub: Não ficou muito claro o sentido da palavra, mas acredito que se refira ao ato de copiar e/ou distorcer um efeito sonoro, algo como uma dublagem de efeito.<br/>
+         - Gatekeepers: Entidades que ditam regras e influenciam opiniões.<br/>
+         - Mash-ups: É a mistura de elementos diferentes, como músicas claramente distintas em tempo, estilo, etc., mixadas.<br/>
+         - Morph: Possivelmente vem de técnicas de animação de transicionar suavemente uma imagem para outra em passos graduais.<br/>
+         - Open-source: Se refere a "código livre", é um termo que identifica criações que são disponibilizadas publicamente para serem copiadas, aprimoradas, modificadas livremente, muito comum quando se fala sobre softwares.<br/>
+         - Peer to peer: É uma infraestrutura digital que permite compartilhar dados entre computadores, ou mais conhecido como "torrent".<br/>
+         - Plunderphonics: É um estilo de música baseada em "samples" e remixagens.<br/>
+         - Sample: Essa palavra aparece diversas vezes no texto, muitas delas "abrasileiradas", como: samplear, sampling, samplers. De modo geral, essa palavra se refere a um "pedaço" de algo ou fazer/tirar um "pedaço" de algo, como um pequeno recorte de uma música.<br/>
+         - Splicing: É uma ação de unir duas partes de áudio, normalmente cortando partes entre elas.<br/>
+        - Turntablists: Músicos que usavam a mesa de disco não apenas para tocar e mixar as músicas, mas para gerar efeitos sonoros que eram incorporados nelas.<br/>
+        - Uploadphonix: É basicamente a versão "digital" do "plunderphonics". O termo foi cunhado quando o compartilhamento de arquivos se popularizou na internet.<br/>
+      </p>
+      
+<section class="footer"></section>
+  </body>
+</html>

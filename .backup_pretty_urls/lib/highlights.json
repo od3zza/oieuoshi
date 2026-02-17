@@ -1,0 +1,46 @@
+[
+  {
+    "date": "2025-08-09",
+    "title": "The Designer's Notebook: A Few Remarks on Creative Play",
+    "url": "https://www.gamedeveloper.com/design/the-designer-s-notebook-a-few-remarks-on-creative-play",
+    "thumbnail": "",
+    "tags": [
+      "game design",
+      "creative play",
+      "taxonomy"
+    ],
+    "summary": "",
+    "page_comment": "Uma lista rudimentar que Ernest criou para tentar 'classificar' alguns tipos de 'creative play' como experiência de jogo. Ele cita primeiro que considera o 'creative play' como algo que permite que o jogador em algum momento diga algo como \"olhe, eu fiz (criei) isso\".",
+    "highlights": [
+      {
+        "highlight": "Self-expressive play is critical in persistent online worlds, where the player may have the same avatar character for years, and wants that avatar to reflect their own fantasy self, and to be able to change it as time goes on.",
+        "color": "yellow",
+        "highlight_note": "Ernest coloca aqui o 'self-expressive play' como uma categoria de jogo onde o jogador pode expressar suas vontades e desejos dentro do jogo, seja construindo algo ou um próprio 'self'. RPGs tem um lugar especial aqui, pois o jogador pode criar um personagem que gostaria de ser, não apenas fisicamente, como também socialmente, sendo a máxima da expressão dentro do jogo."
+      },
+      {
+        "highlight": "This is any kind of creative play that lets the player use the game as a sandbox, largely without limitations. The player can do pretty much whatever she likes in the context the game offers. (If the game doesn't offer anything but freeform creative play, it's not really a game at all, but a toy or a tool.)",
+        "color": "pink",
+        "highlight_note": "Adams coloca que 'freeform creative play' é qualquer tipo de 'creative play' que permite ao jogador agir sem grandes limitações, como em um sandbox. Isso é basicamente o que jogos como GTA San Andreas faz, e de certa forma, ao considerar 'without limitations' como a possibilidade de agir contra as premissas do jogo, também facilmente entraria The Witcher, Cyberpunk 2077, etc (?). É curioso como ele também cita que se um jogo oferece 'apenas' essa experiência, ele não é um jogo, mas um brinquedo ou ferramenta."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-09",
+    "title": "GDC 2005: Iwata Keynote Transcript - IGN",
+    "url": "https://www.ign.com/articles/2005/03/11/gdc-2005-iwata-keynote-transcript?page=3",
+    "thumbnail": "",
+    "tags": [
+      "non-game",
+      "game design"
+    ],
+    "summary": "",
+    "page_comment": "",
+    "highlights": [
+      {
+        "highlight": "it is one of those non-game games I mentioned; a form of entertainment that really doesn't have a winner, or even a real conclusion. And because of its unrestrained pace of action",
+        "color": "pink",
+        "highlight_note": "Iwata está falando do Animal Crossing que seria lançado para Nintendo DS com conexão Wi-Fi. Ele se refere ao jogo como 'non-game' ou 'não-jogo' atribuindo características de um estilo de jogo onde não há um vencedor ou uma real conclusão. Ele também comenta sobre o 'ritmo' de ação do jogo (o 'pace') não possuir restrições, algo como o mundo aberto."
+      }
+    ]
+  }
+]
