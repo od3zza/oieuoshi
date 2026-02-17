@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Como deixar o blogger responsivo - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Eu sempre amei brincar com códigos HTML, CSS e JS no Blogger, isso desde que me conheço na blogsfera – podemos voltar em 2008, talvez. Porém, foi tris..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Novembro, 2024 </sub>
+        
+        <h1>Como deixar o blogger responsivo</h1>
+        <br />
+        
+        <sub> Misc 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p>Eu sempre amei brincar com códigos HTML, CSS e JS no Blogger, isso desde que me conheço na blogsfera – podemos voltar em 2008, talvez. Porém, foi triste ver como o Blogger se manteve simples e não acompanhou todas as necessidades que a usabilidade exige hoje em dia, como a responsividade. Mas, encontrei um tutorial super interessante e vou deixar compartilhado aqui para quem está tentando deixar o Blogger responsivo e ainda não conseguiu encontrar boas respostas!</p><!--more--><p>A versão /m (mobile) da plataforma não é de toda ruim, se propõe de maneira muito simples a ser uma lista das postagens, nada mais. Mas manter uma leitora engajada hoje exige mais do que o conteúdo, mas também um bom trabalho estético. Existem, claro, diversos temas por aí, vendidos até mesmo no Etsy, mas também há muita gente que, como eu, ainda gosta dos temas clássicos e de trabalhar sobre eles.</p><p>Pensando na praticidade do Blogger e também na nostalgia de estar em um espaço mais comunitário, mesmo que em uma dimensão bem menor do que antes, eu acabei desativando meus sites e migrando novamente para cá, mas precisava resolver algo muito importante: como deixar o tema básico do Blogger responsivo, mesmo que ainda o preservando simples. E nessa busca encontrei um tutorial que me ajudou e pode te ajudar também.</p><p>Basicamente você terá que fazer algumas alterações dentro do editor do seu tema, é bem simples, mas aconselho você usar esse tutorial somente se estiver utilizando o "tema clássico" ou o "simples", pois eu não cheguei a testar como ele se comporta com os demais. Dito isso, vamos lá.</p><h3>Tema com barra lateral do lado direito</h3>1. Acesse tema &gt; personalizar e escolha o tema com a barra lateral do lado direito.<p>2. Acesse tema &gt; fazer backup (dentro do botão personalizar) para baixar o seu tema caso algo dê errado e você precise restaurar.</p><p>3. Acesse tema &gt; editar html (dentro do botão personalizar)&nbsp;e faça as alterações abaixo:</p><p>Encontre esse código abaixo da tag &lt;head&gt;</p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/&gt;</textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;</textarea></p><p>Encontre e selecione o código <em>]]&gt;&lt;/b:skin&gt;</em> até <em>]]&gt;&lt;/b:template-skin&gt;</em>&nbsp;e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
+.post-body iframe {width: 100%; display: block;} .post-body img {width: 100%; display: block; margin: -5px;}
+.separator a {margin-left: 0px!important; margin-right: 0px!important;} .post img {max-width: 100%; height: auto;}
+@media screen and (max-width: 1024px) {body {width: 100%!important; padding: 0;}.content-inner {overflow: hidden;}}
+@media screen and (max-width: 768px){.main-inner .column-center-outer, .main-inner .column-right-outer {float: none; width: 100%!important;}
+.Header h1{font-size: 35px; text-align: center;} .Header .description {font-size: 13px; text-align: center;}
+.footer-inner, .main-inner .column-center-inner, .main-inner .column-right-inner {padding: 0;}}
+@media screen and (max-width:414px){.footer-inner .section, .main-inner .column-center-inner .section, .main-inner .column-right-inner.section {margin:10px;}}
+ @media screen and (max-width:320px){fauxcolumn-right-outer .fauxcolumn-inner{border-left: none;}.fauxcolumn-left-outer .fauxcolumn-inner{border-right:none;} footer-inner .section, .main-inner .column-center-inner .section, .main-inner .column-right-inner .section{margin: 0;}
+]]&gt;&lt;/b:skin&gt;
+&lt;b:template-skin&gt;
+&lt;![CDATA[
+body {width: 1133px; margin: 0 auto; min-width:$(content.width);}
+.main-inner .column-right-outer {width: 30%; float: right; margin-right:-$(main.column.right.width);}
+.main-inner .column-center-outer {float: left; width: 70%;}
+#layout {min-width: 0;}
+#layout .content-outer {min-width:0; width: 800px; margin-left: 1px;}
+#layout .region-inner {min-width: 0; width: auto;}
+body#layout div.add_widget {padding: 8px;}
+body#layout div.add_widget a {margin-left: 32px;}
+]]&gt;&lt;/b:template-skin&gt;</textarea></p>
+<p><strong>***</strong></p><h3>Tema com barra lateral do lado esquerdo</h3><p>Siga os passos 1, 2 e 3 escolhendo a barra lateral esquerda e então:</p><p>Encontre esse código abaixo da tag &lt;head&gt;.</p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/&gt;</textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;</textarea></p><p>Encontre e selecione o código&nbsp;<em>]]&gt;&lt;/b:skin&gt;</em>&nbsp;até&nbsp;<em>]]&gt;&lt;/b:template-skin&gt;</em>&nbsp;e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
+.post-body iframe{width:100%; display:block;}.post-body img{width:100%; display:block; margin:-5px;}
+.separator a{margin-left:0px!important;margin-right:0px!important;}.post img{max-width:100%;height:auto;}
+@media screen and (max-width:1024px){body{width:100%!important;padding:0;}.content-inner{overflow: hidden;}}
+@media screen and (max-width:768px){.main-inner .column-left-outer{position:relative!important;left:0;margin:auto;width:100%!important}
+.main-inner .column-center-outer{left:0!important;width:100%!important}
+.footer-inner, .main-inner .column-left-inner, .main-inner .column-center-inner{padding:0;}
+.Header h1{font-size:30px;text-align:center;}
+.Header .description{font-size:14px;text-align:center;}}
+@media screen and (max-width:414px){.footer-inner .section, .main-inner .column-left-inner .section, .main-inner .column-center-inner .section {margin:10px;}}
+@media screen and (max-width:320px){.fauxcolumn-right-outer .fauxcolumn-inner{border-left:none;} .fauxcolumn-left-outer .fauxcolumn-inner{border-right:none;} .footer-inner .section, .main-inner .column-left-inner .section, .main-inner .column-center-inner .section {margin:0;}}
+]]&gt;&lt;/b:skin&gt;
+ &lt;b:template-skin&gt;
+ &lt;![CDATA[
+body {width:1133px;margin:0 auto; min-width:$(content.width);}
+.main-inner .column-left-outer {width:30%;right:70%; position:absolute; margin-left:-$(main.column.left.width);}
+.main-inner .column-center-outer{left:30%; width:70%;}
+#layout {min-width: 0;}
+#layout .content-outer{min-width:0; width:800px; margin-left:1px;}
+#layout .region-inner{min-width:0; width:auto;}
+body#layout div.add_widget{padding:8px;}
+body#layout div.add_widget a{margin-left:32px;}
+]]&gt;&lt;/b:template-skin&gt;</textarea></p><p><strong>***</strong></p>
+<h3>Tema com barra lateral do lado direito e esquerdo</h3><p>Siga os passos 1, 2 e 3 escolhendo a barra lateral em ambos os lados e então:</p><p>Encontre esse código abaixo da tag &lt;head&gt;</p><p><textarea readonly="readonly">&lt;meta expr:content='data:blog.isMobile ? "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" : "width=1100"' name='viewport'/&gt;</textarea></p><p>Substitua pelo código abaixo</p><p><textarea readonly="readonly">&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;
+</textarea></p><p>Encontre e selecione o código&nbsp;<em>]]&gt;&lt;/b:skin&gt;</em>&nbsp;até&nbsp;<em>]]&gt;&lt;/b:template-skin&gt;</em>&nbsp;e substitua pelo código abaixo</p><p><textarea readonly="readonly">/*CSS for responsive theme*/
+.post-body iframe{width:100%; display:block;}.post-body img{width:100%; display:block; margin:-5px;}
+.separator a{margin-left:0px!important;margin-right:0px!important;}.post img{max-width:100%;height:auto;}
+@media screen and (max-width:1024px){body{width:100%!important;padding:0;}}
+@media screen and (max-width:768px){.main-inner .column-left-outer{position:relative!important;left:0;margin:auto;width:100%!important}
+.main-inner .column-center-outer{left:0!important;width:100%!important}
+.main-inner .column-right-outer{float:none;width:100%!important;}
+.Header h1{font-size:30px;text-align:center;}
+.Header .description{font-size:14px;text-align:center;} footer-inner, .main-inner .column-left-inner, .main-inner .column-center-inner, .main-inner .column-right-inner{padding:0;}}
+@media screen and (max-width:414px){.footer-inner .section, .main-inner .column-left-inner .section, .main-inner .column-center-inner .section, .main-inner .column-right-inner .section {margin:10px;}}
+@media screen and (max-width:320px){.fauxcolumn-right-outer .fauxcolumn-inner{border-left:none;}
+.fauxcolumn-left-outer .fauxcolumn-inner{border-right:none;}
+.footer-inner .section, .main-inner .column-left-inner .section, .main-inner .column-center-inner .section, .main-inner .column-right-inner .section{margin:0;}}
+]]&gt;&lt;/b:skin&gt;
+ &lt;b:template-skin&gt;
+&lt;![CDATA[
+body {width:1133px; margin:0 auto; min-width:$(content.width);}
+.main-inner .column-left-outer {width:20%; right:80%; position:absolute; margin-left:-$(main.column.left.width);}
+.main-inner .column-right-outer {width: 20%; float:right; margin-right:-$(main.column.right.width);}
+.main-inner .column-center-outer{left:20%; width:60%;}
+#layout {min-width: 0;}
+#layout .content-outer {min-width:0; width:800px; margin-left:2px;}
+#layout .region-inner {min-width:0; width:auto;}
+body#layout div.add_widget {padding:8px;}
+body#layout div.add_widget a {margin-left:32px;}
+]]&gt;&lt;/b:template-skin&gt;</textarea></p><p><strong>***</strong></p><p>O processo é simples e espero que ajude. Caso algo dê errado ou você precise de ajuda – como eu já precisei, deixe um comentário e eu tento ajudar.&nbsp;</p><p>Até logo.</p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

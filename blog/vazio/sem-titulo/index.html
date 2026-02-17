@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Sem Título - Blog - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="
+      Que isso
+  
+
+dwEven though there's no built-in way to create footnotes in Blogger, it's easy enough to code linked footnotes into a post in HTM..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/5d620f50-0e74-4257-aa4d-114f5d987ec5/favicon.png?v=1727965698348" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <script>
+        if (location.protocol != "https:" && location.hostname !== "localhost") {
+            location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <sub> Janeiro, 2025 </sub>
+        
+        <h1>Sem Título</h1>
+        <br />
+        
+        <sub> vazio 🗂️ | arquivo 🗃️ </sub>
+        <br /><br />
+
+        <div class="post-content">
+            <p><img data-original-height="224" data-original-width="906" src="/lib/media/sem-titulo-01.png" class="blog-image"></p><p>
+  <textarea readonly="readonly">    Que isso
+  </textarea></p>
+
+<p>dw</p><p>Even though there's no built-in way to create footnotes in Blogger, it's easy enough to&nbsp;<strong>code linked footnotes into a post in HTML view</strong>. Here's how I do it.</p><h3>What it looks like for readers</h3><p><img src="/lib/media/sem-titulo-02.png" class="blog-image"></p><p>This is my post text with a linked footnote at the end.<a href="http://www.laurenwayne.com/2011/08/how-to-create-footnotes-in-blogger.html#1" name="top1" rel="nofollow ugc noopener"><sup>1</sup></a>When readers click on the footnote number, it jumps them down to the footnote. Clicking an arrow after the footnote conveniently jumps them back up to where they left off.Footnotes are a great solution for tangential or additional text, such as caveats, resource citations, or pointless jokes. (I especially prefer the latter.) Readers can choose whether to continue reading the main text, or be delightfully distracted down to your bonus offerings, and then back up again when they're ready to resume.</p><h3>The HTML code for you</h3><p>You must enter this code in&nbsp;<a href="http://www.laurenwayne.com/2010/03/how-to-edit-html-in-blogger.html" target="_blank" rel="nofollow ugc noopener">"Edit HTML" view</a>&nbsp;in Blogger.&nbsp;<em>(I have a&nbsp;<a href="http://www.laurenwayne.com/2010/03/how-to-edit-html-in-blogger.html" target="_blank" rel="nofollow ugc noopener">tutorial explaining the difference between Edit HTML and Compose</a>&nbsp;if you're not familiar with the two.)</em><strong>WARNING:&nbsp;<em>NEVER switch back to Compose view</em>&nbsp;once you've inserted the footnote code in Edit HTML!</strong><strong>Code to put in the text where you want the footnote's number to appear:</strong>&lt;a href="#1" name="top1"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;<em>All right, which is easier for you? I pasted it above so you can see it easily, but here's the same code in a grab box for easier copying/pasting. Take your pick!</em></p><p><strong>Code to place at the bottom of your post:</strong>&lt;hr width="80%"&gt;&lt;p&gt;&lt;span class="Apple-style-span" style="font-size: x-small;"&gt;&lt;a name="1"&gt;&lt;b&gt;1 &lt;/b&gt;&lt;/a&gt;FOOTNOTE&lt;a href="#top1"&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/span&gt;</p><p>Obviously, replace "FOOTNOTE" with the actual footnote!</p><h3>Explanation of the codes</h3><p>These footnotes work through a simplistic process of "name" URLs that reference each other. You tag each part of the footnote with a name. The footnote number in the text is named "top1," and the footnote number at the bottom of the post is named "1."Then the paired URLs send readers back and forth between these "names" through the href codes. Telling the URL to go to href="#1" sends it to the post's URL but with #1 appended. That # sign tells the code to look for a name that matches what's after the #, and it finds it in our footnote named "1."</p><h3>Multiple footnotes</h3><p>If you want&nbsp;<strong>multiple footnotes</strong>, you simply need to paste the following parts of the codes again, substituting the numbers you need for the word "NUMBER."<strong>Code to put in the text where you want another footnote's number to appear:</strong>&lt;a href="#NUMBER" name="topNUMBER"&gt;&lt;sup&gt;NUMBER&lt;/sup&gt;&lt;/a&gt;</p><p>That's&nbsp;<em>three</em>&nbsp;replacements at the top, if you're counting.<strong>Code to place at the bottom of your post for multiple footnotes:</strong>You want to add in this line after your first footnote line as many times as you need it.&lt;a name="NUMBER"&gt;&lt;b&gt;NUMBER &lt;/b&gt;&lt;/a&gt;FOOTNOTE&lt;a href="#topNUMBER"&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;Again, replace the three instances of "NUMBER" with the number you're on.Here's a grab code for 5 footnotes:</p><h3>Styling your footnotes</h3><p>Obviously, you can feel free to&nbsp;<strong>alter these codes cosmetically to suit your blog</strong>. This is just what I came up with. The basic structure is the "name" links, and the rest is decoration.I used a "sup" command to make the footnote numbers superscript in the text, added an "hr" line at the bottom to separate the footnotes from the post's text, made the footnote font "x-small" in size, and used a little superscripted ↩ symbol for returning to the text location. Any of those elements could be changed as you wish. For instance, you could have your footnotes appear in a different font face or color, or change how you separate off your footnote area.&nbsp;<strong>If you want to copy mine as is, I don't mind, though I'd love any shout-outs to this post you'd care to give!</strong><a name="more" rel="nofollow ugc noopener"></a></p><h3>Tips</h3><p>I&nbsp;<strong>keep these codes handy in a text file</strong>&nbsp;on my desktop, so I can easily copy and paste them into a post when I need a footnote.The biggest warning I can offer is&nbsp;<strong><em>NEVER switch back to Compose view</em>&nbsp;once you've inserted the footnote code in Edit HTML</strong>. Sorry to semi-shout, but this will mess your code up, yo.Here's, again, the&nbsp;<a href="http://www.laurenwayne.com/2010/03/how-to-edit-html-in-blogger.html" target="_blank" rel="nofollow ugc noopener">tutorial on using Edit HTML vs. Compose</a>. If you're comfortable crafting a post solely in Edit HTML view, then just do that, and you're golden. If you prefer Compose or like to switch between the two, you'll need to add your footnotes at the very end in HTML view, and then hit publish. If you need to get back into that same post to edit, you'll need to do so in HTML view again. Blogger has a usually helpful little thing where it "remembers" what view you used last time — if it was Compose, you might need to start (or edit) a new (different or throwaway) post in Edit HTML, and&nbsp;<em>then</em>&nbsp;open the one with the footnotes.Also,&nbsp;<strong>these footnotes won't work on the main page of your blog, only on the specific post pages</strong>, unless you alter the URLs to have the post page URLs within the code (i.e., not just href="#1" but href="http://www.laurenwayne.com/2010/10/how-to-make-blog-button-grab-box.html#1" or whatever your specific URL is). This is because the generic href="#1" is looking for the "name" tags on the current page only. I figure most people are used to clicking over into a blog post for footnotes — I have to when I'm reading posts in a reader, for instance.Occasionally, even if you're diligent about opening posts only in Edit HTML, Blogger will "helpfully" fill in a placeholder URL in front of your # commands when you reopen a post to edit it. In that case, either&nbsp;<strong>delete the nonsense URL Blogger has inserted, or replace it with the post's URL if you know it</strong>. That will keep the footnotes intact in the future.<strong>Thoughts? Questions? What fanciness do you use for footnotes in Blogger?</strong></p>
+        </div>
+
+        <hr />
+        
+        <section class="comments">
+            
+        </section>
+    </section>
+    
+    <section class="footer"></section>
+</body>
+</html>

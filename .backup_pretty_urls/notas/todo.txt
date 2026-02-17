@@ -1,5 +1,0 @@
-1. Foi atualizado com extensão de navegador que envia as notas para um arquivo lib/highlights.json
-2. Preciso ainda melhor o layout.
-3. Preciso URGENTE criar uma função em que o texto destacado, fique visualmente destacado na página + opção de cores ao destaque.
-4. Os destaques da página pode ficar sendo exibidos na popup da extensão e podem ser editados na popup (alterados ou removidos).
-5. A popup para salvar o destaque deve aparecer na seguinte ordem: seleciona o texto > botão "destacar" aparece > "destacar" abre uma popup com as informações que estão atualmente no botão da extensão.
