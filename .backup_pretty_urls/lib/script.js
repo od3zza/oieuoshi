@@ -245,9 +245,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-      /////////////////////////////////////////////////////////////////////  // Configuração do Supabase - SUBSTITUA PELOS SEUS DADOS!
-        const SUPABASE_URL = 'https://fszoktkjikeopzqohroy.supabase.co';
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzem9rdGtqaWtlb3B6cW9ocm95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY2Njk5NTksImV4cCI6MjA3MjI0NTk1OX0.2ugYTp_GRn5VmiRDMXXlkLLGQHh4DPWIqmFO53Mv_-I';
+            /////////////////////////////////////////////////////////////////////
+            // Comments backend credentials REDACTED in backup.
+            // Original values removed to avoid leaking keys in backups.
+                const BACKEND_URL = 'https://REDACTED';
+                const BACKEND_ANON_KEY = 'REDACTED_ANON_KEY';
 
         // Função para obter o slug do post atual
         function getPostSlug() {
@@ -256,12 +258,12 @@ document.addEventListener('DOMContentLoaded', function () {
             return path.replace(/^\//, '').replace(/\/$/, '') || 'home';
         }
 
-        // Função para fazer requisições ao Supabase
-        async function supabaseRequest(endpoint, options = {}) {
-            const url = `${SUPABASE_URL}/rest/v1/${endpoint}`;
+        // Função para fazer requisições ao backend de comentários
+        async function backendRequest(endpoint, options = {}) {
+            const url = `${BACKEND_URL}/rest/v1/${endpoint}`;
             const headers = {
-                'apikey': SUPABASE_ANON_KEY,
-                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                'apikey': BACKEND_ANON_KEY,
+                'Authorization': `Bearer ${BACKEND_ANON_KEY}`,
                 'Content-Type': 'application/json',
                 'Prefer': 'return=representation',
                 ...options.headers
@@ -285,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const postSlug = getPostSlug();
 
             try {
-                const comments = await supabaseRequest(
+                const comments = await backendRequest(
                     `comentarios?post_slug=eq.${postSlug}&order=created_at.desc`
                 );
 
@@ -355,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     throw new Error('Por favor, insira uma URL válida.');
                 }
 
-                await supabaseRequest('comentarios', {
+                await backendRequest('comentarios', {
                     method: 'POST',
                     body: JSON.stringify(commentData)
                 });
