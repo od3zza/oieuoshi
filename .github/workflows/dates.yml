@@ -1,0 +1,49 @@
+name: Gerar datas dos posts
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  generate-dates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Gerar lib/garden/dates.json
+        run: |
+          mkdir -p lib/garden
+          echo "{" > lib/garden/dates.json
+          first=true
+
+          for file in $(find blog -name "*.html"); do
+            created=$(git log --follow --diff-filter=A --format="%as" -- "$file" | tail -1)
+            updated=$(git log --follow --format="%as" -- "$file" | head -1)
+
+            if [ -z "$created" ]; then created=$(date +%Y-%m-%d); fi
+            if [ -z "$updated" ]; then updated=$(date +%Y-%m-%d); fi
+
+            if [ "$first" = true ]; then
+              first=false
+            else
+              echo "," >> lib/garden/dates.json
+            fi
+
+            echo "  \"/$file\": { \"created\": \"$created\", \"updated\": \"$updated\" }" >> lib/garden/dates.json
+          done
+
+          echo "}" >> lib/garden/dates.json
+
+      - name: Commit dates.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add lib/garden/dates.json
+          git diff --cached --quiet || git commit -m "chore: atualiza datas dos posts [skip ci]"
+          git push

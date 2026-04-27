@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Porque eu fiz uma extensão pra salvar textos destacados - Misc - Uoshi</title>
+
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Uma extensão simples para salvar textos destacados da web." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+
+    <!-- Manifest .json-->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+
+    <!-- Theme Color - https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Ícone-->
+    <link rel="icon" type="image/png" href="/assets/favicon.jpg" />
+
+    <!-- Abre Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-HZNDKKGKW8');
+    </script>
+    <!-- Fecha Google tag (gtag.js) -->
+</head>
+
+<!--
+          )      (\_
+         ((    _/{  "-;
+          )).-' {{ ;'`
+HEY U!   ( (  ;._ \\      -->
+
+<body>
+    <!-- Abre Header -->
+    <!-- sidebar esquerdo -->
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- end sidebar -->
+
+    <!-- Fecha Header -->
+
+    <!-- Abre base -->
+    <section class="main">
+        <div id="post-dates"></div>
+        <!-- título -->
+        <h1>Porque eu fiz uma extensão pra salvar textos destacados</h1>
+        <br />
+        <sub> misc 🗂️</sub>
+        <br /><br />
+
+        <!-- conteúdo -->
+
+        <p>Antes de mais nada, esse post, sem querer, virou quase um <em>estudo de caso </em>:D então
+            separei em alguns tópicos pra ficar mais fluído, mas prometo que é rápido, fácil e <em>barato!
+                Léeeeeegou!</em></p>
+
+        <p style="text-align: center;">***</p>
+
+        <h2>Quantos GB tem na sua cuca?</h2>
+        <p><strong>Quanta informação diária você acha que vê navegando na internet? </strong>Eu nem estou
+            considerando o tempo que você passa nas redes sociais. Não é fácil achar uma fonte confiável, mas apenas
+            para ilustra—e pelo que encontrei: <em>0.4 zettabytes </em>de dados foram gerados em 2025 &gt; isso é
+            uns <em>400 milhões de terabytes</em> por dia &gt; nosso cérebro processa uns <em>70 gigabytes</em> por
+            dia.</p>
+        <p>Sejam esses valores precisos ou não, nós sabemos que é coisa pra caralho. E de tudo isso, se nós
+            guardarmos efetivamente algumas centenas de megabytes na memória, eu diria que é otimismo. Não atoa
+            estamos constantemente criando <em>bookmarks</em>, salvando links, baixando e enviando arquivos, mas
+            tudo tem um limite, e eu diria que o nosso limite de capacidade de organização está <em>indo pra
+                fita</em> junto com a nossa sanidade.</p>
+        <p>Eu descobri a necessidade e a importância de criar metodologias de organização durante o mestrado. E não
+            tô falando de algo científico, mas de boas práticas para nos relacionarmos e lidarmos com dados que
+            temos contato na internet. Ainda assim, continuo sofrendo, mas..</p>
+
+        <h2>Se ninguém faz, eu faço!</h2>
+        <p>Dois dos meus maiores desafios sempre foi: catalogar referências <em>(pois quando se está na academia,
+                tudo o que você lê tem importância — até memes, e catalogar já nas normas da ABNT pode salvar muito
+                do seu tempo)</em> e salvar recortes de conteúdos textuais <em>(perdi a conta de quantas vezes li
+                algo irado em um site e fechei, depois nunca mais achei)</em>. Pro primeiro desafio, descobri o <a
+                href="https://www.mybib.com/" target="_blank">MyBib</a>, e compartilho com vocês. Nesse site você
+            consegue salvar referências de livros, filmes, links, artigos, tudo! e já nas normas da ABNT ou outras
+            dezenas nacionais e internacionais. Você pode nem precisar da ABNT, mas é uma ferramenta maneira pra
+            organizar listas com informações mais precisas.</p>
+        <p>Para o segundo desafio, foi muito tempo testando. Inicialmente, eu salvava os links e separava
+            por <em>tags </em>em sites de <em>feed RSS</em>, que são tipo bibliotecas que você salva sites e pode
+            ler eles direto na plataforma e receber notificação de atualização. Porém, são pagos, caros e ruins.
+            Então descobri algumas extensões, como <a href="https://web-highlights.com/"
+                target="_blank">WebHighlights</a>, que você instala no navegador e consegue selecionar e salvar
+            trechos de textos na <em>web</em>, separar por <em>tags</em>, etc. Porém, a versão <em>free</em> era
+            horrível e a paga apenas em dólar (foda-se). Então descobri o <a href="https://glasp.co/"
+                target="_blank">Glasp</a>, uma <em>startup</em> com um <em>webapp</em> como o anterior, mas focado
+            em conhecimento compartilhado... você podia ver quem salvou as mesmas páginas que você, seguia outros
+            usuários, algo como uma comunidade. Mas, novamente, tinha um milhão de funções desnecessárias, muitas
+            vezes falhava, a versão paga é em dólar e a <em>free</em> é meio blé.</p>
+        <p>Então, com <em>fogo no rabo</em>, pra variar, pensei: MANO! VOU CRIAR ESSA PORRA!</p>
+        <p><strong>Uoshi Highlights surge em sua versão 1.0</strong> HAHA! Sério. Passei semanas estudando um bocado
+            de código que eu ainda não tinha precisado, abusando do Gemini pra me explicar muitas linhas que eu
+            precisava criar, mas acabava perdido, e muitas horas pensando como essa ferramenta deveria ser — pra
+            mim.</p>
+
+        <img src="/assets/blog/pq-fiz-highlight/pq-fiz-highlight-1.webp">
+
+
+        <h2></a>E finalmente...</h2>
+
+        <p>Eu tirei <em>váaaaaarias</em> <em>piras</em> sobre como seria essa ferramenta. Acabou que a melhor
+            saída foi uma extensão pro navegador <em>(HTML, CSS e um bruto dum JS + repositório GIT)</em>.
+            Basicamente, essa extensão reconhece textos que eu seleciono em uma página e armazena
+            temporariamente, até eu selecionar outro texto ou fechar o navegador. Então, a extensão possui
+            uma <em>pop-up</em> onde eu consigo visualizar tudo o que foi selecionado e o link de origem,
+            definir uma cor para destacar o texto no site que estou lendo, também adicionar comentários sobre a
+            página ou especificamente sobre o trecho destacado. Também adicionar <em>tags </em>pra eu não me
+            perder.</p>
+
+         
+        
+        <figure>
+            <img src="/assets/blog/pq-fiz-highlight/pq-fiz-highlight-2.webp" alt="Trechinho destacado">
+            <figcaption>Trechinho <a
+                    href="https://deniac.com/2026/01/31/todos-deveriamos-blogar-mais-e-nos-conectar-mais-com-estranhos/"
+                    target="_blank">destacado no post</a> do Deniac.</figcaption>
+        </figure>
+
+        <p>Quando eu clico em 'Salvar Highlight', todas as informações são enviadas pra um
+            arquivo <em>.json</em> que fica em um repositório no <a
+                href="https://github.com/od3zza/oieuoshi.blogspot.com" target="_blank">GitHub</a> e é espelhado
+            por um código na página '<a href="https://oieuoshi.blogspot.com/p/destaques.html"
+                target="_blank">Destaques</a>' aqui no blog, onde eu posso acessar a qualquer momento pra
+            conferir, pegar as referências e também compartilhar com o mundo.</p>
+        <p>Não foi a solução mais genial, pois não dou <em>dev</em>, mas funcionou bem demais pra mim.</p>
+
+        <img src="/assets/blog/pq-fiz-highlight/pq-fiz-highlight-3.webp">
+
+        <p> Quem sabe o próximo passo é aprimorar a interface da <em>pop-up</em> e fazer com que reconheça também
+            textos de PDF.<em> Que sonho...</em> </p>
+
+        <h2>Sobre a importância de compartilhar</h2>
+        <p>Quem lê esse blog há mais tempo sabe que eu sou <em>heavy user</em> da rede, eu surfo o dia todo e
+            troco muitos dados. Ter um espaço especialmente para organizar recortes é algo vital pra mim,
+            principalmente em época de estudos. Acho que a blogosfera ainda é um espaço acolhedor e que resiste
+            às pressões contemporâneas ao assumir seu próprio ritmo, quebrando lógicas produtivas e temporais.
+            Mas mais do que isso, ainda é um espaço para compartilhar. Várias vezes recebi e-mail
+            ou <em>inbox</em> nas redes de pessoas que encontraram algo legal ou que estavam procurando
+            enquanto <em>fuçavam </em>minhas postagens ou as páginas, e é sobre isso.</p>
+        <p>Acho que hoje, mais do que nunca, nós precisamos de um espaço como esse, que não tenhamos a ansiedade
+            das métricas, e possamos apenas <em>plantar e cultivar</em> aquilo que queremos. Não atoa eu amo
+            tanto a filosofia dos <a href="/blog/traducoes/breve-historia-filosofia-jardim-digital/"
+                target="_blank">Jardins Digitais</a> e tantas outras disruptivas e subversivas, pois elas se
+            preocupam com o florescer da nossa consciência sobre o modo com que nos <u>relacionamos</u> com a
+            tecnologia e os dados.</p>
+        <p>Enfim. Acho que é isso, não entrei em detalhes técnicos, mas se alguém se interessar, consegue espiar
+            o repositório no GitHub... talvez eu faça um tutorial pra vocês criarem suas próprias extensões
+            de <em>highlights</em>, o que acham?</p>
+
+        <!-- Abre footer-->
+        <section class="footer"><div class="post-footer">
+  <button class="like-btn" id="like-btn">
+    <span class="like-icon">♡</span>
+    <span class="like-count" id="like-count">…</span>
+  </button>
+  <div class="post-email">
+    tem algo a dizer?<br>
+    <a href="mailto:oieuoshi@gmail.com?subject=oi, vim do seu blog">escreve pra mim ↗</a>
+  </div>
+</div>
+
+<div id="garden-footer"></div>
+<script src="/lib/garden/garden.js"></script>
+<script src="/lib/interact/likes.js"></script></section>
+<!-- Fecha footer-->
+</body>
+
+</html>

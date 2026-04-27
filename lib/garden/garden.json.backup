@@ -1,0 +1,452 @@
+[
+  {
+    "slug": "luto-e-poesia",
+    "title": "Luto é poesia",
+    "path": "/blog/poesias/luto-e-poesia",
+    "format": "poesia",
+    "tags": ["pessoal", "linguagem"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "sobre-patch-idioma-initial-d-street-stage-ppsspp",
+    "title": "Sobre o patch de idioma de Initial D Street Stage (PPSSPP)",
+    "path": "/blog/misc/sobre-patch-idioma-initial-d-street-stage-ppsspp",
+    "format": "tutorial",
+    "tags": ["jogos", "tecnologia"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "her-odyssey-2",
+    "title": "Her Odyssey (Parte II)",
+    "path": "/blog/ttrpg/her-odyssey-2",
+    "format": "ttrpg",
+    "tags": ["ttrpg", "escrita", "pessoal"],
+    "status": "growing",
+    "links": ["her-odyssey"]
+  },
+  {
+    "slug": "porque-eu-fiz-uma-extensao-pra-salvar-textos-destacados",
+    "title": "Porque eu fiz uma extensão pra salvar textos destacados",
+    "path": "/blog/misc/porque-eu-fiz-uma-extensao-pra-salvar-textos-destacados",
+    "format": "misc",
+    "tags": ["tecnologia", "escrita"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "os-millennials-mataram-a-paixao",
+    "title": "Os millenials mataram a paixão",
+    "path": "/blog/misc/os-millennials-mataram-a-paixao",
+    "format": "misc",
+    "tags": ["pessoal", "escrita", "teoria"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "ainda-to-aqui",
+    "title": "Ainda tô aqui",
+    "path": "/blog/poesias/ainda-to-aqui",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "her-odyssey",
+    "title": "Her Odyssey (Parte I)",
+    "path": "/blog/ttrpg/her-odyssey",
+    "format": "ttrpg",
+    "tags": ["ttrpg", "escrita", "pessoal"],
+    "status": "evergreen",
+    "links": ["her-odyssey-2"]
+  },
+  {
+    "slug": "despedacos",
+    "title": "Despedaços",
+    "path": "/blog/poesias/despedacos",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "somos-artistas-de-merda",
+    "title": "Somos artistas de merda",
+    "path": "/blog/misc/carta-aberta-a-quem-eu-disse-eu-te-amo",
+    "format": "misc",
+    "tags": ["escrita", "pessoal", "criatividade"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "um-pixel-morreu-e-chorei",
+    "title": "Um Pixel Morreu e Chorei",
+    "path": "/blog/ensaios/um-pixel-morreu-e-chorei",
+    "format": "ensaio",
+    "tags": ["cinema", "jogos", "teoria"],
+    "status": "evergreen",
+    "links": ["o-ocio-no-caos", "samurai-negao", "futuro-relacoes-humanas-ias"]
+  },
+  {
+    "slug": "o-ocio-no-caos",
+    "title": "O Ócio no Caos",
+    "path": "/blog/ensaios/o-ocio-no-caos",
+    "format": "ensaio",
+    "tags": ["jogos", "teoria", "cinema"],
+    "status": "growing",
+    "links": ["um-pixel-morreu-e-chorei", "samurai-negao", "futuro-relacoes-humanas-ias", "melancolia-pos-moderna-contemplativa"]
+  },
+  {
+    "slug": "samurai-negao",
+    "title": "Samurai Negão",
+    "path": "/blog/ensaios/samurai-negao",
+    "format": "ensaio",
+    "tags": ["cinema", "identidade", "teoria"],
+    "status": "evergreen",
+    "links": ["um-pixel-morreu-e-chorei", "o-ocio-no-caos", "futuro-relacoes-humanas-ias"]
+  },
+  {
+    "slug": "melancolia-pos-moderna-contemplativa",
+    "title": "Melancolia Pós-Moderna Contemplativa",
+    "path": "/blog/ensaios/melancolia-pos-moderna-contemplativa",
+    "format": "ensaio",
+    "tags": ["teoria", "pessoal", "escrita"],
+    "status": "evergreen",
+    "links": ["o-ocio-no-caos"]
+  },
+  {
+    "slug": "ja-e-setembro",
+    "title": "Já é Setembro",
+    "path": "/blog/misc/ja-e-setembro",
+    "format": "diario",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "como-conectar-um-kinect-xbox-usando-usb",
+    "title": "Como conectar um Kinect XBOX usando USB",
+    "path": "/blog/misc/como-conectar-um-kinect-xbox-usando-usb",
+    "format": "tutorial",
+    "tags": ["tecnologia"],
+    "status": "evergreen",
+    "links": ["por-que-eu-codo-as-coisas"]
+  },
+  {
+    "slug": "por-que-eu-codo-as-coisas",
+    "title": "Por que eu codo as coisas?",
+    "path": "/blog/misc/por-que-eu-codo-as-coisas.html",
+    "format": "misc",
+    "tags": ["tecnologia", "criatividade", "escrita"],
+    "status": "evergreen",
+    "links": ["como-conectar-um-kinect-xbox-usando-usb", "campo-comentarios-blog"]
+  },
+  {
+    "slug": "amostras-do-amontoado",
+    "title": "Amostras do Amontoado",
+    "path": "/blog/traducoes/amostras-do-amontoado.html",
+    "format": "traducao",
+    "tags": ["escrita", "criatividade"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "as-redes-sociais-venceram-ou-quase",
+    "title": "As redes sociais venceram, ou quase",
+    "path": "/blog/misc/as-redes-sociais-venceram-ou-quase.html",
+    "format": "misc",
+    "tags": ["tecnologia", "teoria", "pessoal"],
+    "status": "evergreen",
+    "links": ["pare-de-criar-sua-criatividade-agradece"]
+  },
+  {
+    "slug": "pare-de-criar-sua-criatividade-agradece",
+    "title": "Pare de criar, sua criatividade agradece",
+    "path": "/blog/misc/pare-de-criar-sua-criatividade-agradece.html",
+    "format": "misc",
+    "tags": ["criatividade", "escrita", "teoria"],
+    "status": "evergreen",
+    "links": ["as-redes-sociais-venceram-ou-quase", "somos-artistas-de-merda"]
+  },
+  {
+    "slug": "campo-comentarios-blog",
+    "title": "Como criei um campo de comentários para meu Blog",
+    "path": "/blog/misc/campo-comentarios-blog.html",
+    "format": "tutorial",
+    "tags": ["tecnologia"],
+    "status": "evergreen",
+    "links": ["por-que-eu-codo-as-coisas"]
+  },
+  {
+    "slug": "matrix-uma-vida-menos-vazia",
+    "title": "Matrix - Uma Vida Menos Vazia por Ted McKeever",
+    "path": "/blog/traducoes/matrix-uma-vida-menos-vazia.html",
+    "format": "traducao",
+    "tags": ["teoria", "identidade"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "tic-tac-tic",
+    "title": "Tic Tac Tic",
+    "path": "/blog/poesias/tic-tac-tic.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": ["vestigios"]
+  },
+  {
+    "slug": "vestigios",
+    "title": "Vestígios",
+    "path": "/blog/poesias/vestigios.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": ["tic-tac-tic"]
+  },
+  {
+    "slug": "sob-a-mesa",
+    "title": "Sob a mesa",
+    "path": "/blog/contos/sob-a-mesa.html",
+    "format": "conto",
+    "tags": ["escrita", "pessoal"],
+    "status": "evergreen",
+    "links": ["a-janela"]
+  },
+  {
+    "slug": "a-janela",
+    "title": "A Janela",
+    "path": "/blog/contos/a-janela.html",
+    "format": "conto",
+    "tags": ["escrita"],
+    "status": "evergreen",
+    "links": ["sob-a-mesa"]
+  },
+  {
+    "slug": "sexta-santa",
+    "title": "Sexta santa",
+    "path": "/blog/poesias/sexta-santa.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "nao-existo",
+    "title": "Não existo",
+    "path": "/blog/poesias/nao-existo.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "farpas-sal",
+    "title": "Farpas e sal",
+    "path": "/blog/poesias/farpas-sal.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "futuro-relacoes-humanas-ias",
+    "title": "O futuro, relações humanas e IAs — Observando simulacros de Blade Runner a Detroit Become Human",
+    "path": "/blog/nao-durmo/futuro-relacoes-humanas-ias.html",
+    "format": "ensaio",
+    "tags": ["cinema", "jogos", "teoria", "identidade"],
+    "status": "evergreen",
+    "links": ["um-pixel-morreu-e-chorei", "o-ocio-no-caos", "samurai-negao"]
+  },
+  {
+    "slug": "doente-estou",
+    "title": "Doente estou",
+    "path": "/blog/poesias/doente-estou.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "cansaco",
+    "title": "Cansaço",
+    "path": "/blog/poesias/cansaco.html",
+    "format": "poesia",
+    "tags": ["pessoal", "teoria"],
+    "status": "evergreen",
+    "links": ["o-ocio-no-caos"]
+  },
+  {
+    "slug": "ha-petalas-sob-o-sol",
+    "title": "Há pétalas sob o sol",
+    "path": "/blog/contos/ha-petalas-sob-o-sol.html",
+    "format": "conto",
+    "tags": ["escrita"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "um-canto",
+    "title": "Um Canto",
+    "path": "/blog/poesias/um-canto.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "evolucao-para-senciencia",
+    "title": "Evolução para a senciência — Frankenstein, Ghost in the Shell e The Man of the Crowd",
+    "path": "/blog/traducoes/evolucao-para-senciencia.html",
+    "format": "traducao",
+    "tags": ["cinema", "teoria", "identidade"],
+    "status": "evergreen",
+    "links": ["futuro-relacoes-humanas-ias", "samurai-negao"]
+  },
+  {
+    "slug": "maldito-concreto",
+    "title": "Maldito Concreto",
+    "path": "/blog/poesias/maldito-concreto.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "dungeons-and-dragons-uma-fantasia-simulada",
+    "title": "Dungeons & Dragons — Uma Fantasia Simulada, por Bob Guerra (1990)",
+    "path": "/blog/traducoes/dungeons-and-dragons-uma-fantasia-simulada.html",
+    "format": "traducao",
+    "tags": ["ttrpg", "jogos"],
+    "status": "evergreen",
+    "links": ["her-odyssey"]
+  },
+  {
+    "slug": "breve-historia-filosofia-jardim-digital",
+    "title": "Breve história e filosofia do Jardim Digital por Maggie Appleton (2021?)",
+    "path": "/blog/traducoes/breve-historia-filosofia-jardim-digital.html",
+    "format": "traducao",
+    "tags": ["tecnologia", "escrita", "criatividade"],
+    "status": "evergreen",
+    "links": ["por-que-eu-codo-as-coisas"]
+  },
+  {
+    "slug": "colar-de-memorias",
+    "title": "Colar de memórias",
+    "path": "/blog/poesias/colar-de-memorias.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "quebra-ondas",
+    "title": "Quebra ondas",
+    "path": "/blog/poesias/quebra-ondas.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "ao-chegar-ao-chao",
+    "title": "Ao chegar ao chão",
+    "path": "/blog/poesias/ao-chegar-ao-chao.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "eco",
+    "title": "Eco",
+    "path": "/blog/poesias/eco.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "o-que-e-arte",
+    "title": "O que é arte?",
+    "path": "/blog/poesias/o-que-e-arte.html",
+    "format": "poesia",
+    "tags": ["pessoal", "criatividade"],
+    "status": "evergreen",
+    "links": ["somos-artistas-de-merda"]
+  },
+  {
+    "slug": "pes-descalcos",
+    "title": "Pés Descalços",
+    "path": "/blog/poesias/pes-descalcos.html",
+    "format": "poesia",
+    "tags": ["pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "santo-amaro",
+    "title": "Santo amaro",
+    "path": "/blog/contos/santo-amaro.html",
+    "format": "conto",
+    "tags": ["escrita"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "massala",
+    "title": "Massala",
+    "path": "/blog/contos/massala.html",
+    "format": "conto",
+    "tags": ["escrita"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "nanquim",
+    "title": "Nanquim",
+    "path": "/blog/contos/nanquim.html",
+    "format": "conto",
+    "tags": ["escrita"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "um-conto-do-mar",
+    "title": "Um conto do mar",
+    "path": "/blog/contos/um-conto-do-mar.html",
+    "format": "conto",
+    "tags": ["escrita"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "sofia",
+    "title": "Sofia",
+    "path": "/blog/contos/sofia.html",
+    "format": "conto",
+    "tags": ["escrita"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "reminiscencia",
+    "title": "Reminiscência",
+    "path": "/blog/contos/reminiscencia.html",
+    "format": "conto",
+    "tags": ["escrita", "pessoal"],
+    "status": "evergreen",
+    "links": []
+  },
+  {
+    "slug": "velhas-terras-oniricas",
+    "title": "Velhas terras oníricas — O ciclo de vida da criatividade",
+    "path": "/blog/nao-durmo/velhas-terras-oniricas.html",
+    "format": "ensaio",
+    "tags": ["criatividade", "escrita", "pessoal"],
+    "status": "evergreen",
+    "links": ["pare-de-criar-sua-criatividade-agradece", "somos-artistas-de-merda"]
+  }
+]

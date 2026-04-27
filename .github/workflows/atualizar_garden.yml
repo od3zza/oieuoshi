@@ -1,0 +1,31 @@
+name: Atualizar Garden
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "blog/**/*.html"   # só roda quando um arquivo HTML do blog muda
+  workflow_dispatch:
+
+jobs:
+  atualizar-garden:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detectar posts novos
+        run: python3 api/atualizar_garden.py
+
+      - name: Commit garden.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add lib/garden/garden.json
+          git diff --cached --quiet || git commit -m "chore: adiciona novos posts ao garden.json [skip ci]"
+          git push

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>🪴 Notas - Uoshi</title>
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Designer multidisciplinar e filmmaker apaixonado por processos criativos e experimentais." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="/assets/favicon.jpg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-HZNDKKGKW8");
+    </script>
+
+    <style>
+      .search-wrap { margin-bottom: 1rem; }
+
+      .search-input {
+        width: 100%;
+        padding: 0.7rem 0.9rem;
+        border: 3px solid var(--foreground);
+        border-radius: 6px;
+        font-size: var(--font-size-m);
+        font-family: "Rubik", sans-serif;
+        background: var(--background);
+        color: var(--foreground);
+        box-sizing: border-box;
+        transition: border-color 0.15s;
+      }
+      .search-input::placeholder { color: var(--text-light); }
+      .search-input:focus { outline: none; border-color: var(--text-light); }
+
+      .stats {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        font-weight: normal;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 2rem;
+      }
+      .stats strong { color: var(--foreground); font-family: "Rubik", sans-serif; font-weight: 700; }
+
+      .tags-toggle-wrap { margin-bottom: 0.75rem; }
+
+      .tags-toggle-btn {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        background: transparent;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0.3rem 0.75rem;
+        cursor: pointer;
+        color: var(--text-light);
+        transition: border-color 0.15s, color 0.15s;
+      }
+      .tags-toggle-btn:hover { border-color: var(--foreground); color: var(--foreground); }
+
+      .all-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .tag {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        font-weight: normal;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        border: 1px solid var(--border);
+        padding: 0.15rem 0.55rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s, color 0.15s;
+        background: none;
+      }
+      .tag:hover { border-color: var(--foreground); background: var(--foreground); color: var(--background); }
+      .tag.active { background: var(--foreground); color: var(--background); border-color: var(--foreground); }
+
+      .article-card {
+        border: 3px solid var(--border);
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        transition: border-color 0.2s;
+      }
+      .article-card:hover { border-color: #aaa; }
+
+      .card-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.9rem;
+        padding: 1.1rem 1.2rem;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .card-favicon { flex-shrink: 0; width: 28px; height: 28px; margin-top: 2px; }
+      .card-favicon img { width: 28px; height: 28px; border-radius: 4px; margin: 0; display: block; }
+
+      .card-meta { flex: 1; min-width: 0; }
+
+      .article-title {
+        font-family: "Rubik", sans-serif;
+        font-weight: 700;
+        font-size: var(--font-size-m);
+        color: var(--foreground);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 0.25rem;
+        line-height: 1.4;
+      }
+      .article-title:hover { text-decoration: underline; }
+
+      .article-hostname {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+
+      .article-date {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-top: 0.15rem;
+      }
+
+      .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
+
+      .card-right {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.4rem;
+        margin-top: 2px;
+      }
+
+      .badge-count {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        white-space: nowrap;
+      }
+
+      .expand-icon { font-size: 0.7rem; color: var(--text-light); transition: transform 0.2s; }
+      .article-card.open .expand-icon { transform: rotate(180deg); }
+
+      .card-body {
+        display: none;
+        border-top: 1px solid var(--border);
+        padding: 1.2rem;
+        background: #fafafa;
+      }
+      body.dark-mode .card-body { background: #222; }
+      .article-card.open .card-body { display: block; }
+
+      .page-comment {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-m);
+        font-style: italic;
+        line-height: var(--reading-lh);
+        color: #555;
+        border-left: 3px solid var(--border);
+        padding: 0.5rem 0 0.5rem 1rem;
+        margin-bottom: 1.5rem;
+      }
+      body.dark-mode .page-comment { color: #bbb; border-left-color: #555; }
+
+      .highlight {
+        margin-bottom: 1.2rem;
+        padding: 0.8rem 1rem;
+        border-radius: 4px;
+        border-left: 3px solid transparent;
+      }
+      .highlight:last-child { margin-bottom: 0; }
+      .highlight.yellow { background: rgba(253,223,142,0.25); border-left-color: var(--yellow); }
+      .highlight.green  { background: rgba(92,230,92,0.15);  border-left-color: var(--green); }
+      .highlight.blue   { background: rgba(130,169,245,0.2); border-left-color: var(--blue); }
+      .highlight.pink   { background: rgba(255,192,203,0.25); border-left-color: var(--pink); }
+      body.dark-mode .highlight.yellow { background: rgba(253,223,142,0.1); }
+      body.dark-mode .highlight.green  { background: rgba(92,230,92,0.08); }
+      body.dark-mode .highlight.blue   { background: rgba(130,169,245,0.1); }
+      body.dark-mode .highlight.pink   { background: rgba(255,192,203,0.1); }
+
+      .highlight-text {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-m);
+        line-height: var(--reading-lh);
+        color: var(--foreground);
+        margin-bottom: 0;
+      }
+
+      .highlight-note {
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-m);
+        font-style: italic;
+        line-height: var(--reading-lh);
+        color: #555;
+        margin-top: 0.6rem;
+        padding: 0.5rem 0.75rem;
+        background: rgba(255,255,255,0.6);
+        border-left: 2px solid var(--border);
+        border-radius: 0 3px 3px 0;
+      }
+      body.dark-mode .highlight-note { background: rgba(255,255,255,0.05); color: #bbb; border-left-color: #555; }
+
+      .hide-btn {
+        display: block;
+        margin-top: 1.5rem;
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        background: transparent;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0.3rem 0.75rem;
+        cursor: pointer;
+        color: var(--text-light);
+        transition: border-color 0.15s, color 0.15s;
+      }
+      .hide-btn:hover { border-color: var(--foreground); color: var(--foreground); }
+
+      .ver-mais-btn {
+        display: block;
+        margin: 0.5rem auto 2rem;
+        font-family: "Merriweather", serif;
+        font-size: var(--font-size-s);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        background: transparent;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0.4rem 1.2rem;
+        cursor: pointer;
+        color: var(--text-light);
+        transition: border-color 0.15s, color 0.15s;
+      }
+      .ver-mais-btn:hover { border-color: var(--foreground); color: var(--foreground); }
+
+      .loading, .empty-state {
+        text-align: center;
+        padding: 3rem 1rem;
+        color: var(--text-light);
+        font-family: "Merriweather", serif;
+        font-style: italic;
+        font-size: var(--font-size-m);
+      }
+
+      @media (max-width: 600px) {
+        .card-header { padding: 0.9rem; gap: 0.7rem; }
+        .card-body { padding: 0.9rem; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container"></div>
+    <header class="sidebar">
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <a href="/">← início</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main">
+      <h1>🪴 Notas</h1>
+
+      <p>
+        Eu nunca aprendi a surfar no mar, mas amo as ondas da internet 😊. E como um
+        bom apaixonado por fazer marcações em textos pela web, tentei organizar
+        eles para que você possa acompanhar o que eu ando explorando. Grande parte desse conteúdo tem relação com minhas pesquisas,
+        e outros são só coisas que gosto de ler por aí. Você também pode navegar usando as tags ou a caixa de pesquisa buscando por palavras-chave.
+      </p>
+
+      <hr />
+
+      <div class="search-wrap">
+        <input class="search-input" id="search-input" type="text" placeholder="Buscar por texto, título ou tag..." />
+      </div>
+
+      <div class="tags-toggle-wrap">
+        <button class="tags-toggle-btn" id="tags-toggle" onclick="toggleTagsPanel()">Tags ▾</button>
+      </div>
+
+      <div class="all-tags" id="all-tags" style="display: none;"></div>
+
+      <div class="stats" id="stats">
+        <div class="loading" id="loading">Carregando highlights…</div>
+      </div>
+
+      <div id="highlights-container"></div>
+
+      <div class="empty-state" id="empty-state" style="display:none">
+        <p>Nenhum highlight encontrado com os filtros aplicados.</p>
+      </div>
+    </section>
+
+    <script>
+      let allHighlights      = [];
+      let filteredHighlights = [];
+      let allTags            = new Set();
+      let activeTags         = new Set();
+      let visiveis           = 10;
+
+      const searchInput  = document.getElementById('search-input');
+      const statsDiv     = document.getElementById('stats');
+      const container    = document.getElementById('highlights-container');
+      const emptyState   = document.getElementById('empty-state');
+      const loadingDiv   = document.getElementById('loading');
+      const allTagsDiv   = document.getElementById('all-tags');
+
+      async function loadHighlights() {
+        try {
+          const url = "https://raw.githubusercontent.com/od3zza/oieuoshi/refs/heads/main/lib/highlights.json";
+          const res = await fetch(`${url}?v=${Date.now()}`);
+          if (!res.ok) throw new Error(res.statusText);
+
+          const obj = await res.json();
+          allHighlights = Object.entries(obj).map(([url, data]) => ({ url, ...data }));
+          allHighlights.sort((a, b) => new Date(b.date) - new Date(a.date));
+          filteredHighlights = [...allHighlights];
+
+          allHighlights.forEach(item => (item.tags || []).forEach(t => allTags.add(t)));
+
+          loadingDiv.style.display = 'none';
+          renderTagCloud();
+          updateStats();
+          renderHighlights();
+        } catch (e) {
+          loadingDiv.innerHTML = `❌ Erro ao carregar: ${e.message}`;
+        }
+      }
+
+      function toggleTagsPanel() {
+        const open = allTagsDiv.style.display === 'none';
+        allTagsDiv.style.display = open ? 'flex' : 'none';
+        updateToggleBtn();
+      }
+
+      function updateToggleBtn() {
+        const btn = document.getElementById('tags-toggle');
+        const open = allTagsDiv.style.display !== 'none';
+        const count = activeTags.size > 0 ? ` (${activeTags.size})` : '';
+        btn.textContent = (open ? 'Tags ▴' : 'Tags ▾') + count;
+      }
+
+      function renderTagCloud() {
+        const sorted = [...allTags].sort();
+        allTagsDiv.innerHTML = sorted.map(t => `
+          <span class="tag${activeTags.has(t) ? ' active' : ''}"
+                onclick="toggleTag('${t}')">${t}</span>
+        `).join('');
+        updateToggleBtn();
+      }
+
+      function toggleTag(tag) {
+        if (activeTags.has(tag)) activeTags.delete(tag);
+        else activeTags.add(tag);
+        renderTagCloud();
+        applyFilters();
+      }
+
+      function updateStats() {
+        const arts  = filteredHighlights.length;
+        const highs = filteredHighlights.reduce((s, i) => s + (i.highlights?.length || 0), 0);
+        statsDiv.innerHTML = `
+          <strong>${arts}</strong> artigos &nbsp;·&nbsp;
+          <strong>${highs}</strong> destaques &nbsp;·&nbsp;
+          <strong>${allTags.size}</strong> tags
+        `;
+      }
+
+      function renderHighlights() {
+        if (!filteredHighlights.length) {
+          container.innerHTML = '';
+          emptyState.style.display = 'block';
+          return;
+        }
+        emptyState.style.display = 'none';
+
+        const pagina = filteredHighlights.slice(0, visiveis);
+
+        container.innerHTML = pagina.map((item, i) => {
+          const date     = new Date(item.date).toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+          const hostname = (() => { try { return new URL(item.url).hostname; } catch { return item.url; } })();
+          const favicon  = `https://www.google.com/s2/favicons?domain=${hostname}&sz=64`;
+          const count    = item.highlights?.length || 0;
+
+          const tagsHtml = (item.tags?.length)
+            ? item.tags.map(t => `<span class="tag${activeTags.has(t) ? ' active' : ''}" onclick="event.stopPropagation();toggleTag('${t}')">${t}</span>`).join('')
+            : '';
+
+          const highlightsHtml = (item.highlights || []).map(h => {
+            const color = (h.color || 'yellow').toLowerCase();
+            const note  = h.highlight_note
+              ? `<div class="highlight-note">${h.highlight_note}</div>`
+              : '';
+            return `<div class="highlight ${color}">
+              <div class="highlight-text">${h.highlight}</div>
+              ${note}
+            </div>`;
+          }).join('');
+
+          const pageComment = item.page_comment
+            ? `<div class="page-comment">${item.page_comment}</div>`
+            : '';
+
+          return `
+            <article class="article-card" id="card-${i}">
+              <div class="card-header" onclick="toggleCard(${i})">
+                <div class="card-favicon">
+                  <img src="${favicon}" alt="" loading="lazy" onerror="this.style.display='none'">
+                </div>
+                <div class="card-meta">
+                  <a class="article-title" href="${item.url}" target="_blank"
+                     onclick="event.stopPropagation()">${item.title}</a>
+                  <div class="article-hostname">${hostname}</div>
+                  <div class="article-date">${date}</div>
+                  ${tagsHtml ? `<div class="card-tags">${tagsHtml}</div>` : ''}
+                </div>
+                <div class="card-right">
+                  <span class="badge-count">${count} nota${count !== 1 ? 's' : ''}</span>
+                  <span class="expand-icon">▼</span>
+                </div>
+              </div>
+              <div class="card-body" onclick="event.stopPropagation()">
+                ${pageComment}
+                ${highlightsHtml}
+                <button class="hide-btn" onclick="toggleCard(${i})">fechar ↑</button>
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        if (visiveis < filteredHighlights.length) {
+          const restantes = filteredHighlights.length - visiveis;
+          const btn = document.createElement('button');
+          btn.className = 'ver-mais-btn';
+          btn.textContent = `ver mais (${restantes} restante${restantes !== 1 ? 's' : ''})`;
+          btn.onclick = () => { visiveis += 10; renderHighlights(); };
+          container.appendChild(btn);
+        }
+      }
+
+      function toggleCard(i) {
+        document.getElementById(`card-${i}`).classList.toggle('open');
+      }
+
+      function applyFilters() {
+        const term = searchInput.value.toLowerCase().trim();
+        filteredHighlights = allHighlights.filter(item => {
+          const matchTag = activeTags.size === 0 ||
+            [...activeTags].every(t => (item.tags || []).includes(t));
+          if (!matchTag) return false;
+          if (!term) return true;
+          return (
+            item.title?.toLowerCase().includes(term) ||
+            item.url?.toLowerCase().includes(term) ||
+            item.page_comment?.toLowerCase().includes(term) ||
+            (item.tags || []).some(t => t.toLowerCase().includes(term)) ||
+            (item.highlights || []).some(h =>
+              h.highlight?.toLowerCase().includes(term) ||
+              h.highlight_note?.toLowerCase().includes(term)
+            )
+          );
+        });
+        visiveis = 10;
+        updateStats();
+        renderHighlights();
+      }
+
+      searchInput.addEventListener('input', () => {
+        activeTags.clear();
+        renderTagCloud();
+        applyFilters();
+      });
+
+      loadHighlights();
+    </script>
+  </body>
+</html>

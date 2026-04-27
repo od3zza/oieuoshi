@@ -1,0 +1,759 @@
+[
+  {
+    "slug": "entao-ela-virou-uma-cadela",
+    "title": "Então ela virou uma cadela",
+    "path": "/blog/misc/entao-ela-virou-uma-cadela",
+    "format": "misc",
+    "tags": ["leitura", "quadrinhos", "indie"],
+    "links": []
+  },
+  {
+    "slug": "pare-de-fazer",
+    "title": "Já é Setembro",
+    "path": "/blog/misc/ja-e-setembro",
+    "format": "misc",
+    "tags": ["arte digital", "dump", "projetos", "programação", "p5js"],
+    "links": ["por-que-eu-codo-as-coisas", "pare-de-criar-sua-criatividade-agradece", "campo-comentarios-blog"]
+  },
+  {
+    "slug": "carta-aberta-a-quem-eu-disse-eu-te-amo",
+    "title": "Carta aberta a quem eu disse eu te amo",
+    "path": "/blog/misc/carta-aberta-a-quem-eu-disse-eu-te-amo",
+    "format": "misc",
+    "tags": ["pessoal", "criatividade", "melancolia", "gaston bachelard", "na natureza selvagem"],
+    "links": ["somos-artistas-de-merda", "pare-de-criar-sua-criatividade-agradece", "os-millennials-mataram-a-paixao", "velhas-terras-oniricas"]
+  },
+  {
+    "slug": "quero-escrever-sem-escrever",
+    "title": "Quero escrever sem escrever",
+    "path": "/blog/misc/quero-escrever-sem-escrever",
+    "format": "misc",
+    "tags": ["zines", "escrita", "criatividade", "colagem"],
+    "links": ["o-que-e-arte", "por-que-eu-codo-as-coisas", "pare-de-fazer-sua-criatividade-agradece"]
+  },
+  {
+    "slug": "luto-e-poesia",
+    "title": "Luto é poesia",
+    "path": "/blog/poesias/luto-e-poesia",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "luto",
+      "solidão"
+    ],
+    "links": [
+      "sexta-santa",
+      "despedacos"
+    ]
+  },
+  {
+    "slug": "sobre-patch-idioma-initial-d-street-stage-ppsspp",
+    "title": "Sobre o patch de idioma de Initial D Street Stage (PPSSPP)",
+    "path": "/blog/misc/sobre-patch-idioma-initial-d-street-stage-ppsspp",
+    "format": "misc",
+    "tags": [
+      "jogos",
+      "tecnologia"
+    ],
+    "links": ["por-que-eu-codo-as-coisas", "campo-comentarios-blog"]
+  },
+  {
+    "slug": "her-odyssey-2",
+    "title": "Her Odyssey (Parte II)",
+    "path": "/blog/ttrpg/her-odyssey-2",
+    "format": "ttrpg",
+    "tags": [
+      "ttrpg",
+      "jogos",
+      "narrativa"
+    ],
+    "links": [
+      "her-odyssey"
+    ]
+  },
+  {
+    "slug": "porque-eu-fiz-uma-extensao-pra-salvar-textos-destacados",
+    "title": "Porque eu fiz uma extensão pra salvar textos destacados",
+    "path": "/blog/misc/porque-eu-fiz-uma-extensao-pra-salvar-textos-destacados",
+    "format": "misc",
+    "tags": [
+      "tecnologia",
+      "programação",
+      "leitura"
+    ],
+    "links": [
+      "por-que-eu-codo-as-coisas",
+      "campo-comentarios-blog"
+    ]
+  },
+  {
+    "slug": "os-millennials-mataram-a-paixao",
+    "title": "Os millenials mataram a paixão",
+    "path": "/blog/misc/os-millennials-mataram-a-paixao",
+    "format": "misc",
+    "tags": [
+      "pessoal",
+      "teoria",
+      "memória"
+    ],
+    "links": [
+      "colar-de-memorias"
+    ]
+  },
+  {
+    "slug": "ainda-to-aqui",
+    "title": "Ainda tô aqui",
+    "path": "/blog/poesias/ainda-to-aqui",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "amor",
+      "memória"
+    ],
+    "links": []
+  },
+  {
+    "slug": "her-odyssey",
+    "title": "Her Odyssey (Parte I)",
+    "path": "/blog/ttrpg/her-odyssey",
+    "format": "ttrpg",
+    "tags": [
+      "ttrpg",
+      "jogos",
+      "narrativa"
+    ],
+    "links": [
+      "her-odyssey-2",
+      "dungeons-and-dragons-uma-fantasia-simulada"
+    ]
+  },
+  {
+    "slug": "despedacos",
+    "title": "Despedaços",
+    "path": "/blog/poesias/despedacos",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "melancolia",
+      "existência"
+    ],
+    "links": [
+      "farpas-sal",
+      "vestigios"
+    ]
+  },
+  {
+    "slug": "somos-artistas-de-merda",
+    "title": "Somos artistas de merda",
+    "path": "/blog/misc/carta-aberta-a-quem-eu-disse-eu-te-amo",
+    "format": "misc",
+    "tags": [
+      "pessoal",
+      "criatividade",
+      "melancolia"
+    ],
+    "links": [
+      "pare-de-criar-sua-criatividade-agradece",
+      "velhas-terras-oniricas"
+    ]
+  },
+  {
+    "slug": "um-pixel-morreu-e-chorei",
+    "title": "Um Pixel Morreu e Chorei",
+    "path": "/blog/ensaios/um-pixel-morreu-e-chorei",
+    "format": "ensaio",
+    "tags": [
+      "cinema",
+      "jogos",
+      "teoria",
+      "dissertação"
+    ],
+    "links": [
+      "o-ocio-no-caos",
+      "samurai-negao",
+      "futuro-relacoes-humanas-ias"
+    ]
+  },
+  {
+    "slug": "o-ocio-no-caos",
+    "title": "O Ócio no Caos",
+    "path": "/blog/ensaios/o-ocio-no-caos",
+    "format": "ensaio",
+    "tags": [
+      "jogos",
+      "teoria",
+      "contemplação",
+      "dissertação"
+    ],
+    "links": [
+      "um-pixel-morreu-e-chorei",
+      "samurai-negao",
+      "futuro-relacoes-humanas-ias",
+      "melancolia-pos-moderna-contemplativa",
+      "pare-de-criar-sua-criatividade-agradece"
+    ]
+  },
+  {
+    "slug": "samurai-negao",
+    "title": "Samurai Negão",
+    "path": "/blog/ensaios/samurai-negao",
+    "format": "ensaio",
+    "tags": [
+      "cinema",
+      "identidade",
+      "teoria",
+      "dissertação"
+    ],
+    "links": [
+      "um-pixel-morreu-e-chorei",
+      "o-ocio-no-caos",
+      "melancolia-pos-moderna-contemplativa",
+      "evolucao-para-senciencia"
+    ]
+  },
+  {
+    "slug": "melancolia-pos-moderna-contemplativa",
+    "title": "Melancolia Pós-Moderna Contemplativa",
+    "path": "/blog/ensaios/melancolia-pos-moderna-contemplativa",
+    "format": "ensaio",
+    "tags": [
+      "cinema",
+      "teoria",
+      "contemplação",
+      "melancolia"
+    ],
+    "links": [
+      "o-ocio-no-caos",
+      "samurai-negao"
+    ]
+  },
+  {
+    "slug": "ja-e-setembro",
+    "title": "Já é Setembro",
+    "path": "/blog/misc/ja-e-setembro",
+    "format": "diario",
+    "tags": [
+      "pessoal",
+      "tecnologia"
+    ],
+    "links": [
+      "por-que-eu-codo-as-coisas"
+    ]
+  },
+  {
+    "slug": "como-conectar-um-kinect-xbox-usando-usb",
+    "title": "Como conectar um Kinect XBOX usando USB",
+    "path": "/blog/misc/como-conectar-um-kinect-xbox-usando-usb",
+    "format": "tutorial",
+    "tags": [
+      "tecnologia",
+      "programação",
+      "arte-interativa"
+    ],
+    "links": [
+      "por-que-eu-codo-as-coisas"
+    ]
+  },
+  {
+    "slug": "por-que-eu-codo-as-coisas",
+    "title": "Por que eu codo as coisas?",
+    "path": "/blog/misc/por-que-eu-codo-as-coisas",
+    "format": "misc",
+    "tags": [
+      "tecnologia",
+      "programação",
+      "criatividade"
+    ],
+    "links": [
+      "campo-comentarios-blog",
+      "breve-historia-filosofia-jardim-digital"
+    ]
+  },
+  {
+    "slug": "amostras-do-amontoado",
+    "title": "Amostras do Amontoado",
+    "path": "/blog/traducoes/amostras-do-amontoado",
+    "format": "traducao",
+    "tags": [
+      "teoria",
+      "tecnologia",
+      "criatividade"
+    ],
+    "links": [
+      "breve-historia-filosofia-jardim-digital"
+    ]
+  },
+  {
+    "slug": "as-redes-sociais-venceram-ou-quase",
+    "title": "As redes sociais venceram, ou quase",
+    "path": "/blog/misc/as-redes-sociais-venceram-ou-quase",
+    "format": "misc",
+    "tags": [
+      "tecnologia",
+      "criatividade",
+      "teoria"
+    ],
+    "links": [
+      "pare-de-criar-sua-criatividade-agradece",
+      "por-que-eu-codo-as-coisas"
+    ]
+  },
+  {
+    "slug": "pare-de-criar-sua-criatividade-agradece",
+    "title": "Pare de criar, sua criatividade agradece",
+    "path": "/blog/misc/pare-de-criar-sua-criatividade-agradece",
+    "format": "misc",
+    "tags": [
+      "criatividade",
+      "teoria",
+      "contemplação"
+    ],
+    "links": [
+      "velhas-terras-oniricas",
+      "o-ocio-no-caos",
+      "as-redes-sociais-venceram-ou-quase"
+    ]
+  },
+  {
+    "slug": "campo-comentarios-blog",
+    "title": "Como criei um campo de comentários para meu Blog",
+    "path": "/blog/misc/campo-comentarios-blog",
+    "format": "tutorial",
+    "tags": [
+      "tecnologia",
+      "programação"
+    ],
+    "links": [
+      "por-que-eu-codo-as-coisas"
+    ]
+  },
+  {
+    "slug": "matrix-uma-vida-menos-vazia",
+    "title": "Matrix - Uma Vida Menos Vazia por Ted McKeever",
+    "path": "/blog/traducoes/matrix-uma-vida-menos-vazia",
+    "format": "traducao",
+    "tags": [
+      "cinema",
+      "teoria",
+      "ficção-científica"
+    ],
+    "links": [
+      "futuro-relacoes-humanas-ias",
+      "evolucao-para-senciencia"
+    ]
+  },
+  {
+    "slug": "tic-tac-tic",
+    "title": "Tic Tac Tic",
+    "path": "/blog/poesias/tic-tac-tic",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "ansiedade",
+      "melancolia"
+    ],
+    "links": [
+      "vestigios",
+      "cansaco"
+    ]
+  },
+  {
+    "slug": "vestigios",
+    "title": "Vestígios",
+    "path": "/blog/poesias/vestigios",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "melancolia",
+      "ansiedade"
+    ],
+    "links": [
+      "tic-tac-tic",
+      "cansaco"
+    ]
+  },
+  {
+    "slug": "sob-a-mesa",
+    "title": "Sob a mesa",
+    "path": "/blog/contos/sob-a-mesa",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "atmosfera",
+      "mistério"
+    ],
+    "links": [
+      "a-janela"
+    ]
+  },
+  {
+    "slug": "a-janela",
+    "title": "A Janela",
+    "path": "/blog/contos/a-janela",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "atmosfera",
+      "mistério"
+    ],
+    "links": [
+      "sob-a-mesa"
+    ]
+  },
+  {
+    "slug": "sexta-santa",
+    "title": "Sexta santa",
+    "path": "/blog/poesias/sexta-santa",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "luto",
+      "solidão"
+    ],
+    "links": [
+      "luto-e-poesia",
+      "ainda-to-aqui"
+    ]
+  },
+  {
+    "slug": "nao-existo",
+    "title": "Não existo",
+    "path": "/blog/poesias/nao-existo",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "existência"
+    ],
+    "links": [
+      "despedacos"
+    ]
+  },
+  {
+    "slug": "farpas-sal",
+    "title": "Farpas e sal",
+    "path": "/blog/poesias/farpas-sal",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "solidão",
+      "melancolia"
+    ],
+    "links": [
+      "despedacos",
+      "vestigios"
+    ]
+  },
+  {
+    "slug": "futuro-relacoes-humanas-ias",
+    "title": "O futuro, relações humanas e IAs — Observando simulacros de Blade Runner a Detroit Become Human",
+    "path": "/blog/nao-durmo/futuro-relacoes-humanas-ias",
+    "format": "ensaio",
+    "tags": [
+      "cinema",
+      "jogos",
+      "teoria",
+      "ficção-científica"
+    ],
+    "links": [
+      "um-pixel-morreu-e-chorei",
+      "evolucao-para-senciencia",
+      "matrix-uma-vida-menos-vazia"
+    ]
+  },
+  {
+    "slug": "doente-estou",
+    "title": "Doente estou",
+    "path": "/blog/poesias/doente-estou",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "melancolia",
+      "amor"
+    ],
+    "links": []
+  },
+  {
+    "slug": "cansaco",
+    "title": "Cansaço",
+    "path": "/blog/poesias/cansaco",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "ansiedade",
+      "melancolia"
+    ],
+    "links": [
+      "tic-tac-tic",
+      "vestigios"
+    ]
+  },
+  {
+    "slug": "ha-petalas-sob-o-sol",
+    "title": "Há pétalas sob o sol",
+    "path": "/blog/contos/ha-petalas-sob-o-sol",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "fantasia",
+      "atmosfera"
+    ],
+    "links": [
+      "a-janela"
+    ]
+  },
+  {
+    "slug": "um-canto",
+    "title": "Um Canto",
+    "path": "/blog/poesias/um-canto",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "solidão",
+      "espaço"
+    ],
+    "links": [
+      "maldito-concreto"
+    ]
+  },
+  {
+    "slug": "evolucao-para-senciencia",
+    "title": "Evolução para a senciência — Frankenstein, Ghost in the Shell e The Man of the Crowd",
+    "path": "/blog/traducoes/evolucao-para-senciencia",
+    "format": "traducao",
+    "tags": [
+      "cinema",
+      "teoria",
+      "ficção-científica"
+    ],
+    "links": [
+      "futuro-relacoes-humanas-ias",
+      "matrix-uma-vida-menos-vazia"
+    ]
+  },
+  {
+    "slug": "maldito-concreto",
+    "title": "Maldito Concreto",
+    "path": "/blog/poesias/maldito-concreto",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "contemplação",
+      "urbano"
+    ],
+    "links": [
+      "um-canto"
+    ]
+  },
+  {
+    "slug": "dungeons-and-dragons-uma-fantasia-simulada",
+    "title": "Dungeons & Dragons — Uma Fantasia Simulada, por Bob Guerra (1990)",
+    "path": "/blog/traducoes/dungeons-and-dragons-uma-fantasia-simulada",
+    "format": "traducao",
+    "tags": [
+      "jogos",
+      "ttrpg",
+      "ficção"
+    ],
+    "links": [
+      "her-odyssey"
+    ]
+  },
+  {
+    "slug": "breve-historia-filosofia-jardim-digital",
+    "title": "Breve história e filosofia do Jardim Digital por Maggie Appleton (2021?)",
+    "path": "/blog/traducoes/breve-historia-filosofia-jardim-digital",
+    "format": "traducao",
+    "tags": [
+      "tecnologia",
+      "criatividade",
+      "teoria"
+    ],
+    "links": [
+      "por-que-eu-codo-as-coisas",
+      "amostras-do-amontoado"
+    ]
+  },
+  {
+    "slug": "colar-de-memorias",
+    "title": "Colar de memórias",
+    "path": "/blog/poesias/colar-de-memorias",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "memória",
+      "melancolia"
+    ],
+    "links": [
+      "quebra-ondas"
+    ]
+  },
+  {
+    "slug": "quebra-ondas",
+    "title": "Quebra ondas",
+    "path": "/blog/poesias/quebra-ondas",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "melancolia",
+      "memória"
+    ],
+    "links": [
+      "colar-de-memorias",
+      "ao-chegar-ao-chao"
+    ]
+  },
+  {
+    "slug": "ao-chegar-ao-chao",
+    "title": "Ao chegar ao chão",
+    "path": "/blog/poesias/ao-chegar-ao-chao",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "melancolia",
+      "existência"
+    ],
+    "links": [
+      "quebra-ondas"
+    ]
+  },
+  {
+    "slug": "eco",
+    "title": "Eco",
+    "path": "/blog/poesias/eco",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "existência"
+    ],
+    "links": [
+      "nao-existo"
+    ]
+  },
+  {
+    "slug": "o-que-e-arte",
+    "title": "O que é arte?",
+    "path": "/blog/poesias/o-que-e-arte",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "criatividade",
+      "teoria"
+    ],
+    "links": [
+      "velhas-terras-oniricas",
+      "somos-artistas-de-merda"
+    ]
+  },
+  {
+    "slug": "pes-descalcos",
+    "title": "Pés Descalços",
+    "path": "/blog/poesias/pes-descalcos",
+    "format": "poesia",
+    "tags": [
+      "pessoal",
+      "memória",
+      "solidão"
+    ],
+    "links": []
+  },
+  {
+    "slug": "santo-amaro",
+    "title": "Santo amaro",
+    "path": "/blog/contos/santo-amaro",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "horror",
+      "mistério"
+    ],
+    "links": [
+      "nanquim"
+    ]
+  },
+  {
+    "slug": "massala",
+    "title": "Massala",
+    "path": "/blog/contos/massala",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "ficção-científica",
+      "distopia"
+    ],
+    "links": [
+      "sofia"
+    ]
+  },
+  {
+    "slug": "nanquim",
+    "title": "Nanquim",
+    "path": "/blog/contos/nanquim",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "horror",
+      "mistério"
+    ],
+    "links": [
+      "santo-amaro"
+    ]
+  },
+  {
+    "slug": "um-conto-do-mar",
+    "title": "Um conto do mar",
+    "path": "/blog/contos/um-conto-do-mar",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "fantasia",
+      "identidade"
+    ],
+    "links": [
+      "reminiscencia"
+    ]
+  },
+  {
+    "slug": "sofia",
+    "title": "Sofia",
+    "path": "/blog/contos/sofia",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "ficção-científica",
+      "cyberpunk"
+    ],
+    "links": [
+      "massala",
+      "futuro-relacoes-humanas-ias"
+    ]
+  },
+  {
+    "slug": "reminiscencia",
+    "title": "Reminiscência",
+    "path": "/blog/contos/reminiscencia",
+    "format": "conto",
+    "tags": [
+      "ficção",
+      "fantasia",
+      "memória"
+    ],
+    "links": [
+      "um-conto-do-mar"
+    ]
+  },
+  {
+    "slug": "velhas-terras-oniricas",
+    "title": "Velhas terras oníricas — O ciclo de vida da criatividade",
+    "path": "/blog/nao-durmo/velhas-terras-oniricas",
+    "format": "ensaio",
+    "tags": [
+      "criatividade",
+      "teoria",
+      "memória"
+    ],
+    "links": [
+      "pare-de-criar-sua-criatividade-agradece",
+      "o-que-e-arte"
+    ]
+  }
+]

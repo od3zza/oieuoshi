@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Já é Setembro - Misc - Uoshi</title>
+
+    <meta name="author" content="Uoshi" />
+    <meta name="description" content="Setembro chegou, e com ele, novas ideias e reflexões." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" href="/sitemap.xml" />
+
+    <!-- Manifest .json-->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="/lib/style.css" type="text/css" media="screen, projection" />
+    <script src="/lib/script.js" defer></script>
+
+    <!-- Theme Color - https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Ícone-->
+    <link rel="icon" type="image/png" href="/assets/favicon.jpg" />
+
+    <!-- Abre Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZNDKKGKW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-HZNDKKGKW8');
+    </script>
+    <!-- Fecha Google tag (gtag.js) -->
+</head>
+
+<!--
+          )      (\_
+         ((    _/{  "-;
+          )).-' {{ ;'`
+HEY U!   ( (  ;._ \\      -->
+
+<body>
+    <!-- Abre Header -->
+    <!-- sidebar esquerdo -->
+    <div class="container"></div>
+    <header class="sidebar">
+        <div class="sidebar-text">
+            <nav class="sections">
+                <ul>
+                    <a href="/blog">← blog</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- end sidebar -->
+
+    <!-- Fecha Header -->
+
+    <!-- Abre base -->
+    <section class="main">
+        <div id="post-dates"></div>
+        <!-- título -->
+        <h1>Já é Setembro</h1>
+        <br />
+        <sub> misc 🗂️</sub>
+        <br /><br />
+
+        <!-- conteúdo -->
+        <p>Toda primeira semana de cada mês eu costumo postar fotos e vídeos que tiro durante o mês anterior, algo como
+            um <em>dump</em>, mas dificilmente solto arquivos crus, pois sempre edito logo que capturo. Porém, acabei de
+            notar que eu não tenho nada pra <em>dropar</em> esse mês, e que talvez agosto tenha sido o mês mais
+            introspectivo do meu ano. Há vários motivos: dissertação, trampos, correrias, eu tava sem minha bike (sempre
+            faço <em>shots</em> quando saio pedalar), mas eu também não estava no meu melhor momento com as pessoas, com
+            a vida — apesar de eu ter frequentado algumas manhas/noites de Pauper pela cidade.</p>
+
+        <p>Apesar de não ter tirado fotos ou gravado algo despretensiosamente, eu notei que <em>codei</em> muitas
+            coisas. Antes de tudo, se alguém chegou agora, eu não sou <em>dev</em>, mas conheço um pouco de HTML, CSS,
+            JS e PY, e mano, com LLMs correndo soltas, nunca fiz tanto em tão pouco tempo, além de estar usando essas
+            experiências pra estudar. E felizmente, grande parte do que eu produzi está ligado às artes e eu queria
+            muito compartilhar com vocês... talvez esse seja meu <em>dump</em> de agosto, e acredito que vocês vão
+            gostar, pelo menos de alguma coisa :)</p>
+
+        <a name="more"></a>
+
+        <p>Recebi um convite pra bolar alguma arte num evento que vai rolar na cidade, mas como eu já estava bem
+            desconectado da pintura, pensei em experimentar algo mais digital. Há algumas semanas eu adaptei um Kinect
+            de XBOX na esperança de criar umas artes <em>real time</em> no TouchDesigner e falhei miseravelmente. Não
+            que não tenha rolado, mas o modo <em>free</em> do bagulho é paia e o pago é absurdo de caro. Então, com a
+            mesma ideia do que faria no software, tentei encontrar caminhos usando <em>javascript</em>. Essa linguagem é
+            maneiríssima, super dinâmica e possui várias bibliotecas para fazer coisas diferentes. Também descobri o <a
+                href="https://openprocessing.org/" target="_blank">OpenProcessing</a>, uma plataforma pra projetos de
+            <em>coding + art</em> que usa <a href="https://p5js.org/" target="_blank">p5.js</a>, uma biblioteca gratuita
+            de <em>javascript</em>. Tem muito projeto incrível lá e eu decidi meter a mão na massa. Assim, surgiram o
+            <em>paintthetown</em> e <em>meltingintoblocks</em>.</p>
+
+        <h3><strong>1. <a href="https://openprocessing.org/sketch/2712352"
+                    target="_blank">meltingintoblocks</a></strong></h3>
+
+        <p>Esse projeto em <em>js</em> captura a imagem da câmera e converte em blocos pretos e brancos, quase como uma
+            retícula. Então, se o microfone estiver ativado, ele cria distorções baseadas na captura do som. A ideia é
+            deixar uma projeção rolando em uma parede e capturar com infravermelho o movimento das pessoas que estariam
+            circulando pela sala. Simples, mas eu gosto muito dessa desconstrução da forma, e fiz isso especificamente
+            pra provocar as pessoas a interagirem direto com a câmera e o caos visual.</p>
+
+       <img src="/assets/blog/ja-e-setembro/ja-e-setembro-3.gif" style="height:300px;">
+
+        <h3><strong>2. <a href="https://openprocessing.org/sketch/2712610" target="_blank">paintthetown</a></strong>
+        </h3>
+
+        <p>Semelhante à ideia do <em>meltingintoblocks</em>, esse projeto também em <em>js</em> capta o som e distorce
+            padrões de linhas e partículas que flutuam na tela. Eu já queria há algum tempo explorar abstrações com
+            preto e branco, linhas e composições orgânicas e etéreas, e com esse projeto eu consegui chegar muito perto
+            — juro que eu queria mais <em>glow</em>, mas funciona. Quero ainda projetar isso em parceria com alguma
+            <em>DJ</em> pra deixar como <em>background</em> ou projetado de cima sobre a galera na pista.</p>
+
+        <iframe
+            src="https://www.blogger.com/video.g?token=AD6v5dw7RDp-EeVMnx7c9YBomN1XITvoQOPKEU4hRr--Na6CUXUJtFge-Rrcvr8kmCW-2CRzy0F5KSqux0TkPR75MTmrJTAVWk7jE89xj-_6Gsg0ua-doKCqJEQqaso7WPkJ_CtHeqbk"
+            width="100%" height="315" text-align="center" frameborder="0" allowfullscreen>
+        </iframe>
+
+        <h3><strong>3. <a href="https://dqad.vercel.app/" target="_blank">DQAD</a> &amp; <a
+                    href="https://letmeflowsketching.vercel.app/" target="_blank">FlowSketch</a></strong></h3>
+
+        <p>Estes dois projetos já são mais experimentações de destruição e construção.</p>
+
+        <p><strong>DQAD</strong> é um <em>web app</em> estático que usa <em>js</em> pra desconstruir e mixar imagens.
+            Quando criei o site, queria que as pessoas destruíssem suas imagens, subindo várias para o site que iria
+            reciclar e reconstruí-las mixadas, dando um novo contexto para o “lixo” de imagens que acabam sendo
+            deletadas por não serem perfeitas.</p>
+
+        <img src="/assets/blog/ja-e-setembro/ja-e-setembro-2.jpg">
+
+        <p><strong>FlowSketch</strong> é uma extensão de navegador que rastreia movimentos e cliques do mouse e
+            transforma em diferentes cores e <em>brushes</em> que vão pintando em um canvas digital. Depois de algum
+            tempo com a extensão ativada, você pode abrir para ver o resultado das suas rotinas de ações. Não é apenas
+            uma pintura inconsciente, mas uma forma curiosa de ver o próprio fluxo enquanto navega. Movimentos rápidos
+            criam linhas mais grossas, por exemplo. Atualmente há uma galeria pública onde tenho compartilhado alguns
+            resultados — quem sabe no futuro eu disponibilizo para o público.</p>
+
+    <img src="/assets/blog/ja-e-setembro/ja-e-setembro-1.jpg">
+
+        <p>Sinto falta de fazer arte mais tradicional, mas confesso que o digital tem me atraído muito. Meu próximo
+            projeto será um curta-metragem — eu espero rs — gravado em <em>Grand Theft Auto: San Andreas</em>. Depois
+            dou mais <em>spoilers</em>. Todas essas criações estão disponíveis, a maioria você pode até experimentar — e
+            não esquece de compartilhar comigo no Instagram ou por aí.</p>
+
+        <!-- Abre footer-->
+        <section class="footer"><div class="post-footer">
+  <button class="like-btn" id="like-btn">
+    <span class="like-icon">♡</span>
+    <span class="like-count" id="like-count">…</span>
+  </button>
+  <div class="post-email">
+    tem algo a dizer?<br>
+    <a href="mailto:oieuoshi@gmail.com?subject=oi, vim do seu blog">escreve pra mim ↗</a>
+  </div>
+</div>
+
+<div id="garden-footer"></div>
+<script src="/lib/garden/garden.js"></script>
+<script src="/lib/interact/likes.js"></script></section>
+<!-- Fecha footer-->
+</body>
+
+</html>

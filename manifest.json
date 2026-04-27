@@ -1,0 +1,16 @@
+{
+  "name": "Jardim digital do Uoshi",
+  "short_name": "Uoshi",
+  "description": "Jardim digital do Uoshi",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#7BE4D5",
+  "icons": [
+    {
+      "src": "assets/uoshi-logos/uoshi-logo-black (1).png",
+      "sizes": "503x170",
+      "type": "image/png"
+    }
+  ]
+}
