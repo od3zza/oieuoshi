@@ -545,11 +545,20 @@ img {
 }
 
 .carousel img {
-  flex: 0 0 auto;
-  max-width: 300px;
-  width: 100%;
+  flex: 0 0 280px;
+  width: 280px;
+  height: auto;
   border-radius: 6px;
   scroll-snap-align: start;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .carousel img {
+    flex: 0 0 300px;
+    width: 300px;
+  }
 }
 
 .carousel::-webkit-scrollbar {
