@@ -525,6 +525,8 @@ img {
   display: block;
 }
 
+ 
+
 .carousel {
   display: flex;
   overflow-x: auto;
@@ -533,7 +535,8 @@ img {
   padding-bottom: 8px;
 
   /* Interação mais suave */
-  scroll-behavior: smooth;
+  user-select: none;
+  scroll-behavior: auto !important;
   cursor: grab;
 }
 
