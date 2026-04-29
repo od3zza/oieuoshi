@@ -525,6 +525,44 @@ img {
   display: block;
 }
 
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding-bottom: 8px;
+
+  /* Interação mais suave */
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 6px;
+  scroll-snap-align: start;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  cursor: grab;
+  user-select: none; /* impede seleção ao arrastar */
+}
+
+.carousel.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto !important; /* evita animações brigarem com arrasto */
+}
+
 /**********************
  * Footer
  *********************/
