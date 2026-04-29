@@ -19,6 +19,10 @@ jobs:
       - name: Gerar lib/garden/dates.json
         run: |
           mkdir -p lib/garden
+          
+          # Carrega datas antigas se existirem
+          old_dates=$(cat lib/garden/dates.json 2>/dev/null || echo "{}")
+          
           echo "{" > lib/garden/dates.json
           first=true
 
@@ -28,6 +32,12 @@ jobs:
 
             if [ -z "$created" ]; then created=$(date +%Y-%m-%d); fi
             if [ -z "$updated" ]; then updated=$(date +%Y-%m-%d); fi
+
+            # Se a data de criação já existe no arquivo anterior, mantém a parte 'created' original
+            old_created=$(echo "$old_dates" | jq -r ".\"/$file\".created // empty" 2>/dev/null)
+            if [ ! -z "$old_created" ]; then
+              created="$old_created"
+            fi
 
             if [ "$first" = true ]; then
               first=false
